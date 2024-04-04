@@ -1,0 +1,407 @@
+{
+  "E_1": {
+    "lhs": "zero",
+    "network": "root",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "E_10": {
+    "lhs": "chemPot",
+    "network": "macroscopic",
+    "rhs": " ParDiff ( U , n )"
+  },
+  "E_11": {
+    "lhs": "H",
+    "network": "macroscopic",
+    "rhs": " U - p . V"
+  },
+  "E_12": {
+    "lhs": "A",
+    "network": "macroscopic",
+    "rhs": " U - T . S"
+  },
+  "E_13": {
+    "lhs": "G",
+    "network": "macroscopic",
+    "rhs": " U + p . V - T . S"
+  },
+  "E_14": {
+    "lhs": "v_x",
+    "network": "macroscopic",
+    "rhs": " ParDiff ( r_x , t )"
+  },
+  "E_15": {
+    "lhs": "v_y",
+    "network": "macroscopic",
+    "rhs": " ParDiff ( r_y , t )"
+  },
+  "E_16": {
+    "lhs": "v_z",
+    "network": "macroscopic",
+    "rhs": " ParDiff ( r_z , t )"
+  },
+  "E_17": {
+    "lhs": "R",
+    "network": "physical",
+    "rhs": " Avo . Boltz"
+  },
+  "E_18": {
+    "lhs": "Cp",
+    "network": "macroscopic",
+    "rhs": " ParDiff ( H , T )"
+  },
+  "E_19": {
+    "lhs": "CV",
+    "network": "macroscopic",
+    "rhs": " ParDiff ( U , T )"
+  },
+  "E_2": {
+    "lhs": "one",
+    "network": "root",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "E_29": {
+    "lhs": "h",
+    "network": "macroscopic",
+    "rhs": " H . inv ( n )"
+  },
+  "E_3": {
+    "lhs": "oneHalf",
+    "network": "root",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "E_30": {
+    "lhs": "m",
+    "network": "macroscopic",
+    "rhs": " Mm * S n"
+  },
+  "E_31": {
+    "lhs": "c",
+    "network": "macroscopic",
+    "rhs": " inv ( V ) . n"
+  },
+  "E_32": {
+    "lhs": "nt",
+    "network": "macroscopic",
+    "rhs": " reduceSum ( n , S )"
+  },
+  "E_33": {
+    "lhs": "x",
+    "network": "macroscopic",
+    "rhs": " inv ( nt ) . n"
+  },
+  "E_34": {
+    "lhs": "cp",
+    "network": "physical",
+    "rhs": " Cp . inv ( m )"
+  },
+  "E_35": {
+    "lhs": "cV",
+    "network": "macroscopic",
+    "rhs": " CV . inv ( m )"
+  },
+  "E_36": {
+    "lhs": "rho",
+    "network": "physical",
+    "rhs": " inv ( V ) . m"
+  },
+  "E_4": {
+    "lhs": "to",
+    "network": "root",
+    "rhs": " Instantiate ( t , value )"
+  },
+  "E_40": {
+    "lhs": "Axy",
+    "network": "physical",
+    "rhs": " r_x . r_y"
+  },
+  "E_41": {
+    "lhs": "Axz",
+    "network": "physical",
+    "rhs": " r_x . r_z"
+  },
+  "E_42": {
+    "lhs": "Ayz",
+    "network": "physical",
+    "rhs": " r_y . r_z"
+  },
+  "E_43": {
+    "lhs": "fq_x",
+    "network": "macroscopic",
+    "rhs": " kqA_x . Ayz . F * N T"
+  },
+  "E_44": {
+    "lhs": "fq_y",
+    "network": "macroscopic",
+    "rhs": " kqA_y . Axz . F * N T"
+  },
+  "E_45": {
+    "lhs": "fq_z",
+    "network": "macroscopic",
+    "rhs": " kqA_z . Axy . F * N T"
+  },
+  "E_46": {
+    "lhs": "fnd_x",
+    "network": "macroscopic",
+    "rhs": " kdAFick_x . Ayz . F * N c"
+  },
+  "E_47": {
+    "lhs": "fnd_y",
+    "network": "macroscopic",
+    "rhs": " kdAFick_y . Axz . F * N c"
+  },
+  "E_48": {
+    "lhs": "fnd_z",
+    "network": "macroscopic",
+    "rhs": " kdAFick_z . ( Axy . F ) * N c"
+  },
+  "E_49": {
+    "lhs": "d",
+    "network": "macroscopic",
+    "rhs": " sign ( F * N p )"
+  },
+  "E_5": {
+    "lhs": "te",
+    "network": "root",
+    "rhs": " Instantiate ( t , value )"
+  },
+  "E_50": {
+    "lhs": "c_AS",
+    "network": "macroscopic",
+    "rhs": " ( oneHalf . ( F - d . abs ( F ) ) ) * N c"
+  },
+  "E_51": {
+    "lhs": "fV",
+    "network": "macroscopic",
+    "rhs": " inv ( rhoA ) . kcA_x . Ayz . F * N p"
+  },
+  "E_52": {
+    "lhs": "fnc_x",
+    "network": "macroscopic",
+    "rhs": " fV . c_AS"
+  },
+  "E_53": {
+    "lhs": "chemPotStandard",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( chemPot , value )"
+  },
+  "E_54": {
+    "lhs": "chemPot",
+    "network": "macroscopic",
+    "rhs": " chemPotStandard + R . T . ln ( x )"
+  },
+  "E_55": {
+    "lhs": "_c",
+    "network": "macroscopic >>> reactions",
+    "rhs": " F_NI_source * N c"
+  },
+  "E_56": {
+    "lhs": "c",
+    "network": "reactions",
+    "rhs": " ( F_NI_sink . _c ) * I S_Ip"
+  },
+  "E_57": {
+    "lhs": "_x",
+    "network": "macroscopic >>> reactions",
+    "rhs": " F_NI_source * N x"
+  },
+  "E_58": {
+    "lhs": "x",
+    "network": "reactions",
+    "rhs": " ( F_NI_sink . _x ) * I S_Ip"
+  },
+  "E_59": {
+    "lhs": "_T",
+    "network": "macroscopic >>> reactions",
+    "rhs": " F_NI_source * N T"
+  },
+  "E_6": {
+    "lhs": "t_interval",
+    "network": "root",
+    "rhs": " Instantiate ( t , value )"
+  },
+  "E_60": {
+    "lhs": "T",
+    "network": "reactions",
+    "rhs": " ( F_NI_sink . _T ) * I S_Ip"
+  },
+  "E_61": {
+    "lhs": "factor",
+    "network": "reactions",
+    "rhs": " x ^ ( ( abs ( N ) ) )"
+  },
+  "E_62": {
+    "lhs": "probability",
+    "network": "reactions",
+    "rhs": " Product ( factor , S )"
+  },
+  "E_63": {
+    "lhs": "_V",
+    "network": "macroscopic >>> reactions",
+    "rhs": " F_NI_source * N V"
+  },
+  "E_64": {
+    "lhs": "V",
+    "network": "reactions",
+    "rhs": " ( F_NI_sink . _V ) * I S_Ip"
+  },
+  "E_65": {
+    "lhs": "_nt",
+    "network": "macroscopic >>> reactions",
+    "rhs": " F_NI_source * N nt"
+  },
+  "E_66": {
+    "lhs": "nt",
+    "network": "reactions",
+    "rhs": " ( F_NI_sink . _nt ) * I S_Ip"
+  },
+  "E_67": {
+    "lhs": "Ea",
+    "network": "reactions",
+    "rhs": " Instantiate ( U . inv ( nt ) , value )"
+  },
+  "E_68": {
+    "lhs": "Ko",
+    "network": "reactions",
+    "rhs": " Instantiate ( rho . inv ( Mm . t ) , value )"
+  },
+  "E_69": {
+    "lhs": "K",
+    "network": "reactions",
+    "rhs": " Ko . exp ( Ea . inv ( R . T ) )"
+  },
+  "E_7": {
+    "lhs": "V",
+    "network": "physical",
+    "rhs": " r_x . r_y . r_z"
+  },
+  "E_70": {
+    "lhs": "pn",
+    "network": "reactions",
+    "rhs": " A_Npq * q ( V . N * CS ( K . probability ) )"
+  },
+  "E_71": {
+    "lhs": "_pn",
+    "network": "reactions >>> macroscopic",
+    "rhs": " reduceSum ( ( ( F_NI_source * N pn ) . S_Iq ) , q )"
+  },
+  "E_72": {
+    "lhs": "pn",
+    "network": "macroscopic",
+    "rhs": " F_NI_source * I _pn"
+  },
+  "E_73": {
+    "lhs": "kdA_x",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( inv ( chemPot ) . ( v_x . ( inv ( V ) . ParDiff ( U , chemPot ) ) ) )"
+  },
+  "E_74": {
+    "lhs": "kdA_y",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( inv ( chemPot ) . ( v_y . ( inv ( V ) . ParDiff ( U , chemPot ) ) ) )"
+  },
+  "E_75": {
+    "lhs": "kdA_z",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( inv ( chemPot ) . ( v_z . ( inv ( V ) . ParDiff ( U , chemPot ) ) ) )"
+  },
+  "E_76": {
+    "lhs": "kcA_x",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( ( Mm * S inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_x )"
+  },
+  "E_77": {
+    "lhs": "kcA_y",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( ( Mm * S inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_y )"
+  },
+  "E_78": {
+    "lhs": "kcA_z",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( ( Mm * S inv ( chemPot ) ) . inv ( V ) . ParDiff ( U , p ) . v_z )"
+  },
+  "E_79": {
+    "lhs": "kqA_x",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( inv ( V ) . Cp . v_x )"
+  },
+  "E_8": {
+    "lhs": "p",
+    "network": "physical",
+    "rhs": " ParDiff ( U , V )"
+  },
+  "E_80": {
+    "lhs": "kqA_y",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( inv ( V ) . Cp . v_y )"
+  },
+  "E_81": {
+    "lhs": "kqA_z",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( inv ( V ) . Cp . v_z )"
+  },
+  "E_82": {
+    "lhs": "rhoA",
+    "network": "macroscopic",
+    "rhs": " I_NA * N rho"
+  },
+  "E_83": {
+    "lhs": "kdAFick_x",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( v_x . ParDiff ( U , chemPot ) . inv ( n ) )"
+  },
+  "E_84": {
+    "lhs": "kdAFick_y",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( v_y . ParDiff ( U , chemPot ) . inv ( n ) )"
+  },
+  "E_85": {
+    "lhs": "kdAFick_z",
+    "network": "macroscopic",
+    "rhs": " I_NA * N ( v_z . ParDiff ( U , chemPot ) . inv ( n ) )"
+  },
+  "E_86": {
+    "lhs": "hA",
+    "network": "macroscopic",
+    "rhs": " I_NA * N h"
+  },
+  "E_87": {
+    "lhs": "anc",
+    "network": "macroscopic",
+    "rhs": " F * A fnc_x"
+  },
+  "E_88": {
+    "lhs": "and_x",
+    "network": "macroscopic",
+    "rhs": " F * A fnd_x"
+  },
+  "E_89": {
+    "lhs": "fnd_x",
+    "network": "macroscopic",
+    "rhs": " kdA_x . ( Ayz . F ) * N chemPot"
+  },
+  "E_9": {
+    "lhs": "T",
+    "network": "macroscopic",
+    "rhs": " ParDiff ( U , S )"
+  },
+  "E_90": {
+    "lhs": "fnd_y",
+    "network": "macroscopic",
+    "rhs": " kdA_y . ( Ayz . F ) * N chemPot"
+  },
+  "E_91": {
+    "lhs": "fnd_z",
+    "network": "macroscopic",
+    "rhs": " kdA_z . ( Axy . F ) * N chemPot"
+  },
+  "E_92": {
+    "lhs": "an",
+    "network": "macroscopic",
+    "rhs": " anc + and_x"
+  },
+  "E_93": {
+    "lhs": "n",
+    "network": "macroscopic",
+    "rhs": " Integral ( an :: t in [ to , te ] )"
+  }
+}

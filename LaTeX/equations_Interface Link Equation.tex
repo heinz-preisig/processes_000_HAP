@@ -1,0 +1,64 @@
+
+
+\newenvironment{eq}{\begin{minipage}{15cm}$}{$\end{minipage} }
+%\newenvironment{lay}{\catcode`\_=12}{\catcode`\_=8}
+\renewcommand{\arraystretch}{2}
+
+\begin{longtable}{|p{1cm}|p{15cm}|p{6cm}|p{3cm}|}\hline
+no & equation &documentation &layer \\\hline\hline
+\endhead
+\hline \multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot
+
+        \hyperlink{"v:162"}{ 55 }\hypertarget{"e:55"}{  } &
+    \begin{eq}{\_c}{_{I, S}} := {{F^{source}}}{_{N, I}} \stackrel{N}{\star} {c}{_{N, S}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}macroscopic --> reactions\end{lay} \\
+        \hyperlink{"v:163"}{ 56 }\hypertarget{"e:56"}{  } &
+    \begin{eq}{c}{_{N, S, p}} := \left({{F^{sink}}}{_{N, I}} \, . \, {\_c}{_{I, S}}\right) \stackrel{I}{\star} {{S}}{_{I, p}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:164"}{ 57 }\hypertarget{"e:57"}{  } &
+    \begin{eq}{\_x}{_{I, S}} := {{F^{source}}}{_{N, I}} \stackrel{N}{\star} {x}{_{N, S}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}macroscopic --> reactions\end{lay} \\
+        \hyperlink{"v:165"}{ 58 }\hypertarget{"e:58"}{  } &
+    \begin{eq}{x}{_{N, S, p}} := \left({{F^{sink}}}{_{N, I}} \, . \, {\_x}{_{I, S}}\right) \stackrel{I}{\star} {{S}}{_{I, p}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:166"}{ 59 }\hypertarget{"e:59"}{  } &
+    \begin{eq}{\_T}{_{I}} := {{F^{source}}}{_{N, I}} \stackrel{N}{\star} {T}{_{N}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}macroscopic --> reactions\end{lay} \\
+        \hyperlink{"v:167"}{ 60 }\hypertarget{"e:60"}{  } &
+    \begin{eq}{T}{_{N, p}} := \left({{F^{sink}}}{_{N, I}} \, . \, {\_T}{_{I}}\right) \stackrel{I}{\star} {{S}}{_{I, p}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:170"}{ 63 }\hypertarget{"e:63"}{  } &
+    \begin{eq}{\_V}{_{I}} := {{F^{source}}}{_{N, I}} \stackrel{N}{\star} {V}{_{N}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}macroscopic --> reactions\end{lay} \\
+        \hyperlink{"v:171"}{ 64 }\hypertarget{"e:64"}{  } &
+    \begin{eq}{V}{_{N, p}} := \left({{F^{sink}}}{_{N, I}} \, . \, {\_V}{_{I}}\right) \stackrel{I}{\star} {{S}}{_{I, p}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:172"}{ 65 }\hypertarget{"e:65"}{  } &
+    \begin{eq}{\_nt}{_{I}} := {{F^{source}}}{_{N, I}} \stackrel{N}{\star} {{n^t}}{_{N}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}macroscopic --> reactions\end{lay} \\
+        \hyperlink{"v:173"}{ 66 }\hypertarget{"e:66"}{  } &
+    \begin{eq}{nt}{_{N, p}} := \left({{F^{sink}}}{_{N, I}} \, . \, {\_nt}{_{I}}\right) \stackrel{I}{\star} {{S}}{_{I, p}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:178"}{ 71 }\hypertarget{"e:71"}{  } &
+    \begin{eq}{\_pn}{_{I, S, p}} := \textbf{reduceSum}\left(\left(\left({{F^{source}}}{_{N, I}} \stackrel{N}{\star} {{\tilde{n}}}{_{N, S, p}}\right) \, . \, {{S}}{_{I, q}}\right),q\right)\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}reactions --> macroscopic\end{lay} \\
+        \hyperlink{"v:179"}{ 72 }\hypertarget{"e:72"}{  } &
+    \begin{eq}{pn}{_{N, S, p}} := {{F^{source}}}{_{N, I}} \stackrel{I}{\star} {\_pn}{_{I, S, p}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hline
+\end{longtable}

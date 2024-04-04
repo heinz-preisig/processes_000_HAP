@@ -1,0 +1,650 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.43.0 (0)
+%%Title: material
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 189 1923
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 153 1887 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+0 0 0 graphcolor
+14 /Times-Roman set_font
+42.134 7.8 moveto 61 (material) alignedtext
+% cluster_material___network
+gsave
+1 setlinewidth
+0 0 0 graphcolor
+newpath 8 31 moveto
+8 430 lineto
+137.268 430 lineto
+137.268 31 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+43.134 414.8 moveto 59 (network) alignedtext
+grestore
+% cluster_material___frame
+gsave
+1 setlinewidth
+0 0 0 graphcolor
+newpath 37.634 438 moveto
+37.634 675 lineto
+107.634 675 lineto
+107.634 438 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+51.134 659.8 moveto 43 (frame) alignedtext
+grestore
+% cluster_material___state
+gsave
+1 setlinewidth
+0 0 0 graphcolor
+newpath 37.634 683 moveto
+37.634 1082 lineto
+107.634 1082 lineto
+107.634 683 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+54.134 1066.8 moveto 37 (state) alignedtext
+grestore
+% cluster_material___constant
+gsave
+1 setlinewidth
+0 0 0 graphcolor
+newpath 18.465 1090 moveto
+18.465 1489 lineto
+126.803 1489 lineto
+126.803 1090 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+41.634 1473.8 moveto 62 (constant) alignedtext
+grestore
+% cluster_material___effort
+gsave
+1 setlinewidth
+0 0 0 graphcolor
+newpath 22.7741 1497 moveto
+22.7741 1680 lineto
+122.4939 1680 lineto
+122.4939 1497 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+52.634 1664.8 moveto 40 (effort) alignedtext
+grestore
+% cluster_material___secondaryState
+gsave
+1 setlinewidth
+0 0 0 graphcolor
+newpath 8.634 1688 moveto
+8.634 1871 lineto
+136.634 1871 lineto
+136.634 1688 lineto
+closepath stroke
+0 0 0 graphcolor
+14 /Times-Roman set_font
+16.634 1855.8 moveto 112 (secondaryState) alignedtext
+grestore
+% V_2
+gsave
+0.094118 0.32941 0.82353 nodecolor
+72.634 381 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 381 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+68.134 377.9 moveto 9 (F) alignedtext
+grestore
+% V_3
+gsave
+0.094118 0.32941 0.82353 nodecolor
+72.634 327 56.7683 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 327 56.7683 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+34.634 323.9 moveto 76 (F_NI_source) alignedtext
+grestore
+% V_4
+gsave
+0.094118 0.32941 0.82353 nodecolor
+72.634 273 47.3006 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 273 47.3006 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+42.134 269.9 moveto 61 (F_NI_sink) alignedtext
+grestore
+% V_5
+gsave
+0.094118 0.32941 0.82353 nodecolor
+72.634 219 56.0368 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 219 56.0368 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+35.134 215.9 moveto 75 (F_AI_source) alignedtext
+grestore
+% V_6
+gsave
+0.094118 0.32941 0.82353 nodecolor
+72.634 165 46.3387 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 165 46.3387 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+43.134 161.9 moveto 59 (F_AI_sink) alignedtext
+grestore
+% V_7
+gsave
+0.094118 0.32941 0.82353 nodecolor
+72.634 111 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 111 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+59.134 107.9 moveto 27 (S_Ip) alignedtext
+grestore
+% V_8
+gsave
+0.094118 0.32941 0.82353 nodecolor
+72.634 57 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 57 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+59.134 53.9 moveto 27 (S_Iq) alignedtext
+grestore
+% V_1
+gsave
+0.49804 0.12157 0.93333 nodecolor
+72.634 626 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 626 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+70.134 622.9 moveto 5 (t) alignedtext
+grestore
+% V_10
+gsave
+0.49804 0.12157 0.93333 nodecolor
+72.634 572 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 572 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+63.134 568.9 moveto 19 (r_y) alignedtext
+grestore
+% V_11
+gsave
+0.49804 0.12157 0.93333 nodecolor
+72.634 518 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 518 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+63.134 514.9 moveto 19 (r_z) alignedtext
+grestore
+% V_9
+gsave
+0.49804 0.12157 0.93333 nodecolor
+72.634 464 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 464 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+63.134 460.9 moveto 19 (r_x) alignedtext
+grestore
+% V_105
+gsave
+0.49804 0.12157 1 nodecolor
+72.634 1033 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1033 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+67.634 1029.9 moveto 10 (U) alignedtext
+grestore
+% V_106
+gsave
+0.49804 0.12157 1 nodecolor
+72.634 979 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 979 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+68.134 975.9 moveto 9 (S) alignedtext
+grestore
+% V_107
+gsave
+0.49804 0.12157 1 nodecolor
+72.634 925 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 925 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+68.634 921.9 moveto 8 (n) alignedtext
+grestore
+% V_108
+gsave
+0.49804 0.12157 1 nodecolor
+72.634 871 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 871 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+67.634 867.9 moveto 10 (V) alignedtext
+grestore
+% V_112
+gsave
+0.49804 0.12157 1 nodecolor
+72.634 817 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 817 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+67.134 813.9 moveto 11 (H) alignedtext
+grestore
+% V_113
+gsave
+0.49804 0.12157 1 nodecolor
+72.634 763 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 763 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+67.634 759.9 moveto 10 (A) alignedtext
+grestore
+% V_114
+gsave
+0.49804 0.12157 1 nodecolor
+72.634 709 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 709 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+67.634 705.9 moveto 10 (G) alignedtext
+grestore
+% V_101
+gsave
+0.49804 0.12157 0.80392 nodecolor
+72.634 1440 30.3284 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1440 30.3284 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+56.134 1436.9 moveto 33 (value) alignedtext
+grestore
+% V_102
+gsave
+0.49804 0.12157 0.80392 nodecolor
+72.634 1386 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1386 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+59.134 1382.9 moveto 27 (zero) alignedtext
+grestore
+% V_103
+gsave
+0.49804 0.12157 0.80392 nodecolor
+72.634 1332 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1332 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+61.634 1328.9 moveto 22 (one) alignedtext
+grestore
+% V_104
+gsave
+0.49804 0.12157 0.80392 nodecolor
+72.634 1278 40.0263 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1278 40.0263 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+48.134 1274.9 moveto 49 (oneHalf) alignedtext
+grestore
+% V_118
+gsave
+0.49804 0.12157 0.80392 nodecolor
+72.634 1224 28.8653 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1224 28.8653 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+57.134 1220.9 moveto 31 (Boltz) alignedtext
+grestore
+% V_119
+gsave
+0.49804 0.12157 0.80392 nodecolor
+72.634 1170 46.3387 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1170 46.3387 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+43.134 1166.9 moveto 59 (Avogadro) alignedtext
+grestore
+% V_120
+gsave
+0.49804 0.12157 0.80392 nodecolor
+72.634 1116 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1116 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+67.634 1112.9 moveto 10 (R) alignedtext
+grestore
+% V_109
+gsave
+0.40392 0.67059 0.80392 nodecolor
+72.634 1631 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1631 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+68.634 1627.9 moveto 8 (p) alignedtext
+grestore
+% V_110
+gsave
+0.40392 0.67059 0.80392 nodecolor
+72.634 1577 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1577 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+68.134 1573.9 moveto 9 (T) alignedtext
+grestore
+% V_111
+gsave
+0.40392 0.67059 0.80392 nodecolor
+72.634 1523 41.7203 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1523 41.7203 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+46.634 1519.9 moveto 52 (chemPot) alignedtext
+grestore
+% V_115
+gsave
+0.22745 0.56078 1 nodecolor
+72.634 1822 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1822 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+62.634 1818.9 moveto 20 (v_x) alignedtext
+grestore
+% V_116
+gsave
+0.22745 0.56078 1 nodecolor
+72.634 1768 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1768 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+62.634 1764.9 moveto 20 (v_y) alignedtext
+grestore
+% V_117
+gsave
+0.22745 0.56078 1 nodecolor
+72.634 1714 27 18 ellipse_path fill
+3 setlinewidth
+filled
+0 0 0 nodecolor
+72.634 1714 27 18 ellipse_path stroke
+0 0 0 nodecolor
+12 /Times-Roman set_font
+63.134 1710.9 moveto 19 (v_z) alignedtext
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 189 1923
+end
+restore
+%%EOF

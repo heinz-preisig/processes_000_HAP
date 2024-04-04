@@ -1,0 +1,1331 @@
+{
+  "version": "8",
+  "variables": {
+    "V_1": {
+      "IRI": "qudt:Time",
+      "aliases": {
+        "matlab": "t",
+        "latex": "t",
+        "internal_code": "t",
+        "global_ID": "V_1"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_1",
+        "latex": "{t}{_{}}"
+      },
+      "created": "2024-03-06 15:09:35",
+      "doc": "time",
+      "equations": {},
+      "imported": false,
+      "index_structures": [],
+      "label": "t",
+      "memory": null,
+      "modified": "2024-03-06 15:10:08",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_10": {
+      "IRI": "promo:S_Iq",
+      "aliases": {
+        "matlab": "S_Iq",
+        "latex": "{S}",
+        "internal_code": "S_Iq",
+        "global_ID": "V_10"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_10",
+        "latex": "{{S}}{_{I, q}}"
+      },
+      "created": "2024-03-27 08:09:25",
+      "doc": "selection matrix interface to control output",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3",
+        "I_8"
+      ],
+      "label": "S_Iq",
+      "memory": null,
+      "modified": "2024-03-27 09:18:59",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_11": {
+      "IRI": "promo:I_tu",
+      "aliases": {
+        "matlab": "I_tu",
+        "latex": "{I}",
+        "internal_code": "I_tu",
+        "global_ID": "V_11"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_11",
+        "latex": "{{I}}{_{t, u}}"
+      },
+      "created": "2024-03-27 08:19:40",
+      "doc": "identity mapping from <t> to <u>",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_10",
+        "I_11"
+      ],
+      "label": "I_tu",
+      "memory": null,
+      "modified": "2024-03-27 09:19:13",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_12": {
+      "IRI": "promo:S_Ap",
+      "aliases": {
+        "matlab": "S_Ap",
+        "latex": "{S}",
+        "internal_code": "S_Ap",
+        "global_ID": "V_12"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_12",
+        "latex": "{{S}}{_{A, p}}"
+      },
+      "created": "2024-03-27 08:20:50",
+      "doc": "selection matrix interface species-related measures",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_7"
+      ],
+      "label": "S_Ap",
+      "memory": null,
+      "modified": "2024-03-27 09:19:04",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_13": {
+      "IRI": "promo:S_Aq",
+      "aliases": {
+        "matlab": "S_Aq",
+        "latex": "{S}",
+        "internal_code": "S_Aq",
+        "global_ID": "V_13"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_13",
+        "latex": "{{S}}{_{I, q}}"
+      },
+      "created": "2024-03-27 08:48:06",
+      "doc": "selection matrix arcs to outputs",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3",
+        "I_8"
+      ],
+      "label": "S_Aq",
+      "memory": null,
+      "modified": "2024-03-27 09:17:26",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_14": {
+      "IRI": "promo:S_Npu",
+      "aliases": {
+        "matlab": "S_Npu",
+        "latex": "{S}",
+        "internal_code": "S_Npu",
+        "global_ID": "V_14"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_14",
+        "latex": "{{S}}{_{N, p, q}}"
+      },
+      "created": "2024-03-27 08:50:43",
+      "doc": "selection matrix for stacker",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7",
+        "I_8"
+      ],
+      "label": "S_Npu",
+      "memory": null,
+      "modified": "2024-03-27 09:17:29",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_15": {
+      "IRI": "promo:S_Nqt",
+      "aliases": {
+        "matlab": "S_Nqt",
+        "latex": "{S}",
+        "internal_code": "S_Nqt",
+        "global_ID": "V_15"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_15",
+        "latex": "{{S}}{_{N, q, t}}"
+      },
+      "created": "2024-03-27 08:57:14",
+      "doc": "selection matrix or splitter",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_8",
+        "I_10"
+      ],
+      "label": "S_Nqt",
+      "memory": null,
+      "modified": "2024-03-27 09:17:55",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_16": {
+      "IRI": "promo:mv_I",
+      "aliases": {
+        "matlab": "mv_I",
+        "latex": "{mv}",
+        "internal_code": "mv_I",
+        "global_ID": "V_16"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_16",
+        "latex": "{{mv}}{_{I}}"
+      },
+      "created": "2024-03-27 08:58:02",
+      "doc": "interface variable macro --> control",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3"
+      ],
+      "label": "mv_I",
+      "memory": null,
+      "modified": "2024-03-27 09:18:02",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_17": {
+      "IRI": "promo:cz_N",
+      "aliases": {
+        "matlab": "cz_N",
+        "latex": "{cz}",
+        "internal_code": "cz_N",
+        "global_ID": "V_17"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_17",
+        "latex": "{{cz}}{_{N}}"
+      },
+      "created": "2024-03-27 08:58:58",
+      "doc": "output from control",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "cz_N",
+      "memory": null,
+      "modified": "2024-03-27 09:18:14",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_18": {
+      "IRI": "promo:cz_I",
+      "aliases": {
+        "matlab": "cz_I",
+        "latex": "{cz}",
+        "internal_code": "cz_I",
+        "global_ID": "V_18"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_18",
+        "latex": "{{cz}}{_{I}}"
+      },
+      "created": "2024-03-27 09:03:49",
+      "doc": "interface variable macro --> control",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3"
+      ],
+      "label": "cz_I",
+      "memory": null,
+      "modified": "2024-03-27 09:18:20",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_19": {
+      "IRI": "promo:A_Npq",
+      "aliases": {
+        "matlab": "A_Npq",
+        "latex": "{A}",
+        "internal_code": "A_Npq",
+        "global_ID": "V_19"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_19",
+        "latex": "{{A}}{_{N, p, q}}"
+      },
+      "created": "2024-03-27 09:04:40",
+      "doc": "mapping from inputs to outputs",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7",
+        "I_8"
+      ],
+      "label": "A_Npq",
+      "memory": null,
+      "modified": "2024-03-31 15:22:35",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_2": {
+      "IRI": "promo:F",
+      "aliases": {
+        "matlab": "F",
+        "latex": "{F}",
+        "internal_code": "F",
+        "global_ID": "V_2"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_2",
+        "latex": "{{F}}{_{N, A}}"
+      },
+      "created": "2024-03-06 15:10:23",
+      "doc": "incidence matrix",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_2"
+      ],
+      "label": "F",
+      "memory": null,
+      "modified": "2024-03-27 09:19:21",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_20": {
+      "IRI": "promo:A_Ntu",
+      "aliases": {
+        "matlab": "A_Ntu",
+        "latex": "{A}",
+        "internal_code": "A_Ntu",
+        "global_ID": "V_20"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_20",
+        "latex": "{{A}}{_{N, t, u}}"
+      },
+      "created": "2024-03-27 09:05:28",
+      "doc": "mapping from input elements to outputs",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_10",
+        "I_11"
+      ],
+      "label": "A_Ntu",
+      "memory": null,
+      "modified": "2024-03-31 15:22:47",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_21": {
+      "IRI": "promo:u_Ntu",
+      "aliases": {
+        "matlab": "u_Ntu",
+        "latex": "{u}",
+        "internal_code": "u_Ntu",
+        "global_ID": "V_21"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_21",
+        "latex": "{{u}}{_{N, t, u}}"
+      },
+      "created": "2024-03-27 09:06:27",
+      "doc": "input signal in control domain",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_10",
+        "I_11"
+      ],
+      "label": "u_Ntu",
+      "memory": null,
+      "modified": "2024-03-27 09:18:36",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_22": {
+      "IRI": "promo:y_Ntu",
+      "aliases": {
+        "matlab": "y_Ntu",
+        "latex": "{y}",
+        "internal_code": "y_Ntu",
+        "global_ID": "V_22"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_22",
+        "latex": "{{y}}{_{N, t, u}}"
+      },
+      "created": "2024-03-27 09:07:09",
+      "doc": "output signal in control domain",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_10",
+        "I_11"
+      ],
+      "label": "y_Ntu",
+      "memory": null,
+      "modified": "2024-03-27 09:18:49",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_23": {
+      "IRI": "promo:r_x",
+      "aliases": {
+        "matlab": "r_x",
+        "latex": "{r_x}",
+        "internal_code": "r_x",
+        "global_ID": "V_23"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_23",
+        "latex": "{{r_x}}{_{N}}"
+      },
+      "created": "2024-03-27 09:08:55",
+      "doc": "x-coordinate",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "r_x",
+      "memory": null,
+      "modified": "2024-03-27 18:53:11",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_24": {
+      "IRI": "promo:r_y",
+      "aliases": {
+        "matlab": "r_y",
+        "latex": "{r_y}",
+        "internal_code": "r_y",
+        "global_ID": "V_24"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_24",
+        "latex": "{{r_y}}{_{N}}"
+      },
+      "created": "2024-03-27 09:10:52",
+      "doc": "y-coordinate",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "r_y",
+      "memory": null,
+      "modified": "2024-03-27 18:53:20",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_25": {
+      "IRI": "promo:r_z",
+      "aliases": {
+        "matlab": "r_z",
+        "latex": "{r_z}",
+        "internal_code": "r_z",
+        "global_ID": "V_25"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_25",
+        "latex": "{{r_z}}{_{N}}"
+      },
+      "created": "2024-03-27 09:11:31",
+      "doc": "z-coordinate",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "r_z",
+      "memory": null,
+      "modified": "2024-03-27 18:53:27",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_26": {
+      "IRI": "promo:N",
+      "aliases": {
+        "matlab": "N",
+        "latex": "N",
+        "internal_code": "N",
+        "global_ID": "V_26"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_26",
+        "latex": "{N}{_{S, K}}"
+      },
+      "created": "2024-03-27 09:14:44",
+      "doc": "stoichiometric matrix",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_4",
+        "I_5"
+      ],
+      "label": "N",
+      "memory": null,
+      "modified": "2024-03-31 14:08:05",
+      "network": "reactions",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_27": {
+      "IRI": "promo:I_NA",
+      "aliases": {
+        "matlab": "I_NA",
+        "latex": "{I}",
+        "internal_code": "I_NA",
+        "global_ID": "V_27"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_27",
+        "latex": "{{I}}{_{N, A}}"
+      },
+      "created": "2024-03-30 14:44:46",
+      "doc": "identity mapping from <N> to <A>",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_2"
+      ],
+      "label": "I_NA",
+      "memory": null,
+      "modified": "2024-03-30 14:49:25",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_3": {
+      "IRI": "promo:F_NI_source",
+      "aliases": {
+        "matlab": "F_NI_source",
+        "latex": "{F^{source}}",
+        "internal_code": "F_NI_source",
+        "global_ID": "V_3"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_3",
+        "latex": "{{F^{source}}}{_{N, I}}"
+      },
+      "created": "2024-03-06 15:10:59",
+      "doc": "incidence matrix NI source",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "F_NI_source",
+      "memory": null,
+      "modified": "2024-03-06 15:25:21",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_4": {
+      "IRI": "promo:F_NI_sink",
+      "aliases": {
+        "matlab": "F_NI_sink",
+        "latex": "{F^{sink}}",
+        "internal_code": "F_NI_sink",
+        "global_ID": "V_4"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_4",
+        "latex": "{{F^{sink}}}{_{N, I}}"
+      },
+      "created": "2024-03-06 15:11:44",
+      "doc": "incidence matrix NI sink",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "F_NI_sink",
+      "memory": null,
+      "modified": "2024-03-06 15:25:39",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_5": {
+      "IRI": "promo:F_AI_source",
+      "aliases": {
+        "matlab": "F_AI_source",
+        "latex": "{F^{source}}",
+        "internal_code": "F_AI_source",
+        "global_ID": "V_5"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_5",
+        "latex": "{{F^{source}}}{_{A, I}}"
+      },
+      "created": "2024-03-06 15:12:14",
+      "doc": "incidence matrix AI source",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_3"
+      ],
+      "label": "F_AI_source",
+      "memory": null,
+      "modified": "2024-03-06 15:25:53",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_6": {
+      "IRI": "promo:F_AI_sink",
+      "aliases": {
+        "matlab": "F_AI_sink",
+        "latex": "{F^{sink}}",
+        "internal_code": "F_AI_sink",
+        "global_ID": "V_6"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_6",
+        "latex": "{{F^{sink}}}{_{A, I}}"
+      },
+      "created": "2024-03-06 15:12:39",
+      "doc": "incidence matrix AI sink",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_3"
+      ],
+      "label": "F_AI_sink",
+      "memory": null,
+      "modified": "2024-03-06 15:26:02",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_7": {
+      "IRI": "promo:F_NA_source",
+      "aliases": {
+        "matlab": "F_NA_source",
+        "latex": "{F^{source}}",
+        "internal_code": "F_NA_source",
+        "global_ID": "V_7"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_7",
+        "latex": "{{F^{source}}}{_{N, A}}"
+      },
+      "created": "2024-03-27 08:04:05",
+      "doc": "incidence matrix NA source",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_2"
+      ],
+      "label": "F_NA_source",
+      "memory": null,
+      "modified": "2024-03-27 09:17:05",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_8": {
+      "IRI": "promo:F_NA_sink",
+      "aliases": {
+        "matlab": "F_NA_sink",
+        "latex": "{F^{sink}}",
+        "internal_code": "F_NA_sink",
+        "global_ID": "V_8"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_8",
+        "latex": "{{F^{sink}}}{_{N, A}}"
+      },
+      "created": "2024-03-27 08:06:00",
+      "doc": "incidence matrix NA sink",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_2"
+      ],
+      "label": "F_NA_sink",
+      "memory": null,
+      "modified": "2024-03-27 09:17:13",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_9": {
+      "IRI": "promo:S_Ip",
+      "aliases": {
+        "matlab": "S_Ip",
+        "latex": "{S}",
+        "internal_code": "S_Ip",
+        "global_ID": "V_9"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_9",
+        "latex": "{{S}}{_{I, p}}"
+      },
+      "created": "2024-03-27 08:06:44",
+      "doc": "selection matrix interface to control input",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3",
+        "I_7"
+      ],
+      "label": "S_Ip",
+      "memory": null,
+      "modified": "2024-03-27 09:17:24",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "indices": {
+    "I_1": {
+      "type": "index",
+      "label": "node",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "N",
+        "latex": "N",
+        "internal_code": "N",
+        "global_ID": "I_1"
+      },
+      "tokens": null,
+      "IRI": "promo:node"
+    },
+    "I_2": {
+      "type": "index",
+      "label": "arc",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "A",
+        "latex": "A",
+        "internal_code": "A",
+        "global_ID": "I_2"
+      },
+      "tokens": null,
+      "IRI": "promo:arc"
+    },
+    "I_3": {
+      "type": "index",
+      "label": "interface",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "I",
+        "latex": "I",
+        "internal_code": "I",
+        "global_ID": "I_3"
+      },
+      "tokens": null,
+      "IRI": "promo:interface"
+    },
+    "I_4": {
+      "type": "index",
+      "label": "species",
+      "network": [
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions"
+      ],
+      "aliases": {
+        "matlab": "S",
+        "latex": "S",
+        "internal_code": "S",
+        "global_ID": "I_4"
+      },
+      "tokens": "mass",
+      "IRI": "promo:species"
+    },
+    "I_5": {
+      "type": "index",
+      "label": "species_conversion",
+      "network": [
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions"
+      ],
+      "aliases": {
+        "matlab": "CS",
+        "latex": "CS",
+        "internal_code": "CS",
+        "global_ID": 5
+      },
+      "tokens": {
+        "instances": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "W"
+        ],
+        "conversions": [
+          {
+            "reactants": [
+              "A"
+            ],
+            "products": [
+              "B"
+            ]
+          },
+          {
+            "reactants": [
+              "A",
+              "B"
+            ],
+            "products": [
+              "C",
+              "D"
+            ]
+          }
+        ]
+      },
+      "IRI": "promo:species_conversion"
+    },
+    "I_6": {
+      "type": "index",
+      "label": "D",
+      "network": [
+        "control"
+      ],
+      "aliases": {
+        "matlab": "D",
+        "latex": "D",
+        "internal_code": "D",
+        "global_ID": "I_6"
+      },
+      "tokens": null,
+      "IRI": "promo:D"
+    },
+    "I_7": {
+      "type": "index",
+      "label": "p",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "p",
+        "latex": "p",
+        "internal_code": "p",
+        "global_ID": "I_7"
+      },
+      "tokens": null,
+      "IRI": "promo:p"
+    },
+    "I_8": {
+      "type": "index",
+      "label": "q",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "q",
+        "latex": "q",
+        "internal_code": "q",
+        "global_ID": "I_8"
+      },
+      "tokens": null,
+      "IRI": "promo:q"
+    },
+    "I_9": {
+      "type": "index",
+      "label": "r",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "r",
+        "latex": "r",
+        "internal_code": "r",
+        "global_ID": "I_9"
+      },
+      "tokens": null,
+      "IRI": "promo:r"
+    },
+    "I_10": {
+      "type": "index",
+      "label": "t",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "t",
+        "latex": "t",
+        "internal_code": "t",
+        "global_ID": "I_10"
+      },
+      "tokens": null,
+      "IRI": "promo:t"
+    },
+    "I_11": {
+      "type": "index",
+      "label": "u",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "u",
+        "latex": "u",
+        "internal_code": "u",
+        "global_ID": "I_11"
+      },
+      "tokens": null,
+      "IRI": "promo:u"
+    }
+  },
+  "Ontology_global_IDs": {
+    "variable": 27,
+    "equation": 0
+  }
+}

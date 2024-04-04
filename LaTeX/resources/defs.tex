@@ -1,0 +1,63 @@
+
+
+%TODO: \label{HAP math}
+  \def\M#1{\protect\underline{\protect\underline{{\bf{#1}}}}}
+  \def\V#1{{{\protect\underline{\bf{#1}}}}}
+  
+  %\def\M#1{{#1}}
+  %\def\V#1{{#1}}
+  \def\Func#1{{\textbf{#1}}}
+  \def\diff#1#2{\frac{d\,#1}{d\,#2}}
+  \def\ddt#1{\dot{#1}}
+  \def\ParDiff#1#2{{\frac{\partial\,#1}{\partial\,#2}}} %\tfrac
+  \def\ParDiffn#1#2#3{{\frac{\partial^{#3}\,#1}{\partial\,#2^{#3}}}}
+  \def\ThermoParDiff#1#2#3{\left(\tfrac{\partial\,#1}{\partial\,#2}\right)_{#3} }
+  \def\TotDiff#1#2{\frac{d \, #1}{d \, #2}}
+  \def\TotDiffn#1#2#3{{\tfrac{d^{#3}\,#1}{d\,#2^{#3}}}}\def\sign#1{\text{sign}\left( #1 \right)}
+  \def\Matrix#1#2{{\left[\begin{array}{#1}#2\end{array}\right]}}
+  \def\Real{\switchMode{\mathbb{R}}}
+  \def\RList#1{\left( #1 \right) }
+  \def\List#1{\left[ #1 \right] }
+  \def\Cspace#1{{C\RList{{#1}}}}
+  \def\Nspace#1{{\text{Null}\RList{\M{#1}}}}
+  \def\kernel#1{\text{kern}\RList{\M{#1}}}
+  \def\SET#1{\mathcal{#1}}
+  \def\Set#1{{\left\{ {#1} \right\}} }
+  \def\LIST#1{\mathcal{#1}}
+  \def\List#1{\left[ #1 \right]}
+  %\def\Root#1{\text{root}\left( #1 \right)}
+  \def\Diag#1{\text{diag}\left( #1 \right) }
+  \let\EigVal=\lambda
+  \def\vEigVal{\boldsymbol\EigVal}
+  \def\EigenMat{\boldsymbol\Lambda}
+  \def\Exp#1{e^{#1}}
+  \def\ExpEigMat#1{\M{e}^{\EigenMat \, #1}}
+  \def\vOnes#1{\v{e}_{#1}}
+  \def\NormalVector{\v{n}}
+  \def\Grad{\left(\ParDiff{}{\v{r}} \right)}
+  \def\GradT{\Grad^T}
+  
+  
+  
+
+%TODO:\label{operators}
+  \def\Grad#1{\bigtriangledown #1}
+  \def\Tensor#1{{\mathbb{#1}}}
+
+
+  \def\Var#1{{\gls{#1}}}  % needs the internal {}
+
+  
+%TODO: statistics
+	\def\estimate#1{\hat{#1}}
+	\def\Mean#1{\breve{#1}}
+	
+%TODO: CAM
+
+	\def\Flow#1{\hat{#1}}%\index{flow of EQ!$\hat{#1}$}}
+	\def\Flux#1{\hat{#1}}%\index{flow of EQ!$\hat{#1}$}}
+	\def\ProdRate#1{\tilde{#1}}%\index{production rate!$\tilde{#1}$}}
+	\def\Index#1{{\texttt{#1}}}
+	\def\Decorator#1{{\texttt{#1}}}
+	
+  

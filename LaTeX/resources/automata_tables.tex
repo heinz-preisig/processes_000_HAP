@@ -1,0 +1,98 @@
+
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usepackage[text={\textwidth,10cm},
+		a4paper,
+		headsep=0.7cm,
+		top=2cm,
+		bottom=2cm,
+		left=2cm,
+		right=2cm,
+		%		showframe,
+		showcrop,
+		%nofoot,
+		nomarginpar
+		]{geometry}
+\usepackage[%
+        backref,
+        %	ps2pdf,
+        %	dvips,
+        final,
+        %pdftitle={#1},
+        pdfauthor={Heinz A Preisig},
+        pdfsubject={'CAM'},
+        colorlinks=true,
+        linkcolor=red,
+        citecolor=blue,
+        anchorcolor=blue,
+        hyperindex=true,
+        bookmarks,
+        bookmarksopen=true,
+        bookmarksnumbered=true,
+        bookmarksdepth=10,
+        hyperfigures=true,
+        %a4paper,
+        linktocpage=true,
+        pageanchor=true,
+        ]{hyperref}
+
+\usepackage{enumitem}
+
+%% math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{calligra}
+\usepackage{array}
+
+%% >>>>>>>>>>>>>>>> user definitions BIBLIOGRAPHY & DEFS <<<<<<<<<<<<<<<<<<<<<<<<
+
+
+%% personal styles and definitions
+%\usepackage{mystyle}
+%\def\mydefs{defs}
+%\usepackage[english]{babel}
+%\usepackage{blindtext}
+%\usepackage{listings}
+%\usepackage{multirow}
+%\usepackage{inconsolata}
+%\usepackage{glossaries}
+%\usepackage{pdflscape}
+%\usepackage{caption} % For mimicing a figure in a minipage
+
+%\catcode`\&=12
+\input{./resources/defs}
+\input{./resources/defvars}
+\parindent=0pt
+
+
+
+\newenvironment{variables}{
+	\begin{itemize}[leftmargin=4cm, align=left, labelwidth=3cm, noitemsep]
+	}
+	{\end{itemize}}
+\newenvironment{lay}{\catcode`\_=12}{\catcode`\_=8}
+\newenvironment{IND}{\catcode`\&=12\catcode`\_=12}{\catcode`\&=4\catcode`\_=8}
+
+\newcolumntype{P}[1]{>{$}p{#1}<{$}}
+
+
+\newenvironment{eq}{\begin{minipage}{10cm}$}{$\end{minipage} }
+%\newenvironment{lay}{\catcode`\_=12}{\catcode`\_=8}
+
+
+% ==================================== body  =====================================
+\begin{document}
+
+
+\title{Automata}
+
+\input{automata_topology.tex}
+\input{automata_token_topology.tex}
+\input{automata_equation_topology.tex}
+
+\end{document}
+% ================================== end =========================================

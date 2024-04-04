@@ -1,0 +1,118 @@
+
+% automatically generated - do not edit
+%
+% =======================================
+
+\documentclass[landscape]{article}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usepackage[text={\textwidth,10cm},
+		a4paper,
+		headsep=0.7cm,
+		top=2cm,
+		bottom=2cm,
+		left=2cm,
+		right=2cm,
+		%		showframe,
+		showcrop,
+		%nofoot,
+		nomarginpar
+		]{geometry}
+\usepackage[%
+        backref,
+        %	ps2pdf,
+        %	dvips,
+        final,
+        %pdftitle={#1},
+        pdfauthor={Heinz A Preisig},
+        pdfsubject={'CAM'},
+        colorlinks=true,
+        linkcolor=red,
+        citecolor=blue,
+        anchorcolor=blue,
+        hyperindex=true,
+        bookmarks,
+        bookmarksopen=true,
+        bookmarksnumbered=true,
+        bookmarksdepth=10,
+        hyperfigures=true,
+        %a4paper,
+        linktocpage=true,
+        pageanchor=true,
+        ]{hyperref}
+
+\usepackage{enumitem}
+
+%% math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{calligra}
+\usepackage{array}
+
+%% >>>>>>>>>>>>>>>> user definitions BIBLIOGRAPHY & DEFS <<<<<<<<<<<<<<<<<<<<<<<<
+
+
+%% personal styles and definitions
+%\usepackage{mystyle}
+%\def\mydefs{defs}
+%\usepackage[english]{babel}
+%\usepackage{blindtext}
+%\usepackage{listings}
+%\usepackage{multirow}
+%\usepackage{inconsolata}
+%\usepackage{glossaries}
+%\usepackage{pdflscape}
+%\usepackage{caption} % For mimicing a figure in a minipage
+
+%\catcode`\&=12
+\input{./resources/defs}
+\input{./resources/defvars}
+\parindent=0pt
+
+
+
+\newenvironment{variables}{
+	\begin{itemize}[leftmargin=4cm, align=left, labelwidth=3cm, noitemsep]
+	}
+	{\end{itemize}}
+\newenvironment{lay}{\catcode`\_=12}{\catcode`\_=8}
+\newenvironment{IND}{\catcode`\&=12\catcode`\_=12}{\catcode`\&=4\catcode`\_=8}
+
+\newcolumntype{P}[1]{>{$}p{#1}<{$}}
+
+
+%\newenvironment{eq}{\begin{minipage}{10cm}$}{$\end{minipage} }
+%\newenvironment{lay}{\catcode`\_=12}{\catcode`\_=8}
+
+
+% ==================================== body  =====================================
+\begin{document}
+
+
+\section{Variables}
+
+\section{ root } \input{variables_root.tex} \newpage
+\section{ physical } \input{variables_physical.tex} \newpage
+\section{ macroscopic } \input{variables_macroscopic.tex} \newpage
+\section{ reactions } \input{variables_reactions.tex} \newpage
+\section{ macroscopic--reactions } \input{variables_macroscopic--reactions.tex} \newpage
+\section{ reactions--macroscopic } \input{variables_reactions--macroscopic.tex} \newpage
+
+\section{Equations}
+
+
+\section{ Generic } \input{equations_Generic.tex} \newpage
+\section{ Interface Link Equation } \input{equations_Interface Link Equation.tex} \newpage
+%\subsection{Selections}  			{ \input{equations_select}}
+%\newpage
+%\subsection{Model equations} 	{ \input{equations_generic}}
+%\newpage
+%\subsection{Instantiations}   { \input{equations_instantiate}}
+%\newpage
+
+
+\end{document}
+% ================================== end =========================================

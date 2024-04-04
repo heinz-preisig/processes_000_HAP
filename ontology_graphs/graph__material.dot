@@ -1,0 +1,90 @@
+digraph material {
+label=material;
+rankdir=LR;
+subgraph cluster_material___property {
+label=property;
+rankdir=LR;
+}
+
+subgraph cluster_material___network {
+label=network;
+rankdir=LR;
+V_2 [fillcolor=tan, fontsize=12, label=F, penwidth=3, style=filled];
+V_3 [fillcolor=tan, fontsize=12, label=F_NI_source, penwidth=3, style=filled];
+V_4 [fillcolor=tan, fontsize=12, label=F_NI_sink, penwidth=3, style=filled];
+V_5 [fillcolor=tan, fontsize=12, label=F_AI_source, penwidth=3, style=filled];
+V_6 [fillcolor=tan, fontsize=12, label=F_AI_sink, penwidth=3, style=filled];
+V_7 [fillcolor=tan, fontsize=12, label=S_Ip, penwidth=3, style=filled];
+V_8 [fillcolor=tan, fontsize=12, label=S_Iq, penwidth=3, style=filled];
+}
+
+subgraph cluster_material___differenceOperator {
+label=differenceOperator;
+rankdir=LR;
+}
+
+subgraph cluster_material___frame {
+label=frame;
+rankdir=LR;
+V_1 [fillcolor=lightcyan2, fontsize=12, label=t, penwidth=3, style=filled];
+V_10 [fillcolor=lightcyan2, fontsize=12, label=r_y, penwidth=3, style=filled];
+V_11 [fillcolor=lightcyan2, fontsize=12, label=r_z, penwidth=3, style=filled];
+V_9 [fillcolor=lightcyan2, fontsize=12, label=r_x, penwidth=3, style=filled];
+}
+
+subgraph cluster_material___state {
+label=state;
+rankdir=LR;
+V_105 [fillcolor=lightcyan1, fontsize=12, label=U, penwidth=3, style=filled];
+V_106 [fillcolor=lightcyan1, fontsize=12, label=S, penwidth=3, style=filled];
+V_107 [fillcolor=lightcyan1, fontsize=12, label=n, penwidth=3, style=filled];
+V_108 [fillcolor=lightcyan1, fontsize=12, label=V, penwidth=3, style=filled];
+V_112 [fillcolor=lightcyan1, fontsize=12, label=H, penwidth=3, style=filled];
+V_113 [fillcolor=lightcyan1, fontsize=12, label=A, penwidth=3, style=filled];
+V_114 [fillcolor=lightcyan1, fontsize=12, label=G, penwidth=3, style=filled];
+}
+
+subgraph cluster_material___constant {
+label=constant;
+rankdir=LR;
+V_101 [fillcolor=lightcyan3, fontsize=12, label=value, penwidth=3, style=filled];
+V_102 [fillcolor=lightcyan3, fontsize=12, label=zero, penwidth=3, style=filled];
+V_103 [fillcolor=lightcyan3, fontsize=12, label=one, penwidth=3, style=filled];
+V_104 [fillcolor=lightcyan3, fontsize=12, label=oneHalf, penwidth=3, style=filled];
+V_118 [fillcolor=lightcyan3, fontsize=12, label=Boltz, penwidth=3, style=filled];
+V_119 [fillcolor=lightcyan3, fontsize=12, label=Avogadro, penwidth=3, style=filled];
+V_120 [fillcolor=lightcyan3, fontsize=12, label=R, penwidth=3, style=filled];
+}
+
+subgraph cluster_material___effort {
+label=effort;
+rankdir=LR;
+V_109 [fillcolor=seagreen3, fontsize=12, label=p, penwidth=3, style=filled];
+V_110 [fillcolor=seagreen3, fontsize=12, label=T, penwidth=3, style=filled];
+V_111 [fillcolor=seagreen3, fontsize=12, label=chemPot, penwidth=3, style=filled];
+}
+
+subgraph cluster_material___secondaryState {
+label=secondaryState;
+rankdir=LR;
+V_115 [fillcolor=darkolivegreen1, fontsize=12, label=v_x, penwidth=3, style=filled];
+V_116 [fillcolor=darkolivegreen1, fontsize=12, label=v_y, penwidth=3, style=filled];
+V_117 [fillcolor=darkolivegreen1, fontsize=12, label=v_z, penwidth=3, style=filled];
+}
+
+subgraph cluster_material___diffState {
+label=diffState;
+rankdir=LR;
+}
+
+subgraph cluster_material___property {
+label=property;
+rankdir=LR;
+}
+
+subgraph cluster_material___conversion {
+label=conversion;
+rankdir=LR;
+}
+
+}
