@@ -293,13 +293,27 @@
         "root"
       ],
       "structure": {
-        "arc": {},
-        "node": {
-          "constant": [],
-          "dynamic": [],
-          "event": []
+        "arc": {
+          "signal": {
+            "link": [
+              "unidirectional"
+            ]
+          }
         },
-        "token": {}
+        "node": {
+          "constant": [
+            "AE"
+          ],
+          "dynamic": [
+            "ODE"
+          ],
+          "event": [
+            "AE"
+          ]
+        },
+        "token": {
+          "signal": []
+        }
       },
       "type": "inter"
     },
@@ -756,30 +770,27 @@
     }
   },
   "rules": {
+    "are_constants": [
+      "constant"
+    ],
+    "are_persistent_variables": [
+      "state",
+      "state"
+    ],
     "name_space": false,
     "network_enable_adding_indices": {
-      "atomic": false,
-      "chemical": false,
       "control": false,
-      "electrical": false,
       "energy": false,
       "fluid": false,
       "gas": false,
       "info_processing": false,
       "liquid": false,
       "macroscopic": false,
-      "magnetic": false,
-      "material": false,
-      "mechanical": false,
       "microscopic": false,
-      "optical": false,
       "physical": false,
-      "radiological": false,
-      "reaction": false,
       "reactions": false,
       "root": false,
-      "solid": false,
-      "thermal": false
+      "solid": false
     },
     "nodes_allowing_token_conversion": [
       "dynamic",
@@ -804,6 +815,10 @@
       "network",
       "output",
       "projection",
+      "state",
+      "transport",
+      "differenceOperator",
+      "frame",
       "state",
       "transport"
     ]

@@ -1,0 +1,42 @@
+\def\state#1{#1}
+\def\object#1{#1}
+\def\cursor#1{#1}
+\def\leftnextstate#1{#1}
+\def\leftaction#1{#1}
+\def\rightnextstate#1{#1}
+\def\rightaction#1{#1}
+\section{equation\_topology}
+\subsection{instantiate}
+\begin{tabular}{|l|l|l|l|}
+\object{('ancestor', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', '-')} &\cursor{TR\_instantiate} &(\leftnextstate{-}, \leftaction{instantiate}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', '-')} &\cursor{TR\_instantiate} &(\leftnextstate{-}, \leftaction{instantiate}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('connector', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('knot', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'root', '-')} &\cursor{CC\_L\_goin-R\_instantiate} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{instantiate})\\
+\object{('node\_interface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'root', 'enabled')} &\cursor{TR\_instantiate} &(\leftnextstate{-}, \leftaction{instantiate}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_viewed', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\end{tabular}
+\\
+\subsection{roam}
+\begin{tabular}{|l|l|l|l|}
+\object{('ancestor', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('connector', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('knot', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_viewed', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\end{tabular}
+\\

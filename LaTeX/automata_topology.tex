@@ -1,0 +1,230 @@
+\def\state#1{#1}
+\def\object#1{#1}
+\def\cursor#1{#1}
+\def\leftnextstate#1{#1}
+\def\leftaction#1{#1}
+\def\rightnextstate#1{#1}
+\def\rightaction#1{#1}
+\section{topology}
+\subsection{connect\_arc}
+\begin{tabular}{|l|l|l|l|}
+\object{('ancestor', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('ancestor', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'open')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'open')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_left', 'tail', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_right', 'head', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('connector', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('knot', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_arc', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'root', 'enabled')} &\cursor{TC\_L\_blank-R\_adda} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{insert}, \rightaction{add arc})\\
+\object{('node\_boundary', 'root', 'normal')} &\cursor{TC\_L\_blank-R\_adda} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{insert}, \rightaction{add arc})\\
+\object{('node\_composite', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'root', 'enabled')} &\cursor{CC\_L\_blank-R\_add} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{select node})\\
+\object{('node\_simple', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'root', 'enabled')} &\cursor{TC\_L\_blank-R\_adda} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{insert}, \rightaction{add arc})\\
+\object{('node\_simple', 'root', 'normal')} &\cursor{TC\_L\_goin-R\_adda} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{insert}, \rightaction{add arc})\\
+\object{('node\_viewed', 'root', '-')} &\cursor{TC\_L\_add-R\_blank} &(\leftnextstate{-}, \leftaction{add node}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'root', '-')} &\cursor{TL\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\end{tabular}
+\\
+\subsection{delete}
+\begin{tabular}{|l|l|l|l|}
+\object{('ancestor', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('ancestor', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', '-')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('arc\_edge', 'head', 'enabled')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('arc\_edge', 'head', 'normal')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('arc\_edge', 'head', 'open')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('arc\_edge', 'head', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', '-')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('arc\_edge', 'tail', 'enabled')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('arc\_edge', 'tail', 'normal')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('arc\_edge', 'tail', 'open')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('arc\_edge', 'tail', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_left', 'tail', '-')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('arc\_right', 'head', '-')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove arc})\\
+\object{('connector', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('knot', 'root', '-')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{remove knot})\\
+\object{('node\_arc', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'root', 'enabled')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{delete node})\\
+\object{('node\_boundary', 'root', 'normal')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{delete node})\\
+\object{('node\_composite', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'root', '-')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{delete node})\\
+\object{('node\_interface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'root', 'enabled')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{delete node})\\
+\object{('node\_intraface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'root', 'enabled')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{delete node})\\
+\object{('node\_simple', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'root', 'enabled')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{delete node})\\
+\object{('node\_simple', 'root', 'normal')} &\cursor{TC\_L\_blank-R\_del} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{delete node})\\
+\object{('node\_viewed', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\end{tabular}
+\\
+\subsection{explode}
+\begin{tabular}{|l|l|l|l|}
+\object{('ancestor', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('ancestor', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'open')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'open')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_left', 'tail', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_right', 'head', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('connector', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('knot', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_arc', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'root', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'root', '-')} &\cursor{CC\_explode} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{insert}, \rightaction{explode node})\\
+\object{('node\_interface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'root', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_viewed', 'root', '-')} &\cursor{TC\_L\_group} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{insert}, \rightaction{group nodes})\\
+\object{('sibling', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\end{tabular}
+\\
+\subsection{explore}
+\begin{tabular}{|l|l|l|l|}
+\object{('ancestor', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('ancestor', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'open')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'open')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_left', 'tail', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_right', 'head', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('connector', 'name', '-')} &\cursor{CC\_L\_change-R\_blank} &(\leftnextstate{-}, \leftaction{name node}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('knot', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_arc', 'name', '-')} &\cursor{CC\_L\_change-R\_blank} &(\leftnextstate{-}, \leftaction{name node}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'name', '-')} &\cursor{CC\_L\_change-R\_blank} &(\leftnextstate{-}, \leftaction{name node}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'root', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'name', '-')} &\cursor{CC\_L\_change-R\_blank} &(\leftnextstate{-}, \leftaction{name node}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'name', '-')} &\cursor{CC\_L\_change-R\_blank} &(\leftnextstate{-}, \leftaction{name node}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'name', '-')} &\cursor{CC\_L\_change-R\_blank} &(\leftnextstate{-}, \leftaction{name node}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'name', '-')} &\cursor{CC\_L\_change-R\_blank} &(\leftnextstate{-}, \leftaction{name node}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'root', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_viewed', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\end{tabular}
+\\
+\subsection{insert}
+\begin{tabular}{|l|l|l|l|}
+\object{('ancestor', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('ancestor', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', '-')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{insert knot}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_edge', 'head', 'enabled')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{insert knot}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_edge', 'head', 'normal')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{insert knot}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_edge', 'head', 'open')} &\cursor{TC\_L\_blank-R\_recon} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_edge', 'head', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', '-')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{insert knot}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_edge', 'tail', 'enabled')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{insert knot}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_edge', 'tail', 'normal')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{insert knot}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_edge', 'tail', 'open')} &\cursor{TC\_L\_blank-R\_recon} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_edge', 'tail', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_left', 'tail', '-')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{insert knot}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_right', 'head', '-')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('connector', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('knot', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_arc', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'root', 'enabled')} &\cursor{TC\_L\_add-R\_adda} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{connect\_arc}, \rightaction{begin arc})\\
+\object{('node\_boundary', 'root', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'root', '-')} &\cursor{TC\_L\_goin-R\_tofile} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{make a copy})\\
+\object{('node\_interface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'root', 'enabled')} &\cursor{CC\_L\_add-R\_adda} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{connect\_arc}, \rightaction{begin arc})\\
+\object{('node\_simple', 'name', '-')} &\cursor{TC\_L\_move-R\_ask} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{name node})\\
+\object{('node\_simple', 'root', 'enabled')} &\cursor{CC\_L\_goin-R\_adda} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{connect\_arc}, \rightaction{begin arc})\\
+\object{('node\_simple', 'root', 'normal')} &\cursor{TC\_L\_goin-R\_adda} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{connect\_arc}, \rightaction{begin arc})\\
+\object{('node\_viewed', 'root', '-')} &\cursor{TC\_L\_goin-R\_frfile} &(\leftnextstate{-}, \leftaction{add node}) &(\rightnextstate{-}, \rightaction{insert model})\\
+\object{('sibling', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\end{tabular}
+\\
+\subsection{re-connect\_arc}
+\begin{tabular}{|l|l|l|l|}
+\object{('ancestor', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('ancestor', 'root', '-')} &\cursor{TC\_L\_goin-R\_blank} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'open')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'head', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'open')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_edge', 'tail', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_left', 'tail', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('arc\_right', 'head', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('connector', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('knot', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_arc', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_boundary', 'root', 'normal')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_composite', 'root', '-')} &\cursor{TR\_enter} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_intraface', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_simple', 'root', 'enabled')} &\cursor{TC\_L\_blank-R\_adda} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{insert}, \rightaction{change arc})\\
+\object{('node\_simple', 'root', 'normal')} &\cursor{TC\_L\_blank-R\_recon} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{insert}, \rightaction{change arc})\\
+\object{('node\_viewed', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('sibling', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\end{tabular}
+\\

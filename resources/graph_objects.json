@@ -1215,87 +1215,6 @@
           }
         }
       },
-      "node_intraface": {
-        "name": {
-          "-": {
-            "-": {
-              "action": [
-                "name node"
-              ],
-              "layer": "text",
-              "movable": true,
-              "position_x": 0,
-              "position_y": 50
-            }
-          }
-        },
-        "root": {
-          "intra": {
-            "enabled": {
-              "action": [],
-              "colour": [
-                46,
-                52,
-                54,
-                255
-              ],
-              "height": 50,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": -25,
-              "width": 10
-            },
-            "selected": {
-              "action": [],
-              "colour": [
-                252,
-                233,
-                79,
-                255
-              ],
-              "height": 50,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": -25,
-              "width": 10
-            }
-          },
-          "node_intraface": {
-            "enabled": {
-              "action": [],
-              "colour": [
-                255,
-                255,
-                255,
-                100
-              ],
-              "height": 100,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": 0,
-              "width": 100
-            },
-            "selected": {
-              "action": [],
-              "colour": [
-                252,
-                233,
-                79,
-                255
-              ],
-              "height": 100,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": 0,
-              "width": 100
-            }
-          }
-        }
-      },
       "node_simple": {
         "name": {
           "-": {
@@ -2340,6 +2259,7 @@
             }
           },
           "energy|work|lumped": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -2356,7 +2276,9 @@
               "width": 30
             },
             "enabled": {
-              "action": [],
+              "action": [
+                "inject"
+              ],
               "colour": [
                 53,
                 132,
@@ -2481,6 +2403,7 @@
             }
           },
           "mass|diffusion|lumped": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -2497,7 +2420,9 @@
               "width": 30
             },
             "enabled": {
-              "action": [],
+              "action": [
+                "inject"
+              ],
               "colour": [
                 181,
                 131,
@@ -2674,117 +2599,6 @@
               "position_x": 0,
               "position_y": 0,
               "width": 10
-            }
-          }
-        }
-      },
-      "node_intraface": {
-        "name": {
-          "-": {
-            "-": {
-              "action": [
-                "name node"
-              ],
-              "layer": "text",
-              "movable": true,
-              "position_x": 0,
-              "position_y": 50
-            }
-          }
-        },
-        "root": {
-          "intra": {
-            "blocked": {
-              "action": [],
-              "colour": [
-                186,
-                189,
-                182,
-                255
-              ],
-              "height": 50,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": -25,
-              "width": 10
-            },
-            "enabled": {
-              "action": [],
-              "colour": [
-                46,
-                52,
-                54,
-                255
-              ],
-              "height": 50,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": -25,
-              "width": 10
-            },
-            "selected": {
-              "action": [],
-              "colour": [
-                252,
-                233,
-                79,
-                255
-              ],
-              "height": 50,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": -25,
-              "width": 10
-            }
-          },
-          "node_intraface": {
-            "blocked": {
-              "action": [],
-              "colour": [
-                186,
-                189,
-                182,
-                255
-              ],
-              "height": 100,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": 0,
-              "width": 100
-            },
-            "enabled": {
-              "action": [],
-              "colour": [
-                255,
-                255,
-                255,
-                100
-              ],
-              "height": 100,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": 0,
-              "width": 100
-            },
-            "selected": {
-              "action": [],
-              "colour": [
-                252,
-                233,
-                79,
-                255
-              ],
-              "height": 100,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": 0,
-              "width": 100
             }
           }
         }
@@ -4509,8 +4323,17 @@
         "name": {
           "-": {
             "-": {
-              "action": [],
+              "action": [
+                "name node"
+              ],
               "layer": "text",
+              "movable": true,
+              "position_x": 0,
+              "position_y": 50
+            }
+          },
+          "energy|work|lumped": {
+            "-": {
               "movable": true,
               "position_x": 0,
               "position_y": 50
@@ -4613,6 +4436,7 @@
             }
           },
           "energy|work|lumped": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -4629,7 +4453,9 @@
               "width": 30
             },
             "enabled": {
-              "action": [],
+              "action": [
+                "name node"
+              ],
               "colour": [
                 53,
                 132,
@@ -4958,122 +4784,6 @@
           }
         }
       },
-      "node_intraface": {
-        "name": {
-          "-": {
-            "-": {
-              "action": [
-                "name node"
-              ],
-              "layer": "text",
-              "movable": true,
-              "position_x": 0,
-              "position_y": 50
-            }
-          }
-        },
-        "root": {
-          "intra": {
-            "blocked": {
-              "action": [],
-              "colour": [
-                186,
-                189,
-                182,
-                255
-              ],
-              "height": 50,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": -25,
-              "width": 10
-            },
-            "enabled": {
-              "action": [],
-              "colour": [
-                46,
-                52,
-                54,
-                255
-              ],
-              "height": 50,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": -25,
-              "width": 10
-            },
-            "selected": {
-              "action": [],
-              "colour": [
-                252,
-                233,
-                79,
-                255
-              ],
-              "height": 50,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": -25,
-              "width": 10
-            }
-          },
-          "node_intraface": {
-            "": {},
-            "blocked": {
-              "action": [],
-              "colour": [
-                186,
-                189,
-                182,
-                255
-              ],
-              "height": 100,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": 0,
-              "width": 100
-            },
-            "enabled": {
-              "action": [
-                "add arc",
-                "begin arc",
-                "delete node"
-              ],
-              "colour": [
-                255,
-                255,
-                255,
-                100
-              ],
-              "height": 100,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": 0,
-              "width": 100
-            },
-            "selected": {
-              "action": [],
-              "colour": [
-                252,
-                233,
-                79,
-                255
-              ],
-              "height": 100,
-              "layer": "node",
-              "movable": false,
-              "position_x": 0,
-              "position_y": 0,
-              "width": 100
-            }
-          }
-        }
-      },
       "node_simple": {
         "name": {
           "-": {
@@ -5181,7 +4891,6 @@
             }
           },
           "constant|infinity": {
-            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -5583,6 +5292,14 @@
         255
       ]
     },
+    "control >>> info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "control >>> liquid": {
       "colour": [
         255,
@@ -5591,7 +5308,7 @@
         100
       ]
     },
-    "control >>> material": {
+    "control >>> microscopic": {
       "colour": [
         255,
         255,
@@ -5647,6 +5364,14 @@
         100
       ]
     },
+    "energy >>> info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "energy >>> liquid": {
       "colour": [
         255,
@@ -5655,7 +5380,7 @@
         100
       ]
     },
-    "energy >>> material": {
+    "energy >>> microscopic": {
       "colour": [
         255,
         255,
@@ -5703,6 +5428,14 @@
         100
       ]
     },
+    "gas >>> info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "gas >>> liquid": {
       "colour": [
         255,
@@ -5711,7 +5444,7 @@
         100
       ]
     },
-    "gas >>> material": {
+    "gas >>> microscopic": {
       "colour": [
         255,
         255,
@@ -5735,6 +5468,78 @@
         100
       ]
     },
+    "info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "info_processing >>> control": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "info_processing >>> energy": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "info_processing >>> gas": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "info_processing >>> info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "info_processing >>> liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "info_processing >>> microscopic": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "info_processing >>> reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "info_processing >>> solid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "liquid": {
       "colour": [
         114,
@@ -5751,6 +5556,14 @@
         100
       ]
     },
+    "liquid >>> info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "liquid >>> liquid": {
       "colour": [
         255,
@@ -5759,7 +5572,7 @@
         100
       ]
     },
-    "liquid >>> material": {
+    "liquid >>> microscopic": {
       "colour": [
         255,
         255,
@@ -5783,15 +5596,7 @@
         100
       ]
     },
-    "material": {
-      "colour": [
-        0,
-        0,
-        0,
-        255
-      ]
-    },
-    "material >>> control": {
+    "microscopic": {
       "colour": [
         255,
         255,
@@ -5799,7 +5604,7 @@
         100
       ]
     },
-    "material >>> energy": {
+    "microscopic >>> control": {
       "colour": [
         255,
         255,
@@ -5807,7 +5612,7 @@
         100
       ]
     },
-    "material >>> gas": {
+    "microscopic >>> energy": {
       "colour": [
         255,
         255,
@@ -5815,7 +5620,7 @@
         100
       ]
     },
-    "material >>> liquid": {
+    "microscopic >>> gas": {
       "colour": [
         255,
         255,
@@ -5823,7 +5628,7 @@
         100
       ]
     },
-    "material >>> material": {
+    "microscopic >>> info_processing": {
       "colour": [
         255,
         255,
@@ -5831,7 +5636,7 @@
         100
       ]
     },
-    "material >>> reactions": {
+    "microscopic >>> liquid": {
       "colour": [
         255,
         255,
@@ -5839,7 +5644,23 @@
         100
       ]
     },
-    "material >>> solid": {
+    "microscopic >>> microscopic": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "microscopic >>> reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "microscopic >>> solid": {
       "colour": [
         255,
         255,
@@ -5879,6 +5700,14 @@
         100
       ]
     },
+    "reactions >>> info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "reactions >>> liquid": {
       "colour": [
         255,
@@ -5887,7 +5716,7 @@
         100
       ]
     },
-    "reactions >>> material": {
+    "reactions >>> microscopic": {
       "colour": [
         255,
         255,
@@ -5927,7 +5756,15 @@
         100
       ]
     },
-    "solid >>> material": {
+    "solid >>> info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "solid >>> microscopic": {
       "colour": [
         255,
         255,

@@ -36,28 +36,12 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{T}{_{N, p}} := \left({{F^{sink}}}{_{N, I}} \, . \, {\_T}{_{I}}\right) \stackrel{I}{\star} {{S}}{_{I, p}}\end{eq} &
     \begin{lay}interface equation\end{lay} &
     \begin{lay}reactions\end{lay} \\
-        \hyperlink{"v:170"}{ 63 }\hypertarget{"e:63"}{  } &
-    \begin{eq}{\_V}{_{I}} := {{F^{source}}}{_{N, I}} \stackrel{N}{\star} {V}{_{N}}\end{eq} &
-    \begin{lay}interface equation\end{lay} &
-    \begin{lay}macroscopic --> reactions\end{lay} \\
-        \hyperlink{"v:171"}{ 64 }\hypertarget{"e:64"}{  } &
-    \begin{eq}{V}{_{N, p}} := \left({{F^{sink}}}{_{N, I}} \, . \, {\_V}{_{I}}\right) \stackrel{I}{\star} {{S}}{_{I, p}}\end{eq} &
-    \begin{lay}interface equation\end{lay} &
-    \begin{lay}reactions\end{lay} \\
-        \hyperlink{"v:172"}{ 65 }\hypertarget{"e:65"}{  } &
-    \begin{eq}{\_nt}{_{I}} := {{F^{source}}}{_{N, I}} \stackrel{N}{\star} {{n^t}}{_{N}}\end{eq} &
-    \begin{lay}interface equation\end{lay} &
-    \begin{lay}macroscopic --> reactions\end{lay} \\
-        \hyperlink{"v:173"}{ 66 }\hypertarget{"e:66"}{  } &
-    \begin{eq}{nt}{_{N, p}} := \left({{F^{sink}}}{_{N, I}} \, . \, {\_nt}{_{I}}\right) \stackrel{I}{\star} {{S}}{_{I, p}}\end{eq} &
-    \begin{lay}interface equation\end{lay} &
-    \begin{lay}reactions\end{lay} \\
-        \hyperlink{"v:178"}{ 71 }\hypertarget{"e:71"}{  } &
-    \begin{eq}{\_pn}{_{I, S, p}} := \textbf{reduceSum}\left(\left(\left({{F^{source}}}{_{N, I}} \stackrel{N}{\star} {{\tilde{n}}}{_{N, S, p}}\right) \, . \, {{S}}{_{I, q}}\right),q\right)\end{eq} &
+        \hyperlink{"v:201"}{ 96 }\hypertarget{"e:96"}{  } &
+    \begin{eq}{\_np}{_{I, S}} := \textbf{reduceSum}\left(\left(\left({{F^{source}}}{_{N, I}} \stackrel{N}{\star} {{\tilde{n}}}{_{N, S, q}}\right) \, . \, {{S}}{_{I, q}}\right),q\right)\end{eq} &
     \begin{lay}interface equation\end{lay} &
     \begin{lay}reactions --> macroscopic\end{lay} \\
-        \hyperlink{"v:179"}{ 72 }\hypertarget{"e:72"}{  } &
-    \begin{eq}{pn}{_{N, S, p}} := {{F^{source}}}{_{N, I}} \stackrel{I}{\star} {\_pn}{_{I, S, p}}\end{eq} &
+        \hyperlink{"v:202"}{ 97 }\hypertarget{"e:97"}{  } &
+    \begin{eq}{{\tilde{n}}}{_{N, S}} := {{F^{source}}}{_{N, I}} \stackrel{I}{\star} {\_np}{_{I, S}}\end{eq} &
     \begin{lay}interface equation\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
 \hline

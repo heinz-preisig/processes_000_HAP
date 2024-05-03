@@ -181,28 +181,12 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}chemical potential standard model with mole fraction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:168"}{ 61 }\hypertarget{"e:61"}{  } &
-    \begin{eq}{f}{_{N, S, CS, p}} := {x}{_{N, S, p}}^{\left(\left(|{N}{_{S, CS}}|\right)\right)}\end{eq} &
+    \begin{eq}{f}{_{N, S, K, p}} := {x}{_{N, S, p}}^{\left(\left(|{N}{_{S, K}}|\right)\right)}\end{eq} &
     \begin{lay}factor for probability computation\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:169"}{ 62 }\hypertarget{"e:62"}{  } &
-    \begin{eq}{\xi}{_{N, CS, p}} := \prod_{S}  {{f}{_{N, S, CS, p}}} \end{eq} &
+    \begin{eq}{\xi}{_{N, K, p}} := \prod_{S}  {{f}{_{N, S, K, p}}} \end{eq} &
     \begin{lay}probability of reaction to take place\end{lay} &
-    \begin{lay}reactions\end{lay} \\
-        \hyperlink{"v:174"}{ 67 }\hypertarget{"e:67"}{  } &
-    \begin{eq}{Ea}{_{N, p}} := \textbf{Instantiate}({U}{_{N}} \, . \, \left( {nt}{_{N, p}} \right)^{-1}, {{\#}}{_{}})\end{eq} &
-    \begin{lay}activation energy\end{lay} &
-    \begin{lay}reactions\end{lay} \\
-        \hyperlink{"v:175"}{ 68 }\hypertarget{"e:68"}{  } &
-    \begin{eq}{{K^o}}{_{N, S}} := \textbf{Instantiate}({{\rho}}{_{N}} \, . \, \left( {{\lambda}}{_{S}} \, . \, {t}{_{}} \right)^{-1}, {{\#}}{_{}})\end{eq} &
-    \begin{lay}Arrhenius frequency factor\end{lay} &
-    \begin{lay}reactions\end{lay} \\
-        \hyperlink{"v:176"}{ 69 }\hypertarget{"e:69"}{  } &
-    \begin{eq}{K}{_{N, S, p}} := {{K^o}}{_{N, S}} \, . \, \textbf{exp}\left({Ea}{_{N, p}} \, . \, \left( {R}{_{}} \, . \, {T}{_{N, p}} \right)^{-1}\right)\end{eq} &
-    \begin{lay}Arrhenius reaction "constant"\end{lay} &
-    \begin{lay}reactions\end{lay} \\
-        \hyperlink{"v:177"}{ 70 }\hypertarget{"e:70"}{  } &
-    \begin{eq}{{\tilde{n}}}{_{N, S, p}} := {{A}}{_{N, p, q}} \stackrel{q}{\star} \left({V}{_{N, p}} \, . \, {N}{_{S, CS}} \stackrel{CS}{\star} \left({K}{_{N, S, p}} \, . \, {\xi}{_{N, CS, p}}\right)\right)\end{eq} &
-    \begin{lay}production term\end{lay} &
     \begin{lay}reactions\end{lay} \\
         \hyperlink{"v:180"}{ 73 }\hypertarget{"e:73"}{  } &
     \begin{eq}{{k^d_x}}{_{A, S}} := {{I}}{_{N, A}} \stackrel{N}{\star} \left(\left( {{\mu}}{_{N, S}} \right)^{-1} \, . \, \left({{v_x}}{_{N}} \, . \, \left(\left( {V}{_{N}} \right)^{-1} \, . \, \frac{\partial{{U}{_{N}}}}{\partial{{{\mu}}{_{N, S}}}}\right)\right)\right)\end{eq} &
@@ -261,11 +245,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}partial molar enthalpiies in arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:194"}{ 87 }\hypertarget{"e:87"}{  } &
-    \begin{eq}{{\dot{n}}}{_{N, S}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^c_x}}{_{A, S}}\end{eq} &
+    \begin{eq}{anc_x}{_{N, S}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^c_x}}{_{A, S}}\end{eq} &
     \begin{lay}accumulation of molar mass due to convection\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:195"}{ 88 }\hypertarget{"e:88"}{  } &
-    \begin{eq}{{\dot{n}^d}}{_{N, S}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^{d}_x}}{_{A, S}}\end{eq} &
+    \begin{eq}{{\dot{n}^d_x}}{_{N, S}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^{d}_x}}{_{A, S}}\end{eq} &
     \begin{lay}accumulation due to diffusion in x-direction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:154"}{ 89 }\hypertarget{"e:89"}{  } &
@@ -281,12 +265,96 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}mass diffusion flow in z-direction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:196"}{ 92 }\hypertarget{"e:92"}{  } &
-    \begin{eq}{{\dot{n}}}{_{N, S}} := {{\dot{n}}}{_{N, S}}  + {{\dot{n}^d}}{_{N, S}}\end{eq} &
+    \begin{eq}{{\dot{n}}}{_{N, S}} := {anc_x}{_{N, S}}  + {{\dot{n}^d_x}}{_{N, S}}  + {V}{_{N}} \, . \, {{\tilde{n}}}{_{N, S}}\end{eq} &
     \begin{lay}differential mass balance without reaction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:111"}{ 93 }\hypertarget{"e:93"}{  } &
-    \begin{eq}{n}{_{N, S}} := \int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \, {{\dot{n}}}{_{N, S}} \enskip d\,{t}{_{}}\end{eq} &
+    \begin{eq}{n}{_{N, S}} := \int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \, {{\dot{n}}}{_{N, S}} \enskip d\,{t}{_{}}  + {{n^o}}{_{N, S}}\end{eq} &
     \begin{lay}fundamental state -- molar mass\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:199"}{ 94 }\hypertarget{"e:94"}{  } &
+    \begin{eq}{K}{_{N, K, p}} := {{K^o}}{_{K}} \, . \, \textbf{exp}\left(\left( -{{E^a}}{_{K}} \right) \, . \, \left( {R}{_{}} \, . \, {T}{_{N, p}} \right)^{-1}\right)\end{eq} &
+    \begin{lay}Arrhenius reaction "constant"\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:200"}{ 95 }\hypertarget{"e:95"}{  } &
+    \begin{eq}{{\tilde{n}}}{_{N, S, q}} := {{A}}{_{N, p, q}} \stackrel{p}{\star} \left({N}{_{S, K}} \stackrel{K}{\star} \left({K}{_{N, K, p}} \, . \, {\xi}{_{N, K, p}}\right)\right)\end{eq} &
+    \begin{lay}production from reaction set\end{lay} &
+    \begin{lay}reactions\end{lay} \\
+        \hyperlink{"v:203"}{ 98 }\hypertarget{"e:98"}{  } &
+    \begin{eq}{{n^o}}{_{N, S}} := \textbf{Instantiate}({n}{_{N, S}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}initial mass\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:204"}{ 99 }\hypertarget{"e:99"}{  } &
+    \begin{eq}{{\dot{H}^c_x}}{_{N}} := {{F}}{_{N, A}} \stackrel{A}{\star} \left({{\hat{n}^c_x}}{_{A, S}} \stackrel{S}{\star} {h}{_{N, S}}\right)\end{eq} &
+    \begin{lay}enthalpy accumulation due to convective flow in x-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:205"}{ 100 }\hypertarget{"e:100"}{  } &
+    \begin{eq}{{\dot{H}^d_x}}{_{N}} := {{F}}{_{N, A}} \stackrel{A}{\star} \left({{\hat{n}^{d}_x}}{_{A, S}} \stackrel{S}{\star} {h}{_{N, S}}\right)\end{eq} &
+    \begin{lay}accumulation of enthalpy due to diffusional mass flow in x-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:206"}{ 101 }\hypertarget{"e:101"}{  } &
+    \begin{eq}{{\dot{H}^d_y}}{_{N}} := {{F}}{_{N, A}} \stackrel{A}{\star} \left({{\hat{n}^{d}_y}}{_{A, S}} \stackrel{S}{\star} {h}{_{N, S}}\right)\end{eq} &
+    \begin{lay}accumulation of enthalpy due to diffusional mass flow in y-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:207"}{ 102 }\hypertarget{"e:102"}{  } &
+    \begin{eq}{{\dot{H}^d_z}}{_{N}} := {{F}}{_{N, A}} \stackrel{A}{\star} \left({{\hat{n}^{d}_z}}{_{A, S}} \stackrel{S}{\star} {h}{_{N, S}}\right)\end{eq} &
+    \begin{lay}accumulation of enthalpy due to diffusional mass flow in z-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:208"}{ 103 }\hypertarget{"e:103"}{  } &
+    \begin{eq}{{\dot{q}_x}}{_{N}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{q}_x}}{_{A}}\end{eq} &
+    \begin{lay}accumulation due to heat flow in x-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:209"}{ 104 }\hypertarget{"e:104"}{  } &
+    \begin{eq}{{\dot{q}_y}}{_{N}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{q}_y}}{_{A}}\end{eq} &
+    \begin{lay}accumulation due to heat flow in y-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:210"}{ 105 }\hypertarget{"e:105"}{  } &
+    \begin{eq}{{\dot{q}_z}}{_{N}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{q}_z}}{_{A}}\end{eq} &
+    \begin{lay}accumulation due to heat flow in z-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:211"}{ 106 }\hypertarget{"e:106"}{  } &
+    \begin{eq}{{\hat{w}}}{_{A}} := \textbf{Instantiate}({{\hat{q}_x}}{_{A}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}a fixed work flow to start with\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:212"}{ 107 }\hypertarget{"e:107"}{  } &
+    \begin{eq}{{\dot{n}^d_y}}{_{N, S}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^{d}_y}}{_{A, S}}\end{eq} &
+    \begin{lay}accumulation due to diffusion in y-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:213"}{ 108 }\hypertarget{"e:108"}{  } &
+    \begin{eq}{{\dot{n}^d_z}}{_{N, S}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^{d}_z}}{_{A, S}}\end{eq} &
+    \begin{lay}accumulation due to diffusion in z-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:214"}{ 109 }\hypertarget{"e:109"}{  } &
+    \begin{eq}{{\dot{w}}}{_{N}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{w}}}{_{A}}\end{eq} &
+    \begin{lay}accumulation of enthalpy due to work flow\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:215"}{ 110 }\hypertarget{"e:110"}{  } &
+    \begin{eq}{{\dot{H}}}{_{N}} := {{\dot{H}^c_x}}{_{N}}  + {{\dot{H}^d_x}}{_{N}}  + {{\dot{H}^d_y}}{_{N}}  + {{\dot{H}^d_z}}{_{N}}  + {{\dot{q}_x}}{_{N}}  + {{\dot{q}_y}}{_{N}}  + {{\dot{q}_z}}{_{N}}  + {{\dot{w}}}{_{N}}\end{eq} &
+    \begin{lay}accumulation of enthalpy\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:216"}{ 111 }\hypertarget{"e:111"}{  } &
+    \begin{eq}{{H^o}}{_{N}} := \textbf{Instantiate}({H}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}initial enthalpy\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:115"}{ 112 }\hypertarget{"e:112"}{  } &
+    \begin{eq}{H}{_{N}} := \int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \, {{\dot{H}}}{_{N}} \enskip d\,{t}{_{}}  + {{H^o}}{_{N}}\end{eq} &
+    \begin{lay}Enthalpy\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:217"}{ 113 }\hypertarget{"e:113"}{  } &
+    \begin{eq}{{U^e}}{_{N}} := \left( {C}{_{N}} \right)^{-1} \, . \, {U}{_{N}}\end{eq} &
+    \begin{lay}electrical potential -- voltage\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:218"}{ 114 }\hypertarget{"e:114"}{  } &
+    \begin{eq}{{I^e}}{_{N}} := \frac{d\,{{C}{_{N}}}}{d\,{{t}{_{}}}}\end{eq} &
+    \begin{lay}current definition\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:219"}{ 115 }\hypertarget{"e:115"}{  } &
+    \begin{eq}{{R^e}}{_{N}} := \left( {{I^e}}{_{N}} \right)^{-1} \, . \, {{U^e}}{_{N}}\end{eq} &
+    \begin{lay}electrical resistant\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:220"}{ 116 }\hypertarget{"e:116"}{  } &
+    \begin{eq}{{\dot{U}^e}}{_{A}} := {{F}}{_{N, A}} \stackrel{A}{\star} \left({{R^e}}{_{N}} \, . \, {{I^e}}{_{N}}\right)\end{eq} &
+    \begin{lay}Kirkhoffs first law\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}

@@ -9,10 +9,95 @@
     "network": "macroscopic",
     "rhs": " ParDiff ( U , n )"
   },
+  "E_100": {
+    "lhs": "aHnd_x",
+    "network": "macroscopic",
+    "rhs": " F * A ( fnd_x * S h )"
+  },
+  "E_101": {
+    "lhs": "aHnd_y",
+    "network": "macroscopic",
+    "rhs": " F * A ( fnd_y * S h )"
+  },
+  "E_102": {
+    "lhs": "aHnd_z",
+    "network": "macroscopic",
+    "rhs": " F * A ( fnd_z * S h )"
+  },
+  "E_103": {
+    "lhs": "aq_x",
+    "network": "macroscopic",
+    "rhs": " F * A fq_x"
+  },
+  "E_104": {
+    "lhs": "aq_y",
+    "network": "macroscopic",
+    "rhs": " F * A fq_y"
+  },
+  "E_105": {
+    "lhs": "aq_z",
+    "network": "macroscopic",
+    "rhs": " F * A fq_z"
+  },
+  "E_106": {
+    "lhs": "fw",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( fq_x , value )"
+  },
+  "E_107": {
+    "lhs": "and_y",
+    "network": "macroscopic",
+    "rhs": " F * A fnd_y"
+  },
+  "E_108": {
+    "lhs": "and_z",
+    "network": "macroscopic",
+    "rhs": " F * A fnd_z"
+  },
+  "E_109": {
+    "lhs": "aw",
+    "network": "macroscopic",
+    "rhs": " F * A fw"
+  },
   "E_11": {
     "lhs": "H",
     "network": "macroscopic",
     "rhs": " U - p . V"
+  },
+  "E_110": {
+    "lhs": "dH",
+    "network": "macroscopic",
+    "rhs": " aHnc_x + aHnd_x + aHnd_y + aHnd_z + aq_x + aq_y + aq_z + aw"
+  },
+  "E_111": {
+    "lhs": "Ho",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( H , value )"
+  },
+  "E_112": {
+    "lhs": "H",
+    "network": "macroscopic",
+    "rhs": " Integral ( dH :: t in [ to , te ] ) + Ho"
+  },
+  "E_113": {
+    "lhs": "Ue",
+    "network": "macroscopic",
+    "rhs": " inv ( C ) . U"
+  },
+  "E_114": {
+    "lhs": "current",
+    "network": "macroscopic",
+    "rhs": " TotalDiff ( C , t )"
+  },
+  "E_115": {
+    "lhs": "elResistant",
+    "network": "macroscopic",
+    "rhs": " inv ( current ) . Ue"
+  },
+  "E_116": {
+    "lhs": "dUe",
+    "network": "macroscopic",
+    "rhs": " F * A ( elResistant . current )"
   },
   "E_12": {
     "lhs": "A",
@@ -234,60 +319,10 @@
     "network": "reactions",
     "rhs": " Product ( factor , S )"
   },
-  "E_63": {
-    "lhs": "_V",
-    "network": "macroscopic >>> reactions",
-    "rhs": " F_NI_source * N V"
-  },
-  "E_64": {
-    "lhs": "V",
-    "network": "reactions",
-    "rhs": " ( F_NI_sink . _V ) * I S_Ip"
-  },
-  "E_65": {
-    "lhs": "_nt",
-    "network": "macroscopic >>> reactions",
-    "rhs": " F_NI_source * N nt"
-  },
-  "E_66": {
-    "lhs": "nt",
-    "network": "reactions",
-    "rhs": " ( F_NI_sink . _nt ) * I S_Ip"
-  },
-  "E_67": {
-    "lhs": "Ea",
-    "network": "reactions",
-    "rhs": " Instantiate ( U . inv ( nt ) , value )"
-  },
-  "E_68": {
-    "lhs": "Ko",
-    "network": "reactions",
-    "rhs": " Instantiate ( rho . inv ( Mm . t ) , value )"
-  },
-  "E_69": {
-    "lhs": "K",
-    "network": "reactions",
-    "rhs": " Ko . exp ( Ea . inv ( R . T ) )"
-  },
   "E_7": {
     "lhs": "V",
     "network": "physical",
     "rhs": " r_x . r_y . r_z"
-  },
-  "E_70": {
-    "lhs": "pn",
-    "network": "reactions",
-    "rhs": " A_Npq * q ( V . N * CS ( K . probability ) )"
-  },
-  "E_71": {
-    "lhs": "_pn",
-    "network": "reactions >>> macroscopic",
-    "rhs": " reduceSum ( ( ( F_NI_source * N pn ) . S_Iq ) , q )"
-  },
-  "E_72": {
-    "lhs": "pn",
-    "network": "macroscopic",
-    "rhs": " F_NI_source * I _pn"
   },
   "E_73": {
     "lhs": "kdA_x",
@@ -365,7 +400,7 @@
     "rhs": " I_NA * N h"
   },
   "E_87": {
-    "lhs": "anc",
+    "lhs": "anc_x",
     "network": "macroscopic",
     "rhs": " F * A fnc_x"
   },
@@ -397,11 +432,41 @@
   "E_92": {
     "lhs": "an",
     "network": "macroscopic",
-    "rhs": " anc + and_x"
+    "rhs": " anc_x + and_x + V . np"
   },
   "E_93": {
     "lhs": "n",
     "network": "macroscopic",
-    "rhs": " Integral ( an :: t in [ to , te ] )"
+    "rhs": " Integral ( an :: t in [ to , te ] ) + no"
+  },
+  "E_94": {
+    "lhs": "K",
+    "network": "reactions",
+    "rhs": " Ko . exp ( neg ( Ea ) . inv ( R . T ) )"
+  },
+  "E_95": {
+    "lhs": "np",
+    "network": "reactions",
+    "rhs": " A_Npq * p ( N * K ( K . probability ) )"
+  },
+  "E_96": {
+    "lhs": "_np",
+    "network": "reactions >>> macroscopic",
+    "rhs": " reduceSum ( ( ( F_NI_source * N np ) . S_Iq ) , q )"
+  },
+  "E_97": {
+    "lhs": "np",
+    "network": "macroscopic",
+    "rhs": " F_NI_source * I _np"
+  },
+  "E_98": {
+    "lhs": "no",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( n , value )"
+  },
+  "E_99": {
+    "lhs": "aHnc_x",
+    "network": "macroscopic",
+    "rhs": " F * A ( fnc_x * S h )"
   }
 }
