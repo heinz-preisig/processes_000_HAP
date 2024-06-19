@@ -1,0 +1,432 @@
+{
+    "macroscopic.node.mass|constant|infinity.Source": {
+        "index_set": "N_cons",
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_85": []
+            }
+        ],
+        "init_vars": [
+            "V_85"
+        ],
+        "input_vars": [],
+        "output_vars": [
+            "V_85"
+        ]
+    },
+    "macroscopic.node.mass|dynamic|lumped.Pore": {
+        "index_set": "N_dyna",
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_18": [
+                    "E_129"
+                ],
+                "E_129": [
+                    "V_145",
+                    "V_5",
+                    "V_4",
+                    "V_6",
+                    "V_139"
+                ],
+                "V_145": [],
+                "V_5": [],
+                "V_4": [],
+                "V_6": [],
+                "V_139": [
+                    "E_123"
+                ],
+                "E_123": [
+                    "V_104",
+                    "V_93",
+                    "V_138"
+                ],
+                "V_104": [
+                    "E_90"
+                ],
+                "V_93": [],
+                "V_138": [],
+                "E_90": [
+                    "V_101",
+                    "V_10"
+                ],
+                "V_101": [],
+                "V_10": []
+            },
+            {
+                "V_85": [
+                    "E_74"
+                ],
+                "E_74": [
+                    "V_15"
+                ],
+                "V_15": []
+            }
+        ],
+        "init_vars": [
+            "V_145",
+            "V_5",
+            "V_93",
+            "V_6",
+            "V_138",
+            "V_15"
+        ],
+        "input_vars": [
+            "V_10",
+            "V_101",
+            "V_4"
+        ],
+        "output_vars": [
+            "V_18",
+            "V_85"
+        ]
+    },
+    "macroscopic.arc.mass|diffusion|lumped.Diff_arc": {
+        "index_set": "A_diff",
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_101": [
+                    "E_85"
+                ],
+                "E_85": [
+                    "V_64",
+                    "V_85",
+                    "V_75",
+                    "V_70"
+                ],
+                "V_64": [],
+                "V_85": [],
+                "V_75": [],
+                "V_70": []
+            }
+        ],
+        "init_vars": [
+            "V_70",
+            "V_75"
+        ],
+        "input_vars": [
+            "V_64",
+            "V_85"
+        ],
+        "output_vars": [
+            "V_101"
+        ]
+    },
+    "macroscopic.node.mass|dynamic|lumped.reactiveLump": {
+        "index_set": "N_dyna",
+        "integrators": {
+            "V_18": "E_129"
+        },
+        "var_eq_forest": [
+            {
+                "V_85": [
+                    "E_74"
+                ],
+                "E_74": [
+                    "V_15"
+                ],
+                "V_15": []
+            },
+            {
+                "E_129": [
+                    "V_4",
+                    "V_139",
+                    "V_6",
+                    "V_5",
+                    "V_145"
+                ],
+                "V_4": [],
+                "V_139": [
+                    "E_123"
+                ],
+                "V_6": [],
+                "V_5": [],
+                "V_145": [],
+                "E_123": [
+                    "V_138",
+                    "V_104",
+                    "V_93"
+                ],
+                "V_138": [
+                    "E_122"
+                ],
+                "V_104": [
+                    "E_90"
+                ],
+                "V_93": [
+                    "E_82"
+                ],
+                "E_122": [
+                    "V_137"
+                ],
+                "V_137": [],
+                "E_90": [
+                    "V_101",
+                    "V_10"
+                ],
+                "V_101": [],
+                "V_10": [],
+                "E_82": [
+                    "V_92"
+                ],
+                "V_92": []
+            }
+        ],
+        "init_vars": [
+            "V_5",
+            "V_15",
+            "V_6",
+            "V_145"
+        ],
+        "input_vars": [
+            "V_4",
+            "V_10",
+            "V_137",
+            "V_101",
+            "V_138",
+            "V_92"
+        ],
+        "output_vars": [
+            "V_85",
+            "V_18"
+        ]
+    },
+    "reactions.node.mass|event|lumped.standardReaction": {
+        "index_set": "N_even",
+        "integrators": {
+            "V_131": "E_115"
+        },
+        "var_eq_forest": [
+            {
+                "V_136": [
+                    "E_120"
+                ],
+                "E_120": [
+                    "V_131",
+                    "V_15",
+                    "V_135",
+                    "V_118"
+                ],
+                "V_15": [],
+                "V_135": [
+                    "E_119"
+                ],
+                "V_118": [],
+                "E_115": [
+                    "V_129"
+                ],
+                "V_129": [
+                    "E_113"
+                ],
+                "E_119": [
+                    "V_114",
+                    "V_34",
+                    "V_134",
+                    "V_115"
+                ],
+                "V_114": [
+                    "E_99"
+                ],
+                "V_34": [],
+                "V_134": [],
+                "V_115": [],
+                "E_113": [
+                    "V_113",
+                    "V_128"
+                ],
+                "V_113": [],
+                "V_128": [
+                    "E_112"
+                ],
+                "E_99": [
+                    "V_19"
+                ],
+                "V_19": [],
+                "E_112": [
+                    "V_126",
+                    "V_125"
+                ],
+                "V_126": [],
+                "V_125": []
+            }
+        ],
+        "init_vars": [
+            "V_34",
+            "V_15",
+            "V_113",
+            "V_126",
+            "V_118",
+            "V_134",
+            "V_115"
+        ],
+        "input_vars": [
+            "V_19",
+            "V_125"
+        ],
+        "output_vars": [
+            "V_136"
+        ]
+    },
+    "material.arc.mass|convection|lumped.convectiveFlow": {
+        "index_set": "A_conv",
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_92": [
+                    "E_81"
+                ],
+                "E_81": [
+                    "V_87",
+                    "V_91"
+                ],
+                "V_87": [],
+                "V_91": [
+                    "E_80"
+                ],
+                "E_80": [
+                    "V_71",
+                    "V_70",
+                    "V_90",
+                    "V_20",
+                    "V_64"
+                ],
+                "V_71": [],
+                "V_70": [],
+                "V_90": [],
+                "V_20": [],
+                "V_64": []
+            }
+        ],
+        "init_vars": [],
+        "input_vars": [],
+        "output_vars": [
+            "V_92"
+        ]
+    },
+    "macroscopic.node.energy|event|lumped.sensorTemperature": {
+        "index_set": "N_even",
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_149": [
+                    "E_135"
+                ],
+                "E_135": [
+                    "V_146",
+                    "V_19"
+                ],
+                "V_146": [],
+                "V_19": []
+            }
+        ],
+        "init_vars": [
+            "V_146"
+        ],
+        "input_vars": [
+            "V_19"
+        ],
+        "output_vars": [
+            "V_149"
+        ]
+    },
+    "macroscopic >>> reactions (F_NI_source -> _T)": {
+        "index_set": null,
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_166": [
+                    "E_59"
+                ],
+                "E_59": [
+                    "V_3",
+                    "V_113"
+                ],
+                "V_3": [],
+                "V_113": []
+            }
+        ],
+        "init_vars": [],
+        "input_vars": [
+            "V_3"
+        ],
+        "output_vars": [
+            "V_166"
+        ]
+    },
+    "macroscopic >>> reactions (x -> _x)": {
+        "index_set": null,
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_164": [
+                    "E_57"
+                ],
+                "E_57": [
+                    "V_3",
+                    "V_140"
+                ],
+                "V_3": [],
+                "V_140": []
+            }
+        ],
+        "init_vars": [],
+        "input_vars": [
+            "V_3"
+        ],
+        "output_vars": [
+            "V_164"
+        ]
+    },
+    "macroscopic >>> reactions (c -> _c)": {
+        "index_set": null,
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_162": [
+                    "E_55"
+                ],
+                "E_55": [
+                    "V_3",
+                    "V_138"
+                ],
+                "V_3": [],
+                "V_138": []
+            }
+        ],
+        "init_vars": [],
+        "input_vars": [
+            "V_3"
+        ],
+        "output_vars": [
+            "V_162"
+        ]
+    },
+    "reactions >>> macroscopic (np -> _np)": {
+        "index_set": null,
+        "integrators": {},
+        "var_eq_forest": [
+            {
+                "V_201": [
+                    "E_96"
+                ],
+                "E_96": [
+                    "V_3",
+                    "V_200",
+                    "V_10"
+                ],
+                "V_3": [],
+                "V_200": [],
+                "V_10": []
+            }
+        ],
+        "init_vars": [],
+        "input_vars": [
+            "V_3"
+        ],
+        "output_vars": [
+            "V_201"
+        ]
+    }
+}

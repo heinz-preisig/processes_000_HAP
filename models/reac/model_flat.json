@@ -1,0 +1,700 @@
+{
+  "nodes": {
+    "1": {
+      "name": "massSource",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "constant|infinity",
+      "variant": "massSource",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "tokens": {
+        "mass": [
+          "A"
+        ]
+      },
+      "injected_typed_tokens": {
+        "mass": [
+          "A"
+        ]
+      },
+      "mass": []
+    },
+    "2": {
+      "name": "dynamicReactiveLump",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "dynamic|lumped",
+      "variant": "dynamicReactiveLump",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+      "tokens": {
+        "mass": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "conversions": {
+        "mass": [
+          "['A', 'B']  -->  ['C', 'D']"
+        ]
+      },
+      "mass": []
+    },
+    "3": {
+      "name": "massSource",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "constant|infinity",
+      "variant": "massSource",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "tokens": {
+        "mass": [
+          "B",
+          "D",
+          "C"
+        ]
+      },
+      "injected_typed_tokens": {
+        "mass": [
+          "B"
+        ]
+      },
+      "mass": []
+    },
+    "4": {
+      "name": "dynamicReactiveLump",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "dynamic|lumped",
+      "variant": "dynamicReactiveLump",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+      "tokens": {
+        "mass": [
+          "B",
+          "D",
+          "C"
+        ]
+      },
+      "conversions": {},
+      "mass": []
+    },
+    "5": {
+      "name": "convectiveMassFlow",
+      "network": "liquid",
+      "named_network": "A-liquid >>> A-liquid",
+      "class": "node_arc",
+      "type": "mass|convection|lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow",
+      "tokens": {
+        "mass": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "tokens_right": {
+        "mass": []
+      },
+      "tokens_left": {
+        "mass": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "transfer_constraints": {
+        "mass": [
+          "B",
+          "C",
+          "D",
+          "W"
+        ]
+      },
+      "mass": []
+    },
+    "6": {
+      "name": "convectiveMassFlow",
+      "network": "liquid",
+      "named_network": "A-liquid >>> A-liquid",
+      "class": "node_arc",
+      "type": "mass|convection|lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow",
+      "tokens": {
+        "mass": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "tokens_right": {
+        "mass": []
+      },
+      "tokens_left": {
+        "mass": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "transfer_constraints": {
+        "mass": []
+      },
+      "mass": []
+    },
+    "7": {
+      "name": "diffusionalMassTransfer",
+      "network": "liquid",
+      "named_network": "A-liquid >>> A-liquid",
+      "class": "node_arc",
+      "type": "mass|diffusion|lumped",
+      "variant": "diffusionalMassTransfer",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|diffusion|lumped.diffusionalMassTransfer",
+      "tokens": {
+        "mass": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "tokens_right": {
+        "mass": []
+      },
+      "tokens_left": {
+        "mass": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "transfer_constraints": {
+        "mass": [
+          "A"
+        ]
+      },
+      "mass": []
+    },
+    "8": {
+      "name": "massSource",
+      "network": "liquid",
+      "named_network": "B-liquid",
+      "class": "node_simple",
+      "type": "constant|infinity",
+      "variant": "massSource",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "tokens": {
+        "mass": [
+          "D",
+          "C",
+          "B"
+        ]
+      },
+      "injected_typed_tokens": {},
+      "mass": []
+    },
+    "9": {
+      "name": "convectiveMassFlow",
+      "network": "liquid",
+      "named_network": "A-liquid >>> B-liquid",
+      "class": "node_arc",
+      "type": "mass|convection|lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow",
+      "tokens": {
+        "mass": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "tokens_right": {
+        "mass": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "tokens_left": {
+        "mass": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "transfer_constraints": {
+        "mass": []
+      },
+      "mass": []
+    }
+  },
+  "arcs": {
+    "0": {
+      "name": "1 | 5",
+      "source": 1,
+      "sink": 5,
+      "token": "mass",
+      "typed_tokens": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "mechanism": "convection",
+      "nature": "lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {}
+    },
+    "1": {
+      "name": "5 | 2",
+      "source": 5,
+      "sink": 2,
+      "token": "mass",
+      "typed_tokens": [],
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "mechanism": "convection",
+      "nature": "lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {}
+    },
+    "2": {
+      "name": "3 | 6",
+      "source": 3,
+      "sink": 6,
+      "token": "mass",
+      "typed_tokens": [
+        "B",
+        "C",
+        "D"
+      ],
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "mechanism": "convection",
+      "nature": "lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {}
+    },
+    "3": {
+      "name": "6 | 4",
+      "source": 6,
+      "sink": 4,
+      "token": "mass",
+      "typed_tokens": [],
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "mechanism": "convection",
+      "nature": "lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {}
+    },
+    "4": {
+      "name": "2 | 7",
+      "source": 2,
+      "sink": 7,
+      "token": "mass",
+      "typed_tokens": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "mechanism": "diffusion",
+      "nature": "lumped",
+      "variant": "diffusionalMassTransfer",
+      "instantiated_variables": {}
+    },
+    "5": {
+      "name": "7 | 4",
+      "source": 7,
+      "sink": 4,
+      "token": "mass",
+      "typed_tokens": [],
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "mechanism": "diffusion",
+      "nature": "lumped",
+      "variant": "diffusionalMassTransfer",
+      "instantiated_variables": {}
+    },
+    "6": {
+      "name": "4 | 9",
+      "source": 4,
+      "sink": 9,
+      "token": "mass",
+      "typed_tokens": [
+        "B",
+        "C",
+        "D"
+      ],
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "mechanism": "convection",
+      "nature": "lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {}
+    },
+    "7": {
+      "name": "9 | 8",
+      "source": 9,
+      "sink": 8,
+      "token": "mass",
+      "typed_tokens": [
+        "B",
+        "C",
+        "D"
+      ],
+      "network": "liquid",
+      "named_network": "B-liquid",
+      "mechanism": "convection",
+      "nature": "lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {}
+    }
+  },
+  "named_networks": {
+    "network__named_network": {
+      "control": [
+        "A-control"
+      ],
+      "energy": [
+        "A-energy"
+      ],
+      "gas": [
+        "A-gas"
+      ],
+      "info_processing": [
+        "A-info_processing"
+      ],
+      "liquid": [
+        "A-liquid",
+        "B-liquid"
+      ],
+      "microscopic": [
+        "A-microscopic"
+      ],
+      "reactions": [
+        "A-reactions"
+      ],
+      "solid": [
+        "A-solid"
+      ]
+    },
+    "A-control": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-energy": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-gas": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-microscopic": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-solid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "B-liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    }
+  },
+  "token_domains": {
+    "charge": {},
+    "energy": {},
+    "mass": {
+      "0": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "signal": {}
+  },
+  "typed_token_domains": {
+    "mass": {
+      "0": {
+        "species": {
+          "A": [
+            1,
+            2,
+            5,
+            7
+          ],
+          "B": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "C": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "D": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    }
+  },
+  "token_incidence_matrix": {
+    "0": {
+      "mass": {
+        "1": [
+          0
+        ],
+        "5": [
+          0,
+          1
+        ],
+        "2": [
+          1,
+          4
+        ],
+        "3": [
+          2
+        ],
+        "6": [
+          2,
+          3
+        ],
+        "4": [
+          3,
+          5,
+          6
+        ],
+        "7": [
+          4,
+          5
+        ],
+        "9": [
+          6,
+          7
+        ],
+        "8": [
+          7
+        ]
+      }
+    }
+  },
+  "typed_token_incidence_matrix": {
+    "mass": {
+      "0": {
+        "A": {
+          "1": [
+            0
+          ],
+          "5": [
+            0
+          ],
+          "2": [
+            4
+          ],
+          "7": [
+            4
+          ]
+        },
+        "B": {
+          "1": [
+            0
+          ],
+          "5": [
+            0
+          ],
+          "3": [
+            2
+          ],
+          "6": [
+            2
+          ],
+          "2": [
+            4
+          ],
+          "7": [
+            4
+          ],
+          "4": [
+            6
+          ],
+          "9": [
+            6,
+            7
+          ],
+          "8": [
+            7
+          ]
+        },
+        "C": {
+          "1": [
+            0
+          ],
+          "5": [
+            0
+          ],
+          "3": [
+            2
+          ],
+          "6": [
+            2
+          ],
+          "2": [
+            4
+          ],
+          "7": [
+            4
+          ],
+          "4": [
+            6
+          ],
+          "9": [
+            6,
+            7
+          ],
+          "8": [
+            7
+          ]
+        },
+        "D": {
+          "1": [
+            0
+          ],
+          "5": [
+            0
+          ],
+          "3": [
+            2
+          ],
+          "6": [
+            2
+          ],
+          "2": [
+            4
+          ],
+          "7": [
+            4
+          ],
+          "4": [
+            6
+          ],
+          "9": [
+            6,
+            7
+          ],
+          "8": [
+            7
+          ]
+        }
+      }
+    }
+  },
+  "typed_token_lists": {
+    "mass": {
+      "0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  }
+}

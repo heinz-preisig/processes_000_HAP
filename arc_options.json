@@ -1,153 +1,53 @@
 {
-    "macroscopic.arc.mass|diffusion|lumped.Diff_arc": {
+    "macroscopic.arc.mass|convection|lumped.convectiveMassFlow": {
         "sources": [
-            "macroscopic.node.mass|constant|infinity.Source",
-            "macroscopic.node.mass|dynamic|lumped.Pore",
-            "macroscopic.node.mass|dynamic|lumped.reactiveLump"
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy"
         ],
         "sinks": [
-            "macroscopic.node.mass|constant|infinity.Source",
-            "macroscopic.node.mass|dynamic|lumped.Pore",
-            "macroscopic.node.mass|dynamic|lumped.reactiveLump"
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy"
         ]
     },
-    "material.arc.mass|convection|lumped.convectiveFlow": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kd_z_A -> _kd_z_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "macroscopic >>> control (p_normed -> _p_normed)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kc_x_A -> _kc_x_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kd_y_Fick -> _kd_y_Fick)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kd_x_A -> _kd_x_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kd_z_Fick -> _kd_z_Fick)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (Mm -> _Mm)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kq_y_A -> _kq_y_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "reactions >>> macroscopic (Ea -> _Ea)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kq_z_A -> _kq_z_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "reactions >>> macroscopic (N -> _N)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (h -> _h)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (density_A -> _density_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kc_z_A -> _kc_z_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "macroscopic >>> material (x -> _x)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (density -> _density)": {
-        "sources": [],
-        "sinks": []
-    },
-    "macroscopic >>> control (c_normed -> _c_normed)": {
-        "sources": [],
-        "sinks": []
-    },
-    "macroscopic >>> reactions (c -> _c)": {
+    "macroscopic.arc.mass|diffusion|lumped.diffusionalMassTransfer": {
         "sources": [
-            "macroscopic.node.mass|constant|infinity.Source",
-            "macroscopic.node.mass|dynamic|lumped.Pore",
-            "macroscopic.node.mass|dynamic|lumped.reactiveLump"
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy"
         ],
         "sinks": [
-            "reactions.node.mass|event|lumped.standardReaction"
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy"
         ]
     },
-    "reactions >>> macroscopic (T_K -> _T_K)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kq_x_A -> _kq_x_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "macroscopic >>> control (T_normed -> _T_normed)": {
+    "control.arc.signal|link|unidirectional.signal": {
         "sources": [
-            "macroscopic.node.energy|event|lumped.sensorTemperature"
-        ],
-        "sinks": []
-    },
-    "material >>> macroscopic (kd_x_Fick -> _kd_x_Fick)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (h_A -> _h_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "material >>> macroscopic (kd_y_A -> _kd_y_A)": {
-        "sources": [],
-        "sinks": []
-    },
-    "reactions >>> macroscopic (nProd -> _nProd)": {
-        "sources": [
-            "reactions.node.mass|event|lumped.standardReaction"
+            "control.node.signal|event|AE.p-control"
         ],
         "sinks": [
-            "macroscopic.node.mass|dynamic|lumped.reactiveLump"
+            "control.node.signal|event|AE.p-control"
         ]
     },
-    "material >>> macroscopic (kc_y_A -> _kc_y_A)": {
+    "macroscopic >>> reactions (F_NI_source -> _x)": {
         "sources": [],
         "sinks": []
     },
-    "control >>> macroscopic (setpoint_matrix -> _setpoint_matrix)": {
+    "reactions >>> macroscopic (F_NI_source -> _np)": {
         "sources": [],
         "sinks": []
     },
-    "control >>> macroscopic (setpoint_vector -> _setpoint_vector)": {
+    "macroscopic >>> reactions (F_NI_source -> _c)": {
         "sources": [],
         "sinks": []
     },
-    "material >>> macroscopic (cp -> _cp)": {
+    "macroscopic >>> reactions (F_NI_source -> _T)": {
         "sources": [],
         "sinks": []
     },
-    "macroscopic >>> material (I -> _I)": {
-        "sources": [],
-        "sinks": []
-    },
-    "control >>> macroscopic (u_vector -> _u_vector)": {
+    "macroscopic >>> control (F_NI_source -> _T_meas)": {
         "sources": [],
         "sinks": []
     }

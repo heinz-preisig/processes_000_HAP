@@ -12,13 +12,61 @@
 \endlastfoot
 
 
-        206
-             & \hypertarget{"v:206"}{ $ {{\dot{H}^d_y}}{_{N}} $}
-             & \verb|aHnd_y|
-             & accumulation of enthalpy due to diffusional mass flow in y-direction
+        158
+             & \hypertarget{"v:158"}{ $ {c}{_{A, S}} $}
+             & \verb|c_AS|
+             & concentration in convective event-dynamic flow
+             & \begin{lay}transport \end{lay}
+             & $ m^{-3} \,mol \, $
+             &                 \hyperlink{"e:50"}{ 50 }
+                 \\
+            195
+             & \hypertarget{"v:195"}{ $ {{\dot{n}^d_x}}{_{N, S}} $}
+             & \verb|and_x|
+             & accumulation due to diffusion in x-direction
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             &                 \hyperlink{"e:88"}{ 88 }
+                 \\
+            151
+             & \hypertarget{"v:151"}{ $ {{\hat{q}_x}}{_{A}} $}
+             & \verb|fq_x|
+             & heat flow in x-direction
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:101"}{ 101 }
+             &                 \hyperlink{"e:43"}{ 43 }
+                 \\
+            211
+             & \hypertarget{"v:211"}{ $ {{\hat{w}}}{_{A}} $}
+             & \verb|fw|
+             & a fixed work flow to start with
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:106"}{ 106 }
+                 \\
+            159
+             & \hypertarget{"v:159"}{ $ {{\hat{V}}}{_{A}} $}
+             & \verb|fV|
+             & volumetric flow in x-direction
+             & \begin{lay}transport \end{lay}
+             & $ m^{3} \,s^{-1} \, $
+             &                 \hyperlink{"e:51"}{ 51 }
+                 \\
+            209
+             & \hypertarget{"v:209"}{ $ {{\dot{q}_y}}{_{N}} $}
+             & \verb|aq_y|
+             & accumulation due to heat flow in y-direction
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:104"}{ 104 }
+                 \\
+            194
+             & \hypertarget{"v:194"}{ $ {{\dot{n}^c_x}}{_{N, S}} $}
+             & \verb|anc_x|
+             & accumulation of molar mass due to convection
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             &                 \hyperlink{"e:87"}{ 87 }
                  \\
             157
              & \hypertarget{"v:157"}{ $ {d}{_{A}} $}
@@ -28,13 +76,37 @@
              & $  $
              &                 \hyperlink{"e:49"}{ 49 }
                  \\
-            211
-             & \hypertarget{"v:211"}{ $ {{\hat{w}}}{_{A}} $}
-             & \verb|fw|
-             & a fixed work flow to start with
+            210
+             & \hypertarget{"v:210"}{ $ {{\dot{q}_z}}{_{N}} $}
+             & \verb|aq_z|
+             & accumulation due to heat flow in z-direction
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:106"}{ 106 }
+             &                 \hyperlink{"e:105"}{ 105 }
+                 \\
+            153
+             & \hypertarget{"v:153"}{ $ {{\hat{q}_z}}{_{A}} $}
+             & \verb|fq_z|
+             & heat flow in z-direction
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:45"}{ 45 }
+                 \\
+            160
+             & \hypertarget{"v:160"}{ $ {{\hat{n}^c_x}}{_{A, S}} $}
+             & \verb|fnc_x|
+             & molar convective flow in x-direction
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             &                 \hyperlink{"e:52"}{ 52 }
+                 \\
+            213
+             & \hypertarget{"v:213"}{ $ {{\dot{n}^d_z}}{_{N, S}} $}
+             & \verb|and_z|
+             & accumulation due to diffusion in z-direction
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             &                 \hyperlink{"e:108"}{ 108 }
                  \\
             156
              & \hypertarget{"v:156"}{ $ {{\hat{n}^{d}_z}}{_{A, S}} $}
@@ -45,69 +117,14 @@
              &                 \hyperlink{"e:48"}{ 48 }
                                  \hyperlink{"e:91"}{ 91 }
                  \\
-            212
-             & \hypertarget{"v:212"}{ $ {{\dot{n}^d_y}}{_{N, S}} $}
-             & \verb|and_y|
-             & accumulation due to diffusion in y-direction
+            154
+             & \hypertarget{"v:154"}{ $ {{\hat{n}^{d}_x}}{_{A, S}} $}
+             & \verb|fnd_x|
+             & diffusion flow in x-direction
              & \begin{lay}transport \end{lay}
              & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:107"}{ 107 }
-                 \\
-            205
-             & \hypertarget{"v:205"}{ $ {{\dot{H}^d_x}}{_{N}} $}
-             & \verb|aHnd_x|
-             & accumulation of enthalpy due to diffusional mass flow in x-direction
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:100"}{ 100 }
-                 \\
-            208
-             & \hypertarget{"v:208"}{ $ {{\dot{q}_x}}{_{N}} $}
-             & \verb|aq_x|
-             & accumulation due to heat flow in x-direction
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:103"}{ 103 }
-                 \\
-            194
-             & \hypertarget{"v:194"}{ $ {anc_x}{_{N, S}} $}
-             & \verb|anc_x|
-             & accumulation of molar mass due to convection
-             & \begin{lay}transport \end{lay}
-             & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:87"}{ 87 }
-                 \\
-            159
-             & \hypertarget{"v:159"}{ $ {{\hat{V}}}{_{A}} $}
-             & \verb|fV|
-             & volumetric flow in x-direction
-             & \begin{lay}transport \end{lay}
-             & $ m^{3} \,s^{-1} \, $
-             &                 \hyperlink{"e:51"}{ 51 }
-                 \\
-            207
-             & \hypertarget{"v:207"}{ $ {{\dot{H}^d_z}}{_{N}} $}
-             & \verb|aHnd_z|
-             & accumulation of enthalpy due to diffusional mass flow in z-direction
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:102"}{ 102 }
-                 \\
-            153
-             & \hypertarget{"v:153"}{ $ {{\hat{q}_z}}{_{A}} $}
-             & \verb|fq_z|
-             & heat flow in z-direction
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:45"}{ 45 }
-                 \\
-            158
-             & \hypertarget{"v:158"}{ $ {c}{_{A, S}} $}
-             & \verb|c_AS|
-             & concentration in convective event-dynamic flow
-             & \begin{lay}transport \end{lay}
-             & $ m^{-3} \,mol \, $
-             &                 \hyperlink{"e:50"}{ 50 }
+             &                 \hyperlink{"e:46"}{ 46 }
+                                 \hyperlink{"e:89"}{ 89 }
                  \\
             152
              & \hypertarget{"v:152"}{ $ {{\hat{q}_y}}{_{A}} $}
@@ -117,45 +134,37 @@
              & $ kg \,m^{2} \,s^{-3} \, $
              &                 \hyperlink{"e:44"}{ 44 }
                  \\
-            213
-             & \hypertarget{"v:213"}{ $ {{\dot{n}^d_z}}{_{N, S}} $}
-             & \verb|and_z|
-             & accumulation due to diffusion in z-direction
+            208
+             & \hypertarget{"v:208"}{ $ {{\dot{q}_x}}{_{N}} $}
+             & \verb|aq_x|
+             & accumulation due to heat flow in x-direction
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:103"}{ 103 }
+                 \\
+            212
+             & \hypertarget{"v:212"}{ $ {{\dot{n}^d_y}}{_{N, S}} $}
+             & \verb|and_y|
+             & accumulation due to diffusion in y-direction
              & \begin{lay}transport \end{lay}
              & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:108"}{ 108 }
+             &                 \hyperlink{"e:107"}{ 107 }
                  \\
-            195
-             & \hypertarget{"v:195"}{ $ {{\dot{n}^d_x}}{_{N, S}} $}
-             & \verb|and_x|
-             & accumulation due to diffusion in x-direction
-             & \begin{lay}transport \end{lay}
-             & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:88"}{ 88 }
-                 \\
-            210
-             & \hypertarget{"v:210"}{ $ {{\dot{q}_z}}{_{N}} $}
-             & \verb|aq_z|
-             & accumulation due to heat flow in z-direction
+            204
+             & \hypertarget{"v:204"}{ $ {{\dot{H}^c_x}}{_{N}} $}
+             & \verb|aHnc_x|
+             & accumulation of enthalpy due to convective mass flow in x-direction
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:105"}{ 105 }
+             &                 \hyperlink{"e:99"}{ 99 }
                  \\
-            151
-             & \hypertarget{"v:151"}{ $ {{\hat{q}_x}}{_{A}} $}
-             & \verb|fq_x|
-             & heat flow in x-direction
+            205
+             & \hypertarget{"v:205"}{ $ {{\dot{H}^d_x}}{_{N}} $}
+             & \verb|aHnd_x|
+             & accumulation of enthalpy due to diffusional mass flow in x-direction
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:43"}{ 43 }
-                 \\
-            209
-             & \hypertarget{"v:209"}{ $ {{\dot{q}_y}}{_{N}} $}
-             & \verb|aq_y|
-             & accumulation due to heat flow in y-direction
-             & \begin{lay}transport \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:104"}{ 104 }
+             &                 \hyperlink{"e:100"}{ 100 }
                  \\
             214
              & \hypertarget{"v:214"}{ $ {{\dot{w}}}{_{N}} $}
@@ -164,15 +173,6 @@
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
              &                 \hyperlink{"e:109"}{ 109 }
-                 \\
-            154
-             & \hypertarget{"v:154"}{ $ {{\hat{n}^{d}_x}}{_{A, S}} $}
-             & \verb|fnd_x|
-             & diffusion flow in x-direction
-             & \begin{lay}transport \end{lay}
-             & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:46"}{ 46 }
-                                 \hyperlink{"e:89"}{ 89 }
                  \\
             155
              & \hypertarget{"v:155"}{ $ {{\hat{n}^{d}_y}}{_{A, S}} $}
@@ -183,21 +183,77 @@
              &                 \hyperlink{"e:47"}{ 47 }
                                  \hyperlink{"e:90"}{ 90 }
                  \\
-            160
-             & \hypertarget{"v:160"}{ $ {{\hat{n}^c_x}}{_{A, S}} $}
-             & \verb|fnc_x|
-             & molar convective flow in x-direction
-             & \begin{lay}transport \end{lay}
-             & $ mol \,s^{-1} \, $
-             &                 \hyperlink{"e:52"}{ 52 }
-                 \\
-            204
-             & \hypertarget{"v:204"}{ $ {{\dot{H}^c_x}}{_{N}} $}
-             & \verb|aHnc_x|
-             & accumulation of enthalpy due to convective mass flow in x-direction
+            207
+             & \hypertarget{"v:207"}{ $ {{\dot{H}^d_z}}{_{N}} $}
+             & \verb|aHnd_z|
+             & accumulation of enthalpy due to diffusional mass flow in z-direction
              & \begin{lay}transport \end{lay}
              & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:99"}{ 99 }
+             &                 \hyperlink{"e:102"}{ 102 }
+                 \\
+            206
+             & \hypertarget{"v:206"}{ $ {{\dot{H}^d_y}}{_{N}} $}
+             & \verb|aHnd_y|
+             & accumulation of enthalpy due to diffusional mass flow in y-direction
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:101"}{ 101 }
+                 \\
+            183
+             & \hypertarget{"v:183"}{ $ {{k^c_x}}{_{A}} $}
+             & \verb|kcA_x|
+             & convective mass conductivity in arc and x diretion
+             & \begin{lay}properties \end{lay}
+             & $ m^{-1} \,s \, $
+             &                 \hyperlink{"e:76"}{ 76 }
+                 \\
+            192
+             & \hypertarget{"v:192"}{ $ {{\hat{k}^{d,Fick}_z}}{_{A, S}} $}
+             & \verb|kdAFick_z|
+             & Fick diffusivity in arc and z-direction
+             & \begin{lay}properties \end{lay}
+             & $ m s^{-1} \, $
+             &                 \hyperlink{"e:85"}{ 85 }
+                 \\
+            191
+             & \hypertarget{"v:191"}{ $ {{\hat{k}^{d,Fick}_y}}{_{A, S}} $}
+             & \verb|kdAFick_y|
+             & Fick diffusivity in arc and y-direction
+             & \begin{lay}properties \end{lay}
+             & $ m s^{-1} \, $
+             &                 \hyperlink{"e:84"}{ 84 }
+                 \\
+            182
+             & \hypertarget{"v:182"}{ $ {{k^d_z}}{_{A, S}} $}
+             & \verb|kdA_z|
+             & diffusivity in arc and z-direction
+             & \begin{lay}properties \end{lay}
+             & $ kg^{-1} \,m^{-4} \,mol^{2} \,s \, $
+             &                 \hyperlink{"e:75"}{ 75 }
+                 \\
+            189
+             & \hypertarget{"v:189"}{ $ {{\rho}}{_{A}} $}
+             & \verb|rhoA|
+             & density in arc
+             & \begin{lay}properties \end{lay}
+             & $ kg \,m^{-3} \, $
+             &                 \hyperlink{"e:82"}{ 82 }
+                 \\
+            188
+             & \hypertarget{"v:188"}{ $ {{k^q_z}}{_{A}} $}
+             & \verb|kqA_z|
+             & thermal conductivity in arc and z-direction
+             & \begin{lay}properties \end{lay}
+             & $ kg \,K^{-1} \,s^{-3} \, $
+             &                 \hyperlink{"e:81"}{ 81 }
+                 \\
+            185
+             & \hypertarget{"v:185"}{ $ {{k^c_z}}{_{A}} $}
+             & \verb|kcA_z|
+             & convecive mass conductivity in arc and y-direction
+             & \begin{lay}properties \end{lay}
+             & $ m^{-1} \,s \, $
+             &                 \hyperlink{"e:78"}{ 78 }
                  \\
             190
              & \hypertarget{"v:190"}{ $ {{\hat{k}^{d,Fick}_x}}{_{A, S}} $}
@@ -215,38 +271,6 @@
              & $ kg \,m^{2} \,A^{-2} s^{-3} \, $
              &                 \hyperlink{"e:115"}{ 115 }
                  \\
-            181
-             & \hypertarget{"v:181"}{ $ {{k^d_y}}{_{A, S}} $}
-             & \verb|kdA_y|
-             & diffusivity in arc and y-direction
-             & \begin{lay}properties \end{lay}
-             & $ kg^{-1} \,m^{-4} \,mol^{2} \,s \, $
-             &                 \hyperlink{"e:74"}{ 74 }
-                 \\
-            182
-             & \hypertarget{"v:182"}{ $ {{k^d_z}}{_{A, S}} $}
-             & \verb|kdA_z|
-             & diffusivity in arc and z-direction
-             & \begin{lay}properties \end{lay}
-             & $ kg^{-1} \,m^{-4} \,mol^{2} \,s \, $
-             &                 \hyperlink{"e:75"}{ 75 }
-                 \\
-            184
-             & \hypertarget{"v:184"}{ $ {{k^c_y}}{_{A}} $}
-             & \verb|kcA_y|
-             & convective mass conductivity in arc and y-direction
-             & \begin{lay}properties \end{lay}
-             & $ m^{-1} \,s \, $
-             &                 \hyperlink{"e:77"}{ 77 }
-                 \\
-            183
-             & \hypertarget{"v:183"}{ $ {{k^c_x}}{_{A}} $}
-             & \verb|kcA_x|
-             & convective mass conductivity in arc and x diretion
-             & \begin{lay}properties \end{lay}
-             & $ m^{-1} \,s \, $
-             &                 \hyperlink{"e:76"}{ 76 }
-                 \\
             187
              & \hypertarget{"v:187"}{ $ {{k^q_y}}{_{A}} $}
              & \verb|kqA_y|
@@ -254,22 +278,6 @@
              & \begin{lay}properties \end{lay}
              & $ kg \,K^{-1} \,s^{-3} \, $
              &                 \hyperlink{"e:80"}{ 80 }
-                 \\
-            188
-             & \hypertarget{"v:188"}{ $ {{k^q_z}}{_{A}} $}
-             & \verb|kqA_z|
-             & thermal conductivity in arc and z-direction
-             & \begin{lay}properties \end{lay}
-             & $ kg \,K^{-1} \,s^{-3} \, $
-             &                 \hyperlink{"e:81"}{ 81 }
-                 \\
-            193
-             & \hypertarget{"v:193"}{ $ {h}{_{A, S}} $}
-             & \verb|hA|
-             & partial molar enthalpiies in arc
-             & \begin{lay}properties \end{lay}
-             & $ kg \,m^{2} \,mol^{-1} \,s^{-2} \, $
-             &                 \hyperlink{"e:86"}{ 86 }
                  \\
             180
              & \hypertarget{"v:180"}{ $ {{k^d_x}}{_{A, S}} $}
@@ -279,21 +287,21 @@
              & $ kg^{-1} \,m^{-4} \,mol^{2} \,s \, $
              &                 \hyperlink{"e:73"}{ 73 }
                  \\
-            189
-             & \hypertarget{"v:189"}{ $ {{\rho}}{_{A}} $}
-             & \verb|rhoA|
-             & density in arc
+            181
+             & \hypertarget{"v:181"}{ $ {{k^d_y}}{_{A, S}} $}
+             & \verb|kdA_y|
+             & diffusivity in arc and y-direction
              & \begin{lay}properties \end{lay}
-             & $ kg \,m^{-3} \, $
-             &                 \hyperlink{"e:82"}{ 82 }
+             & $ kg^{-1} \,m^{-4} \,mol^{2} \,s \, $
+             &                 \hyperlink{"e:74"}{ 74 }
                  \\
-            191
-             & \hypertarget{"v:191"}{ $ {{\hat{k}^{d,Fick}_y}}{_{A, S}} $}
-             & \verb|kdAFick_y|
-             & Fick diffusivity in arc and y-direction
+            184
+             & \hypertarget{"v:184"}{ $ {{k^c_y}}{_{A}} $}
+             & \verb|kcA_y|
+             & convective mass conductivity in arc and y-direction
              & \begin{lay}properties \end{lay}
-             & $ m s^{-1} \, $
-             &                 \hyperlink{"e:84"}{ 84 }
+             & $ m^{-1} \,s \, $
+             &                 \hyperlink{"e:77"}{ 77 }
                  \\
             186
              & \hypertarget{"v:186"}{ $ {{k^q_x}}{_{A}} $}
@@ -303,37 +311,13 @@
              & $ kg \,K^{-1} \,s^{-3} \, $
              &                 \hyperlink{"e:79"}{ 79 }
                  \\
-            192
-             & \hypertarget{"v:192"}{ $ {{\hat{k}^{d,Fick}_z}}{_{A, S}} $}
-             & \verb|kdAFick_z|
-             & Fick diffusivity in arc and z-direction
+            193
+             & \hypertarget{"v:193"}{ $ {h}{_{A, S}} $}
+             & \verb|hA|
+             & partial molar enthalpiies in arc
              & \begin{lay}properties \end{lay}
-             & $ m s^{-1} \, $
-             &                 \hyperlink{"e:85"}{ 85 }
-                 \\
-            185
-             & \hypertarget{"v:185"}{ $ {{k^c_z}}{_{A}} $}
-             & \verb|kcA_z|
-             & convecive mass conductivity in arc and y-direction
-             & \begin{lay}properties \end{lay}
-             & $ m^{-1} \,s \, $
-             &                 \hyperlink{"e:78"}{ 78 }
-                 \\
-            117
-             & \hypertarget{"v:117"}{ $ {G}{_{N}} $}
-             & \verb|G|
-             & Gibbs free energy
-             & \begin{lay}state \end{lay}
-             & $ kg \,m^{2} \,s^{-2} \, $
-             &                 \hyperlink{"e:13"}{ 13 }
-                 \\
-            203
-             & \hypertarget{"v:203"}{ $ {{n^o}}{_{N, S}} $}
-             & \verb|no|
-             & initial mass
-             & \begin{lay}state \end{lay}
-             & $ mol \, $
-             &                 \hyperlink{"e:98"}{ 98 }
+             & $ kg \,m^{2} \,mol^{-1} \,s^{-2} \, $
+             &                 \hyperlink{"e:86"}{ 86 }
                  \\
             115
              & \hypertarget{"v:115"}{ $ {H}{_{N}} $}
@@ -344,14 +328,6 @@
              &                 \hyperlink{"e:11"}{ 11 }
                                  \hyperlink{"e:112"}{ 112 }
                  \\
-            216
-             & \hypertarget{"v:216"}{ $ {{H^o}}{_{N}} $}
-             & \verb|Ho|
-             & initial enthalpy
-             & \begin{lay}state \end{lay}
-             & $ kg \,m^{2} \,s^{-2} \, $
-             &                 \hyperlink{"e:111"}{ 111 }
-                 \\
             116
              & \hypertarget{"v:116"}{ $ {A}{_{N}} $}
              & \verb|A|
@@ -360,14 +336,29 @@
              & $ kg \,m^{2} \,s^{-2} \, $
              &                 \hyperlink{"e:12"}{ 12 }
                  \\
-            114
-             & \hypertarget{"v:114"}{ $ {{\mu}}{_{N, S}} $}
-             & \verb|chemPot|
-             & chemical potential
-             & \begin{lay}effort \end{lay}
-             & $ kg \,m^{2} \,mol^{-1} \,s^{-2} \, $
-             &                 \hyperlink{"e:10"}{ 10 }
-                                 \hyperlink{"e:54"}{ 54 }
+            203
+             & \hypertarget{"v:203"}{ $ {{n^o}}{_{N, S}} $}
+             & \verb|no|
+             & initial mass
+             & \begin{lay}state \end{lay}
+             & $ mol \, $
+             &                 \hyperlink{"e:98"}{ 98 }
+                 \\
+            216
+             & \hypertarget{"v:216"}{ $ {{H^o}}{_{N}} $}
+             & \verb|Ho|
+             & initial enthalpy
+             & \begin{lay}state \end{lay}
+             & $ kg \,m^{2} \,s^{-2} \, $
+             &                 \hyperlink{"e:111"}{ 111 }
+                 \\
+            117
+             & \hypertarget{"v:117"}{ $ {G}{_{N}} $}
+             & \verb|G|
+             & Gibbs free energy
+             & \begin{lay}state \end{lay}
+             & $ kg \,m^{2} \,s^{-2} \, $
+             &                 \hyperlink{"e:13"}{ 13 }
                  \\
             161
              & \hypertarget{"v:161"}{ $ {{\mu^o}}{_{N, S}} $}
@@ -384,6 +375,16 @@
              & \begin{lay}effort \end{lay}
              & $ K \, $
              &                 \hyperlink{"e:9"}{ 9 }
+                                 \hyperlink{"e:121"}{ 121 }
+                 \\
+            114
+             & \hypertarget{"v:114"}{ $ {{\mu}}{_{N, S}} $}
+             & \verb|chemPot|
+             & chemical potential
+             & \begin{lay}effort \end{lay}
+             & $ kg \,m^{2} \,mol^{-1} \,s^{-2} \, $
+             &                 \hyperlink{"e:10"}{ 10 }
+                                 \hyperlink{"e:54"}{ 54 }
                  \\
             112
              & \hypertarget{"v:112"}{ $ {p}{_{N}} $}
@@ -401,69 +402,13 @@
              & $ kg \,m^{2} \,A^{-1} s^{-3} \, $
              &                 \hyperlink{"e:113"}{ 113 }
                  \\
-            119
-             & \hypertarget{"v:119"}{ $ {{v_y}}{_{N}} $}
-             & \verb|v_y|
-             & velocity in y-direction
+            222
+             & \hypertarget{"v:222"}{ $ {{T^{ref}}}{_{N}} $}
+             & \verb|T_ref|
+             & reference temperature
              & \begin{lay}secondaryState \end{lay}
-             & $ m s^{-1} \, $
-             &                 \hyperlink{"e:15"}{ 15 }
-                 \\
-            138
-             & \hypertarget{"v:138"}{ $ {c}{_{N, S}} $}
-             & \verb|c|
-             & molar concentration
-             & \begin{lay}secondaryState \end{lay}
-             & $ m^{-3} \,mol \, $
-             &                 \hyperlink{"e:31"}{ 31 }
-                 \\
-            125
-             & \hypertarget{"v:125"}{ $ {CV}{_{N}} $}
-             & \verb|CV|
-             & total heat capacity at constant volume
-             & \begin{lay}secondaryState \end{lay}
-             & $ kg \,m^{2} \,K^{-1} \,s^{-2} \, $
-             &                 \hyperlink{"e:19"}{ 19 }
-                 \\
-            141
-             & \hypertarget{"v:141"}{ $ {{c_p}}{_{N}} $}
-             & \verb|cp|
-             & specific heat capacity at constant pressure
-             & \begin{lay}secondaryState \end{lay}
-             & $ m^{2} \,K^{-1} \,s^{-2} \, $
-             &                 \hyperlink{"e:34"}{ 34 }
-                 \\
-            118
-             & \hypertarget{"v:118"}{ $ {{v_x}}{_{N}} $}
-             & \verb|v_x|
-             & velocity in x-direction
-             & \begin{lay}secondaryState \end{lay}
-             & $ m s^{-1} \, $
-             &                 \hyperlink{"e:14"}{ 14 }
-                 \\
-            139
-             & \hypertarget{"v:139"}{ $ {{n^t}}{_{N}} $}
-             & \verb|nt|
-             & total number of moles
-             & \begin{lay}secondaryState \end{lay}
-             & $ mol \, $
-             &                 \hyperlink{"e:32"}{ 32 }
-                 \\
-            136
-             & \hypertarget{"v:136"}{ $ {h}{_{N, S}} $}
-             & \verb|h|
-             & partial molar enthalpies
-             & \begin{lay}secondaryState \end{lay}
-             & $ kg \,m^{2} \,mol^{-1} \,s^{-2} \, $
-             &                 \hyperlink{"e:29"}{ 29 }
-                 \\
-            142
-             & \hypertarget{"v:142"}{ $ {{c_V}}{_{N}} $}
-             & \verb|cV|
-             & specific heat capacity at constant volume
-             & \begin{lay}secondaryState \end{lay}
-             & $ m^{2} \,K^{-1} \,s^{-2} \, $
-             &                 \hyperlink{"e:35"}{ 35 }
+             & $ K \, $
+             &                 \hyperlink{"e:119"}{ 119 }
                  \\
             140
              & \hypertarget{"v:140"}{ $ {x}{_{N, S}} $}
@@ -473,13 +418,54 @@
              & $  $
              &                 \hyperlink{"e:33"}{ 33 }
                  \\
-            124
-             & \hypertarget{"v:124"}{ $ {Cp}{_{N}} $}
-             & \verb|Cp|
-             & total heat capacity at constant pressure
+            119
+             & \hypertarget{"v:119"}{ $ {{v_y}}{_{N}} $}
+             & \verb|v_y|
+             & velocity in y-direction
+             & \begin{lay}secondaryState \end{lay}
+             & $ m s^{-1} \, $
+             &                 \hyperlink{"e:15"}{ 15 }
+                 \\
+            125
+             & \hypertarget{"v:125"}{ $ {{C_V}}{_{N}} $}
+             & \verb|CV|
+             & total heat capacity at constant volume
              & \begin{lay}secondaryState \end{lay}
              & $ kg \,m^{2} \,K^{-1} \,s^{-2} \, $
-             &                 \hyperlink{"e:18"}{ 18 }
+             &                 \hyperlink{"e:19"}{ 19 }
+                 \\
+            224
+             & \hypertarget{"v:224"}{ $ {{\bar{T}}}{_{N}} $}
+             & \verb|T_meas|
+             & temperature measurement
+             & \begin{lay}secondaryState \end{lay}
+             & $  $
+             &                 \hyperlink{"e:123"}{ 123 }
+                 \\
+            223
+             & \hypertarget{"v:223"}{ $ {{T^n}}{_{N}} $}
+             & \verb|T_meas_norming|
+             & value to norm measurement of temperature
+             & \begin{lay}secondaryState \end{lay}
+             & $ K \, $
+             &                 \hyperlink{"e:122"}{ 122 }
+                 \\
+            136
+             & \hypertarget{"v:136"}{ $ {h}{_{N, S}} $}
+             & \verb|h|
+             & partial molar enthalpies
+             & \begin{lay}secondaryState \end{lay}
+             & $ kg \,m^{2} \,mol^{-1} \,s^{-2} \, $
+             &                 \hyperlink{"e:29"}{ 29 }
+                 \\
+            141
+             & \hypertarget{"v:141"}{ $ {{c_p}}{_{N}} $}
+             & \verb|cp|
+             & specific heat capacity at constant pressure
+             & \begin{lay}secondaryState \end{lay}
+             & $ m^{2} \,K^{-1} \,s^{-2} \, $
+             &                 \hyperlink{"e:34"}{ 34 }
+                                 \hyperlink{"e:120"}{ 120 }
                  \\
             120
              & \hypertarget{"v:120"}{ $ {{v_z}}{_{N}} $}
@@ -488,6 +474,47 @@
              & \begin{lay}secondaryState \end{lay}
              & $ m s^{-1} \, $
              &                 \hyperlink{"e:16"}{ 16 }
+                 \\
+            118
+             & \hypertarget{"v:118"}{ $ {{v_x}}{_{N}} $}
+             & \verb|v_x|
+             & velocity in x-direction
+             & \begin{lay}secondaryState \end{lay}
+             & $ m s^{-1} \, $
+             &                 \hyperlink{"e:14"}{ 14 }
+                 \\
+            142
+             & \hypertarget{"v:142"}{ $ {{c_V}}{_{N}} $}
+             & \verb|cV|
+             & specific heat capacity at constant volume
+             & \begin{lay}secondaryState \end{lay}
+             & $ m^{2} \,K^{-1} \,s^{-2} \, $
+             &                 \hyperlink{"e:35"}{ 35 }
+                 \\
+            124
+             & \hypertarget{"v:124"}{ $ {{C_p}}{_{N}} $}
+             & \verb|Cp|
+             & total heat capacity at constant pressure
+             & \begin{lay}secondaryState \end{lay}
+             & $ kg \,m^{2} \,K^{-1} \,s^{-2} \, $
+             &                 \hyperlink{"e:18"}{ 18 }
+                                 \hyperlink{"e:117"}{ 117 }
+                 \\
+            139
+             & \hypertarget{"v:139"}{ $ {{n^t}}{_{N}} $}
+             & \verb|nt|
+             & total number of moles
+             & \begin{lay}secondaryState \end{lay}
+             & $ mol \, $
+             &                 \hyperlink{"e:32"}{ 32 }
+                 \\
+            138
+             & \hypertarget{"v:138"}{ $ {c}{_{N, S}} $}
+             & \verb|c|
+             & molar concentration
+             & \begin{lay}secondaryState \end{lay}
+             & $ m^{-3} \,mol \, $
+             &                 \hyperlink{"e:31"}{ 31 }
                  \\
             202
              & \hypertarget{"v:202"}{ $ {{\tilde{n}}}{_{N, S}} $}
@@ -505,14 +532,6 @@
              & $ kg \,m^{2} \,A^{-1} s^{-3} \, $
              &                 \hyperlink{"e:116"}{ 116 }
                  \\
-            215
-             & \hypertarget{"v:215"}{ $ {{\dot{H}}}{_{N}} $}
-             & \verb|dH|
-             & accumulation of enthalpy
-             & \begin{lay}diffState \end{lay}
-             & $ kg \,m^{2} \,s^{-3} \, $
-             &                 \hyperlink{"e:110"}{ 110 }
-                 \\
             196
              & \hypertarget{"v:196"}{ $ {{\dot{n}}}{_{N, S}} $}
              & \verb|an|
@@ -520,6 +539,14 @@
              & \begin{lay}diffState \end{lay}
              & $ mol \,s^{-1} \, $
              &                 \hyperlink{"e:92"}{ 92 }
+                 \\
+            215
+             & \hypertarget{"v:215"}{ $ {{\dot{H}}}{_{N}} $}
+             & \verb|dH|
+             & accumulation of enthalpy
+             & \begin{lay}diffState \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             &                 \hyperlink{"e:110"}{ 110 }
                  \\
             218
              & \hypertarget{"v:218"}{ $ {{I^e}}{_{N}} $}

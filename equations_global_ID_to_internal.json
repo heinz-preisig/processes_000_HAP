@@ -99,15 +99,85 @@
     "network": "macroscopic",
     "rhs": " F * A ( elResistant . current )"
   },
+  "E_117": {
+    "lhs": "Cp",
+    "network": "macroscopic",
+    "rhs": " m . cp"
+  },
+  "E_119": {
+    "lhs": "T_ref",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( T , value )"
+  },
   "E_12": {
     "lhs": "A",
     "network": "macroscopic",
     "rhs": " U - T . S"
   },
+  "E_120": {
+    "lhs": "cp",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( cp , value )"
+  },
+  "E_121": {
+    "lhs": "T",
+    "network": "macroscopic",
+    "rhs": " H . inv ( Cp ) + T_ref"
+  },
+  "E_122": {
+    "lhs": "T_meas_norming",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( T , value )"
+  },
+  "E_123": {
+    "lhs": "T_meas",
+    "network": "macroscopic",
+    "rhs": " T . inv ( T_meas_norming )"
+  },
+  "E_124": {
+    "lhs": "_T_meas",
+    "network": "macroscopic >>> control",
+    "rhs": " F_NI_source * N T_meas"
+  },
+  "E_125": {
+    "lhs": "T_meas",
+    "network": "control",
+    "rhs": " ( F_NI_sink . _T_meas ) * I S_Ip"
+  },
+  "E_126": {
+    "lhs": "T_setpoint",
+    "network": "control",
+    "rhs": " Instantiate ( T_meas , value )"
+  },
+  "E_127": {
+    "lhs": "p_gain",
+    "network": "control",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "E_128": {
+    "lhs": "u",
+    "network": "control",
+    "rhs": " neg ( p_gain ) . control_error"
+  },
+  "E_129": {
+    "lhs": "d_dir",
+    "network": "control",
+    "rhs": " sign ( u )"
+  },
   "E_13": {
     "lhs": "G",
     "network": "macroscopic",
     "rhs": " U + p . V - T . S"
+  },
+  "E_130": {
+    "lhs": "control_error",
+    "network": "control",
+    "rhs": " T_setpoint - T_meas"
+  },
+  "E_132": {
+    "lhs": "limit",
+    "network": "control",
+    "rhs": " Instantiate ( u , value )"
   },
   "E_14": {
     "lhs": "v_x",

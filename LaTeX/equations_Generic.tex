@@ -81,11 +81,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}gas constant\end{lay} &
     \begin{lay}physical\end{lay} \\
         \hyperlink{"v:124"}{ 18 }\hypertarget{"e:18"}{  } &
-    \begin{eq}{Cp}{_{N}} := \frac{\partial{{H}{_{N}}}}{\partial{{T}{_{N}}}}\end{eq} &
+    \begin{eq}{{C_p}}{_{N}} := \frac{\partial{{H}{_{N}}}}{\partial{{T}{_{N}}}}\end{eq} &
     \begin{lay}total heat capacity at constant pressure\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:125"}{ 19 }\hypertarget{"e:19"}{  } &
-    \begin{eq}{CV}{_{N}} := \frac{\partial{{U}{_{N}}}}{\partial{{T}{_{N}}}}\end{eq} &
+    \begin{eq}{{C_V}}{_{N}} := \frac{\partial{{U}{_{N}}}}{\partial{{T}{_{N}}}}\end{eq} &
     \begin{lay}total heat capacity at constant volume\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:136"}{ 29 }\hypertarget{"e:29"}{  } &
@@ -109,11 +109,11 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}mole fraction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:141"}{ 34 }\hypertarget{"e:34"}{  } &
-    \begin{eq}{{c_p}}{_{N}} := {Cp}{_{N}} \, . \, \left( {m}{_{N}} \right)^{-1}\end{eq} &
+    \begin{eq}{{c_p}}{_{N}} := {{C_p}}{_{N}} \, . \, \left( {m}{_{N}} \right)^{-1}\end{eq} &
     \begin{lay}specific heat capacity at constant pressure\end{lay} &
     \begin{lay}physical\end{lay} \\
         \hyperlink{"v:142"}{ 35 }\hypertarget{"e:35"}{  } &
-    \begin{eq}{{c_V}}{_{N}} := {CV}{_{N}} \, . \, \left( {m}{_{N}} \right)^{-1}\end{eq} &
+    \begin{eq}{{c_V}}{_{N}} := {{C_V}}{_{N}} \, . \, \left( {m}{_{N}} \right)^{-1}\end{eq} &
     \begin{lay}specific heat capacity at constant volume\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:143"}{ 36 }\hypertarget{"e:36"}{  } &
@@ -213,15 +213,15 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}convecive mass conductivity in arc and y-direction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:186"}{ 79 }\hypertarget{"e:79"}{  } &
-    \begin{eq}{{k^q_x}}{_{A}} := {{I}}{_{N, A}} \stackrel{N}{\star} \left(\left( {V}{_{N}} \right)^{-1} \, . \, {Cp}{_{N}} \, . \, {{v_x}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{k^q_x}}{_{A}} := {{I}}{_{N, A}} \stackrel{N}{\star} \left(\left( {V}{_{N}} \right)^{-1} \, . \, {{C_p}}{_{N}} \, . \, {{v_x}}{_{N}}\right)\end{eq} &
     \begin{lay}thermal conductivity in arc and x-direction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:187"}{ 80 }\hypertarget{"e:80"}{  } &
-    \begin{eq}{{k^q_y}}{_{A}} := {{I}}{_{N, A}} \stackrel{N}{\star} \left(\left( {V}{_{N}} \right)^{-1} \, . \, {Cp}{_{N}} \, . \, {{v_y}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{k^q_y}}{_{A}} := {{I}}{_{N, A}} \stackrel{N}{\star} \left(\left( {V}{_{N}} \right)^{-1} \, . \, {{C_p}}{_{N}} \, . \, {{v_y}}{_{N}}\right)\end{eq} &
     \begin{lay}thermal conductivity in arc and y-direction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:188"}{ 81 }\hypertarget{"e:81"}{  } &
-    \begin{eq}{{k^q_z}}{_{A}} := {{I}}{_{N, A}} \stackrel{N}{\star} \left(\left( {V}{_{N}} \right)^{-1} \, . \, {Cp}{_{N}} \, . \, {{v_z}}{_{N}}\right)\end{eq} &
+    \begin{eq}{{k^q_z}}{_{A}} := {{I}}{_{N, A}} \stackrel{N}{\star} \left(\left( {V}{_{N}} \right)^{-1} \, . \, {{C_p}}{_{N}} \, . \, {{v_z}}{_{N}}\right)\end{eq} &
     \begin{lay}thermal conductivity in arc and z-direction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:189"}{ 82 }\hypertarget{"e:82"}{  } &
@@ -245,7 +245,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}partial molar enthalpiies in arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:194"}{ 87 }\hypertarget{"e:87"}{  } &
-    \begin{eq}{anc_x}{_{N, S}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^c_x}}{_{A, S}}\end{eq} &
+    \begin{eq}{{\dot{n}^c_x}}{_{N, S}} := {{F}}{_{N, A}} \stackrel{A}{\star} {{\hat{n}^c_x}}{_{A, S}}\end{eq} &
     \begin{lay}accumulation of molar mass due to convection\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:195"}{ 88 }\hypertarget{"e:88"}{  } &
@@ -265,7 +265,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}mass diffusion flow in z-direction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:196"}{ 92 }\hypertarget{"e:92"}{  } &
-    \begin{eq}{{\dot{n}}}{_{N, S}} := {anc_x}{_{N, S}}  + {{\dot{n}^d_x}}{_{N, S}}  + {V}{_{N}} \, . \, {{\tilde{n}}}{_{N, S}}\end{eq} &
+    \begin{eq}{{\dot{n}}}{_{N, S}} := {{\dot{n}^c_x}}{_{N, S}}  + {{\dot{n}^d_x}}{_{N, S}}  + {V}{_{N}} \, . \, {{\tilde{n}}}{_{N, S}}\end{eq} &
     \begin{lay}differential mass balance without reaction\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
         \hyperlink{"v:111"}{ 93 }\hypertarget{"e:93"}{  } &
@@ -356,5 +356,53 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{{\dot{U}^e}}{_{A}} := {{F}}{_{N, A}} \stackrel{A}{\star} \left({{R^e}}{_{N}} \, . \, {{I^e}}{_{N}}\right)\end{eq} &
     \begin{lay}Kirkhoffs first law\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:124"}{ 117 }\hypertarget{"e:117"}{  } &
+    \begin{eq}{{C_p}}{_{N}} := {m}{_{N}} \, . \, {{c_p}}{_{N}}\end{eq} &
+    \begin{lay}total heat capacity at constant pressure\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:222"}{ 119 }\hypertarget{"e:119"}{  } &
+    \begin{eq}{{T^{ref}}}{_{N}} := \textbf{Instantiate}({T}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}reference temperature\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:141"}{ 120 }\hypertarget{"e:120"}{  } &
+    \begin{eq}{{c_p}}{_{N}} := \textbf{Instantiate}({{c_p}}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}constant specific heat capacity at constant pressure \end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:113"}{ 121 }\hypertarget{"e:121"}{  } &
+    \begin{eq}{T}{_{N}} := {H}{_{N}} \, . \, \left( {{C_p}}{_{N}} \right)^{-1}  + {{T^{ref}}}{_{N}}\end{eq} &
+    \begin{lay}temperature from constant heat capacity\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:223"}{ 122 }\hypertarget{"e:122"}{  } &
+    \begin{eq}{{T^n}}{_{N}} := \textbf{Instantiate}({T}{_{N}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}value to norm measurement of temperature\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:224"}{ 123 }\hypertarget{"e:123"}{  } &
+    \begin{eq}{{\bar{T}}}{_{N}} := {T}{_{N}} \, . \, \left( {{T^n}}{_{N}} \right)^{-1}\end{eq} &
+    \begin{lay}temperature measurement\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:227"}{ 126 }\hypertarget{"e:126"}{  } &
+    \begin{eq}{{T_{setpoint}}}{_{N, p}} := \textbf{Instantiate}({{\bar{T}}}{_{N, p}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}setpoint for temperatue\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:228"}{ 127 }\hypertarget{"e:127"}{  } &
+    \begin{eq}{p}{_{}} := \textbf{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}proportional gain\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:229"}{ 128 }\hypertarget{"e:128"}{  } &
+    \begin{eq}{u}{_{N, p}} := \left( -{p}{_{}} \right) \, . \, {e}{_{N, p}}\end{eq} &
+    \begin{lay}output of straight proportional temperature controller\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:230"}{ 129 }\hypertarget{"e:129"}{  } &
+    \begin{eq}{{d^{heating}}}{_{N, p}} := \textbf{sign} \left( {u}{_{N, p}} \right)\end{eq} &
+    \begin{lay}direction of heating\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:231"}{ 130 }\hypertarget{"e:130"}{  } &
+    \begin{eq}{e}{_{N, p}} := {{T_{setpoint}}}{_{N, p}}  - {{\bar{T}}}{_{N, p}}\end{eq} &
+    \begin{lay}control error in normed temperature\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:233"}{ 132 }\hypertarget{"e:132"}{  } &
+    \begin{eq}{l}{_{N, p}} := \textbf{Instantiate}({u}{_{N, p}}, {{\#}}{_{}})\end{eq} &
+    \begin{lay}maximum limit\end{lay} &
+    \begin{lay}control\end{lay} \\
 \hline
 \end{longtable}

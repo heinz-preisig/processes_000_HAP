@@ -1,0 +1,2956 @@
+{
+  "mouse": {
+    "topology": {
+      "explore": {
+        "('ancestor', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TR_enter",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_left', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_right', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "name node"
+          },
+          "cursor": "CC_L_change-R_blank",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_arc', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "name node"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "CC_L_change-R_blank"
+        },
+        "('node_arc', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "name node"
+          },
+          "cursor": "CC_L_change-R_blank",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TR_enter",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "name node"
+          },
+          "cursor": "CC_L_change-R_blank",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "name node"
+          },
+          "cursor": "CC_L_change-R_blank",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('sibling', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TR_enter",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "name node"
+          },
+          "cursor": "CC_L_change-R_blank",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "name node"
+          },
+          "cursor": "CC_L_change-R_blank",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        }
+      },
+      "insert": {
+        "('ancestor', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TR_enter",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "insert knot"
+          },
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          },
+          "cursor": "TC_L_insknot-R_recon"
+        },
+        "('arc_edge', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "insert knot"
+          },
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          },
+          "cursor": "TC_L_insknot-R_recon"
+        },
+        "('arc_left', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "insert knot"
+          },
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          },
+          "cursor": "TC_L_insknot-R_recon"
+        },
+        "('arc_right', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          },
+          "cursor": "TC_L_insknot-R_recon"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_arc', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_arc', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TC_L_goin-R_tofile",
+          "right": {
+            "state": "-",
+            "output": "make a copy"
+          }
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_move-R_ask",
+          "right": {
+            "state": "-",
+            "output": "name node"
+          }
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "CC_L_goin-R_adda",
+          "right": {
+            "state": "connect_arc",
+            "output": "begin arc"
+          }
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "add node"
+          },
+          "cursor": "TC_L_goin-R_frfile",
+          "right": {
+            "state": "-",
+            "output": "insert model"
+          }
+        },
+        "('sibling', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TR_enter",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "CC_L_add-R_adda",
+          "right": {
+            "state": "connect_arc",
+            "output": "begin arc"
+          }
+        },
+        "('arc_edge', 'head', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "insert knot"
+          },
+          "cursor": "TC_L_insknot-R_recon",
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          }
+        },
+        "('arc_edge', 'head', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_recon",
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          }
+        },
+        "('arc_edge', 'head', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "insert knot"
+          },
+          "cursor": "TC_L_insknot-R_recon",
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          }
+        },
+        "('arc_edge', 'tail', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_recon",
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          }
+        },
+        "('arc_edge', 'tail', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_add-R_adda",
+          "right": {
+            "state": "connect_arc",
+            "output": "begin arc"
+          }
+        },
+        "('node_boundary', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "insert knot"
+          },
+          "cursor": "TC_L_insknot-R_recon",
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          }
+        },
+        "('node_boundary', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "insert knot"
+          },
+          "cursor": "TC_L_insknot-R_recon",
+          "right": {
+            "state": "re-connect_arc",
+            "output": "re-direct arc"
+          }
+        },
+        "('node_simple', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TC_L_goin-R_adda",
+          "right": {
+            "state": "connect_arc",
+            "output": "begin arc"
+          }
+        }
+      },
+      "connect_arc": {
+        "('ancestor', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TR_enter",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_left', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_right', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_arc', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_arc', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TR_enter",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_adda",
+          "right": {
+            "state": "insert",
+            "output": "add arc"
+          }
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "add node"
+          },
+          "cursor": "TC_L_add-R_blank",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('sibling', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TL_enter",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "CC_L_blank-R_add",
+          "right": {
+            "state": "-",
+            "output": "select node"
+          }
+        },
+        "('arc_edge', 'head', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_adda",
+          "right": {
+            "state": "insert",
+            "output": "add arc"
+          }
+        },
+        "('node_boundary', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_adda",
+          "right": {
+            "state": "insert",
+            "output": "add arc"
+          }
+        },
+        "('arc_edge', 'head', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TC_L_goin-R_adda",
+          "right": {
+            "state": "insert",
+            "output": "add arc"
+          }
+        }
+      },
+      "re-connect_arc": {
+        "('ancestor', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TC_L_goin-R_blank",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_left', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_right', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_arc', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_arc', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "cursor": "TR_enter",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_adda",
+          "right": {
+            "state": "insert",
+            "output": "change arc"
+          }
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('sibling', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_recon",
+          "right": {
+            "state": "insert",
+            "output": "change arc"
+          }
+        }
+      },
+      "explode": {
+        "('ancestor', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_left', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_right', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_arc', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_arc', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "CC_explode",
+          "right": {
+            "state": "insert",
+            "output": "explode node"
+          }
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_group",
+          "right": {
+            "state": "insert",
+            "output": "group nodes"
+          }
+        },
+        "('sibling', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        }
+      },
+      "delete": {
+        "('ancestor', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          },
+          "cursor": "TC_L_blank-R_del"
+        },
+        "('arc_edge', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          },
+          "cursor": "TC_L_blank-R_del"
+        },
+        "('arc_left', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          },
+          "cursor": "TC_L_blank-R_del"
+        },
+        "('arc_right', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          },
+          "cursor": "TC_L_blank-R_del"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "remove knot"
+          }
+        },
+        "('node_arc', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_arc', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "delete node"
+          }
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "delete node"
+          }
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "delete node"
+          }
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('sibling', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "delete node"
+          }
+        },
+        "('arc_edge', 'head', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          }
+        },
+        "('arc_edge', 'head', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          }
+        },
+        "('arc_edge', 'head', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          }
+        },
+        "('arc_edge', 'tail', 'open')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          }
+        },
+        "('arc_edge', 'tail', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('node_boundary', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "delete node"
+          }
+        },
+        "('node_boundary', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-",
+          "right": {
+            "state": "-",
+            "output": "-"
+          }
+        },
+        "('arc_edge', 'tail', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          }
+        },
+        "('node_boundary', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "delete node"
+          }
+        },
+        "('arc_edge', 'head', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "remove arc"
+          }
+        },
+        "('node_simple', 'root', 'normal')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TC_L_blank-R_del",
+          "right": {
+            "state": "-",
+            "output": "delete node"
+          }
+        }
+      }
+    },
+    "token_topology": {
+      "inject": {
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TR_enter"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_arc', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "inject"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "BR_inject_token"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TR_enter"
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'root', 'blocked')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "inject"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "BR_inject_token"
+        },
+        "('node_simple', 'root', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TR_enter"
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_interface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_intraface', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "inject"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "BR_inject_token"
+        }
+      },
+      "roam": {
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_arc', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'root', 'blocked')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'root', 'selected')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        }
+      }
+    },
+    "equation_topology": {
+      "instantiate": {
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TR_enter"
+        },
+        "('arc_edge', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "instantiate"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TR_instantiate"
+        },
+        "('arc_edge', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "instantiate"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TR_instantiate"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "right": {
+            "state": "-",
+            "output": "instantiate"
+          },
+          "cursor": "CC_L_goin-R_instantiate"
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "instantiate"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TR_instantiate"
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "zoom in"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "TR_enter"
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        }
+      },
+      "roam": {
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'head', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('arc_edge', 'tail', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        }
+      }
+    }
+  },
+  "key": {
+    "topology": {
+      "Key_I": {
+        "state": "insert",
+        "output": "-"
+      },
+      "Key_D": {
+        "state": "delete",
+        "output": "-"
+      },
+      "Key_Escape": {
+        "state": "explore",
+        "output": "reset"
+      },
+      "Key_E": {
+        "state": "explore",
+        "output": "-"
+      },
+      "Key_G": {
+        "state": "explode",
+        "output": "-"
+      }
+    },
+    "token_topology": {
+      "Key_I": {
+        "state": "inject",
+        "output": "-"
+      },
+      "Key_Escape": {
+        "state": "roam",
+        "output": "-"
+      }
+    },
+    "equation_topology": {
+      "Key_I": {
+        "state": "instantiate",
+        "output": "-"
+      },
+      "Key_Escape": {
+        "state": "roam",
+        "output": "-"
+      }
+    }
+  }
+}

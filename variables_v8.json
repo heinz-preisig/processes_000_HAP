@@ -757,6 +757,26 @@
             "global_ID": "V_113",
             "latex": "{T}{_{N}}"
           }
+        },
+        "E_121": {
+          "rhs": {
+            "global_ID": " V_115 O_4 F_15 D_0 V_124 D_1 O_0 V_222",
+            "latex": "{H}{_{N}} \\, . \\, \\left( {{C_p}}{_{N}} \\right)^{-1}  + {{T^{ref}}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "temperature from constant heat capacity",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_115",
+            "V_124",
+            "V_222"
+          ],
+          "created": "2024-06-18 14:11:13",
+          "modified": "2024-06-18 14:11:13",
+          "lhs": {
+            "global_ID": "V_113",
+            "latex": "{T}{_{N}}"
+          }
         }
       },
       "imported": false,
@@ -1396,13 +1416,13 @@
       "IRI": "promo:Cp",
       "aliases": {
         "matlab": "Cp",
-        "latex": "Cp",
+        "latex": "{C_p}",
         "internal_code": "Cp",
         "global_ID": "V_124"
       },
       "compiled_lhs": {
         "global_ID": "V_124",
-        "latex": "{Cp}{_{N}}"
+        "latex": "{{C_p}}{_{N}}"
       },
       "created": "2024-03-28 10:19:38",
       "doc": "total heat capacity at constant pressure",
@@ -1423,7 +1443,26 @@
           "modified": "2024-03-28 10:19:38",
           "lhs": {
             "global_ID": "V_124",
-            "latex": "{Cp}{_{N}}"
+            "latex": "{{C_p}}{_{N}}"
+          }
+        },
+        "E_117": {
+          "rhs": {
+            "global_ID": " V_137 O_4 V_141",
+            "latex": "{m}{_{N}} \\, . \\, {{c_p}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "total heat capacity at constant pressure",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_137",
+            "V_141"
+          ],
+          "created": "2024-06-18 13:52:38",
+          "modified": "2024-06-18 13:52:38",
+          "lhs": {
+            "global_ID": "V_124",
+            "latex": "{{C_p}}{_{N}}"
           }
         }
       },
@@ -1433,7 +1472,7 @@
       ],
       "label": "Cp",
       "memory": null,
-      "modified": "2024-03-30 13:47:48",
+      "modified": "2024-05-10 15:44:29",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -1453,13 +1492,13 @@
       "IRI": "promo:CV",
       "aliases": {
         "matlab": "CV",
-        "latex": "CV",
+        "latex": "{C_V}",
         "internal_code": "CV",
         "global_ID": "V_125"
       },
       "compiled_lhs": {
         "global_ID": "V_125",
-        "latex": "{CV}{_{N}}"
+        "latex": "{{C_V}}{_{N}}"
       },
       "created": "2024-03-28 10:20:47",
       "doc": "total heat capacity at constant volume",
@@ -1480,7 +1519,7 @@
           "modified": "2024-03-28 10:20:47",
           "lhs": {
             "global_ID": "V_125",
-            "latex": "{CV}{_{N}}"
+            "latex": "{{C_V}}{_{N}}"
           }
         }
       },
@@ -1490,7 +1529,7 @@
       ],
       "label": "CV",
       "memory": null,
-      "modified": "2024-03-30 13:47:39",
+      "modified": "2024-05-10 15:44:43",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -1925,7 +1964,7 @@
         "E_34": {
           "rhs": {
             "global_ID": " V_124 O_4 F_15 D_0 V_137 D_1",
-            "latex": "{Cp}{_{N}} \\, . \\, \\left( {m}{_{N}} \\right)^{-1}"
+            "latex": "{{C_p}}{_{N}} \\, . \\, \\left( {m}{_{N}} \\right)^{-1}"
           },
           "type": "generic",
           "doc": "specific heat capacity at constant pressure",
@@ -1936,6 +1975,25 @@
           ],
           "created": "2024-03-30 13:47:18",
           "modified": "2024-03-30 13:49:16",
+          "lhs": {
+            "global_ID": "V_141",
+            "latex": "{{c_p}}{_{N}}"
+          }
+        },
+        "E_120": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_141 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{c_p}}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "constant specific heat capacity at constant pressure ",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_141"
+          ],
+          "created": "2024-06-18 14:08:41",
+          "modified": "2024-06-18 14:08:41",
           "lhs": {
             "global_ID": "V_141",
             "latex": "{{c_p}}{_{N}}"
@@ -1982,7 +2040,7 @@
         "E_35": {
           "rhs": {
             "global_ID": " V_125 O_4 F_15 D_0 V_137 D_1",
-            "latex": "{CV}{_{N}} \\, . \\, \\left( {m}{_{N}} \\right)^{-1}"
+            "latex": "{{C_V}}{_{N}} \\, . \\, \\left( {m}{_{N}} \\right)^{-1}"
           },
           "type": "generic",
           "doc": "specific heat capacity at constant volume",
@@ -4006,7 +4064,7 @@
         "E_79": {
           "rhs": {
             "global_ID": " V_27  O_5 I_1 D_0 F_15 D_0 V_110 D_1 O_4 V_124 O_4 V_118 D_1",
-            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {Cp}{_{N}} \\, . \\, {{v_x}}{_{N}}\\right)"
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {{C_p}}{_{N}} \\, . \\, {{v_x}}{_{N}}\\right)"
           },
           "type": "generic",
           "doc": "thermal conductivity in arc and x-direction",
@@ -4065,7 +4123,7 @@
         "E_80": {
           "rhs": {
             "global_ID": " V_27  O_5 I_1 D_0 F_15 D_0 V_110 D_1 O_4 V_124 O_4 V_119 D_1",
-            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {Cp}{_{N}} \\, . \\, {{v_y}}{_{N}}\\right)"
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {{C_p}}{_{N}} \\, . \\, {{v_y}}{_{N}}\\right)"
           },
           "type": "generic",
           "doc": "thermal conductivity in arc and y-direction",
@@ -4124,7 +4182,7 @@
         "E_81": {
           "rhs": {
             "global_ID": " V_27  O_5 I_1 D_0 F_15 D_0 V_110 D_1 O_4 V_124 O_4 V_120 D_1",
-            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {Cp}{_{N}} \\, . \\, {{v_z}}{_{N}}\\right)"
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {{C_p}}{_{N}} \\, . \\, {{v_z}}{_{N}}\\right)"
           },
           "type": "generic",
           "doc": "thermal conductivity in arc and z-direction",
@@ -4506,13 +4564,13 @@
       "IRI": "promo:anc_x",
       "aliases": {
         "matlab": "anc_x",
-        "latex": "anc_x",
+        "latex": "{\\dot{n}^c_x}",
         "internal_code": "anc_x",
         "global_ID": "V_194"
       },
       "compiled_lhs": {
         "global_ID": "V_194",
-        "latex": "{anc_x}{_{N, S}}"
+        "latex": "{{\\dot{n}^c_x}}{_{N, S}}"
       },
       "created": "2024-04-03 16:37:41",
       "doc": "accumulation of molar mass due to convection",
@@ -4533,7 +4591,7 @@
           "modified": "2024-04-03 16:37:41",
           "lhs": {
             "global_ID": "V_194",
-            "latex": "{anc_x}{_{N, S}}"
+            "latex": "{{\\dot{n}^c_x}}{_{N, S}}"
           }
         }
       },
@@ -4544,7 +4602,7 @@
       ],
       "label": "anc_x",
       "memory": null,
-      "modified": "2024-04-04 15:46:00",
+      "modified": "2024-05-10 15:45:26",
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
@@ -4636,7 +4694,7 @@
         "E_92": {
           "rhs": {
             "global_ID": " V_194 O_0 V_195 O_0 V_110 O_4 V_202",
-            "latex": "{anc_x}{_{N, S}}  + {{\\dot{n}^d_x}}{_{N, S}}  + {V}{_{N}} \\, . \\, {{\\tilde{n}}}{_{N, S}}"
+            "latex": "{{\\dot{n}^c_x}}{_{N, S}}  + {{\\dot{n}^d_x}}{_{N, S}}  + {V}{_{N}} \\, . \\, {{\\tilde{n}}}{_{N, S}}"
           },
           "type": "generic",
           "doc": "differential mass balance without reaction",
@@ -6186,6 +6244,463 @@
         0
       ]
     },
+    "V_222": {
+      "IRI": "promo:T_ref",
+      "aliases": {
+        "matlab": "T_ref",
+        "latex": "{T^{ref}}",
+        "internal_code": "T_ref",
+        "global_ID": "V_222"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_222",
+        "latex": "{{T^{ref}}}{_{N}}"
+      },
+      "created": "2024-06-18 13:57:45",
+      "doc": "reference temperature",
+      "equations": {
+        "E_119": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_113 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({T}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "reference temperature",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_113"
+          ],
+          "created": "2024-06-18 13:57:45",
+          "modified": "2024-06-18 13:57:45",
+          "lhs": {
+            "global_ID": "V_222",
+            "latex": "{{T^{ref}}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "T_ref",
+      "memory": null,
+      "modified": "2024-06-18 13:57:45",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_223": {
+      "IRI": "promo:T_meas_norming",
+      "aliases": {
+        "matlab": "T_meas_norming",
+        "latex": "{T^n}",
+        "internal_code": "T_meas_norming",
+        "global_ID": "V_223"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_223",
+        "latex": "{{T^n}}{_{N}}"
+      },
+      "created": "2024-06-19 12:09:11",
+      "doc": "value to norm measurement of temperature",
+      "equations": {
+        "E_122": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_113 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({T}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "value to norm measurement of temperature",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_113"
+          ],
+          "created": "2024-06-19 12:09:11",
+          "modified": "2024-06-19 12:09:11",
+          "lhs": {
+            "global_ID": "V_223",
+            "latex": "{{T^n}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "T_meas_norming",
+      "memory": null,
+      "modified": "2024-06-19 12:13:50",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_224": {
+      "IRI": "promo:T_meas",
+      "aliases": {
+        "matlab": "T_meas",
+        "latex": "{\\bar{T}}",
+        "internal_code": "T_meas",
+        "global_ID": "V_224"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_224",
+        "latex": "{{\\bar{T}}}{_{N}}"
+      },
+      "created": "2024-06-19 12:12:49",
+      "doc": "temperature measurement",
+      "equations": {
+        "E_123": {
+          "rhs": {
+            "global_ID": " V_113 O_4 F_15 D_0 V_223 D_1",
+            "latex": "{T}{_{N}} \\, . \\, \\left( {{T^n}}{_{N}} \\right)^{-1}"
+          },
+          "type": "generic",
+          "doc": "temperature measurement",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_113",
+            "V_223"
+          ],
+          "created": "2024-06-19 12:12:49",
+          "modified": "2024-06-19 12:12:49",
+          "lhs": {
+            "global_ID": "V_224",
+            "latex": "{{\\bar{T}}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "T_meas",
+      "memory": null,
+      "modified": "2024-06-19 12:12:49",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_225": {
+      "IRI": "promo:_T_meas",
+      "aliases": {
+        "matlab": "_T_meas",
+        "latex": "\\_T\\_meas",
+        "internal_code": "_T_meas",
+        "global_ID": "V_225"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_225",
+        "latex": "{\\_T\\_meas}{_{I}}"
+      },
+      "created": "2024-06-19 12:14:14",
+      "doc": "link variable _T_meas to interface macroscopic >>> control with source:node",
+      "equations": {
+        "E_124": {
+          "rhs": {
+            "global_ID": " V_3  O_5 I_1 V_224",
+            "latex": "{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {{\\bar{T}}}{_{N}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic >>> control",
+          "incidence_list": [
+            "V_224",
+            "V_3"
+          ],
+          "created": "2024-06-19 12:14:14",
+          "modified": "2024-06-19 12:14:14",
+          "lhs": {
+            "global_ID": "V_225",
+            "latex": "{\\_T\\_meas}{_{I}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_3"
+      ],
+      "label": "_T_meas",
+      "memory": "node",
+      "modified": "2024-06-19 12:14:14",
+      "network": "macroscopic >>> control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_226": {
+      "IRI": "promo:T_meas",
+      "aliases": {
+        "matlab": "T_meas",
+        "latex": "{\\bar{T}}",
+        "internal_code": "T_meas",
+        "global_ID": "V_226"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_226",
+        "latex": "{{\\bar{T}}}{_{N, p}}"
+      },
+      "created": "2024-06-19 12:15:34",
+      "doc": "link variable _T_meas to interface control",
+      "equations": {
+        "E_125": {
+          "rhs": {
+            "global_ID": " D_0 V_4 O_4 V_225 D_1  O_5 I_3 V_9",
+            "latex": "\\left({{F^{sink}}}{_{N, I}} \\, . \\, {\\_T\\_meas}{_{I}}\\right) \\stackrel{I}{\\star} {{S}}{_{I, p}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "control",
+          "incidence_list": [
+            "V_225",
+            "V_4",
+            "V_9"
+          ],
+          "created": "2024-06-19 12:15:34",
+          "modified": "2024-06-19 12:15:34",
+          "lhs": {
+            "global_ID": "V_226",
+            "latex": "{{\\bar{T}}}{_{N, p}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "T_meas",
+      "memory": "node",
+      "modified": "2024-06-19 12:31:58",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_227": {
+      "IRI": "promo:T_setpoint",
+      "aliases": {
+        "matlab": "T_setpoint",
+        "latex": "{T_{setpoint}}",
+        "internal_code": "T_setpoint",
+        "global_ID": "V_227"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_227",
+        "latex": "{{T_{setpoint}}}{_{N, p}}"
+      },
+      "created": "2024-06-19 12:17:04",
+      "doc": "setpoint for temperatue",
+      "equations": {
+        "E_126": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_226 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{\\bar{T}}}{_{N, p}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "setpoint for temperatue",
+          "network": "control",
+          "incidence_list": [
+            "V_101",
+            "V_226"
+          ],
+          "created": "2024-06-19 12:17:04",
+          "modified": "2024-06-19 12:17:04",
+          "lhs": {
+            "global_ID": "V_227",
+            "latex": "{{T_{setpoint}}}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "T_setpoint",
+      "memory": "node",
+      "modified": "2024-06-19 12:32:13",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_228": {
+      "IRI": "qudt:Gain",
+      "aliases": {
+        "matlab": "p_gain",
+        "latex": "p",
+        "internal_code": "p_gain",
+        "global_ID": "V_228"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_228",
+        "latex": "{p}{_{}}"
+      },
+      "created": "2024-06-19 12:21:52",
+      "doc": "proportional gain",
+      "equations": {
+        "E_127": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_101 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "proportional gain",
+          "network": "control",
+          "incidence_list": [
+            "V_101"
+          ],
+          "created": "2024-06-19 12:21:52",
+          "modified": "2024-06-19 12:21:52",
+          "lhs": {
+            "global_ID": "V_228",
+            "latex": "{p}{_{}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [],
+      "label": "p_gain",
+      "memory": null,
+      "modified": "2024-06-19 12:25:55",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_229": {
+      "IRI": "promo:u",
+      "aliases": {
+        "matlab": "u",
+        "latex": "u",
+        "internal_code": "u",
+        "global_ID": "V_229"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_229",
+        "latex": "{u}{_{N, p}}"
+      },
+      "created": "2024-06-19 12:24:02",
+      "doc": "output of straight proportional controller direction heating",
+      "equations": {
+        "E_128": {
+          "rhs": {
+            "global_ID": " F_11 D_0 V_228 D_1 O_4 V_231",
+            "latex": "\\left( -{p}{_{}} \\right) \\, . \\, {e}{_{N, p}}"
+          },
+          "type": "generic",
+          "doc": "output of straight proportional temperature controller",
+          "network": "control",
+          "incidence_list": [
+            "V_228",
+            "V_231"
+          ],
+          "created": "2024-06-19 12:24:02",
+          "modified": "2024-06-19 15:53:43",
+          "lhs": {
+            "global_ID": "V_229",
+            "latex": "{u}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "u",
+      "memory": "node",
+      "modified": "2024-06-19 12:34:01",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     "V_23": {
       "IRI": "promo:r_x",
       "aliases": {
@@ -6215,6 +6730,179 @@
       "units": [
         0,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_230": {
+      "IRI": "promo:d_dir",
+      "aliases": {
+        "matlab": "d_dir",
+        "latex": "{d^{heating}}",
+        "internal_code": "d_dir",
+        "global_ID": "V_230"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_230",
+        "latex": "{{d^{heating}}}{_{N, p}}"
+      },
+      "created": "2024-06-19 12:36:12",
+      "doc": "direction of heating",
+      "equations": {
+        "E_129": {
+          "rhs": {
+            "global_ID": " F_16 D_0 V_229 D_1",
+            "latex": "\\textbf{sign} \\left( {u}{_{N, p}} \\right)"
+          },
+          "type": "generic",
+          "doc": "direction of heating",
+          "network": "control",
+          "incidence_list": [
+            "V_229"
+          ],
+          "created": "2024-06-19 12:36:12",
+          "modified": "2024-06-19 12:36:12",
+          "lhs": {
+            "global_ID": "V_230",
+            "latex": "{{d^{heating}}}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "d_dir",
+      "memory": "node",
+      "modified": "2024-06-19 15:49:40",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_231": {
+      "IRI": "promo:control_error",
+      "aliases": {
+        "matlab": "control_error",
+        "latex": "e",
+        "internal_code": "control_error",
+        "global_ID": "V_231"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_231",
+        "latex": "{e}{_{N, p}}"
+      },
+      "created": "2024-06-19 15:52:40",
+      "doc": "control error in normed temperature",
+      "equations": {
+        "E_130": {
+          "rhs": {
+            "global_ID": " V_227 O_1 V_226",
+            "latex": "{{T_{setpoint}}}{_{N, p}}  - {{\\bar{T}}}{_{N, p}}"
+          },
+          "type": "generic",
+          "doc": "control error in normed temperature",
+          "network": "control",
+          "incidence_list": [
+            "V_226",
+            "V_227"
+          ],
+          "created": "2024-06-19 15:52:40",
+          "modified": "2024-06-19 15:52:40",
+          "lhs": {
+            "global_ID": "V_231",
+            "latex": "{e}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "control_error",
+      "memory": "node",
+      "modified": "2024-06-19 15:56:53",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_233": {
+      "IRI": "promo:limit",
+      "aliases": {
+        "matlab": "limit",
+        "latex": "l",
+        "internal_code": "limit",
+        "global_ID": "V_233"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_233",
+        "latex": "{{u^{max}}}{_{N, p}}"
+      },
+      "created": "2024-06-19 16:14:14",
+      "doc": "limit",
+      "equations": {
+        "E_132": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_229 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({u}{_{N, p}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "maximum limit",
+          "network": "control",
+          "incidence_list": [
+            "V_101",
+            "V_229"
+          ],
+          "created": "2024-06-19 16:14:14",
+          "modified": "2024-06-19 16:14:14",
+          "lhs": {
+            "global_ID": "V_233",
+            "latex": "{{u^{max}}}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "limit",
+      "memory": "node",
+      "modified": "2024-06-19 16:42:58",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
         0,
         0,
         0,
@@ -6940,7 +7628,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 220,
-    "equation": 116
+    "variable": 233,
+    "equation": 132
   }
 }

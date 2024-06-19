@@ -494,10 +494,10 @@
             "output": "-"
           },
           "right": {
-            "state": "-",
-            "output": "-"
+            "state": "connect_arc",
+            "output": "begin arc"
           },
-          "cursor": "-"
+          "cursor": "TC_L_blank-R_adda"
         },
         "('node_composite', 'name', '-')": {
           "left": {
@@ -870,10 +870,10 @@
             "output": "-"
           },
           "right": {
-            "state": "-",
-            "output": "-"
+            "state": "insert",
+            "output": "add arc"
           },
-          "cursor": "-"
+          "cursor": "TC_L_blank-R_adda"
         },
         "('node_composite', 'name', '-')": {
           "left": {
@@ -1999,9 +1999,9 @@
           },
           "right": {
             "state": "-",
-            "output": "-"
+            "output": "delete node"
           },
-          "cursor": "-"
+          "cursor": "TC_L_blank-R_del"
         },
         "('node_composite', 'name', '-')": {
           "left": {
