@@ -1,0 +1,90 @@
+{
+    "N_0": {
+        "identifier": "N_0",
+        "name": "composite",
+        "parent_id": null,
+        "modeller_class": "NodeComposite",
+        "children_ids": [
+            "A_1",
+            "N_2",
+            "N_3"
+        ]
+    },
+    "A_1": {
+        "identifier": "A_1",
+        "name": "controlledMassFlow",
+        "parent_id": "N_0",
+        "modeller_class": "Arc",
+        "entity_name": "macroscopic.arc.mass|convection|lumped.controlledMassFlow",
+        "network": "liquid",
+        "named_network": "A-liquid >>> A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {
+            "V_104": {},
+            "V_150": {},
+            "V_183": {},
+            "V_189": {}
+        },
+        "outgoing_connections": [
+            "N_2"
+        ]
+    },
+    "N_2": {
+        "identifier": "N_2",
+        "name": "dynamicReactiveLump",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {
+            "V_105": {},
+            "V_106": {},
+            "V_110": {},
+            "V_132": {},
+            "V_136": {},
+            "V_141": {},
+            "V_203": {},
+            "V_206": {},
+            "V_207": {},
+            "V_209": {},
+            "V_210": {},
+            "V_214": {},
+            "V_216": {},
+            "V_222": {},
+            "V_223": {}
+        },
+        "outgoing_connections": [],
+        "conversions": {},
+        "injected_typed_tokens": null
+    },
+    "N_3": {
+        "identifier": "N_3",
+        "name": "massSource",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.mass|constant|infinity.massSource",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [],
+        "typed_tokens": {},
+        "instantiated_variables": {
+            "V_112": {},
+            "V_138": {}
+        },
+        "outgoing_connections": [],
+        "conversions": null,
+        "injected_typed_tokens": null
+    }
+}

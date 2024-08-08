@@ -1,0 +1,131 @@
+{
+  "nodes": {
+    "1": {
+      "name": "dynamicMassEnergy",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "dynamic|lumped",
+      "variant": "dynamicMassEnergy",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+      "tokens": {},
+      "conversions": {}
+    },
+    "2": {
+      "name": "dynamicMassEnergy",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "dynamic|lumped",
+      "variant": "dynamicMassEnergy",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+      "tokens": {},
+      "conversions": {}
+    }
+  },
+  "arcs": {},
+  "named_networks": {
+    "network__named_network": {
+      "control": [
+        "A-control"
+      ],
+      "energy": [
+        "A-energy"
+      ],
+      "gas": [
+        "A-gas"
+      ],
+      "info_processing": [
+        "A-info_processing"
+      ],
+      "liquid": [
+        "A-liquid"
+      ],
+      "microscopic": [
+        "A-microscopic"
+      ],
+      "reactions": [
+        "A-reactions"
+      ],
+      "solid": [
+        "A-solid"
+      ]
+    },
+    "A-control": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-energy": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-gas": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-microscopic": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-solid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    }
+  },
+  "token_domains": {
+    "charge": {},
+    "energy": {},
+    "mass": {},
+    "signal": {}
+  },
+  "typed_token_domains": {},
+  "token_incidence_matrix": {},
+  "typed_token_incidence_matrix": {},
+  "typed_token_lists": {}
+}

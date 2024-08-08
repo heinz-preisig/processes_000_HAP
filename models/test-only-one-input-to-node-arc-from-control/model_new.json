@@ -1,0 +1,138 @@
+{
+    "N_0": {
+        "identifier": "N_0",
+        "name": "test-intraface-construction",
+        "parent_id": null,
+        "modeller_class": "NodeComposite",
+        "children_ids": [
+            "N_1",
+            "N_2",
+            "A_3",
+            "N_4",
+            "A_5"
+        ]
+    },
+    "N_1": {
+        "identifier": "N_1",
+        "name": "massSource",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.mass|constant|infinity.massSource",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {
+            "V_112": {},
+            "V_138": {}
+        },
+        "outgoing_connections": [
+            "A_3"
+        ],
+        "conversions": null,
+        "injected_typed_tokens": null
+    },
+    "N_2": {
+        "identifier": "N_2",
+        "name": "dynamicReactiveLump",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {
+            "V_105": {},
+            "V_106": {},
+            "V_110": {},
+            "V_132": {},
+            "V_136": {},
+            "V_141": {},
+            "V_203": {},
+            "V_206": {},
+            "V_207": {},
+            "V_209": {},
+            "V_210": {},
+            "V_214": {},
+            "V_216": {},
+            "V_222": {},
+            "V_223": {}
+        },
+        "outgoing_connections": [],
+        "conversions": {},
+        "injected_typed_tokens": null
+    },
+    "A_3": {
+        "identifier": "A_3",
+        "name": "controlledMassFlow",
+        "parent_id": "N_0",
+        "modeller_class": "Arc",
+        "entity_name": "macroscopic.arc.mass|convection|lumped.controlledMassFlow",
+        "network": "liquid",
+        "named_network": "A-liquid >>> A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {
+            "V_104": {},
+            "V_150": {},
+            "V_183": {},
+            "V_189": {}
+        },
+        "outgoing_connections": [
+            "N_2"
+        ]
+    },
+    "N_4": {
+        "identifier": "N_4",
+        "name": "pControl",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "control.node.signal|event|AE.pControl",
+        "network": "control",
+        "named_network": "A-control",
+        "tokens": [
+            "information"
+        ],
+        "typed_tokens": {
+            "information": []
+        },
+        "instantiated_variables": {
+            "V_102": {},
+            "V_227": {},
+            "V_237": {}
+        },
+        "outgoing_connections": [
+            "A_5"
+        ],
+        "conversions": {},
+        "injected_typed_tokens": null
+    },
+    "A_5": {
+        "identifier": "A_5",
+        "name": "control >>> macroscopic (y_p_positive -> _y_p_positive)",
+        "parent_id": "N_0",
+        "modeller_class": "Arc",
+        "entity_name": "control >>> macroscopic (y_p_positive -> _y_p_positive)",
+        "network": "control >>> liquid",
+        "named_network": "A-control >>> A-liquid >>> A-liquid",
+        "tokens": [],
+        "typed_tokens": {},
+        "instantiated_variables": {},
+        "outgoing_connections": [
+            "A_3"
+        ]
+    }
+}

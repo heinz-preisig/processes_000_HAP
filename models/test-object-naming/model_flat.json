@@ -1,0 +1,143 @@
+{
+  "nodes": {
+    "1": {
+      "name": "massSource",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "constant|infinity",
+      "variant": "massSource",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "tokens": {},
+      "injected_typed_tokens": {}
+    },
+    "2": {
+      "name": "dynamicReactiveLump",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "dynamic|lumped",
+      "variant": "dynamicReactiveLump",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+      "tokens": {},
+      "conversions": {}
+    },
+    "3": {
+      "name": "pControl",
+      "network": "control",
+      "named_network": "A-control",
+      "class": "node_simple",
+      "type": "event|AE",
+      "variant": "pControl",
+      "instantiated_variables": {},
+      "entity_id": "control.node.signal|event|AE.pControl",
+      "tokens": {},
+      "conversions": {}
+    }
+  },
+  "arcs": {},
+  "named_networks": {
+    "network__named_network": {
+      "control": [
+        "A-control"
+      ],
+      "energy": [
+        "A-energy"
+      ],
+      "gas": [
+        "A-gas"
+      ],
+      "info_processing": [
+        "A-info_processing"
+      ],
+      "liquid": [
+        "A-liquid"
+      ],
+      "microscopic": [
+        "A-microscopic"
+      ],
+      "reactions": [
+        "A-reactions"
+      ],
+      "solid": [
+        "A-solid"
+      ]
+    },
+    "A-control": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-energy": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-gas": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-microscopic": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-solid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    }
+  },
+  "token_domains": {
+    "charge": {},
+    "energy": {},
+    "mass": {},
+    "signal": {}
+  },
+  "typed_token_domains": {},
+  "token_incidence_matrix": {},
+  "typed_token_incidence_matrix": {},
+  "typed_token_lists": {}
+}

@@ -1,0 +1,42 @@
+{
+    "N_0": {
+        "identifier": "N_0",
+        "name": "test-multiple-token-connections",
+        "parent_id": null,
+        "modeller_class": "NodeComposite",
+        "children_ids": [
+            "N_1",
+            "N_2"
+        ]
+    },
+    "N_1": {
+        "identifier": "N_1",
+        "name": "dynamicMassEnergy",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [],
+        "typed_tokens": {},
+        "instantiated_variables": {},
+        "outgoing_connections": [],
+        "conversions": {},
+        "injected_typed_tokens": null
+    },
+    "N_2": {
+        "identifier": "N_2",
+        "name": "dynamicMassEnergy",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [],
+        "typed_tokens": {},
+        "instantiated_variables": {},
+        "outgoing_connections": [],
+        "conversions": {},
+        "injected_typed_tokens": null
+    }
+}

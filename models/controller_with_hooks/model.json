@@ -1,0 +1,270 @@
+{
+  "ID_tree": {
+    "0": {
+      "ancestors": [],
+      "children": [
+        1,
+        2,
+        3
+      ]
+    },
+    "1": {
+      "ancestors": [
+        0
+      ],
+      "children": []
+    },
+    "2": {
+      "ancestors": [
+        0
+      ],
+      "children": []
+    },
+    "3": {
+      "ancestors": [
+        0
+      ],
+      "children": []
+    }
+  },
+  "named_networks": {
+    "network__named_network": {
+      "control": [
+        "A-control"
+      ],
+      "energy": [
+        "A-energy"
+      ],
+      "gas": [
+        "A-gas"
+      ],
+      "info_processing": [
+        "A-info_processing"
+      ],
+      "liquid": [
+        "A-liquid"
+      ],
+      "microscopic": [
+        "A-microscopic"
+      ],
+      "reactions": [
+        "A-reactions"
+      ],
+      "solid": [
+        "A-solid"
+      ]
+    },
+    "A-control": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-energy": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-gas": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-microscopic": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-solid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    }
+  },
+  "nodes": {
+    "0": {
+      "name": "composite",
+      "network": "composite",
+      "named_network": "node_composite",
+      "class": "node_composite",
+      "type": "node_composite",
+      "variant": "composite",
+      "instantiated_variables": {},
+      "entity_id": ""
+    },
+    "1": {
+      "name": "macroscopic >>> control (T_meas -> _T_meas)",
+      "network": "liquid >>> control",
+      "named_network": "A-liquid >>> A-control",
+      "class": "node_interface",
+      "type": "node_interface",
+      "variant": "macroscopic >>> control (T_meas -> _T_meas)",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic >>> control (T_meas -> _T_meas)"
+    },
+    "2": {
+      "name": "control >>> macroscopic (y_p_positive -> _y_p_positive)",
+      "network": "control >>> liquid",
+      "named_network": "A-control >>> A-liquid",
+      "class": "node_interface",
+      "type": "node_interface",
+      "variant": "control >>> macroscopic (y_p_positive -> _y_p_positive)",
+      "instantiated_variables": {},
+      "entity_id": "control >>> macroscopic (y_p_positive -> _y_p_positive)"
+    },
+    "3": {
+      "name": "pControl",
+      "network": "control",
+      "named_network": "A-control",
+      "class": "node_simple",
+      "type": "event|AE",
+      "variant": "pControl",
+      "instantiated_variables": {},
+      "entity_id": "control.node.signal|event|AE.pControl",
+      "tokens": {
+        "information": []
+      },
+      "conversions": {}
+    }
+  },
+  "domains": {},
+  "arcs": {
+    "0": {
+      "name": "4 | 5",
+      "source": 3,
+      "sink": 2,
+      "token": "information",
+      "typed_tokens": [],
+      "network": "control",
+      "named_network": "A-control",
+      "mechanism": "link",
+      "nature": "unidirectional",
+      "variant": "interface",
+      "instantiated_variables": {}
+    },
+    "1": {
+      "name": "6 | 4",
+      "source": 1,
+      "sink": 3,
+      "token": "information",
+      "typed_tokens": [],
+      "network": "control",
+      "named_network": "A-control",
+      "mechanism": "link",
+      "nature": "unidirectional",
+      "variant": "interface",
+      "instantiated_variables": {}
+    }
+  },
+  "scenes": {
+    "0": {
+      "nodes": {
+        "1": {
+          "position_x": 12,
+          "position_y": -148,
+          "root": {
+            "position_x": 0,
+            "position_y": 0
+          },
+          "name": {
+            "position_x": 0,
+            "position_y": 55
+          }
+        },
+        "2": {
+          "position_x": -192,
+          "position_y": -144,
+          "root": {
+            "position_x": 0,
+            "position_y": 0
+          },
+          "name": {
+            "position_x": 0,
+            "position_y": 55
+          }
+        },
+        "3": {
+          "position_x": -80.0,
+          "position_y": -233.0,
+          "root": {
+            "position_x": 0,
+            "position_y": 0
+          },
+          "name": {
+            "position_x": 0,
+            "position_y": 50
+          },
+          "network": {
+            "position_x": -15,
+            "position_y": 0
+          },
+          "named_network": {
+            "position_x": -20,
+            "position_y": 0
+          }
+        }
+      },
+      "arcs": {
+        "0": [],
+        "1": []
+      }
+    },
+    "1": {
+      "nodes": {},
+      "arcs": {
+        "1": []
+      }
+    },
+    "2": {
+      "nodes": {},
+      "arcs": {
+        "0": []
+      }
+    },
+    "3": {
+      "nodes": {},
+      "arcs": {
+        "0": [],
+        "1": []
+      }
+    }
+  }
+}

@@ -1,0 +1,7634 @@
+{
+  "version": "8",
+  "variables": {
+    "V_1": {
+      "IRI": "qudt:Time",
+      "aliases": {
+        "matlab": "t",
+        "latex": "t",
+        "internal_code": "t",
+        "global_ID": "V_1"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_1",
+        "latex": "{t}{_{}}"
+      },
+      "created": "2024-03-06 15:09:35",
+      "doc": "time",
+      "equations": {},
+      "imported": false,
+      "index_structures": [],
+      "label": "t",
+      "memory": null,
+      "modified": "2024-03-06 15:10:08",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_10": {
+      "IRI": "promo:S_Iq",
+      "aliases": {
+        "matlab": "S_Iq",
+        "latex": "{S}",
+        "internal_code": "S_Iq",
+        "global_ID": "V_10"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_10",
+        "latex": "{{S}}{_{I, q}}"
+      },
+      "created": "2024-03-27 08:09:25",
+      "doc": "selection matrix interface to control output",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3",
+        "I_8"
+      ],
+      "label": "S_Iq",
+      "memory": null,
+      "modified": "2024-03-27 09:18:59",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_101": {
+      "IRI": "promo:value",
+      "aliases": {
+        "matlab": "value",
+        "latex": "{\\#}",
+        "internal_code": "value",
+        "global_ID": "V_101"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_101",
+        "latex": "{{\\#}}{_{}}"
+      },
+      "created": "2024-03-27 09:53:48",
+      "doc": "numerical value",
+      "equations": {},
+      "imported": false,
+      "index_structures": [],
+      "label": "value",
+      "memory": null,
+      "modified": "2024-03-27 09:55:19",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_102": {
+      "IRI": "promo:zero",
+      "aliases": {
+        "matlab": "zero",
+        "latex": "0",
+        "internal_code": "zero",
+        "global_ID": "V_102"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_102",
+        "latex": "{0}{_{}}"
+      },
+      "created": "2024-03-27 09:55:05",
+      "doc": "numerical value zero",
+      "equations": {
+        "E_1": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_101 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "numerical value zero",
+          "network": "root",
+          "incidence_list": [
+            "V_101"
+          ],
+          "created": "2024-03-27 09:55:05",
+          "modified": "2024-03-27 09:55:05",
+          "lhs": {
+            "global_ID": "V_102",
+            "latex": "{0}{_{}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [],
+      "label": "zero",
+      "memory": null,
+      "modified": "2024-03-27 09:55:05",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_103": {
+      "IRI": "promo:one",
+      "aliases": {
+        "matlab": "one",
+        "latex": "1",
+        "internal_code": "one",
+        "global_ID": "V_103"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_103",
+        "latex": "{1}{_{}}"
+      },
+      "created": "2024-03-27 11:43:17",
+      "doc": "numerical value one",
+      "equations": {
+        "E_2": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_101 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "numerical value one",
+          "network": "root",
+          "incidence_list": [
+            "V_101"
+          ],
+          "created": "2024-03-27 11:43:17",
+          "modified": "2024-03-27 11:43:17",
+          "lhs": {
+            "global_ID": "V_103",
+            "latex": "{1}{_{}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [],
+      "label": "one",
+      "memory": null,
+      "modified": "2024-03-27 11:43:17",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_104": {
+      "IRI": "promo:oneHalf",
+      "aliases": {
+        "matlab": "oneHalf",
+        "latex": "0.5",
+        "internal_code": "oneHalf",
+        "global_ID": "V_104"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_104",
+        "latex": "{0.5}{_{}}"
+      },
+      "created": "2024-03-27 11:44:56",
+      "doc": "numerical value one half",
+      "equations": {
+        "E_3": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_101 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "numerical value one half",
+          "network": "root",
+          "incidence_list": [
+            "V_101"
+          ],
+          "created": "2024-03-27 11:44:56",
+          "modified": "2024-03-27 11:44:56",
+          "lhs": {
+            "global_ID": "V_104",
+            "latex": "{0.5}{_{}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [],
+      "label": "oneHalf",
+      "memory": null,
+      "modified": "2024-03-27 11:44:56",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_105": {
+      "IRI": "promo:to",
+      "aliases": {
+        "matlab": "to",
+        "latex": "{t^o}",
+        "internal_code": "to",
+        "global_ID": "V_105"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_105",
+        "latex": "{{t^o}}{_{}}"
+      },
+      "created": "2024-03-27 11:45:57",
+      "doc": "starting time",
+      "equations": {
+        "E_4": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_1 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({t}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "starting time",
+          "network": "root",
+          "incidence_list": [
+            "V_1",
+            "V_101"
+          ],
+          "created": "2024-03-27 11:45:57",
+          "modified": "2024-03-27 11:47:30",
+          "lhs": {
+            "global_ID": "V_105",
+            "latex": "{{t^o}}{_{}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [],
+      "label": "to",
+      "memory": null,
+      "modified": "2024-03-27 11:49:30",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_106": {
+      "IRI": "promo:te",
+      "aliases": {
+        "matlab": "te",
+        "latex": "{t^e}",
+        "internal_code": "te",
+        "global_ID": "V_106"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_106",
+        "latex": "{{t^e}}{_{}}"
+      },
+      "created": "2024-03-27 11:46:46",
+      "doc": "end time",
+      "equations": {
+        "E_5": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_1 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({t}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "end time",
+          "network": "root",
+          "incidence_list": [
+            "V_1",
+            "V_101"
+          ],
+          "created": "2024-03-27 11:46:46",
+          "modified": "2024-03-27 11:46:46",
+          "lhs": {
+            "global_ID": "V_106",
+            "latex": "{{t^e}}{_{}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [],
+      "label": "te",
+      "memory": null,
+      "modified": "2024-03-27 11:46:46",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_107": {
+      "IRI": "promo:t_interval",
+      "aliases": {
+        "matlab": "t_interval",
+        "latex": "{\\Delta t}",
+        "internal_code": "t_interval",
+        "global_ID": "V_107"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_107",
+        "latex": "{{\\Delta t}}{_{}}"
+      },
+      "created": "2024-03-27 11:49:22",
+      "doc": "time interval",
+      "equations": {
+        "E_6": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_1 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({t}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "time interval",
+          "network": "root",
+          "incidence_list": [
+            "V_1",
+            "V_101"
+          ],
+          "created": "2024-03-27 11:49:22",
+          "modified": "2024-03-27 11:49:22",
+          "lhs": {
+            "global_ID": "V_107",
+            "latex": "{{\\Delta t}}{_{}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [],
+      "label": "t_interval",
+      "memory": null,
+      "modified": "2024-03-27 11:49:22",
+      "network": "root",
+      "port_variable": false,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_108": {
+      "IRI": "qudt:EnergyInternal",
+      "aliases": {
+        "matlab": "U",
+        "latex": "U",
+        "internal_code": "U",
+        "global_ID": "V_108"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_108",
+        "latex": "{U}{_{N}}"
+      },
+      "created": "2024-03-27 18:45:18",
+      "doc": "fundamental state -- internal energy",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "U",
+      "memory": null,
+      "modified": "2024-03-28 09:15:12",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_109": {
+      "IRI": "qudt:Entropy",
+      "aliases": {
+        "matlab": "S",
+        "latex": "S",
+        "internal_code": "S",
+        "global_ID": "V_109"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_109",
+        "latex": "{S}{_{N}}"
+      },
+      "created": "2024-03-27 18:46:38",
+      "doc": "fundamental state -- internal entropy",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "S",
+      "memory": null,
+      "modified": "2024-03-28 09:15:05",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_11": {
+      "IRI": "promo:I_tu",
+      "aliases": {
+        "matlab": "I_tu",
+        "latex": "{I}",
+        "internal_code": "I_tu",
+        "global_ID": "V_11"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_11",
+        "latex": "{{I}}{_{t, u}}"
+      },
+      "created": "2024-03-27 08:19:40",
+      "doc": "identity mapping from <t> to <u>",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_10",
+        "I_11"
+      ],
+      "label": "I_tu",
+      "memory": null,
+      "modified": "2024-03-27 09:19:13",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_110": {
+      "IRI": "qudt:Volume",
+      "aliases": {
+        "matlab": "V",
+        "latex": "V",
+        "internal_code": "V",
+        "global_ID": "V_110"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_110",
+        "latex": "{V}{_{N}}"
+      },
+      "created": "2024-03-27 18:48:38",
+      "doc": "volume",
+      "equations": {
+        "E_7": {
+          "rhs": {
+            "global_ID": " V_23 O_4 V_24 O_4 V_25",
+            "latex": "{{r_x}}{_{N}} \\, . \\, {{r_y}}{_{N}} \\, . \\, {{r_z}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "volume",
+          "network": "physical",
+          "incidence_list": [
+            "V_23",
+            "V_24",
+            "V_25"
+          ],
+          "created": "2024-03-27 18:48:38",
+          "modified": "2024-03-27 18:48:38",
+          "lhs": {
+            "global_ID": "V_110",
+            "latex": "{V}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "V",
+      "memory": null,
+      "modified": "2024-03-28 09:15:23",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_111": {
+      "IRI": "qudt:MolarMass",
+      "aliases": {
+        "matlab": "n",
+        "latex": "n",
+        "internal_code": "n",
+        "global_ID": "V_111"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_111",
+        "latex": "{n}{_{N, S}}"
+      },
+      "created": "2024-03-27 18:48:45",
+      "doc": "fundamental state -- molar mass",
+      "equations": {
+        "E_93": {
+          "rhs": {
+            "global_ID": " O_8 D_0 V_196 D_8 V_1 O_13 D_2 V_105 D_7 V_106 D_3 D_1 O_0 V_203",
+            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {{\\dot{n}}}{_{N, S}} \\enskip d\\,{t}{_{}}  + {{n^o}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "fundamental state -- molar mass",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_105",
+            "V_106",
+            "V_196",
+            "V_203"
+          ],
+          "created": "2024-04-03 17:33:24",
+          "modified": "2024-04-04 12:00:38",
+          "lhs": {
+            "global_ID": "V_111",
+            "latex": "{n}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "n",
+      "memory": null,
+      "modified": "2024-03-28 09:15:45",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_112": {
+      "IRI": "qudt:Pressure",
+      "aliases": {
+        "matlab": "p",
+        "latex": "p",
+        "internal_code": "p",
+        "global_ID": "V_112"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_112",
+        "latex": "{p}{_{N}}"
+      },
+      "created": "2024-03-28 09:05:37",
+      "doc": "thermodynamic pressure",
+      "equations": {
+        "E_8": {
+          "rhs": {
+            "global_ID": " O_6 D_0 V_108 D_7 V_110 D_1",
+            "latex": "\\frac{\\partial{{U}{_{N}}}}{\\partial{{V}{_{N}}}}"
+          },
+          "type": "generic",
+          "doc": "thermodynamic pressure",
+          "network": "physical",
+          "incidence_list": [
+            "V_108",
+            "V_110"
+          ],
+          "created": "2024-03-28 09:05:37",
+          "modified": "2024-03-28 09:05:37",
+          "lhs": {
+            "global_ID": "V_112",
+            "latex": "{p}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "p",
+      "memory": null,
+      "modified": "2024-03-28 09:06:01",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "effort",
+      "units": [
+        -2,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_113": {
+      "IRI": "qudt:Temperature",
+      "aliases": {
+        "matlab": "T",
+        "latex": "T",
+        "internal_code": "T",
+        "global_ID": "V_113"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_113",
+        "latex": "{T}{_{N}}"
+      },
+      "created": "2024-03-28 09:09:07",
+      "doc": "temperature",
+      "equations": {
+        "E_9": {
+          "rhs": {
+            "global_ID": " O_6 D_0 V_108 D_7 V_109 D_1",
+            "latex": "\\frac{\\partial{{U}{_{N}}}}{\\partial{{S}{_{N}}}}"
+          },
+          "type": "generic",
+          "doc": "temperature",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_109"
+          ],
+          "created": "2024-03-28 09:09:07",
+          "modified": "2024-03-28 09:09:07",
+          "lhs": {
+            "global_ID": "V_113",
+            "latex": "{T}{_{N}}"
+          }
+        },
+        "E_121": {
+          "rhs": {
+            "global_ID": " V_115 O_4 F_15 D_0 V_124 D_1 O_0 V_222",
+            "latex": "{H}{_{N}} \\, . \\, \\left( {{C_p}}{_{N}} \\right)^{-1}  + {{T^{ref}}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "temperature from constant heat capacity",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_115",
+            "V_124",
+            "V_222"
+          ],
+          "created": "2024-06-18 14:11:13",
+          "modified": "2024-06-18 14:11:13",
+          "lhs": {
+            "global_ID": "V_113",
+            "latex": "{T}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "T",
+      "memory": null,
+      "modified": "2024-03-28 10:01:04",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "effort",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_114": {
+      "IRI": "qudt:ChemicalPotential",
+      "aliases": {
+        "matlab": "chemPot",
+        "latex": "{\\mu}",
+        "internal_code": "chemPot",
+        "global_ID": "V_114"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_114",
+        "latex": "{{\\mu}}{_{N, S}}"
+      },
+      "created": "2024-03-28 09:09:57",
+      "doc": "chemical potential",
+      "equations": {
+        "E_10": {
+          "rhs": {
+            "global_ID": " O_6 D_0 V_108 D_7 V_111 D_1",
+            "latex": "\\frac{\\partial{{U}{_{N}}}}{\\partial{{n}{_{N, S}}}}"
+          },
+          "type": "generic",
+          "doc": "chemical potential",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_111"
+          ],
+          "created": "2024-03-28 09:09:57",
+          "modified": "2024-03-28 09:16:51",
+          "lhs": {
+            "global_ID": "V_114",
+            "latex": "{{\\mu}}{_{N, S}}"
+          }
+        },
+        "E_54": {
+          "rhs": {
+            "global_ID": " V_161 O_0 V_123 O_4 V_113 O_4 F_2 D_0 V_140 D_1",
+            "latex": "{{\\mu^o}}{_{N, S}}  + {R}{_{}} \\, . \\, {T}{_{N}} \\, . \\, \\textbf{ln}\\left({x}{_{N, S}}\\right)"
+          },
+          "type": "generic",
+          "doc": "chemical potential standard model with mole fraction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_113",
+            "V_123",
+            "V_140",
+            "V_161"
+          ],
+          "created": "2024-03-30 15:52:22",
+          "modified": "2024-03-30 15:52:22",
+          "lhs": {
+            "global_ID": "V_114",
+            "latex": "{{\\mu}}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "chemPot",
+      "memory": null,
+      "modified": "2024-03-28 09:16:51",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "effort",
+      "units": [
+        -2,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_115": {
+      "IRI": "qudt:Enthalpy",
+      "aliases": {
+        "matlab": "H",
+        "latex": "H",
+        "internal_code": "H",
+        "global_ID": "V_115"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_115",
+        "latex": "{H}{_{N}}"
+      },
+      "created": "2024-03-28 09:12:06",
+      "doc": "Enthalpy",
+      "equations": {
+        "E_11": {
+          "rhs": {
+            "global_ID": " V_108 O_1 V_112 O_4 V_110",
+            "latex": "{U}{_{N}}  - {p}{_{N}} \\, . \\, {V}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "Enthalpy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_110",
+            "V_112"
+          ],
+          "created": "2024-03-28 09:12:06",
+          "modified": "2024-03-28 09:12:06",
+          "lhs": {
+            "global_ID": "V_115",
+            "latex": "{H}{_{N}}"
+          }
+        },
+        "E_112": {
+          "rhs": {
+            "global_ID": " O_8 D_0 V_215 D_8 V_1 O_13 D_2 V_105 D_7 V_106 D_3 D_1 O_0 V_216",
+            "latex": "\\int_{ {{t^o}}{_{}} }^{ {{t^e}}{_{}} } \\, {{\\dot{H}}}{_{N}} \\enskip d\\,{t}{_{}}  + {{H^o}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "Enthalpy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_105",
+            "V_106",
+            "V_215",
+            "V_216"
+          ],
+          "created": "2024-04-04 15:55:31",
+          "modified": "2024-04-04 15:55:31",
+          "lhs": {
+            "global_ID": "V_115",
+            "latex": "{H}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "H",
+      "memory": null,
+      "modified": "2024-03-28 09:14:53",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_116": {
+      "IRI": "qudt:HelmholtzEnergy",
+      "aliases": {
+        "matlab": "A",
+        "latex": "A",
+        "internal_code": "A",
+        "global_ID": "V_116"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_116",
+        "latex": "{A}{_{N}}"
+      },
+      "created": "2024-03-28 09:12:52",
+      "doc": "Helmholtz energy",
+      "equations": {
+        "E_12": {
+          "rhs": {
+            "global_ID": " V_108 O_1 V_113 O_4 V_109",
+            "latex": "{U}{_{N}}  - {T}{_{N}} \\, . \\, {S}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "Helmholtz energy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_109",
+            "V_113"
+          ],
+          "created": "2024-03-28 09:12:52",
+          "modified": "2024-03-28 09:12:52",
+          "lhs": {
+            "global_ID": "V_116",
+            "latex": "{A}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "A",
+      "memory": null,
+      "modified": "2024-03-28 09:14:44",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_117": {
+      "IRI": "qudt:GibbsEnergy",
+      "aliases": {
+        "matlab": "G",
+        "latex": "G",
+        "internal_code": "G",
+        "global_ID": "V_117"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_117",
+        "latex": "{G}{_{N}}"
+      },
+      "created": "2024-03-28 09:13:35",
+      "doc": "Gibbs free energy",
+      "equations": {
+        "E_13": {
+          "rhs": {
+            "global_ID": " V_108 O_0 V_112 O_4 V_110 O_1 V_113 O_4 V_109",
+            "latex": "{U}{_{N}}  + {p}{_{N}} \\, . \\, {V}{_{N}}  - {T}{_{N}} \\, . \\, {S}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "Gibbs free energy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_109",
+            "V_110",
+            "V_112",
+            "V_113"
+          ],
+          "created": "2024-03-28 09:13:35",
+          "modified": "2024-03-28 09:13:35",
+          "lhs": {
+            "global_ID": "V_117",
+            "latex": "{G}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "G",
+      "memory": null,
+      "modified": "2024-03-28 09:14:35",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_118": {
+      "IRI": "promo:v_x",
+      "aliases": {
+        "matlab": "v_x",
+        "latex": "{v_x}",
+        "internal_code": "v_x",
+        "global_ID": "V_118"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_118",
+        "latex": "{{v_x}}{_{N}}"
+      },
+      "created": "2024-03-28 10:02:46",
+      "doc": "velocity in x-direction",
+      "equations": {
+        "E_14": {
+          "rhs": {
+            "global_ID": " O_6 D_0 V_23 D_7 V_1 D_1",
+            "latex": "\\frac{\\partial{{{r_x}}{_{N}}}}{\\partial{{t}{_{}}}}"
+          },
+          "type": "generic",
+          "doc": "velocity in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_23"
+          ],
+          "created": "2024-03-28 10:02:46",
+          "modified": "2024-03-28 10:02:46",
+          "lhs": {
+            "global_ID": "V_118",
+            "latex": "{{v_x}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "v_x",
+      "memory": null,
+      "modified": "2024-03-28 10:02:46",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_119": {
+      "IRI": "promo:v_y",
+      "aliases": {
+        "matlab": "v_y",
+        "latex": "{v_y}",
+        "internal_code": "v_y",
+        "global_ID": "V_119"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_119",
+        "latex": "{{v_y}}{_{N}}"
+      },
+      "created": "2024-03-28 10:03:43",
+      "doc": "velocity in y-direction",
+      "equations": {
+        "E_15": {
+          "rhs": {
+            "global_ID": " O_6 D_0 V_24 D_7 V_1 D_1",
+            "latex": "\\frac{\\partial{{{r_y}}{_{N}}}}{\\partial{{t}{_{}}}}"
+          },
+          "type": "generic",
+          "doc": "velocity in y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_24"
+          ],
+          "created": "2024-03-28 10:03:43",
+          "modified": "2024-03-28 10:03:43",
+          "lhs": {
+            "global_ID": "V_119",
+            "latex": "{{v_y}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "v_y",
+      "memory": null,
+      "modified": "2024-03-28 10:03:43",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_12": {
+      "IRI": "promo:S_Ap",
+      "aliases": {
+        "matlab": "S_Ap",
+        "latex": "{S}",
+        "internal_code": "S_Ap",
+        "global_ID": "V_12"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_12",
+        "latex": "{{S}}{_{A, p}}"
+      },
+      "created": "2024-03-27 08:20:50",
+      "doc": "selection matrix interface species-related measures",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_7"
+      ],
+      "label": "S_Ap",
+      "memory": null,
+      "modified": "2024-03-27 09:19:04",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_120": {
+      "IRI": "promo:v_z",
+      "aliases": {
+        "matlab": "v_z",
+        "latex": "{v_z}",
+        "internal_code": "v_z",
+        "global_ID": "V_120"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_120",
+        "latex": "{{v_z}}{_{N}}"
+      },
+      "created": "2024-03-28 10:04:21",
+      "doc": "velocity in z-direction",
+      "equations": {
+        "E_16": {
+          "rhs": {
+            "global_ID": " O_6 D_0 V_25 D_7 V_1 D_1",
+            "latex": "\\frac{\\partial{{{r_z}}{_{N}}}}{\\partial{{t}{_{}}}}"
+          },
+          "type": "generic",
+          "doc": "velocity in z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_25"
+          ],
+          "created": "2024-03-28 10:04:21",
+          "modified": "2024-03-28 10:04:47",
+          "lhs": {
+            "global_ID": "V_120",
+            "latex": "{{v_z}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "v_z",
+      "memory": null,
+      "modified": "2024-03-28 10:04:58",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_121": {
+      "IRI": "qudt:AvogadroConstant",
+      "aliases": {
+        "matlab": "Avo",
+        "latex": "{N^A}",
+        "internal_code": "Avo",
+        "global_ID": "V_121"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_121",
+        "latex": "{{N^A}}{_{}}"
+      },
+      "created": "2024-03-28 10:09:44",
+      "doc": "Avogadro constant",
+      "equations": {},
+      "imported": false,
+      "index_structures": [],
+      "label": "Avo",
+      "memory": null,
+      "modified": "2024-03-28 10:15:55",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_122": {
+      "IRI": "qudt:BoltzmannConstant",
+      "aliases": {
+        "matlab": "Boltz",
+        "latex": "{k^B}",
+        "internal_code": "Boltz",
+        "global_ID": "V_122"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_122",
+        "latex": "{{k^B}}{_{}}"
+      },
+      "created": "2024-03-28 10:11:54",
+      "doc": "Boltzmann constant",
+      "equations": {},
+      "imported": false,
+      "index_structures": [],
+      "label": "Boltz",
+      "memory": null,
+      "modified": "2024-03-28 10:15:44",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_123": {
+      "IRI": "promo:R",
+      "aliases": {
+        "matlab": "R",
+        "latex": "R",
+        "internal_code": "R",
+        "global_ID": "V_123"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_123",
+        "latex": "{R}{_{}}"
+      },
+      "created": "2024-03-28 10:17:37",
+      "doc": "gas constant",
+      "equations": {
+        "E_17": {
+          "rhs": {
+            "global_ID": " V_121 O_4 V_122",
+            "latex": "{{N^A}}{_{}} \\, . \\, {{k^B}}{_{}}"
+          },
+          "type": "generic",
+          "doc": "gas constant",
+          "network": "physical",
+          "incidence_list": [
+            "V_121",
+            "V_122"
+          ],
+          "created": "2024-03-28 10:17:37",
+          "modified": "2024-03-28 10:17:37",
+          "lhs": {
+            "global_ID": "V_123",
+            "latex": "{R}{_{}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [],
+      "label": "R",
+      "memory": null,
+      "modified": "2024-03-28 10:17:37",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        -2,
+        2,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_124": {
+      "IRI": "promo:Cp",
+      "aliases": {
+        "matlab": "Cp",
+        "latex": "{C_p}",
+        "internal_code": "Cp",
+        "global_ID": "V_124"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_124",
+        "latex": "{{C_p}}{_{N}}"
+      },
+      "created": "2024-03-28 10:19:38",
+      "doc": "total heat capacity at constant pressure",
+      "equations": {
+        "E_18": {
+          "rhs": {
+            "global_ID": " O_6 D_0 V_115 D_7 V_113 D_1",
+            "latex": "\\frac{\\partial{{H}{_{N}}}}{\\partial{{T}{_{N}}}}"
+          },
+          "type": "generic",
+          "doc": "total heat capacity at constant pressure",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_113",
+            "V_115"
+          ],
+          "created": "2024-03-28 10:19:38",
+          "modified": "2024-03-28 10:19:38",
+          "lhs": {
+            "global_ID": "V_124",
+            "latex": "{{C_p}}{_{N}}"
+          }
+        },
+        "E_117": {
+          "rhs": {
+            "global_ID": " V_137 O_4 V_141",
+            "latex": "{m}{_{N}} \\, . \\, {{c_p}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "total heat capacity at constant pressure",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_137",
+            "V_141"
+          ],
+          "created": "2024-06-18 13:52:38",
+          "modified": "2024-06-18 13:52:38",
+          "lhs": {
+            "global_ID": "V_124",
+            "latex": "{{C_p}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "Cp",
+      "memory": null,
+      "modified": "2024-05-10 15:44:29",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_125": {
+      "IRI": "promo:CV",
+      "aliases": {
+        "matlab": "CV",
+        "latex": "{C_V}",
+        "internal_code": "CV",
+        "global_ID": "V_125"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_125",
+        "latex": "{{C_V}}{_{N}}"
+      },
+      "created": "2024-03-28 10:20:47",
+      "doc": "total heat capacity at constant volume",
+      "equations": {
+        "E_19": {
+          "rhs": {
+            "global_ID": " O_6 D_0 V_108 D_7 V_113 D_1",
+            "latex": "\\frac{\\partial{{U}{_{N}}}}{\\partial{{T}{_{N}}}}"
+          },
+          "type": "generic",
+          "doc": "total heat capacity at constant volume",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_113"
+          ],
+          "created": "2024-03-28 10:20:47",
+          "modified": "2024-03-28 10:20:47",
+          "lhs": {
+            "global_ID": "V_125",
+            "latex": "{{C_V}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "CV",
+      "memory": null,
+      "modified": "2024-05-10 15:44:43",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_13": {
+      "IRI": "promo:S_Aq",
+      "aliases": {
+        "matlab": "S_Aq",
+        "latex": "{S}",
+        "internal_code": "S_Aq",
+        "global_ID": "V_13"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_13",
+        "latex": "{{S}}{_{I, q}}"
+      },
+      "created": "2024-03-27 08:48:06",
+      "doc": "selection matrix arcs to outputs",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3",
+        "I_8"
+      ],
+      "label": "S_Aq",
+      "memory": null,
+      "modified": "2024-03-27 09:17:26",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_132": {
+      "IRI": "promo:Mm",
+      "aliases": {
+        "matlab": "Mm",
+        "latex": "{\\lambda}",
+        "internal_code": "Mm",
+        "global_ID": "V_132"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_132",
+        "latex": "{{\\lambda}}{_{S}}"
+      },
+      "created": "2024-03-28 10:35:43",
+      "doc": "molecular masses",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_4"
+      ],
+      "label": "Mm",
+      "memory": null,
+      "modified": "2024-03-28 10:38:22",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_136": {
+      "IRI": "promo:h",
+      "aliases": {
+        "matlab": "h",
+        "latex": "h",
+        "internal_code": "h",
+        "global_ID": "V_136"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_136",
+        "latex": "{h}{_{N, S}}"
+      },
+      "created": "2024-03-28 13:48:32",
+      "doc": "partial molar enthalpies",
+      "equations": {
+        "E_29": {
+          "rhs": {
+            "global_ID": " V_115 O_4 F_15 D_0 V_111 D_1",
+            "latex": "{H}{_{N}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}"
+          },
+          "type": "generic",
+          "doc": "partial molar enthalpies",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_111",
+            "V_115"
+          ],
+          "created": "2024-03-28 13:48:32",
+          "modified": "2024-03-28 13:48:32",
+          "lhs": {
+            "global_ID": "V_136",
+            "latex": "{h}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "h",
+      "memory": null,
+      "modified": "2024-03-28 13:48:32",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -2,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_137": {
+      "IRI": "qudt:Mass",
+      "aliases": {
+        "matlab": "m",
+        "latex": "m",
+        "internal_code": "m",
+        "global_ID": "V_137"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_137",
+        "latex": "{m}{_{N}}"
+      },
+      "created": "2024-03-28 13:50:17",
+      "doc": "mass",
+      "equations": {
+        "E_30": {
+          "rhs": {
+            "global_ID": " V_132  O_5 I_4 V_111",
+            "latex": "{{\\lambda}}{_{S}} \\stackrel{S}{\\star} {n}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "mass",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_111",
+            "V_132"
+          ],
+          "created": "2024-03-28 13:50:17",
+          "modified": "2024-03-28 13:50:17",
+          "lhs": {
+            "global_ID": "V_137",
+            "latex": "{m}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "m",
+      "memory": null,
+      "modified": "2024-03-30 13:54:59",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_138": {
+      "IRI": "promo:c",
+      "aliases": {
+        "matlab": "c",
+        "latex": "c",
+        "internal_code": "c",
+        "global_ID": "V_138"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_138",
+        "latex": "{c}{_{N, S}}"
+      },
+      "created": "2024-03-28 13:52:08",
+      "doc": "molar concentration",
+      "equations": {
+        "E_31": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_110 D_1 O_4 V_111",
+            "latex": "\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {n}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "molar concentration",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_110",
+            "V_111"
+          ],
+          "created": "2024-03-28 13:52:08",
+          "modified": "2024-03-28 13:52:08",
+          "lhs": {
+            "global_ID": "V_138",
+            "latex": "{c}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "c",
+      "memory": null,
+      "modified": "2024-03-28 13:52:08",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_139": {
+      "IRI": "promo:nt",
+      "aliases": {
+        "matlab": "nt",
+        "latex": "{n^t}",
+        "internal_code": "nt",
+        "global_ID": "V_139"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_139",
+        "latex": "{{n^t}}{_{N}}"
+      },
+      "created": "2024-03-28 14:12:42",
+      "doc": "total number of moles",
+      "equations": {
+        "E_32": {
+          "rhs": {
+            "global_ID": " O_15 D_0 V_111 D_7 I_4 D_1",
+            "latex": "\\textbf{reduceSum}\\left({n}{_{N, S}},S\\right)"
+          },
+          "type": "generic",
+          "doc": "total number of moles",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_111"
+          ],
+          "created": "2024-03-28 14:12:42",
+          "modified": "2024-03-28 14:12:42",
+          "lhs": {
+            "global_ID": "V_139",
+            "latex": "{{n^t}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "nt",
+      "memory": null,
+      "modified": "2024-03-28 14:13:35",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_14": {
+      "IRI": "promo:S_Npu",
+      "aliases": {
+        "matlab": "S_Npu",
+        "latex": "{S}",
+        "internal_code": "S_Npu",
+        "global_ID": "V_14"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_14",
+        "latex": "{{S}}{_{N, p, q}}"
+      },
+      "created": "2024-03-27 08:50:43",
+      "doc": "selection matrix for stacker",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7",
+        "I_8"
+      ],
+      "label": "S_Npu",
+      "memory": null,
+      "modified": "2024-03-27 09:17:29",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_140": {
+      "IRI": "promo:x",
+      "aliases": {
+        "matlab": "x",
+        "latex": "x",
+        "internal_code": "x",
+        "global_ID": "V_140"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_140",
+        "latex": "{x}{_{N, S}}"
+      },
+      "created": "2024-03-28 14:13:19",
+      "doc": "mole fraction",
+      "equations": {
+        "E_33": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_139 D_1 O_4 V_111",
+            "latex": "\\left( {{n^t}}{_{N}} \\right)^{-1} \\, . \\, {n}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "mole fraction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_111",
+            "V_139"
+          ],
+          "created": "2024-03-28 14:13:19",
+          "modified": "2024-03-28 14:13:19",
+          "lhs": {
+            "global_ID": "V_140",
+            "latex": "{x}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "x",
+      "memory": null,
+      "modified": "2024-03-28 14:13:19",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_141": {
+      "IRI": "promo:cp",
+      "aliases": {
+        "matlab": "cp",
+        "latex": "{c_p}",
+        "internal_code": "cp",
+        "global_ID": "V_141"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_141",
+        "latex": "{{c_p}}{_{N}}"
+      },
+      "created": "2024-03-30 13:47:18",
+      "doc": "specific heat capacity at constant pressure",
+      "equations": {
+        "E_34": {
+          "rhs": {
+            "global_ID": " V_124 O_4 F_15 D_0 V_137 D_1",
+            "latex": "{{C_p}}{_{N}} \\, . \\, \\left( {m}{_{N}} \\right)^{-1}"
+          },
+          "type": "generic",
+          "doc": "specific heat capacity at constant pressure",
+          "network": "physical",
+          "incidence_list": [
+            "V_124",
+            "V_137"
+          ],
+          "created": "2024-03-30 13:47:18",
+          "modified": "2024-03-30 13:49:16",
+          "lhs": {
+            "global_ID": "V_141",
+            "latex": "{{c_p}}{_{N}}"
+          }
+        },
+        "E_120": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_141 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{c_p}}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "constant specific heat capacity at constant pressure ",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_141"
+          ],
+          "created": "2024-06-18 14:08:41",
+          "modified": "2024-06-18 14:08:41",
+          "lhs": {
+            "global_ID": "V_141",
+            "latex": "{{c_p}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "cp",
+      "memory": null,
+      "modified": "2024-03-30 13:48:58",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -2,
+        2,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_142": {
+      "IRI": "promo:cV",
+      "aliases": {
+        "matlab": "cV",
+        "latex": "{c_V}",
+        "internal_code": "cV",
+        "global_ID": "V_142"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_142",
+        "latex": "{{c_V}}{_{N}}"
+      },
+      "created": "2024-03-30 13:48:44",
+      "doc": "specific heat capacity at constant volume",
+      "equations": {
+        "E_35": {
+          "rhs": {
+            "global_ID": " V_125 O_4 F_15 D_0 V_137 D_1",
+            "latex": "{{C_V}}{_{N}} \\, . \\, \\left( {m}{_{N}} \\right)^{-1}"
+          },
+          "type": "generic",
+          "doc": "specific heat capacity at constant volume",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_125",
+            "V_137"
+          ],
+          "created": "2024-03-30 13:48:44",
+          "modified": "2024-03-30 13:48:44",
+          "lhs": {
+            "global_ID": "V_142",
+            "latex": "{{c_V}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "cV",
+      "memory": null,
+      "modified": "2024-03-30 13:48:44",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        -2,
+        2,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_143": {
+      "IRI": "promo:rho",
+      "aliases": {
+        "matlab": "rho",
+        "latex": "{\\rho}",
+        "internal_code": "rho",
+        "global_ID": "V_143"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_143",
+        "latex": "{{\\rho}}{_{N}}"
+      },
+      "created": "2024-03-30 13:49:59",
+      "doc": "density",
+      "equations": {
+        "E_36": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_110 D_1 O_4 V_137",
+            "latex": "\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {m}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "density",
+          "network": "physical",
+          "incidence_list": [
+            "V_110",
+            "V_137"
+          ],
+          "created": "2024-03-30 13:49:59",
+          "modified": "2024-03-30 13:50:33",
+          "lhs": {
+            "global_ID": "V_143",
+            "latex": "{{\\rho}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "rho",
+      "memory": null,
+      "modified": "2024-03-30 13:50:33",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        -3,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_144": {
+      "IRI": "qudt:ElectricCharge",
+      "aliases": {
+        "matlab": "C",
+        "latex": "C",
+        "internal_code": "C",
+        "global_ID": "V_144"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_144",
+        "latex": "{C}{_{N}}"
+      },
+      "created": "2024-03-30 13:53:15",
+      "doc": "fundamental state -- charge",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "C",
+      "memory": null,
+      "modified": "2024-03-30 13:54:44",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "V_148": {
+      "IRI": "promo:Axy",
+      "aliases": {
+        "matlab": "Axy",
+        "latex": "{A_{xy}}",
+        "internal_code": "Axy",
+        "global_ID": "V_148"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_148",
+        "latex": "{{A_{xy}}}{_{N}}"
+      },
+      "created": "2024-03-30 14:34:55",
+      "doc": "cross sectional area xy",
+      "equations": {
+        "E_40": {
+          "rhs": {
+            "global_ID": " V_23 O_4 V_24",
+            "latex": "{{r_x}}{_{N}} \\, . \\, {{r_y}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "cross sectional area xy",
+          "network": "physical",
+          "incidence_list": [
+            "V_23",
+            "V_24"
+          ],
+          "created": "2024-03-30 14:34:55",
+          "modified": "2024-03-30 14:34:55",
+          "lhs": {
+            "global_ID": "V_148",
+            "latex": "{{A_{xy}}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "Axy",
+      "memory": null,
+      "modified": "2024-03-30 14:34:55",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_149": {
+      "IRI": "promo:Axz",
+      "aliases": {
+        "matlab": "Axz",
+        "latex": "{A_{xz}}",
+        "internal_code": "Axz",
+        "global_ID": "V_149"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_149",
+        "latex": "{{A_{xz}}}{_{N}}"
+      },
+      "created": "2024-03-30 14:35:41",
+      "doc": "cross sectional are xz",
+      "equations": {
+        "E_41": {
+          "rhs": {
+            "global_ID": " V_23 O_4 V_25",
+            "latex": "{{r_x}}{_{N}} \\, . \\, {{r_z}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "cross sectional are xz",
+          "network": "physical",
+          "incidence_list": [
+            "V_23",
+            "V_25"
+          ],
+          "created": "2024-03-30 14:35:41",
+          "modified": "2024-03-30 14:35:41",
+          "lhs": {
+            "global_ID": "V_149",
+            "latex": "{{A_{xz}}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "Axz",
+      "memory": null,
+      "modified": "2024-03-30 14:35:41",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_15": {
+      "IRI": "promo:S_Nqt",
+      "aliases": {
+        "matlab": "S_Nqt",
+        "latex": "{S}",
+        "internal_code": "S_Nqt",
+        "global_ID": "V_15"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_15",
+        "latex": "{{S}}{_{N, q, t}}"
+      },
+      "created": "2024-03-27 08:57:14",
+      "doc": "selection matrix or splitter",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_8",
+        "I_10"
+      ],
+      "label": "S_Nqt",
+      "memory": null,
+      "modified": "2024-03-27 09:17:55",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_150": {
+      "IRI": "promo:Ayz",
+      "aliases": {
+        "matlab": "Ayz",
+        "latex": "{A_{yz}}",
+        "internal_code": "Ayz",
+        "global_ID": "V_150"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_150",
+        "latex": "{{A_{yz}}}{_{N}}"
+      },
+      "created": "2024-03-30 14:36:38",
+      "doc": "cross sectional area yz",
+      "equations": {
+        "E_42": {
+          "rhs": {
+            "global_ID": " V_24 O_4 V_25",
+            "latex": "{{r_y}}{_{N}} \\, . \\, {{r_z}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "cross sectional area yz",
+          "network": "physical",
+          "incidence_list": [
+            "V_24",
+            "V_25"
+          ],
+          "created": "2024-03-30 14:36:38",
+          "modified": "2024-03-30 14:36:38",
+          "lhs": {
+            "global_ID": "V_150",
+            "latex": "{{A_{yz}}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "Ayz",
+      "memory": null,
+      "modified": "2024-03-30 14:36:38",
+      "network": "physical",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_151": {
+      "IRI": "promo:fq_x",
+      "aliases": {
+        "matlab": "fq_x",
+        "latex": "{\\hat{q}_x}",
+        "internal_code": "fq_x",
+        "global_ID": "V_151"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_151",
+        "latex": "{{\\hat{q}_x}}{_{A}}"
+      },
+      "created": "2024-03-30 15:23:46",
+      "doc": "heat flow in x-direction",
+      "equations": {
+        "E_43": {
+          "rhs": {
+            "global_ID": " V_186 O_4 V_150 O_4 V_2  O_5 I_1 V_113",
+            "latex": "{{k^q_x}}{_{A}} \\, . \\, {{A_{yz}}}{_{N}} \\, . \\, {{F}}{_{N, A}} \\stackrel{N}{\\star} {T}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "heat flow in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_113",
+            "V_150",
+            "V_186",
+            "V_2"
+          ],
+          "created": "2024-03-30 15:23:46",
+          "modified": "2024-04-03 12:30:08",
+          "lhs": {
+            "global_ID": "V_151",
+            "latex": "{{\\hat{q}_x}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "fq_x",
+      "memory": null,
+      "modified": "2024-03-30 15:23:46",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_152": {
+      "IRI": "promo:fq_y",
+      "aliases": {
+        "matlab": "fq_y",
+        "latex": "{\\hat{q}_y}",
+        "internal_code": "fq_y",
+        "global_ID": "V_152"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_152",
+        "latex": "{{\\hat{q}_y}}{_{A}}"
+      },
+      "created": "2024-03-30 15:24:47",
+      "doc": "heat flow in y-direction",
+      "equations": {
+        "E_44": {
+          "rhs": {
+            "global_ID": " V_187 O_4 V_149 O_4 V_2  O_5 I_1 V_113",
+            "latex": "{{k^q_y}}{_{A}} \\, . \\, {{A_{xz}}}{_{N}} \\, . \\, {{F}}{_{N, A}} \\stackrel{N}{\\star} {T}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "heat flow in y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_113",
+            "V_149",
+            "V_187",
+            "V_2"
+          ],
+          "created": "2024-03-30 15:24:47",
+          "modified": "2024-04-03 16:29:44",
+          "lhs": {
+            "global_ID": "V_152",
+            "latex": "{{\\hat{q}_y}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "fq_y",
+      "memory": null,
+      "modified": "2024-03-30 15:24:47",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_153": {
+      "IRI": "promo:fq_z",
+      "aliases": {
+        "matlab": "fq_z",
+        "latex": "{\\hat{q}_z}",
+        "internal_code": "fq_z",
+        "global_ID": "V_153"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_153",
+        "latex": "{{\\hat{q}_z}}{_{A}}"
+      },
+      "created": "2024-03-30 15:25:40",
+      "doc": "heat flow in z-direction",
+      "equations": {
+        "E_45": {
+          "rhs": {
+            "global_ID": " V_188 O_4 V_148 O_4 V_2  O_5 I_1 V_113",
+            "latex": "{{k^q_z}}{_{A}} \\, . \\, {{A_{xy}}}{_{N}} \\, . \\, {{F}}{_{N, A}} \\stackrel{N}{\\star} {T}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "heat flow in z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_113",
+            "V_148",
+            "V_188",
+            "V_2"
+          ],
+          "created": "2024-03-30 15:25:40",
+          "modified": "2024-04-03 16:30:30",
+          "lhs": {
+            "global_ID": "V_153",
+            "latex": "{{\\hat{q}_z}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "fq_z",
+      "memory": null,
+      "modified": "2024-03-30 15:25:40",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_154": {
+      "IRI": "promo:fnd_x",
+      "aliases": {
+        "matlab": "fnd_x",
+        "latex": "{\\hat{n}^{d}_x}",
+        "internal_code": "fnd_x",
+        "global_ID": "V_154"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_154",
+        "latex": "{{\\hat{n}^{d}_x}}{_{A, S}}"
+      },
+      "created": "2024-03-30 15:31:09",
+      "doc": "diffusion flow in x-direction",
+      "equations": {
+        "E_46": {
+          "rhs": {
+            "global_ID": " V_190 O_4 V_150 O_4 V_2  O_5 I_1 V_138",
+            "latex": "{{\\hat{k}^{d,Fick}_x}}{_{A, S}} \\, . \\, {{A_{yz}}}{_{N}} \\, . \\, {{F}}{_{N, A}} \\stackrel{N}{\\star} {c}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "Fick diffusion flow in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_138",
+            "V_150",
+            "V_190",
+            "V_2"
+          ],
+          "created": "2024-03-30 15:31:09",
+          "modified": "2024-04-03 17:08:52",
+          "lhs": {
+            "global_ID": "V_154",
+            "latex": "{{\\hat{n}^{d}_x}}{_{A, S}}"
+          }
+        },
+        "E_89": {
+          "rhs": {
+            "global_ID": " V_180 O_4 D_0 V_150 O_4 V_2 D_1  O_5 I_1 V_114",
+            "latex": "{{k^d_x}}{_{A, S}} \\, . \\, \\left({{A_{yz}}}{_{N}} \\, . \\, {{F}}{_{N, A}}\\right) \\stackrel{N}{\\star} {{\\mu}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "Fick diffusion flow in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_114",
+            "V_150",
+            "V_180",
+            "V_2"
+          ],
+          "created": "2024-04-03 16:52:53",
+          "modified": "2024-04-03 16:52:53",
+          "lhs": {
+            "global_ID": "V_154",
+            "latex": "{{\\hat{n}^{d}_x}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "fnd_x",
+      "memory": null,
+      "modified": "2024-04-03 17:08:52",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_155": {
+      "IRI": "promo:fnd_y",
+      "aliases": {
+        "matlab": "fnd_y",
+        "latex": "{\\hat{n}^{d}_y}",
+        "internal_code": "fnd_y",
+        "global_ID": "V_155"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_155",
+        "latex": "{{\\hat{n}^{d}_y}}{_{A, S}}"
+      },
+      "created": "2024-03-30 15:32:35",
+      "doc": "diffusion flow in y-direction",
+      "equations": {
+        "E_47": {
+          "rhs": {
+            "global_ID": " V_191 O_4 V_149 O_4 V_2  O_5 I_1 V_138",
+            "latex": "{{\\hat{k}^{d,Fick}_y}}{_{A, S}} \\, . \\, {{A_{xz}}}{_{N}} \\, . \\, {{F}}{_{N, A}} \\stackrel{N}{\\star} {c}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "Fick diffusion flow in y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_138",
+            "V_149",
+            "V_191",
+            "V_2"
+          ],
+          "created": "2024-03-30 15:32:35",
+          "modified": "2024-04-03 17:09:37",
+          "lhs": {
+            "global_ID": "V_155",
+            "latex": "{{\\hat{n}^{d}_y}}{_{A, S}}"
+          }
+        },
+        "E_90": {
+          "rhs": {
+            "global_ID": " V_181 O_4 D_0 V_150 O_4 V_2 D_1  O_5 I_1 V_114",
+            "latex": "{{k^d_y}}{_{A, S}} \\, . \\, \\left({{A_{yz}}}{_{N}} \\, . \\, {{F}}{_{N, A}}\\right) \\stackrel{N}{\\star} {{\\mu}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "Fick diffusion flow in y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_114",
+            "V_150",
+            "V_181",
+            "V_2"
+          ],
+          "created": "2024-04-03 16:53:28",
+          "modified": "2024-04-03 16:53:28",
+          "lhs": {
+            "global_ID": "V_155",
+            "latex": "{{\\hat{n}^{d}_y}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "fnd_y",
+      "memory": null,
+      "modified": "2024-04-03 17:09:37",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_156": {
+      "IRI": "promo:fnd_z",
+      "aliases": {
+        "matlab": "fnd_z",
+        "latex": "{\\hat{n}^{d}_z}",
+        "internal_code": "fnd_z",
+        "global_ID": "V_156"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_156",
+        "latex": "{{\\hat{n}^{d}_z}}{_{A, S}}"
+      },
+      "created": "2024-03-30 15:33:31",
+      "doc": "diffusion flow in z-direction",
+      "equations": {
+        "E_48": {
+          "rhs": {
+            "global_ID": " V_192 O_4 D_0 V_148 O_4 V_2 D_1  O_5 I_1 V_138",
+            "latex": "{{\\hat{k}^{d,Fick}_z}}{_{A, S}} \\, . \\, \\left({{A_{xy}}}{_{N}} \\, . \\, {{F}}{_{N, A}}\\right) \\stackrel{N}{\\star} {c}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "Fick diffusion flow in z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_138",
+            "V_148",
+            "V_192",
+            "V_2"
+          ],
+          "created": "2024-03-30 15:33:31",
+          "modified": "2024-04-03 17:07:08",
+          "lhs": {
+            "global_ID": "V_156",
+            "latex": "{{\\hat{n}^{d}_z}}{_{A, S}}"
+          }
+        },
+        "E_91": {
+          "rhs": {
+            "global_ID": " V_182 O_4 D_0 V_148 O_4 V_2 D_1  O_5 I_1 V_114",
+            "latex": "{{k^d_z}}{_{A, S}} \\, . \\, \\left({{A_{xy}}}{_{N}} \\, . \\, {{F}}{_{N, A}}\\right) \\stackrel{N}{\\star} {{\\mu}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "mass diffusion flow in z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_114",
+            "V_148",
+            "V_182",
+            "V_2"
+          ],
+          "created": "2024-04-03 17:05:14",
+          "modified": "2024-04-03 17:05:46",
+          "lhs": {
+            "global_ID": "V_156",
+            "latex": "{{\\hat{n}^{d}_z}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "fnd_z",
+      "memory": null,
+      "modified": "2024-04-03 17:05:46",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_157": {
+      "IRI": "promo:d",
+      "aliases": {
+        "matlab": "d",
+        "latex": "d",
+        "internal_code": "d",
+        "global_ID": "V_157"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_157",
+        "latex": "{d}{_{A}}"
+      },
+      "created": "2024-03-30 15:36:54",
+      "doc": "flow direction of convective flow",
+      "equations": {
+        "E_49": {
+          "rhs": {
+            "global_ID": " F_16 D_0 V_2  O_5 I_1 V_112 D_1",
+            "latex": "\\textbf{sign} \\left( {{F}}{_{N, A}} \\stackrel{N}{\\star} {p}{_{N}} \\right)"
+          },
+          "type": "generic",
+          "doc": "flow direction of convective flow",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_112",
+            "V_2"
+          ],
+          "created": "2024-03-30 15:36:54",
+          "modified": "2024-03-30 15:36:54",
+          "lhs": {
+            "global_ID": "V_157",
+            "latex": "{d}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "d",
+      "memory": null,
+      "modified": "2024-03-30 15:36:54",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_158": {
+      "IRI": "promo:c_AS",
+      "aliases": {
+        "matlab": "c_AS",
+        "latex": "c",
+        "internal_code": "c_AS",
+        "global_ID": "V_158"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_158",
+        "latex": "{c}{_{A, S}}"
+      },
+      "created": "2024-03-30 15:39:39",
+      "doc": "concentration in convective event-dynamic flow",
+      "equations": {
+        "E_50": {
+          "rhs": {
+            "global_ID": " D_0 V_104 O_4 D_0 V_2 O_1 V_157 O_4 F_10 D_0 V_2 D_1 D_1 D_1  O_5 I_1 V_138",
+            "latex": "\\left({0.5}{_{}} \\, . \\, \\left({{F}}{_{N, A}}  - {d}{_{A}} \\, . \\, |{{F}}{_{N, A}}|\\right)\\right) \\stackrel{N}{\\star} {c}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "concentration in convective event-dynamic flow",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_104",
+            "V_138",
+            "V_157",
+            "V_2"
+          ],
+          "created": "2024-03-30 15:39:39",
+          "modified": "2024-03-30 15:39:39",
+          "lhs": {
+            "global_ID": "V_158",
+            "latex": "{c}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "c_AS",
+      "memory": null,
+      "modified": "2024-03-30 15:39:39",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        0,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_159": {
+      "IRI": "promo:fV",
+      "aliases": {
+        "matlab": "fV",
+        "latex": "{\\hat{V}}",
+        "internal_code": "fV",
+        "global_ID": "V_159"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_159",
+        "latex": "{{\\hat{V}}}{_{A}}"
+      },
+      "created": "2024-03-30 15:42:22",
+      "doc": "volumetric flow in x-direction",
+      "equations": {
+        "E_51": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_189 D_1 O_4 V_183 O_4 V_150 O_4 V_2  O_5 I_1 V_112",
+            "latex": "\\left( {{\\rho}}{_{A}} \\right)^{-1} \\, . \\, {{k^c_x}}{_{A}} \\, . \\, {{A_{yz}}}{_{N}} \\, . \\, {{F}}{_{N, A}} \\stackrel{N}{\\star} {p}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "volumetric flow in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_112",
+            "V_150",
+            "V_183",
+            "V_189",
+            "V_2"
+          ],
+          "created": "2024-03-30 15:42:22",
+          "modified": "2024-04-03 09:58:01",
+          "lhs": {
+            "global_ID": "V_159",
+            "latex": "{{\\hat{V}}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "fV",
+      "memory": null,
+      "modified": "2024-03-30 15:42:22",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_16": {
+      "IRI": "promo:mv_I",
+      "aliases": {
+        "matlab": "mv_I",
+        "latex": "{mv}",
+        "internal_code": "mv_I",
+        "global_ID": "V_16"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_16",
+        "latex": "{{mv}}{_{I}}"
+      },
+      "created": "2024-03-27 08:58:02",
+      "doc": "interface variable macro --> control",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3"
+      ],
+      "label": "mv_I",
+      "memory": null,
+      "modified": "2024-03-27 09:18:02",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_160": {
+      "IRI": "promo:fnc_x",
+      "aliases": {
+        "matlab": "fnc_x",
+        "latex": "{\\hat{n}^c_x}",
+        "internal_code": "fnc_x",
+        "global_ID": "V_160"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_160",
+        "latex": "{{\\hat{n}^c_x}}{_{A, S}}"
+      },
+      "created": "2024-03-30 15:43:52",
+      "doc": "molar convective flow in x-direction",
+      "equations": {
+        "E_52": {
+          "rhs": {
+            "global_ID": " V_159 O_4 V_158",
+            "latex": "{{\\hat{V}}}{_{A}} \\, . \\, {c}{_{A, S}}"
+          },
+          "type": "generic",
+          "doc": "molar convective flow in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_158",
+            "V_159"
+          ],
+          "created": "2024-03-30 15:43:52",
+          "modified": "2024-03-30 15:43:52",
+          "lhs": {
+            "global_ID": "V_160",
+            "latex": "{{\\hat{n}^c_x}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "fnc_x",
+      "memory": null,
+      "modified": "2024-03-30 15:43:52",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_161": {
+      "IRI": "promo:chemPotStandard",
+      "aliases": {
+        "matlab": "chemPotStandard",
+        "latex": "{\\mu^o}",
+        "internal_code": "chemPotStandard",
+        "global_ID": "V_161"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_161",
+        "latex": "{{\\mu^o}}{_{N, S}}"
+      },
+      "created": "2024-03-30 15:46:57",
+      "doc": "instantiating standard chemical potential",
+      "equations": {
+        "E_53": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_114 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{\\mu}}{_{N, S}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "instantiating standard chemical potential",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_114"
+          ],
+          "created": "2024-03-30 15:46:57",
+          "modified": "2024-03-30 15:46:57",
+          "lhs": {
+            "global_ID": "V_161",
+            "latex": "{{\\mu^o}}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "chemPotStandard",
+      "memory": null,
+      "modified": "2024-03-30 15:46:57",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "effort",
+      "units": [
+        -2,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_162": {
+      "IRI": "promo:_c",
+      "aliases": {
+        "matlab": "_c",
+        "latex": "\\_c",
+        "internal_code": "_c",
+        "global_ID": "V_162"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_162",
+        "latex": "{\\_c}{_{I, S}}"
+      },
+      "created": "2024-03-30 18:06:12",
+      "doc": "link variable _c to interface macroscopic >>> reactions with source:node",
+      "equations": {
+        "E_55": {
+          "rhs": {
+            "global_ID": " V_3  O_5 I_1 V_138",
+            "latex": "{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {c}{_{N, S}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic >>> reactions",
+          "incidence_list": [
+            "V_138",
+            "V_3"
+          ],
+          "created": "2024-03-30 18:06:12",
+          "modified": "2024-03-30 18:06:12",
+          "lhs": {
+            "global_ID": "V_162",
+            "latex": "{\\_c}{_{I, S}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_3",
+        "I_4"
+      ],
+      "label": "_c",
+      "memory": "node",
+      "modified": "2024-03-30 18:06:12",
+      "network": "macroscopic >>> reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_163": {
+      "IRI": "promo:c",
+      "aliases": {
+        "matlab": "c",
+        "latex": "c",
+        "internal_code": "c",
+        "global_ID": "V_163"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_163",
+        "latex": "{c}{_{N, S, p}}"
+      },
+      "created": "2024-03-30 18:06:14",
+      "doc": "link variable _c to interface reactions",
+      "equations": {
+        "E_56": {
+          "rhs": {
+            "global_ID": " D_0 V_4 O_4 V_162 D_1  O_5 I_3 V_9",
+            "latex": "\\left({{F^{sink}}}{_{N, I}} \\, . \\, {\\_c}{_{I, S}}\\right) \\stackrel{I}{\\star} {{S}}{_{I, p}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "reactions",
+          "incidence_list": [
+            "V_162",
+            "V_4",
+            "V_9"
+          ],
+          "created": "2024-03-30 18:06:14",
+          "modified": "2024-03-30 18:06:14",
+          "lhs": {
+            "global_ID": "V_163",
+            "latex": "{c}{_{N, S, p}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_1",
+        "I_4",
+        "I_7"
+      ],
+      "label": "c",
+      "memory": "node",
+      "modified": "2024-03-30 18:06:14",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_164": {
+      "IRI": "promo:_x",
+      "aliases": {
+        "matlab": "_x",
+        "latex": "\\_x",
+        "internal_code": "_x",
+        "global_ID": "V_164"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_164",
+        "latex": "{\\_x}{_{I, S}}"
+      },
+      "created": "2024-03-30 18:08:39",
+      "doc": "link variable _x to interface macroscopic >>> reactions with source:node",
+      "equations": {
+        "E_57": {
+          "rhs": {
+            "global_ID": " V_3  O_5 I_1 V_140",
+            "latex": "{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {x}{_{N, S}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic >>> reactions",
+          "incidence_list": [
+            "V_140",
+            "V_3"
+          ],
+          "created": "2024-03-30 18:08:39",
+          "modified": "2024-03-30 18:08:39",
+          "lhs": {
+            "global_ID": "V_164",
+            "latex": "{\\_x}{_{I, S}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_3",
+        "I_4"
+      ],
+      "label": "_x",
+      "memory": "node",
+      "modified": "2024-03-30 18:08:39",
+      "network": "macroscopic >>> reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_165": {
+      "IRI": "promo:x",
+      "aliases": {
+        "matlab": "x",
+        "latex": "x",
+        "internal_code": "x",
+        "global_ID": "V_165"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_165",
+        "latex": "{x}{_{N, S, p}}"
+      },
+      "created": "2024-03-30 18:08:41",
+      "doc": "link variable _x to interface reactions",
+      "equations": {
+        "E_58": {
+          "rhs": {
+            "global_ID": " D_0 V_4 O_4 V_164 D_1  O_5 I_3 V_9",
+            "latex": "\\left({{F^{sink}}}{_{N, I}} \\, . \\, {\\_x}{_{I, S}}\\right) \\stackrel{I}{\\star} {{S}}{_{I, p}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "reactions",
+          "incidence_list": [
+            "V_164",
+            "V_4",
+            "V_9"
+          ],
+          "created": "2024-03-30 18:08:41",
+          "modified": "2024-03-30 18:08:41",
+          "lhs": {
+            "global_ID": "V_165",
+            "latex": "{x}{_{N, S, p}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_1",
+        "I_4",
+        "I_7"
+      ],
+      "label": "x",
+      "memory": "node",
+      "modified": "2024-03-30 18:08:41",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_166": {
+      "IRI": "promo:_T",
+      "aliases": {
+        "matlab": "_T",
+        "latex": "\\_T",
+        "internal_code": "_T",
+        "global_ID": "V_166"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_166",
+        "latex": "{\\_T}{_{I}}"
+      },
+      "created": "2024-03-30 18:08:59",
+      "doc": "link variable _T to interface macroscopic >>> reactions with source:node",
+      "equations": {
+        "E_59": {
+          "rhs": {
+            "global_ID": " V_3  O_5 I_1 V_113",
+            "latex": "{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {T}{_{N}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic >>> reactions",
+          "incidence_list": [
+            "V_113",
+            "V_3"
+          ],
+          "created": "2024-03-30 18:08:59",
+          "modified": "2024-03-30 18:08:59",
+          "lhs": {
+            "global_ID": "V_166",
+            "latex": "{\\_T}{_{I}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_3"
+      ],
+      "label": "_T",
+      "memory": "node",
+      "modified": "2024-03-30 18:08:59",
+      "network": "macroscopic >>> reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_167": {
+      "IRI": "promo:T",
+      "aliases": {
+        "matlab": "T",
+        "latex": "T",
+        "internal_code": "T",
+        "global_ID": "V_167"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_167",
+        "latex": "{T}{_{N, p}}"
+      },
+      "created": "2024-03-30 18:09:03",
+      "doc": "link variable _T to interface reactions",
+      "equations": {
+        "E_60": {
+          "rhs": {
+            "global_ID": " D_0 V_4 O_4 V_166 D_1  O_5 I_3 V_9",
+            "latex": "\\left({{F^{sink}}}{_{N, I}} \\, . \\, {\\_T}{_{I}}\\right) \\stackrel{I}{\\star} {{S}}{_{I, p}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "reactions",
+          "incidence_list": [
+            "V_166",
+            "V_4",
+            "V_9"
+          ],
+          "created": "2024-03-30 18:09:03",
+          "modified": "2024-03-30 18:09:03",
+          "lhs": {
+            "global_ID": "V_167",
+            "latex": "{T}{_{N, p}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "T",
+      "memory": "node",
+      "modified": "2024-03-30 18:09:03",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "effort",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_168": {
+      "IRI": "promo:factor",
+      "aliases": {
+        "matlab": "factor",
+        "latex": "f",
+        "internal_code": "factor",
+        "global_ID": "V_168"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_168",
+        "latex": "{f}{_{N, S, K, p}}"
+      },
+      "created": "2024-03-30 18:34:24",
+      "doc": "factor for probability computation",
+      "equations": {
+        "E_61": {
+          "rhs": {
+            "global_ID": " V_165 O_2 D_0 D_0 F_10 D_0 V_26 D_1 D_1 D_1",
+            "latex": "{x}{_{N, S, p}}^{\\left(\\left(|{N}{_{S, K}}|\\right)\\right)}"
+          },
+          "type": "generic",
+          "doc": "factor for probability computation",
+          "network": "reactions",
+          "incidence_list": [
+            "V_165",
+            "V_26"
+          ],
+          "created": "2024-03-30 18:34:24",
+          "modified": "2024-03-30 18:34:24",
+          "lhs": {
+            "global_ID": "V_168",
+            "latex": "{f}{_{N, S, K, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4",
+        "I_5",
+        "I_7"
+      ],
+      "label": "factor",
+      "memory": "node",
+      "modified": "2024-03-30 18:34:24",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "conversion",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_169": {
+      "IRI": "promo:probability",
+      "aliases": {
+        "matlab": "probability",
+        "latex": "\\xi",
+        "internal_code": "probability",
+        "global_ID": "V_169"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_169",
+        "latex": "{\\xi}{_{N, K, p}}"
+      },
+      "created": "2024-03-30 18:35:15",
+      "doc": "probability of reaction to take place",
+      "equations": {
+        "E_62": {
+          "rhs": {
+            "global_ID": " O_9 D_0 V_168 D_7 I_4 D_1",
+            "latex": "\\prod_{S}  {{f}{_{N, S, K, p}}} "
+          },
+          "type": "generic",
+          "doc": "probability of reaction to take place",
+          "network": "reactions",
+          "incidence_list": [
+            "V_168"
+          ],
+          "created": "2024-03-30 18:35:15",
+          "modified": "2024-03-30 18:35:15",
+          "lhs": {
+            "global_ID": "V_169",
+            "latex": "{\\xi}{_{N, K, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_5",
+        "I_7"
+      ],
+      "label": "probability",
+      "memory": "node",
+      "modified": "2024-03-31 16:01:01",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "conversion",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_17": {
+      "IRI": "promo:cz_N",
+      "aliases": {
+        "matlab": "cz_N",
+        "latex": "{cz}",
+        "internal_code": "cz_N",
+        "global_ID": "V_17"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_17",
+        "latex": "{{cz}}{_{N}}"
+      },
+      "created": "2024-03-27 08:58:58",
+      "doc": "output from control",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "cz_N",
+      "memory": null,
+      "modified": "2024-03-27 09:18:14",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_18": {
+      "IRI": "promo:cz_I",
+      "aliases": {
+        "matlab": "cz_I",
+        "latex": "{cz}",
+        "internal_code": "cz_I",
+        "global_ID": "V_18"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_18",
+        "latex": "{{cz}}{_{I}}"
+      },
+      "created": "2024-03-27 09:03:49",
+      "doc": "interface variable macro --> control",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3"
+      ],
+      "label": "cz_I",
+      "memory": null,
+      "modified": "2024-03-27 09:18:20",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_180": {
+      "IRI": "promo:kdA_x",
+      "aliases": {
+        "matlab": "kdA_x",
+        "latex": "{k^d_x}",
+        "internal_code": "kdA_x",
+        "global_ID": "V_180"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_180",
+        "latex": "{{k^d_x}}{_{A, S}}"
+      },
+      "created": "2024-04-03 09:37:45",
+      "doc": "diffusivity in arc and x-direction",
+      "equations": {
+        "E_73": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 F_15 D_0 V_114 D_1 O_4 D_0 V_118 O_4 D_0 F_15 D_0 V_110 D_1 O_4 O_6 D_0 V_108 D_7 V_114 D_1 D_1 D_1 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {{\\mu}}{_{N, S}} \\right)^{-1} \\, . \\, \\left({{v_x}}{_{N}} \\, . \\, \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}}\\right)\\right)\\right)"
+          },
+          "type": "generic",
+          "doc": "diffusivity in arc and x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_110",
+            "V_114",
+            "V_118",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:37:45",
+          "modified": "2024-04-03 16:01:30",
+          "lhs": {
+            "global_ID": "V_180",
+            "latex": "{{k^d_x}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "kdA_x",
+      "memory": null,
+      "modified": "2024-04-03 09:41:34",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        1,
+        -4,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_181": {
+      "IRI": "promo:kdA_y",
+      "aliases": {
+        "matlab": "kdA_y",
+        "latex": "{k^d_y}",
+        "internal_code": "kdA_y",
+        "global_ID": "V_181"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_181",
+        "latex": "{{k^d_y}}{_{A, S}}"
+      },
+      "created": "2024-04-03 09:38:38",
+      "doc": "diffusivity in arc and y-direction",
+      "equations": {
+        "E_74": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 F_15 D_0 V_114 D_1 O_4 D_0 V_119 O_4 D_0 F_15 D_0 V_110 D_1 O_4 O_6 D_0 V_108 D_7 V_114 D_1 D_1 D_1 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {{\\mu}}{_{N, S}} \\right)^{-1} \\, . \\, \\left({{v_y}}{_{N}} \\, . \\, \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}}\\right)\\right)\\right)"
+          },
+          "type": "generic",
+          "doc": "diffusivity in arc and y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_110",
+            "V_114",
+            "V_119",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:38:38",
+          "modified": "2024-04-03 16:02:22",
+          "lhs": {
+            "global_ID": "V_181",
+            "latex": "{{k^d_y}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "kdA_y",
+      "memory": null,
+      "modified": "2024-04-03 09:38:38",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        1,
+        -4,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_182": {
+      "IRI": "promo:kdA_z",
+      "aliases": {
+        "matlab": "kdA_z",
+        "latex": "{k^d_z}",
+        "internal_code": "kdA_z",
+        "global_ID": "V_182"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_182",
+        "latex": "{{k^d_z}}{_{A, S}}"
+      },
+      "created": "2024-04-03 09:41:23",
+      "doc": "diffusivity in arc and z-direction",
+      "equations": {
+        "E_75": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 F_15 D_0 V_114 D_1 O_4 D_0 V_120 O_4 D_0 F_15 D_0 V_110 D_1 O_4 O_6 D_0 V_108 D_7 V_114 D_1 D_1 D_1 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {{\\mu}}{_{N, S}} \\right)^{-1} \\, . \\, \\left({{v_z}}{_{N}} \\, . \\, \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}}\\right)\\right)\\right)"
+          },
+          "type": "generic",
+          "doc": "diffusivity in arc and z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_110",
+            "V_114",
+            "V_120",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:41:23",
+          "modified": "2024-04-03 16:03:41",
+          "lhs": {
+            "global_ID": "V_182",
+            "latex": "{{k^d_z}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "kdA_z",
+      "memory": null,
+      "modified": "2024-04-03 09:41:23",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        1,
+        -4,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_183": {
+      "IRI": "promo:kcA_x",
+      "aliases": {
+        "matlab": "kcA_x",
+        "latex": "{k^c_x}",
+        "internal_code": "kcA_x",
+        "global_ID": "V_183"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_183",
+        "latex": "{{k^c_x}}{_{A}}"
+      },
+      "created": "2024-04-03 09:44:02",
+      "doc": "convective mass conductivity in arc and x diretion",
+      "equations": {
+        "E_76": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 D_0 V_132  O_5 I_4 F_15 D_0 V_114 D_1 D_1 O_4 F_15 D_0 V_110 D_1 O_4 O_6 D_0 V_108 D_7 V_112 D_1 O_4 V_118 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left({{\\lambda}}{_{S}} \\stackrel{S}{\\star} \\left( {{\\mu}}{_{N, S}} \\right)^{-1}\\right) \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{p}{_{N}}}} \\, . \\, {{v_x}}{_{N}}\\right)"
+          },
+          "type": "generic",
+          "doc": "convective mass conductivity in arc and x diretion",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_110",
+            "V_112",
+            "V_114",
+            "V_118",
+            "V_132",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:44:02",
+          "modified": "2024-04-03 16:07:20",
+          "lhs": {
+            "global_ID": "V_183",
+            "latex": "{{k^c_x}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "kcA_x",
+      "memory": null,
+      "modified": "2024-04-03 09:44:02",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_184": {
+      "IRI": "promo:kcA_y",
+      "aliases": {
+        "matlab": "kcA_y",
+        "latex": "{k^c_y}",
+        "internal_code": "kcA_y",
+        "global_ID": "V_184"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_184",
+        "latex": "{{k^c_y}}{_{A}}"
+      },
+      "created": "2024-04-03 09:45:18",
+      "doc": "convective mass conductivity in arc and y-direction",
+      "equations": {
+        "E_77": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 D_0 V_132  O_5 I_4 F_15 D_0 V_114 D_1 D_1 O_4 F_15 D_0 V_110 D_1 O_4 O_6 D_0 V_108 D_7 V_112 D_1 O_4 V_119 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left({{\\lambda}}{_{S}} \\stackrel{S}{\\star} \\left( {{\\mu}}{_{N, S}} \\right)^{-1}\\right) \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{p}{_{N}}}} \\, . \\, {{v_y}}{_{N}}\\right)"
+          },
+          "type": "generic",
+          "doc": "convective mass conductivity in arc and y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_110",
+            "V_112",
+            "V_114",
+            "V_119",
+            "V_132",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:45:18",
+          "modified": "2024-04-03 16:07:52",
+          "lhs": {
+            "global_ID": "V_184",
+            "latex": "{{k^c_y}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "kcA_y",
+      "memory": null,
+      "modified": "2024-04-03 16:27:55",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_185": {
+      "IRI": "promo:kcA_z",
+      "aliases": {
+        "matlab": "kcA_z",
+        "latex": "{k^c_z}",
+        "internal_code": "kcA_z",
+        "global_ID": "V_185"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_185",
+        "latex": "{{k^c_z}}{_{A}}"
+      },
+      "created": "2024-04-03 09:46:27",
+      "doc": "convecive mass conductivity in arc and y-direction",
+      "equations": {
+        "E_78": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 D_0 V_132  O_5 I_4 F_15 D_0 V_114 D_1 D_1 O_4 F_15 D_0 V_110 D_1 O_4 O_6 D_0 V_108 D_7 V_112 D_1 O_4 V_120 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left({{\\lambda}}{_{S}} \\stackrel{S}{\\star} \\left( {{\\mu}}{_{N, S}} \\right)^{-1}\\right) \\, . \\, \\left( {V}{_{N}} \\right)^{-1} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{p}{_{N}}}} \\, . \\, {{v_z}}{_{N}}\\right)"
+          },
+          "type": "generic",
+          "doc": "convecive mass conductivity in arc and y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_110",
+            "V_112",
+            "V_114",
+            "V_120",
+            "V_132",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:46:27",
+          "modified": "2024-04-03 16:08:10",
+          "lhs": {
+            "global_ID": "V_185",
+            "latex": "{{k^c_z}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "kcA_z",
+      "memory": null,
+      "modified": "2024-04-03 09:46:27",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_186": {
+      "IRI": "promo:kqA_x",
+      "aliases": {
+        "matlab": "kqA_x",
+        "latex": "{k^q_x}",
+        "internal_code": "kqA_x",
+        "global_ID": "V_186"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_186",
+        "latex": "{{k^q_x}}{_{A}}"
+      },
+      "created": "2024-04-03 09:49:18",
+      "doc": "thermal conductivity in arc and x-direction",
+      "equations": {
+        "E_79": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 F_15 D_0 V_110 D_1 O_4 V_124 O_4 V_118 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {{C_p}}{_{N}} \\, . \\, {{v_x}}{_{N}}\\right)"
+          },
+          "type": "generic",
+          "doc": "thermal conductivity in arc and x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_110",
+            "V_118",
+            "V_124",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:49:18",
+          "modified": "2024-04-03 16:05:08",
+          "lhs": {
+            "global_ID": "V_186",
+            "latex": "{{k^q_x}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "kqA_x",
+      "memory": null,
+      "modified": "2024-04-03 09:49:18",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -3,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_187": {
+      "IRI": "promo:kqA_y",
+      "aliases": {
+        "matlab": "kqA_y",
+        "latex": "{k^q_y}",
+        "internal_code": "kqA_y",
+        "global_ID": "V_187"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_187",
+        "latex": "{{k^q_y}}{_{A}}"
+      },
+      "created": "2024-04-03 09:50:21",
+      "doc": "thermal conductivity in arc and y-direction",
+      "equations": {
+        "E_80": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 F_15 D_0 V_110 D_1 O_4 V_124 O_4 V_119 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {{C_p}}{_{N}} \\, . \\, {{v_y}}{_{N}}\\right)"
+          },
+          "type": "generic",
+          "doc": "thermal conductivity in arc and y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_110",
+            "V_119",
+            "V_124",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:50:21",
+          "modified": "2024-04-03 16:05:31",
+          "lhs": {
+            "global_ID": "V_187",
+            "latex": "{{k^q_y}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "kqA_y",
+      "memory": null,
+      "modified": "2024-04-03 09:50:21",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -3,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_188": {
+      "IRI": "promo:kqA_z",
+      "aliases": {
+        "matlab": "kqA_z",
+        "latex": "{k^q_z}",
+        "internal_code": "kqA_z",
+        "global_ID": "V_188"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_188",
+        "latex": "{{k^q_z}}{_{A}}"
+      },
+      "created": "2024-04-03 09:51:17",
+      "doc": "thermal conductivity in arc and z-direction",
+      "equations": {
+        "E_81": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 F_15 D_0 V_110 D_1 O_4 V_124 O_4 V_120 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left(\\left( {V}{_{N}} \\right)^{-1} \\, . \\, {{C_p}}{_{N}} \\, . \\, {{v_z}}{_{N}}\\right)"
+          },
+          "type": "generic",
+          "doc": "thermal conductivity in arc and z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_110",
+            "V_120",
+            "V_124",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:51:17",
+          "modified": "2024-04-03 16:06:30",
+          "lhs": {
+            "global_ID": "V_188",
+            "latex": "{{k^q_z}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "kqA_z",
+      "memory": null,
+      "modified": "2024-04-03 09:51:17",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -3,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_189": {
+      "IRI": "promo:rhoA",
+      "aliases": {
+        "matlab": "rhoA",
+        "latex": "{\\rho}",
+        "internal_code": "rhoA",
+        "global_ID": "V_189"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_189",
+        "latex": "{{\\rho}}{_{A}}"
+      },
+      "created": "2024-04-03 09:54:50",
+      "doc": "density in arc",
+      "equations": {
+        "E_82": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 V_143",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} {{\\rho}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "density in arc",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_143",
+            "V_27"
+          ],
+          "created": "2024-04-03 09:54:50",
+          "modified": "2024-04-03 09:54:50",
+          "lhs": {
+            "global_ID": "V_189",
+            "latex": "{{\\rho}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "rhoA",
+      "memory": null,
+      "modified": "2024-04-03 09:54:50",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        0,
+        -3,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_19": {
+      "IRI": "promo:A_Npq",
+      "aliases": {
+        "matlab": "A_Npq",
+        "latex": "{A}",
+        "internal_code": "A_Npq",
+        "global_ID": "V_19"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_19",
+        "latex": "{{A}}{_{N, p, q}}"
+      },
+      "created": "2024-03-27 09:04:40",
+      "doc": "mapping from inputs to outputs",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7",
+        "I_8"
+      ],
+      "label": "A_Npq",
+      "memory": null,
+      "modified": "2024-03-31 15:22:35",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_190": {
+      "IRI": "promo:kdAFick_x",
+      "aliases": {
+        "matlab": "kdAFick_x",
+        "latex": "{\\hat{k}^{d,Fick}_x}",
+        "internal_code": "kdAFick_x",
+        "global_ID": "V_190"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_190",
+        "latex": "{{\\hat{k}^{d,Fick}_x}}{_{A, S}}"
+      },
+      "created": "2024-04-03 10:00:15",
+      "doc": "Fick's diffusivity in arc and x-direction",
+      "equations": {
+        "E_83": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 V_118 O_4 O_6 D_0 V_108 D_7 V_114 D_1 O_4 F_15 D_0 V_111 D_1 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left({{v_x}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)"
+          },
+          "type": "generic",
+          "doc": "Fick's diffusivity in arc and x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_111",
+            "V_114",
+            "V_118",
+            "V_27"
+          ],
+          "created": "2024-04-03 10:00:15",
+          "modified": "2024-04-03 15:58:40",
+          "lhs": {
+            "global_ID": "V_190",
+            "latex": "{{\\hat{k}^{d,Fick}_x}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "kdAFick_x",
+      "memory": null,
+      "modified": "2024-04-03 17:13:21",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_191": {
+      "IRI": "promo:kdAFick_y",
+      "aliases": {
+        "matlab": "kdAFick_y",
+        "latex": "{\\hat{k}^{d,Fick}_y}",
+        "internal_code": "kdAFick_y",
+        "global_ID": "V_191"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_191",
+        "latex": "{{\\hat{k}^{d,Fick}_y}}{_{A, S}}"
+      },
+      "created": "2024-04-03 10:00:56",
+      "doc": "Fick diffusivity in arc and y-direction",
+      "equations": {
+        "E_84": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 V_119 O_4 O_6 D_0 V_108 D_7 V_114 D_1 O_4 F_15 D_0 V_111 D_1 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left({{v_y}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)"
+          },
+          "type": "generic",
+          "doc": "Fick diffusivity in arc and y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_111",
+            "V_114",
+            "V_119",
+            "V_27"
+          ],
+          "created": "2024-04-03 10:00:56",
+          "modified": "2024-04-03 15:59:19",
+          "lhs": {
+            "global_ID": "V_191",
+            "latex": "{{\\hat{k}^{d,Fick}_y}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "kdAFick_y",
+      "memory": null,
+      "modified": "2024-04-03 17:13:31",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_192": {
+      "IRI": "promo:kdAFick_z",
+      "aliases": {
+        "matlab": "kdAFick_z",
+        "latex": "{\\hat{k}^{d,Fick}_z}",
+        "internal_code": "kdAFick_z",
+        "global_ID": "V_192"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_192",
+        "latex": "{{\\hat{k}^{d,Fick}_z}}{_{A, S}}"
+      },
+      "created": "2024-04-03 10:02:03",
+      "doc": "Fick diffusivity in arc and z-direction",
+      "equations": {
+        "E_85": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 D_0 V_120 O_4 O_6 D_0 V_108 D_7 V_114 D_1 O_4 F_15 D_0 V_111 D_1 D_1",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} \\left({{v_z}}{_{N}} \\, . \\, \\frac{\\partial{{U}{_{N}}}}{\\partial{{{\\mu}}{_{N, S}}}} \\, . \\, \\left( {n}{_{N, S}} \\right)^{-1}\\right)"
+          },
+          "type": "generic",
+          "doc": "Fick diffusivity in arc and z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_111",
+            "V_114",
+            "V_120",
+            "V_27"
+          ],
+          "created": "2024-04-03 10:02:03",
+          "modified": "2024-04-03 16:00:34",
+          "lhs": {
+            "global_ID": "V_192",
+            "latex": "{{\\hat{k}^{d,Fick}_z}}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "kdAFick_z",
+      "memory": null,
+      "modified": "2024-04-03 17:13:38",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_193": {
+      "IRI": "promo:hA",
+      "aliases": {
+        "matlab": "hA",
+        "latex": "h",
+        "internal_code": "hA",
+        "global_ID": "V_193"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_193",
+        "latex": "{h}{_{A, S}}"
+      },
+      "created": "2024-04-03 16:33:28",
+      "doc": "partial molar enthalpiies in arc",
+      "equations": {
+        "E_86": {
+          "rhs": {
+            "global_ID": " V_27  O_5 I_1 V_136",
+            "latex": "{{I}}{_{N, A}} \\stackrel{N}{\\star} {h}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "partial molar enthalpiies in arc",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_136",
+            "V_27"
+          ],
+          "created": "2024-04-03 16:33:28",
+          "modified": "2024-04-03 16:33:28",
+          "lhs": {
+            "global_ID": "V_193",
+            "latex": "{h}{_{A, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_4"
+      ],
+      "label": "hA",
+      "memory": null,
+      "modified": "2024-04-03 16:33:28",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -2,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_194": {
+      "IRI": "promo:anc_x",
+      "aliases": {
+        "matlab": "anc_x",
+        "latex": "{\\dot{n}^c_x}",
+        "internal_code": "anc_x",
+        "global_ID": "V_194"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_194",
+        "latex": "{{\\dot{n}^c_x}}{_{N, S}}"
+      },
+      "created": "2024-04-03 16:37:41",
+      "doc": "accumulation of molar mass due to convection",
+      "equations": {
+        "E_87": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 V_160",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{n}^c_x}}{_{A, S}}"
+          },
+          "type": "generic",
+          "doc": "accumulation of molar mass due to convection",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_160",
+            "V_2"
+          ],
+          "created": "2024-04-03 16:37:41",
+          "modified": "2024-04-03 16:37:41",
+          "lhs": {
+            "global_ID": "V_194",
+            "latex": "{{\\dot{n}^c_x}}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "anc_x",
+      "memory": null,
+      "modified": "2024-05-10 15:45:26",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_195": {
+      "IRI": "promo:and_x",
+      "aliases": {
+        "matlab": "and_x",
+        "latex": "{\\dot{n}^d_x}",
+        "internal_code": "and_x",
+        "global_ID": "V_195"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_195",
+        "latex": "{{\\dot{n}^d_x}}{_{N, S}}"
+      },
+      "created": "2024-04-03 16:43:54",
+      "doc": "accumulation due to diffusion in x-direction",
+      "equations": {
+        "E_88": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 V_154",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{n}^{d}_x}}{_{A, S}}"
+          },
+          "type": "generic",
+          "doc": "accumulation due to diffusion in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_154",
+            "V_2"
+          ],
+          "created": "2024-04-03 16:43:54",
+          "modified": "2024-04-03 16:43:54",
+          "lhs": {
+            "global_ID": "V_195",
+            "latex": "{{\\dot{n}^d_x}}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "and_x",
+      "memory": null,
+      "modified": "2024-04-04 15:53:20",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_196": {
+      "IRI": "promo:an",
+      "aliases": {
+        "matlab": "an",
+        "latex": "{\\dot{n}}",
+        "internal_code": "an",
+        "global_ID": "V_196"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_196",
+        "latex": "{{\\dot{n}}}{_{N, S}}"
+      },
+      "created": "2024-04-03 17:22:56",
+      "doc": "differential mass balance without reaction",
+      "equations": {
+        "E_92": {
+          "rhs": {
+            "global_ID": " V_194 O_0 V_195 O_0 V_110 O_4 V_202",
+            "latex": "{{\\dot{n}^c_x}}{_{N, S}}  + {{\\dot{n}^d_x}}{_{N, S}}  + {V}{_{N}} \\, . \\, {{\\tilde{n}}}{_{N, S}}"
+          },
+          "type": "generic",
+          "doc": "differential mass balance without reaction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_110",
+            "V_194",
+            "V_195",
+            "V_202"
+          ],
+          "created": "2024-04-03 17:22:56",
+          "modified": "2024-04-04 12:03:36",
+          "lhs": {
+            "global_ID": "V_196",
+            "latex": "{{\\dot{n}}}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "an",
+      "memory": null,
+      "modified": "2024-04-03 17:22:56",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "diffState",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_197": {
+      "IRI": "promo:Ea",
+      "aliases": {
+        "matlab": "Ea",
+        "latex": "{E^a}",
+        "internal_code": "Ea",
+        "global_ID": "V_197"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_197",
+        "latex": "{{E^a}}{_{K}}"
+      },
+      "created": "2024-04-04 11:13:28",
+      "doc": "Arrhenius activation energy",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_5"
+      ],
+      "label": "Ea",
+      "memory": null,
+      "modified": "2024-04-04 11:16:04",
+      "network": "reactions",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        -2,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_198": {
+      "IRI": "promo:Ko",
+      "aliases": {
+        "matlab": "Ko",
+        "latex": "{K^o}",
+        "internal_code": "Ko",
+        "global_ID": "V_198"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_198",
+        "latex": "{{K^o}}{_{K}}"
+      },
+      "created": "2024-04-04 11:14:30",
+      "doc": "Arrhenius frequency factor",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_5"
+      ],
+      "label": "Ko",
+      "memory": null,
+      "modified": "2024-04-04 11:16:15",
+      "network": "reactions",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        -1,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_199": {
+      "IRI": "promo:K",
+      "aliases": {
+        "matlab": "K",
+        "latex": "K",
+        "internal_code": "K",
+        "global_ID": "V_199"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_199",
+        "latex": "{K}{_{N, K, p}}"
+      },
+      "created": "2024-04-04 11:53:09",
+      "doc": "Arrhenius reaction \"constant\"",
+      "equations": {
+        "E_94": {
+          "rhs": {
+            "global_ID": " V_198 O_4 F_0 D_0 F_11 D_0 V_197 D_1 O_4 F_15 D_0 V_123 O_4 V_167 D_1 D_1",
+            "latex": "{{K^o}}{_{K}} \\, . \\, \\textbf{exp}\\left(\\left( -{{E^a}}{_{K}} \\right) \\, . \\, \\left( {R}{_{}} \\, . \\, {T}{_{N, p}} \\right)^{-1}\\right)"
+          },
+          "type": "generic",
+          "doc": "Arrhenius reaction \"constant\"",
+          "network": "reactions",
+          "incidence_list": [
+            "V_123",
+            "V_167",
+            "V_197",
+            "V_198"
+          ],
+          "created": "2024-04-04 11:53:09",
+          "modified": "2024-04-04 11:53:09",
+          "lhs": {
+            "global_ID": "V_199",
+            "latex": "{K}{_{N, K, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_5",
+        "I_7"
+      ],
+      "label": "K",
+      "memory": "node",
+      "modified": "2024-04-04 11:53:09",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "conversion",
+      "units": [
+        -1,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_2": {
+      "IRI": "promo:F",
+      "aliases": {
+        "matlab": "F",
+        "latex": "{F}",
+        "internal_code": "F",
+        "global_ID": "V_2"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_2",
+        "latex": "{{F}}{_{N, A}}"
+      },
+      "created": "2024-03-06 15:10:23",
+      "doc": "incidence matrix",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_2"
+      ],
+      "label": "F",
+      "memory": null,
+      "modified": "2024-03-27 09:19:21",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_20": {
+      "IRI": "promo:A_Ntu",
+      "aliases": {
+        "matlab": "A_Ntu",
+        "latex": "{A}",
+        "internal_code": "A_Ntu",
+        "global_ID": "V_20"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_20",
+        "latex": "{{A}}{_{N, t, u}}"
+      },
+      "created": "2024-03-27 09:05:28",
+      "doc": "mapping from input elements to outputs",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_10",
+        "I_11"
+      ],
+      "label": "A_Ntu",
+      "memory": null,
+      "modified": "2024-03-31 15:22:47",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_200": {
+      "IRI": "promo:np",
+      "aliases": {
+        "matlab": "np",
+        "latex": "{\\tilde{n}}",
+        "internal_code": "np",
+        "global_ID": "V_200"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_200",
+        "latex": "{{\\tilde{n}}}{_{N, S, q}}"
+      },
+      "created": "2024-04-04 11:55:32",
+      "doc": "production from reaction set",
+      "equations": {
+        "E_95": {
+          "rhs": {
+            "global_ID": " V_19  O_5 I_7 D_0 V_26  O_5 I_5 D_0 V_199 O_4 V_169 D_1 D_1",
+            "latex": "{{A}}{_{N, p, q}} \\stackrel{p}{\\star} \\left({N}{_{S, K}} \\stackrel{K}{\\star} \\left({K}{_{N, K, p}} \\, . \\, {\\xi}{_{N, K, p}}\\right)\\right)"
+          },
+          "type": "generic",
+          "doc": "production from reaction set",
+          "network": "reactions",
+          "incidence_list": [
+            "V_169",
+            "V_19",
+            "V_199",
+            "V_26"
+          ],
+          "created": "2024-04-04 11:55:32",
+          "modified": "2024-04-04 11:55:32",
+          "lhs": {
+            "global_ID": "V_200",
+            "latex": "{{\\tilde{n}}}{_{N, S, q}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4",
+        "I_8"
+      ],
+      "label": "np",
+      "memory": "node",
+      "modified": "2024-04-04 11:55:32",
+      "network": "reactions",
+      "port_variable": false,
+      "tokens": [],
+      "type": "conversion",
+      "units": [
+        -1,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_201": {
+      "IRI": "promo:_np",
+      "aliases": {
+        "matlab": "_np",
+        "latex": "\\_np",
+        "internal_code": "_np",
+        "global_ID": "V_201"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_201",
+        "latex": "{\\_np}{_{I, S}}"
+      },
+      "created": "2024-04-04 11:57:17",
+      "doc": "link variable _np to interface reactions >>> macroscopic with source:node",
+      "equations": {
+        "E_96": {
+          "rhs": {
+            "global_ID": " O_15 D_0 D_0 D_0 V_3  O_5 I_1 V_200 D_1 O_4 V_10 D_1 D_7 I_8 D_1",
+            "latex": "\\textbf{reduceSum}\\left(\\left(\\left({{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {{\\tilde{n}}}{_{N, S, q}}\\right) \\, . \\, {{S}}{_{I, q}}\\right),q\\right)"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "reactions >>> macroscopic",
+          "incidence_list": [
+            "V_10",
+            "V_200",
+            "V_3"
+          ],
+          "created": "2024-04-04 11:57:17",
+          "modified": "2024-04-04 11:57:17",
+          "lhs": {
+            "global_ID": "V_201",
+            "latex": "{\\_np}{_{I, S}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_3",
+        "I_4"
+      ],
+      "label": "_np",
+      "memory": "node",
+      "modified": "2024-04-04 11:57:17",
+      "network": "reactions >>> macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        -1,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_202": {
+      "IRI": "promo:np",
+      "aliases": {
+        "matlab": "np",
+        "latex": "{\\tilde{n}}",
+        "internal_code": "np",
+        "global_ID": "V_202"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_202",
+        "latex": "{{\\tilde{n}}}{_{N, S}}"
+      },
+      "created": "2024-04-04 11:57:25",
+      "doc": "link variable _np to interface macroscopic",
+      "equations": {
+        "E_97": {
+          "rhs": {
+            "global_ID": " V_3  O_5 I_3 V_201",
+            "latex": "{{F^{source}}}{_{N, I}} \\stackrel{I}{\\star} {\\_np}{_{I, S}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_201",
+            "V_3"
+          ],
+          "created": "2024-04-04 11:57:25",
+          "modified": "2024-04-04 11:57:25",
+          "lhs": {
+            "global_ID": "V_202",
+            "latex": "{{\\tilde{n}}}{_{N, S}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "np",
+      "memory": "node",
+      "modified": "2024-04-04 11:58:45",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "conversion",
+      "units": [
+        -1,
+        -3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_203": {
+      "IRI": "promo:no",
+      "aliases": {
+        "matlab": "no",
+        "latex": "{n^o}",
+        "internal_code": "no",
+        "global_ID": "V_203"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_203",
+        "latex": "{{n^o}}{_{N, S}}"
+      },
+      "created": "2024-04-04 12:00:19",
+      "doc": "initial mass",
+      "equations": {
+        "E_98": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_111 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({n}{_{N, S}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "initial mass",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_111"
+          ],
+          "created": "2024-04-04 12:00:19",
+          "modified": "2024-04-04 12:00:19",
+          "lhs": {
+            "global_ID": "V_203",
+            "latex": "{{n^o}}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "no",
+      "memory": null,
+      "modified": "2024-04-04 12:00:19",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_204": {
+      "IRI": "promo:aHnc_x",
+      "aliases": {
+        "matlab": "aHnc_x",
+        "latex": "{\\dot{H}^c_x}",
+        "internal_code": "aHnc_x",
+        "global_ID": "V_204"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_204",
+        "latex": "{{\\dot{H}^c_x}}{_{N}}"
+      },
+      "created": "2024-04-04 13:39:50",
+      "doc": "accumulation of enthalpy due to convective mass flow in x-direction",
+      "equations": {
+        "E_99": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 D_0 V_160  O_5 I_4 V_136 D_1",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} \\left({{\\hat{n}^c_x}}{_{A, S}} \\stackrel{S}{\\star} {h}{_{N, S}}\\right)"
+          },
+          "type": "generic",
+          "doc": "enthalpy accumulation due to convective flow in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_136",
+            "V_160",
+            "V_2"
+          ],
+          "created": "2024-04-04 13:39:50",
+          "modified": "2024-04-04 13:40:38",
+          "lhs": {
+            "global_ID": "V_204",
+            "latex": "{{\\dot{H}^c_x}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aHnc_x",
+      "memory": null,
+      "modified": "2024-04-04 13:41:01",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_205": {
+      "IRI": "promo:aHnd_x",
+      "aliases": {
+        "matlab": "aHnd_x",
+        "latex": "{\\dot{H}^d_x}",
+        "internal_code": "aHnd_x",
+        "global_ID": "V_205"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_205",
+        "latex": "{{\\dot{H}^d_x}}{_{N}}"
+      },
+      "created": "2024-04-04 13:43:06",
+      "doc": "accumulation of enthalpy due to diffusional mass flow in x-direction",
+      "equations": {
+        "E_100": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 D_0 V_154  O_5 I_4 V_136 D_1",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} \\left({{\\hat{n}^{d}_x}}{_{A, S}} \\stackrel{S}{\\star} {h}{_{N, S}}\\right)"
+          },
+          "type": "generic",
+          "doc": "accumulation of enthalpy due to diffusional mass flow in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_136",
+            "V_154",
+            "V_2"
+          ],
+          "created": "2024-04-04 13:43:06",
+          "modified": "2024-04-04 13:45:51",
+          "lhs": {
+            "global_ID": "V_205",
+            "latex": "{{\\dot{H}^d_x}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aHnd_x",
+      "memory": null,
+      "modified": "2024-04-04 13:45:51",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_206": {
+      "IRI": "promo:aHnd_y",
+      "aliases": {
+        "matlab": "aHnd_y",
+        "latex": "{\\dot{H}^d_y}",
+        "internal_code": "aHnd_y",
+        "global_ID": "V_206"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_206",
+        "latex": "{{\\dot{H}^d_y}}{_{N}}"
+      },
+      "created": "2024-04-04 13:44:07",
+      "doc": "accumulation of enthalpy due to diffusional mass flow in y-direction",
+      "equations": {
+        "E_101": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 D_0 V_155  O_5 I_4 V_136 D_1",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} \\left({{\\hat{n}^{d}_y}}{_{A, S}} \\stackrel{S}{\\star} {h}{_{N, S}}\\right)"
+          },
+          "type": "generic",
+          "doc": "accumulation of enthalpy due to diffusional mass flow in y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_136",
+            "V_155",
+            "V_2"
+          ],
+          "created": "2024-04-04 13:44:07",
+          "modified": "2024-04-04 14:03:35",
+          "lhs": {
+            "global_ID": "V_206",
+            "latex": "{{\\dot{H}^d_y}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aHnd_y",
+      "memory": null,
+      "modified": "2024-04-04 13:45:20",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_207": {
+      "IRI": "promo:aHnd_z",
+      "aliases": {
+        "matlab": "aHnd_z",
+        "latex": "{\\dot{H}^d_z}",
+        "internal_code": "aHnd_z",
+        "global_ID": "V_207"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_207",
+        "latex": "{{\\dot{H}^d_z}}{_{N}}"
+      },
+      "created": "2024-04-04 13:49:22",
+      "doc": "accumulation of enthalpy due to diffusional mass flow in z-direction",
+      "equations": {
+        "E_102": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 D_0 V_156  O_5 I_4 V_136 D_1",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} \\left({{\\hat{n}^{d}_z}}{_{A, S}} \\stackrel{S}{\\star} {h}{_{N, S}}\\right)"
+          },
+          "type": "generic",
+          "doc": "accumulation of enthalpy due to diffusional mass flow in z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_136",
+            "V_156",
+            "V_2"
+          ],
+          "created": "2024-04-04 13:49:22",
+          "modified": "2024-04-04 13:49:22",
+          "lhs": {
+            "global_ID": "V_207",
+            "latex": "{{\\dot{H}^d_z}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aHnd_z",
+      "memory": null,
+      "modified": "2024-04-04 13:55:56",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_208": {
+      "IRI": "promo:aq_x",
+      "aliases": {
+        "matlab": "aq_x",
+        "latex": "{\\dot{q}_x}",
+        "internal_code": "aq_x",
+        "global_ID": "V_208"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_208",
+        "latex": "{{\\dot{q}_x}}{_{N}}"
+      },
+      "created": "2024-04-04 13:51:19",
+      "doc": "accumulation due to heat flow in x-direction",
+      "equations": {
+        "E_103": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 V_151",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{q}_x}}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "accumulation due to heat flow in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_151",
+            "V_2"
+          ],
+          "created": "2024-04-04 13:51:19",
+          "modified": "2024-04-04 13:53:06",
+          "lhs": {
+            "global_ID": "V_208",
+            "latex": "{{\\dot{q}_x}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aq_x",
+      "memory": null,
+      "modified": "2024-04-04 13:54:19",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_209": {
+      "IRI": "promo:aq_y",
+      "aliases": {
+        "matlab": "aq_y",
+        "latex": "{\\dot{q}_y}",
+        "internal_code": "aq_y",
+        "global_ID": "V_209"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_209",
+        "latex": "{{\\dot{q}_y}}{_{N}}"
+      },
+      "created": "2024-04-04 13:52:29",
+      "doc": "accumulation due to heat flow in y-direction",
+      "equations": {
+        "E_104": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 V_152",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{q}_y}}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "accumulation due to heat flow in y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_152",
+            "V_2"
+          ],
+          "created": "2024-04-04 13:52:29",
+          "modified": "2024-04-04 13:52:29",
+          "lhs": {
+            "global_ID": "V_209",
+            "latex": "{{\\dot{q}_y}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aq_y",
+      "memory": null,
+      "modified": "2024-04-04 13:54:37",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_21": {
+      "IRI": "promo:u_Ntu",
+      "aliases": {
+        "matlab": "u_Ntu",
+        "latex": "{u}",
+        "internal_code": "u_Ntu",
+        "global_ID": "V_21"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_21",
+        "latex": "{{u}}{_{N, t, u}}"
+      },
+      "created": "2024-03-27 09:06:27",
+      "doc": "input signal in control domain",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_10",
+        "I_11"
+      ],
+      "label": "u_Ntu",
+      "memory": null,
+      "modified": "2024-03-27 09:18:36",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_210": {
+      "IRI": "promo:aq_z",
+      "aliases": {
+        "matlab": "aq_z",
+        "latex": "{\\dot{q}_z}",
+        "internal_code": "aq_z",
+        "global_ID": "V_210"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_210",
+        "latex": "{{\\dot{q}_z}}{_{N}}"
+      },
+      "created": "2024-04-04 13:54:05",
+      "doc": "accumulation due to heat flow in z-direction",
+      "equations": {
+        "E_105": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 V_153",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{q}_z}}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "accumulation due to heat flow in z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_153",
+            "V_2"
+          ],
+          "created": "2024-04-04 13:54:05",
+          "modified": "2024-04-04 13:54:05",
+          "lhs": {
+            "global_ID": "V_210",
+            "latex": "{{\\dot{q}_z}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aq_z",
+      "memory": null,
+      "modified": "2024-04-04 13:54:05",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_211": {
+      "IRI": "promo:fw",
+      "aliases": {
+        "matlab": "fw",
+        "latex": "{\\hat{w}}",
+        "internal_code": "fw",
+        "global_ID": "V_211"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_211",
+        "latex": "{{\\hat{w}}}{_{A}}"
+      },
+      "created": "2024-04-04 15:39:31",
+      "doc": "a fixed work flow to start with",
+      "equations": {
+        "E_106": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_151 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{\\hat{q}_x}}{_{A}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "a fixed work flow to start with",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_151"
+          ],
+          "created": "2024-04-04 15:39:31",
+          "modified": "2024-04-04 15:39:31",
+          "lhs": {
+            "global_ID": "V_211",
+            "latex": "{{\\hat{w}}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "fw",
+      "memory": null,
+      "modified": "2024-04-04 15:39:31",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_212": {
+      "IRI": "promo:and_y",
+      "aliases": {
+        "matlab": "and_y",
+        "latex": "{\\dot{n}^d_y}",
+        "internal_code": "and_y",
+        "global_ID": "V_212"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_212",
+        "latex": "{{\\dot{n}^d_y}}{_{N, S}}"
+      },
+      "created": "2024-04-04 15:43:45",
+      "doc": "accumulation due to diffusion in y-direction",
+      "equations": {
+        "E_107": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 V_155",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{n}^{d}_y}}{_{A, S}}"
+          },
+          "type": "generic",
+          "doc": "accumulation due to diffusion in y-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_155",
+            "V_2"
+          ],
+          "created": "2024-04-04 15:43:45",
+          "modified": "2024-04-04 15:43:45",
+          "lhs": {
+            "global_ID": "V_212",
+            "latex": "{{\\dot{n}^d_y}}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "and_y",
+      "memory": null,
+      "modified": "2024-04-04 15:53:10",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_213": {
+      "IRI": "promo:and_z",
+      "aliases": {
+        "matlab": "and_z",
+        "latex": "{\\dot{n}^d_z}",
+        "internal_code": "and_z",
+        "global_ID": "V_213"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_213",
+        "latex": "{{\\dot{n}^d_z}}{_{N, S}}"
+      },
+      "created": "2024-04-04 15:44:16",
+      "doc": "accumulation due to diffusion in z-direction",
+      "equations": {
+        "E_108": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 V_156",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{n}^{d}_z}}{_{A, S}}"
+          },
+          "type": "generic",
+          "doc": "accumulation due to diffusion in z-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_156",
+            "V_2"
+          ],
+          "created": "2024-04-04 15:44:16",
+          "modified": "2024-04-04 15:44:16",
+          "lhs": {
+            "global_ID": "V_213",
+            "latex": "{{\\dot{n}^d_z}}{_{N, S}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_4"
+      ],
+      "label": "and_z",
+      "memory": null,
+      "modified": "2024-04-04 15:53:28",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_214": {
+      "IRI": "promo:aw",
+      "aliases": {
+        "matlab": "aw",
+        "latex": "{\\dot{w}}",
+        "internal_code": "aw",
+        "global_ID": "V_214"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_214",
+        "latex": "{{\\dot{w}}}{_{N}}"
+      },
+      "created": "2024-04-04 15:51:23",
+      "doc": "accumulation of enthalpy due to work flow",
+      "equations": {
+        "E_109": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 V_211",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} {{\\hat{w}}}{_{A}}"
+          },
+          "type": "generic",
+          "doc": "accumulation of enthalpy due to work flow",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_2",
+            "V_211"
+          ],
+          "created": "2024-04-04 15:51:23",
+          "modified": "2024-04-04 15:51:23",
+          "lhs": {
+            "global_ID": "V_214",
+            "latex": "{{\\dot{w}}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "aw",
+      "memory": null,
+      "modified": "2024-04-04 15:51:23",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_215": {
+      "IRI": "promo:dH",
+      "aliases": {
+        "matlab": "dH",
+        "latex": "{\\dot{H}}",
+        "internal_code": "dH",
+        "global_ID": "V_215"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_215",
+        "latex": "{{\\dot{H}}}{_{N}}"
+      },
+      "created": "2024-04-04 15:51:54",
+      "doc": "accumulation of enthalpy",
+      "equations": {
+        "E_110": {
+          "rhs": {
+            "global_ID": " V_204 O_0 V_205 O_0 V_206 O_0 V_207 O_0 V_208 O_0 V_209 O_0 V_210 O_0 V_214",
+            "latex": "{{\\dot{H}^c_x}}{_{N}}  + {{\\dot{H}^d_x}}{_{N}}  + {{\\dot{H}^d_y}}{_{N}}  + {{\\dot{H}^d_z}}{_{N}}  + {{\\dot{q}_x}}{_{N}}  + {{\\dot{q}_y}}{_{N}}  + {{\\dot{q}_z}}{_{N}}  + {{\\dot{w}}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "accumulation of enthalpy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_204",
+            "V_205",
+            "V_206",
+            "V_207",
+            "V_208",
+            "V_209",
+            "V_210",
+            "V_214"
+          ],
+          "created": "2024-04-04 15:51:54",
+          "modified": "2024-04-04 15:51:54",
+          "lhs": {
+            "global_ID": "V_215",
+            "latex": "{{\\dot{H}}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "dH",
+      "memory": null,
+      "modified": "2024-04-04 15:52:24",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "diffState",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_216": {
+      "IRI": "promo:Ho",
+      "aliases": {
+        "matlab": "Ho",
+        "latex": "{H^o}",
+        "internal_code": "Ho",
+        "global_ID": "V_216"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_216",
+        "latex": "{{H^o}}{_{N}}"
+      },
+      "created": "2024-04-04 15:54:47",
+      "doc": "initial enthalpy",
+      "equations": {
+        "E_111": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_115 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({H}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "initial enthalpy",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_115"
+          ],
+          "created": "2024-04-04 15:54:47",
+          "modified": "2024-04-04 15:54:47",
+          "lhs": {
+            "global_ID": "V_216",
+            "latex": "{{H^o}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "Ho",
+      "memory": null,
+      "modified": "2024-04-04 15:54:47",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "state",
+      "units": [
+        -2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_217": {
+      "IRI": "promo:Ue",
+      "aliases": {
+        "matlab": "Ue",
+        "latex": "{U^e}",
+        "internal_code": "Ue",
+        "global_ID": "V_217"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_217",
+        "latex": "{{U^e}}{_{N}}"
+      },
+      "created": "2024-04-04 16:05:08",
+      "doc": "electrical potential -- voltage",
+      "equations": {
+        "E_113": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_144 D_1 O_4 V_108",
+            "latex": "\\left( {C}{_{N}} \\right)^{-1} \\, . \\, {U}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "electrical potential -- voltage",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_108",
+            "V_144"
+          ],
+          "created": "2024-04-04 16:05:08",
+          "modified": "2024-04-04 16:05:08",
+          "lhs": {
+            "global_ID": "V_217",
+            "latex": "{{U^e}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "Ue",
+      "memory": null,
+      "modified": "2024-04-04 16:05:08",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "effort",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    "V_218": {
+      "IRI": "promo:current",
+      "aliases": {
+        "matlab": "current",
+        "latex": "{I^e}",
+        "internal_code": "current",
+        "global_ID": "V_218"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_218",
+        "latex": "{{I^e}}{_{N}}"
+      },
+      "created": "2024-04-04 16:08:05",
+      "doc": "current definition",
+      "equations": {
+        "E_114": {
+          "rhs": {
+            "global_ID": " O_7 D_0 V_144 D_7 V_1 D_1",
+            "latex": "\\frac{d\\,{{C}{_{N}}}}{d\\,{{t}{_{}}}}"
+          },
+          "type": "generic",
+          "doc": "current definition",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_1",
+            "V_144"
+          ],
+          "created": "2024-04-04 16:08:05",
+          "modified": "2024-04-04 16:08:05",
+          "lhs": {
+            "global_ID": "V_218",
+            "latex": "{{I^e}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "current",
+      "memory": null,
+      "modified": "2024-04-04 16:21:53",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "internalTransport",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "V_219": {
+      "IRI": "promo:elResistant",
+      "aliases": {
+        "matlab": "elResistant",
+        "latex": "{R^e}",
+        "internal_code": "elResistant",
+        "global_ID": "V_219"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_219",
+        "latex": "{{R^e}}{_{N}}"
+      },
+      "created": "2024-04-04 16:11:09",
+      "doc": "electrical resistant",
+      "equations": {
+        "E_115": {
+          "rhs": {
+            "global_ID": " F_15 D_0 V_218 D_1 O_4 V_217",
+            "latex": "\\left( {{I^e}}{_{N}} \\right)^{-1} \\, . \\, {{U^e}}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "electrical resistant",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_217",
+            "V_218"
+          ],
+          "created": "2024-04-04 16:11:09",
+          "modified": "2024-04-04 16:11:09",
+          "lhs": {
+            "global_ID": "V_219",
+            "latex": "{{R^e}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "elResistant",
+      "memory": null,
+      "modified": "2024-04-04 16:21:39",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "properties",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        -2,
+        0,
+        0
+      ]
+    },
+    "V_22": {
+      "IRI": "promo:y_Ntu",
+      "aliases": {
+        "matlab": "y_Ntu",
+        "latex": "{y}",
+        "internal_code": "y_Ntu",
+        "global_ID": "V_22"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_22",
+        "latex": "{{y}}{_{N, t, u}}"
+      },
+      "created": "2024-03-27 09:07:09",
+      "doc": "output signal in control domain",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_10",
+        "I_11"
+      ],
+      "label": "y_Ntu",
+      "memory": null,
+      "modified": "2024-03-27 09:18:49",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_220": {
+      "IRI": "promo:dUe",
+      "aliases": {
+        "matlab": "dUe",
+        "latex": "{\\dot{U}^e}",
+        "internal_code": "dUe",
+        "global_ID": "V_220"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_220",
+        "latex": "{{\\dot{U}^e}}{_{A}}"
+      },
+      "created": "2024-04-04 16:18:57",
+      "doc": "Kirkhoffs first law",
+      "equations": {
+        "E_116": {
+          "rhs": {
+            "global_ID": " V_2  O_5 I_2 D_0 V_219 O_4 V_218 D_1",
+            "latex": "{{F}}{_{N, A}} \\stackrel{A}{\\star} \\left({{R^e}}{_{N}} \\, . \\, {{I^e}}{_{N}}\\right)"
+          },
+          "type": "generic",
+          "doc": "Kirkhoffs first law",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_2",
+            "V_218",
+            "V_219"
+          ],
+          "created": "2024-04-04 16:18:57",
+          "modified": "2024-04-04 16:18:57",
+          "lhs": {
+            "global_ID": "V_220",
+            "latex": "{{\\dot{U}^e}}{_{A}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "dUe",
+      "memory": null,
+      "modified": "2024-04-04 16:18:57",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "diffState",
+      "units": [
+        -3,
+        2,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    "V_222": {
+      "IRI": "promo:T_ref",
+      "aliases": {
+        "matlab": "T_ref",
+        "latex": "{T^{ref}}",
+        "internal_code": "T_ref",
+        "global_ID": "V_222"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_222",
+        "latex": "{{T^{ref}}}{_{N}}"
+      },
+      "created": "2024-06-18 13:57:45",
+      "doc": "reference temperature",
+      "equations": {
+        "E_119": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_113 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({T}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "reference temperature",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_113"
+          ],
+          "created": "2024-06-18 13:57:45",
+          "modified": "2024-06-18 13:57:45",
+          "lhs": {
+            "global_ID": "V_222",
+            "latex": "{{T^{ref}}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "T_ref",
+      "memory": null,
+      "modified": "2024-06-18 13:57:45",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_223": {
+      "IRI": "promo:T_meas_norming",
+      "aliases": {
+        "matlab": "T_meas_norming",
+        "latex": "{T^n}",
+        "internal_code": "T_meas_norming",
+        "global_ID": "V_223"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_223",
+        "latex": "{{T^n}}{_{N}}"
+      },
+      "created": "2024-06-19 12:09:11",
+      "doc": "value to norm measurement of temperature",
+      "equations": {
+        "E_122": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_113 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({T}{_{N}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "value to norm measurement of temperature",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_101",
+            "V_113"
+          ],
+          "created": "2024-06-19 12:09:11",
+          "modified": "2024-06-19 12:09:11",
+          "lhs": {
+            "global_ID": "V_223",
+            "latex": "{{T^n}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "T_meas_norming",
+      "memory": null,
+      "modified": "2024-06-19 12:13:50",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_224": {
+      "IRI": "promo:T_meas",
+      "aliases": {
+        "matlab": "T_meas",
+        "latex": "{\\bar{T}}",
+        "internal_code": "T_meas",
+        "global_ID": "V_224"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_224",
+        "latex": "{{\\bar{T}}}{_{N}}"
+      },
+      "created": "2024-06-19 12:12:49",
+      "doc": "temperature measurement",
+      "equations": {
+        "E_123": {
+          "rhs": {
+            "global_ID": " V_113 O_4 F_15 D_0 V_223 D_1",
+            "latex": "{T}{_{N}} \\, . \\, \\left( {{T^n}}{_{N}} \\right)^{-1}"
+          },
+          "type": "generic",
+          "doc": "temperature measurement",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_113",
+            "V_223"
+          ],
+          "created": "2024-06-19 12:12:49",
+          "modified": "2024-06-19 12:12:49",
+          "lhs": {
+            "global_ID": "V_224",
+            "latex": "{{\\bar{T}}}{_{N}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "T_meas",
+      "memory": null,
+      "modified": "2024-06-19 12:12:49",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "secondaryState",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_225": {
+      "IRI": "promo:_T_meas",
+      "aliases": {
+        "matlab": "_T_meas",
+        "latex": "\\_T\\_meas",
+        "internal_code": "_T_meas",
+        "global_ID": "V_225"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_225",
+        "latex": "{\\_T\\_meas}{_{I}}"
+      },
+      "created": "2024-06-19 12:14:14",
+      "doc": "link variable _T_meas to interface macroscopic >>> control with source:node",
+      "equations": {
+        "E_124": {
+          "rhs": {
+            "global_ID": " V_3  O_5 I_1 V_224",
+            "latex": "{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {{\\bar{T}}}{_{N}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic >>> control",
+          "incidence_list": [
+            "V_224",
+            "V_3"
+          ],
+          "created": "2024-06-19 12:14:14",
+          "modified": "2024-06-19 12:14:14",
+          "lhs": {
+            "global_ID": "V_225",
+            "latex": "{\\_T\\_meas}{_{I}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_3"
+      ],
+      "label": "_T_meas",
+      "memory": "node",
+      "modified": "2024-06-19 12:14:14",
+      "network": "macroscopic >>> control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_226": {
+      "IRI": "promo:T_meas",
+      "aliases": {
+        "matlab": "T_meas",
+        "latex": "{\\bar{T}}",
+        "internal_code": "T_meas",
+        "global_ID": "V_226"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_226",
+        "latex": "{{\\bar{T}}}{_{N, p}}"
+      },
+      "created": "2024-06-19 12:15:34",
+      "doc": "link variable _T_meas to interface control",
+      "equations": {
+        "E_125": {
+          "rhs": {
+            "global_ID": " D_0 V_4 O_4 V_225 D_1  O_5 I_3 V_9",
+            "latex": "\\left({{F^{sink}}}{_{N, I}} \\, . \\, {\\_T\\_meas}{_{I}}\\right) \\stackrel{I}{\\star} {{S}}{_{I, p}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "control",
+          "incidence_list": [
+            "V_225",
+            "V_4",
+            "V_9"
+          ],
+          "created": "2024-06-19 12:15:34",
+          "modified": "2024-06-19 12:15:34",
+          "lhs": {
+            "global_ID": "V_226",
+            "latex": "{{\\bar{T}}}{_{N, p}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "T_meas",
+      "memory": "node",
+      "modified": "2024-06-19 12:31:58",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_227": {
+      "IRI": "promo:T_setpoint",
+      "aliases": {
+        "matlab": "T_setpoint",
+        "latex": "{T_{setpoint}}",
+        "internal_code": "T_setpoint",
+        "global_ID": "V_227"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_227",
+        "latex": "{{T_{setpoint}}}{_{N, p}}"
+      },
+      "created": "2024-06-19 12:17:04",
+      "doc": "setpoint for temperatue",
+      "equations": {
+        "E_126": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_226 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{\\bar{T}}}{_{N, p}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "setpoint for temperatue",
+          "network": "control",
+          "incidence_list": [
+            "V_101",
+            "V_226"
+          ],
+          "created": "2024-06-19 12:17:04",
+          "modified": "2024-06-19 12:17:04",
+          "lhs": {
+            "global_ID": "V_227",
+            "latex": "{{T_{setpoint}}}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "T_setpoint",
+      "memory": "node",
+      "modified": "2024-06-19 12:32:13",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_228": {
+      "IRI": "qudt:Gain",
+      "aliases": {
+        "matlab": "p_gain",
+        "latex": "p",
+        "internal_code": "p_gain",
+        "global_ID": "V_228"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_228",
+        "latex": "{p}{_{}}"
+      },
+      "created": "2024-06-19 12:21:52",
+      "doc": "proportional gain",
+      "equations": {
+        "E_127": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_101 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "proportional gain",
+          "network": "control",
+          "incidence_list": [
+            "V_101"
+          ],
+          "created": "2024-06-19 12:21:52",
+          "modified": "2024-06-19 12:21:52",
+          "lhs": {
+            "global_ID": "V_228",
+            "latex": "{p}{_{}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [],
+      "label": "p_gain",
+      "memory": null,
+      "modified": "2024-06-19 12:25:55",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_229": {
+      "IRI": "promo:u",
+      "aliases": {
+        "matlab": "u",
+        "latex": "u",
+        "internal_code": "u",
+        "global_ID": "V_229"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_229",
+        "latex": "{u}{_{N, p}}"
+      },
+      "created": "2024-06-19 12:24:02",
+      "doc": "output of straight proportional controller direction heating",
+      "equations": {
+        "E_128": {
+          "rhs": {
+            "global_ID": " F_11 D_0 V_228 D_1 O_4 V_231",
+            "latex": "\\left( -{p}{_{}} \\right) \\, . \\, {e}{_{N, p}}"
+          },
+          "type": "generic",
+          "doc": "output of straight proportional temperature controller",
+          "network": "control",
+          "incidence_list": [
+            "V_228",
+            "V_231"
+          ],
+          "created": "2024-06-19 12:24:02",
+          "modified": "2024-06-19 15:53:43",
+          "lhs": {
+            "global_ID": "V_229",
+            "latex": "{u}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "u",
+      "memory": "node",
+      "modified": "2024-06-19 12:34:01",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_23": {
+      "IRI": "promo:r_x",
+      "aliases": {
+        "matlab": "r_x",
+        "latex": "{r_x}",
+        "internal_code": "r_x",
+        "global_ID": "V_23"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_23",
+        "latex": "{{r_x}}{_{N}}"
+      },
+      "created": "2024-03-27 09:08:55",
+      "doc": "x-coordinate",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "r_x",
+      "memory": null,
+      "modified": "2024-03-27 18:50:59",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_230": {
+      "IRI": "promo:d_dir",
+      "aliases": {
+        "matlab": "d_dir",
+        "latex": "{d^{heating}}",
+        "internal_code": "d_dir",
+        "global_ID": "V_230"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_230",
+        "latex": "{{d^{heating}}}{_{N, p}}"
+      },
+      "created": "2024-06-19 12:36:12",
+      "doc": "direction of heating",
+      "equations": {
+        "E_129": {
+          "rhs": {
+            "global_ID": " F_16 D_0 V_229 D_1",
+            "latex": "\\textbf{sign} \\left( {u}{_{N, p}} \\right)"
+          },
+          "type": "generic",
+          "doc": "direction of heating",
+          "network": "control",
+          "incidence_list": [
+            "V_229"
+          ],
+          "created": "2024-06-19 12:36:12",
+          "modified": "2024-06-19 12:36:12",
+          "lhs": {
+            "global_ID": "V_230",
+            "latex": "{{d^{heating}}}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "d_dir",
+      "memory": "node",
+      "modified": "2024-06-19 15:49:40",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_231": {
+      "IRI": "promo:control_error",
+      "aliases": {
+        "matlab": "control_error",
+        "latex": "e",
+        "internal_code": "control_error",
+        "global_ID": "V_231"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_231",
+        "latex": "{e}{_{N, p}}"
+      },
+      "created": "2024-06-19 15:52:40",
+      "doc": "control error in normed temperature",
+      "equations": {
+        "E_130": {
+          "rhs": {
+            "global_ID": " V_227 O_1 V_226",
+            "latex": "{{T_{setpoint}}}{_{N, p}}  - {{\\bar{T}}}{_{N, p}}"
+          },
+          "type": "generic",
+          "doc": "control error in normed temperature",
+          "network": "control",
+          "incidence_list": [
+            "V_226",
+            "V_227"
+          ],
+          "created": "2024-06-19 15:52:40",
+          "modified": "2024-06-19 15:52:40",
+          "lhs": {
+            "global_ID": "V_231",
+            "latex": "{e}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "control_error",
+      "memory": "node",
+      "modified": "2024-06-19 15:56:53",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_233": {
+      "IRI": "promo:limit",
+      "aliases": {
+        "matlab": "limit",
+        "latex": "l",
+        "internal_code": "limit",
+        "global_ID": "V_233"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_233",
+        "latex": "{{u^{max}}}{_{N, p}}"
+      },
+      "created": "2024-06-19 16:14:14",
+      "doc": "limit",
+      "equations": {
+        "E_132": {
+          "rhs": {
+            "global_ID": " O_10 D_0 V_229 D_7 V_101 D_1",
+            "latex": "\\textbf{Instantiate}({u}{_{N, p}}, {{\\#}}{_{}})"
+          },
+          "type": "generic",
+          "doc": "maximum limit",
+          "network": "control",
+          "incidence_list": [
+            "V_101",
+            "V_229"
+          ],
+          "created": "2024-06-19 16:14:14",
+          "modified": "2024-06-19 16:14:14",
+          "lhs": {
+            "global_ID": "V_233",
+            "latex": "{{u^{max}}}{_{N, p}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7"
+      ],
+      "label": "limit",
+      "memory": "node",
+      "modified": "2024-06-19 16:42:58",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_24": {
+      "IRI": "promo:r_y",
+      "aliases": {
+        "matlab": "r_y",
+        "latex": "{r_y}",
+        "internal_code": "r_y",
+        "global_ID": "V_24"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_24",
+        "latex": "{{r_y}}{_{N}}"
+      },
+      "created": "2024-03-27 09:10:52",
+      "doc": "y-coordinate",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "r_y",
+      "memory": null,
+      "modified": "2024-03-27 18:51:08",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_25": {
+      "IRI": "promo:r_z",
+      "aliases": {
+        "matlab": "r_z",
+        "latex": "{r_z}",
+        "internal_code": "r_z",
+        "global_ID": "V_25"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_25",
+        "latex": "{{r_z}}{_{N}}"
+      },
+      "created": "2024-03-27 09:11:31",
+      "doc": "z-coordinate",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1"
+      ],
+      "label": "r_z",
+      "memory": null,
+      "modified": "2024-03-27 18:51:19",
+      "network": "physical",
+      "port_variable": true,
+      "tokens": [],
+      "type": "frame",
+      "units": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_26": {
+      "IRI": "promo:N",
+      "aliases": {
+        "matlab": "N",
+        "latex": "N",
+        "internal_code": "N",
+        "global_ID": "V_26"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_26",
+        "latex": "{N}{_{S, K}}"
+      },
+      "created": "2024-03-27 09:14:44",
+      "doc": "stoichiometric matrix",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_4",
+        "I_5"
+      ],
+      "label": "N",
+      "memory": null,
+      "modified": "2024-03-31 14:08:05",
+      "network": "reactions",
+      "port_variable": true,
+      "tokens": [],
+      "type": "constant",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_27": {
+      "IRI": "promo:I_NA",
+      "aliases": {
+        "matlab": "I_NA",
+        "latex": "{I}",
+        "internal_code": "I_NA",
+        "global_ID": "V_27"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_27",
+        "latex": "{{I}}{_{N, A}}"
+      },
+      "created": "2024-03-30 14:44:46",
+      "doc": "identity mapping from <N> to <A>",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_2"
+      ],
+      "label": "I_NA",
+      "memory": null,
+      "modified": "2024-03-30 14:49:25",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_3": {
+      "IRI": "promo:F_NI_source",
+      "aliases": {
+        "matlab": "F_NI_source",
+        "latex": "{F^{source}}",
+        "internal_code": "F_NI_source",
+        "global_ID": "V_3"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_3",
+        "latex": "{{F^{source}}}{_{N, I}}"
+      },
+      "created": "2024-03-06 15:10:59",
+      "doc": "incidence matrix NI source",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "F_NI_source",
+      "memory": null,
+      "modified": "2024-03-06 15:25:21",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_4": {
+      "IRI": "promo:F_NI_sink",
+      "aliases": {
+        "matlab": "F_NI_sink",
+        "latex": "{F^{sink}}",
+        "internal_code": "F_NI_sink",
+        "global_ID": "V_4"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_4",
+        "latex": "{{F^{sink}}}{_{N, I}}"
+      },
+      "created": "2024-03-06 15:11:44",
+      "doc": "incidence matrix NI sink",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_3"
+      ],
+      "label": "F_NI_sink",
+      "memory": null,
+      "modified": "2024-03-06 15:25:39",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_5": {
+      "IRI": "promo:F_AI_source",
+      "aliases": {
+        "matlab": "F_AI_source",
+        "latex": "{F^{source}}",
+        "internal_code": "F_AI_source",
+        "global_ID": "V_5"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_5",
+        "latex": "{{F^{source}}}{_{A, I}}"
+      },
+      "created": "2024-03-06 15:12:14",
+      "doc": "incidence matrix AI source",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_3"
+      ],
+      "label": "F_AI_source",
+      "memory": null,
+      "modified": "2024-03-06 15:25:53",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_6": {
+      "IRI": "promo:F_AI_sink",
+      "aliases": {
+        "matlab": "F_AI_sink",
+        "latex": "{F^{sink}}",
+        "internal_code": "F_AI_sink",
+        "global_ID": "V_6"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_6",
+        "latex": "{{F^{sink}}}{_{A, I}}"
+      },
+      "created": "2024-03-06 15:12:39",
+      "doc": "incidence matrix AI sink",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_2",
+        "I_3"
+      ],
+      "label": "F_AI_sink",
+      "memory": null,
+      "modified": "2024-03-06 15:26:02",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_7": {
+      "IRI": "promo:F_NA_source",
+      "aliases": {
+        "matlab": "F_NA_source",
+        "latex": "{F^{source}}",
+        "internal_code": "F_NA_source",
+        "global_ID": "V_7"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_7",
+        "latex": "{{F^{source}}}{_{N, A}}"
+      },
+      "created": "2024-03-27 08:04:05",
+      "doc": "incidence matrix NA source",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_2"
+      ],
+      "label": "F_NA_source",
+      "memory": null,
+      "modified": "2024-03-27 09:17:05",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_8": {
+      "IRI": "promo:F_NA_sink",
+      "aliases": {
+        "matlab": "F_NA_sink",
+        "latex": "{F^{sink}}",
+        "internal_code": "F_NA_sink",
+        "global_ID": "V_8"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_8",
+        "latex": "{{F^{sink}}}{_{N, A}}"
+      },
+      "created": "2024-03-27 08:06:00",
+      "doc": "incidence matrix NA sink",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_2"
+      ],
+      "label": "F_NA_sink",
+      "memory": null,
+      "modified": "2024-03-27 09:17:13",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_9": {
+      "IRI": "promo:S_Ip",
+      "aliases": {
+        "matlab": "S_Ip",
+        "latex": "{S}",
+        "internal_code": "S_Ip",
+        "global_ID": "V_9"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_9",
+        "latex": "{{S}}{_{I, p}}"
+      },
+      "created": "2024-03-27 08:06:44",
+      "doc": "selection matrix interface to control input",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_3",
+        "I_7"
+      ],
+      "label": "S_Ip",
+      "memory": null,
+      "modified": "2024-03-27 09:17:24",
+      "network": "root",
+      "port_variable": true,
+      "tokens": [],
+      "type": "network",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "indices": {
+    "I_1": {
+      "type": "index",
+      "label": "node",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "N",
+        "latex": "N",
+        "internal_code": "N",
+        "global_ID": "I_1"
+      },
+      "tokens": null,
+      "IRI": "promo:node"
+    },
+    "I_2": {
+      "type": "index",
+      "label": "arc",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "A",
+        "latex": "A",
+        "internal_code": "A",
+        "global_ID": "I_2"
+      },
+      "tokens": null,
+      "IRI": "promo:arc"
+    },
+    "I_3": {
+      "type": "index",
+      "label": "interface",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "I",
+        "latex": "I",
+        "internal_code": "I",
+        "global_ID": "I_3"
+      },
+      "tokens": null,
+      "IRI": "promo:interface"
+    },
+    "I_4": {
+      "type": "index",
+      "label": "species",
+      "network": [
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions"
+      ],
+      "aliases": {
+        "matlab": "S",
+        "latex": "S",
+        "internal_code": "S",
+        "global_ID": "I_4"
+      },
+      "tokens": "mass",
+      "IRI": "promo:species"
+    },
+    "I_5": {
+      "type": "index",
+      "label": "species_conversion",
+      "network": [
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions"
+      ],
+      "aliases": {
+        "matlab": "K",
+        "latex": "K",
+        "internal_code": "K",
+        "global_ID": "I_5"
+      },
+      "tokens": {
+        "instances": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "W"
+        ],
+        "conversions": [
+          {
+            "reactants": [
+              "A"
+            ],
+            "products": [
+              "B"
+            ]
+          },
+          {
+            "reactants": [
+              "A",
+              "B"
+            ],
+            "products": [
+              "C",
+              "D"
+            ]
+          }
+        ]
+      },
+      "IRI": "promo:species_conversion"
+    },
+    "I_6": {
+      "type": "index",
+      "label": "D",
+      "network": [
+        "control"
+      ],
+      "aliases": {
+        "matlab": "D",
+        "latex": "D",
+        "internal_code": "D",
+        "global_ID": "I_6"
+      },
+      "tokens": null,
+      "IRI": "promo:D"
+    },
+    "I_7": {
+      "type": "index",
+      "label": "p",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "p",
+        "latex": "p",
+        "internal_code": "p",
+        "global_ID": "I_7"
+      },
+      "tokens": null,
+      "IRI": "promo:p"
+    },
+    "I_8": {
+      "type": "index",
+      "label": "q",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "q",
+        "latex": "q",
+        "internal_code": "q",
+        "global_ID": "I_8"
+      },
+      "tokens": null,
+      "IRI": "promo:q"
+    },
+    "I_9": {
+      "type": "index",
+      "label": "r",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "r",
+        "latex": "r",
+        "internal_code": "r",
+        "global_ID": "I_9"
+      },
+      "tokens": null,
+      "IRI": "promo:r"
+    },
+    "I_10": {
+      "type": "index",
+      "label": "t",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "t",
+        "latex": "t",
+        "internal_code": "t",
+        "global_ID": "I_10"
+      },
+      "tokens": null,
+      "IRI": "promo:t"
+    },
+    "I_11": {
+      "type": "index",
+      "label": "u",
+      "network": [
+        "root",
+        "physical",
+        "macroscopic",
+        "solid",
+        "fluid",
+        "liquid",
+        "gas",
+        "energy",
+        "microscopic",
+        "reactions",
+        "control",
+        "info_processing"
+      ],
+      "aliases": {
+        "matlab": "u",
+        "latex": "u",
+        "internal_code": "u",
+        "global_ID": "I_11"
+      },
+      "tokens": null,
+      "IRI": "promo:u"
+    }
+  },
+  "Ontology_global_IDs": {
+    "variable": 233,
+    "equation": 132
+  }
+}

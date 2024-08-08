@@ -68,7 +68,9 @@
           "secondaryState",
           "conversion",
           "diffState",
-          "internalTransport"
+          "internalTransport",
+          "controlInput",
+          "observation"
         ]
       },
       "children": [],
@@ -142,7 +144,9 @@
           "secondaryState",
           "conversion",
           "diffState",
-          "internalTransport"
+          "internalTransport",
+          "controlInput",
+          "observation"
         ]
       },
       "children": [
@@ -219,7 +223,9 @@
           "secondaryState",
           "conversion",
           "diffState",
-          "internalTransport"
+          "internalTransport",
+          "controlInput",
+          "observation"
         ]
       },
       "children": [],
@@ -336,7 +342,9 @@
           "secondaryState",
           "conversion",
           "diffState",
-          "internalTransport"
+          "internalTransport",
+          "controlInput",
+          "observation"
         ]
       },
       "children": [],
@@ -411,7 +419,9 @@
           "secondaryState",
           "conversion",
           "diffState",
-          "internalTransport"
+          "internalTransport",
+          "controlInput",
+          "observation"
         ]
       },
       "children": [
@@ -483,7 +493,9 @@
           "effort",
           "secondaryState",
           "diffState",
-          "conversion"
+          "conversion",
+          "controlInput",
+          "observation"
         ]
       },
       "children": [],
@@ -547,7 +559,9 @@
           "effort",
           "secondaryState",
           "diffState",
-          "conversion"
+          "conversion",
+          "controlInput",
+          "observation"
         ]
       },
       "children": [
@@ -614,7 +628,9 @@
           "effort",
           "secondaryState",
           "diffState",
-          "conversion"
+          "conversion",
+          "controlInput",
+          "observation"
         ]
       },
       "children": [],
@@ -713,7 +729,9 @@
           "secondaryState",
           "conversion",
           "diffState",
-          "internalTransport"
+          "internalTransport",
+          "controlInput",
+          "observation"
         ]
       },
       "children": [],

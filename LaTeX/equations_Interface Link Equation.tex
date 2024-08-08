@@ -52,5 +52,13 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{{\bar{T}}}{_{N, p}} := \left({{F^{sink}}}{_{N, I}} \, . \, {\_T\_meas}{_{I}}\right) \stackrel{I}{\star} {{S}}{_{I, p}}\end{eq} &
     \begin{lay}interface equation\end{lay} &
     \begin{lay}control\end{lay} \\
+        \hyperlink{"v:242"}{ 140 }\hypertarget{"e:140"}{  } &
+    \begin{eq}{{\_y^{p+}}}{_{I}} := \textbf{reduceSum}\left(\left(\left({{F^{source}}}{_{N, I}} \stackrel{N}{\star} {{y^{p +}}}{_{N, q}}\right) \, . \, {{S}}{_{I, q}}\right),q\right)\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}control --> macroscopic\end{lay} \\
+        \hyperlink{"v:243"}{ 141 }\hypertarget{"e:141"}{  } &
+    \begin{eq}{{y^{p+}}}{_{A}} := {{F^{source}}}{_{A, I}} \stackrel{I}{\star} {{\_y^{p+}}}{_{I}}\end{eq} &
+    \begin{lay}interface equation\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}

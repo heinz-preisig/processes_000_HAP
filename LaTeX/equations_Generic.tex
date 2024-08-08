@@ -384,25 +384,25 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{{T_{setpoint}}}{_{N, p}} := \textbf{Instantiate}({{\bar{T}}}{_{N, p}}, {{\#}}{_{}})\end{eq} &
     \begin{lay}setpoint for temperatue\end{lay} &
     \begin{lay}control\end{lay} \\
-        \hyperlink{"v:228"}{ 127 }\hypertarget{"e:127"}{  } &
-    \begin{eq}{p}{_{}} := \textbf{Instantiate}({{\#}}{_{}}, {{\#}}{_{}})\end{eq} &
-    \begin{lay}proportional gain\end{lay} &
-    \begin{lay}control\end{lay} \\
-        \hyperlink{"v:229"}{ 128 }\hypertarget{"e:128"}{  } &
-    \begin{eq}{u}{_{N, p}} := \left( -{p}{_{}} \right) \, . \, {e}{_{N, p}}\end{eq} &
-    \begin{lay}output of straight proportional temperature controller\end{lay} &
-    \begin{lay}control\end{lay} \\
-        \hyperlink{"v:230"}{ 129 }\hypertarget{"e:129"}{  } &
-    \begin{eq}{{d^{heating}}}{_{N, p}} := \textbf{sign} \left( {u}{_{N, p}} \right)\end{eq} &
-    \begin{lay}direction of heating\end{lay} &
-    \begin{lay}control\end{lay} \\
         \hyperlink{"v:231"}{ 130 }\hypertarget{"e:130"}{  } &
     \begin{eq}{e}{_{N, p}} := {{T_{setpoint}}}{_{N, p}}  - {{\bar{T}}}{_{N, p}}\end{eq} &
     \begin{lay}control error in normed temperature\end{lay} &
     \begin{lay}control\end{lay} \\
-        \hyperlink{"v:233"}{ 132 }\hypertarget{"e:132"}{  } &
-    \begin{eq}{l}{_{N, p}} := \textbf{Instantiate}({u}{_{N, p}}, {{\#}}{_{}})\end{eq} &
-    \begin{lay}maximum limit\end{lay} &
+        \hyperlink{"v:234"}{ 133 }\hypertarget{"e:133"}{  } &
+    \begin{eq}{{\hat{m}}}{_{N, A}} := {{\hat{V}}}{_{A}} \, . \, {{\rho}}{_{N}}\end{eq} &
+    \begin{lay}convective mass flow\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+        \hyperlink{"v:238"}{ 136 }\hypertarget{"e:136"}{  } &
+    \begin{eq}{{y^{p}}}{_{N, q}} := \left( -{p}{_{N, p, q}} \right) \stackrel{p}{\star} {e}{_{N, p}}\end{eq} &
+    \begin{lay}output of proportional controller\end{lay} &
     \begin{lay}control\end{lay} \\
+        \hyperlink{"v:239"}{ 137 }\hypertarget{"e:137"}{  } &
+    \begin{eq}{{y^{p +}}}{_{N, q}} := \mathbf{max}\left( {0}{_{}} \, . \, {{y^{p}}}{_{N, q}}, {{y^{p}}}{_{N, q}} \right)\end{eq} &
+    \begin{lay}positive signal only\end{lay} &
+    \begin{lay}control\end{lay} \\
+        \hyperlink{"v:159"}{ 142 }\hypertarget{"e:142"}{  } &
+    \begin{eq}{{\hat{V}}}{_{A}} := {{y^{p+}}}{_{A}} \, . \, \left( {{\rho}}{_{A}} \right)^{-1} \, . \, {{k^c_x}}{_{A}} \, . \, {{A_{yz}}}{_{N}} \, . \, {{F}}{_{N, A}} \stackrel{N}{\star} {p}{_{N}}\end{eq} &
+    \begin{lay}controlled volumetric flow in x-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}

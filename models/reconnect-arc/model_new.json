@@ -1,0 +1,137 @@
+{
+    "N_0": {
+        "identifier": "N_0",
+        "name": "g",
+        "parent_id": null,
+        "modeller_class": "NodeComposite",
+        "children_ids": [
+            "N_1",
+            "N_2",
+            "N_3",
+            "A_4",
+            "N_5",
+            "N_6"
+        ]
+    },
+    "N_1": {
+        "identifier": "N_1",
+        "name": "massSource",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.mass|constant|infinity.massSource",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {
+            "V_112": {},
+            "V_138": {}
+        },
+        "outgoing_connections": [
+            "A_4"
+        ],
+        "conversions": null,
+        "injected_typed_tokens": null
+    },
+    "N_2": {
+        "identifier": "N_2",
+        "name": "massSource",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.mass|constant|infinity.massSource",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [],
+        "typed_tokens": {},
+        "instantiated_variables": {
+            "V_112": {},
+            "V_138": {}
+        },
+        "outgoing_connections": [],
+        "conversions": null,
+        "injected_typed_tokens": null
+    },
+    "N_3": {
+        "identifier": "N_3",
+        "name": "dynamicMassEnergy",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {},
+        "outgoing_connections": [],
+        "conversions": {},
+        "injected_typed_tokens": null
+    },
+    "A_4": {
+        "identifier": "A_4",
+        "name": "convectiveMassFlow",
+        "parent_id": "N_0",
+        "modeller_class": "Arc",
+        "entity_name": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow",
+        "network": "liquid",
+        "named_network": "A-liquid >>> A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {
+            "V_104": {},
+            "V_150": {},
+            "V_183": {},
+            "V_189": {}
+        },
+        "outgoing_connections": [
+            "N_3"
+        ]
+    },
+    "N_5": {
+        "identifier": "N_5",
+        "name": "massSource",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.mass|constant|infinity.massSource",
+        "network": "gas",
+        "named_network": "A-gas",
+        "tokens": [],
+        "typed_tokens": {},
+        "instantiated_variables": {
+            "V_112": {},
+            "V_138": {}
+        },
+        "outgoing_connections": [],
+        "conversions": null,
+        "injected_typed_tokens": null
+    },
+    "N_6": {
+        "identifier": "N_6",
+        "name": "massSource",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.mass|constant|infinity.massSource",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [],
+        "typed_tokens": {},
+        "instantiated_variables": {
+            "V_112": {},
+            "V_138": {}
+        },
+        "outgoing_connections": [],
+        "conversions": null,
+        "injected_typed_tokens": null
+    }
+}

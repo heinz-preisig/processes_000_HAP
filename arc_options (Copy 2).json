@@ -1,0 +1,88 @@
+{
+    "macroscopic.arc.mass|convection|lumped.convectiveMassFlow": {
+        "sources": [
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+        ],
+        "sinks": [
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+        ]
+    },
+    "macroscopic.arc.mass|diffusion|lumped.diffusionalMassTransfer": {
+        "sources": [
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+        ],
+        "sinks": [
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+        ]
+    },
+    "control.arc.signal|link|unidirectional.signal": {
+        "sources": [
+            "control.node.signal|event|AE.pControl"
+        ],
+        "sinks": [
+            "control.node.signal|event|AE.pControl"
+        ]
+    },
+    "macroscopic.arc.mass|convection|lumped.controlledMassFlow": {
+        "sources": [
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+        ],
+        "sinks": [
+            "macroscopic.node.mass|constant|infinity.massSource",
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+        ]
+    },
+    "macroscopic >>> reactions (F_NI_source -> _x)": {
+        "sources": [],
+        "sinks": []
+    },
+    "reactions >>> macroscopic (F_NI_source -> _np)": {
+        "sources": [],
+        "sinks": []
+    },
+    "macroscopic >>> reactions (F_NI_source -> _c)": {
+        "sources": [
+            "macroscopic.node.mass|constant|infinity.massSource"
+        ],
+        "sinks": []
+    },
+    "macroscopic >>> reactions (F_NI_source -> _T)": {
+        "sources": [
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump"
+        ],
+        "sinks": []
+    },
+    "macroscopic >>> control (F_NI_source -> _T_meas)": {
+        "sources": [
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump"
+        ],
+        "sinks": [
+            "control.node.signal|event|AE.pControl"
+        ]
+    },
+    "control >>> macroscopic (y_p_positive -> _y_p_positive)": {
+        "sources": [
+            "control.node.signal|event|AE.pControl"
+        ],
+        "sinks": [
+            "macroscopic.arc.mass|convection|lumped.controlledMassFlow"
+        ]
+    }
+}

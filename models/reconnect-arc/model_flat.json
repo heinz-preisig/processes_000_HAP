@@ -1,0 +1,258 @@
+{
+  "nodes": {
+    "1": {
+      "name": "massSource",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "constant|infinity",
+      "variant": "massSource",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "tokens": {
+        "mass": []
+      },
+      "injected_typed_tokens": {},
+      "mass": []
+    },
+    "2": {
+      "name": "massSource",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "constant|infinity",
+      "variant": "massSource",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "tokens": {},
+      "injected_typed_tokens": {}
+    },
+    "3": {
+      "name": "dynamicMassEnergy",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "dynamic|lumped",
+      "variant": "dynamicMassEnergy",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+      "tokens": {
+        "mass": []
+      },
+      "conversions": {},
+      "mass": []
+    },
+    "4": {
+      "name": "convectiveMassFlow",
+      "network": "liquid",
+      "named_network": "A-liquid >>> A-liquid",
+      "class": "node_arc",
+      "type": "mass|convection|lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow",
+      "tokens": {
+        "mass": []
+      },
+      "tokens_right": {
+        "mass": []
+      },
+      "tokens_left": {
+        "mass": []
+      },
+      "transfer_constraints": {
+        "mass": []
+      },
+      "mass": []
+    },
+    "5": {
+      "name": "massSource",
+      "network": "gas",
+      "named_network": "A-gas",
+      "class": "node_simple",
+      "type": "constant|infinity",
+      "variant": "massSource",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "tokens": {},
+      "injected_typed_tokens": {}
+    },
+    "6": {
+      "name": "massSource",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "constant|infinity",
+      "variant": "massSource",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "tokens": {},
+      "injected_typed_tokens": {}
+    }
+  },
+  "arcs": {
+    "0": {
+      "name": "1 | 4",
+      "source": 1,
+      "sink": 4,
+      "token": "mass",
+      "typed_tokens": [],
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "mechanism": "convection",
+      "nature": "lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {}
+    },
+    "1": {
+      "name": "4 | 3",
+      "source": 4,
+      "sink": 3,
+      "token": "mass",
+      "typed_tokens": [],
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "mechanism": "convection",
+      "nature": "lumped",
+      "variant": "convectiveMassFlow",
+      "instantiated_variables": {}
+    }
+  },
+  "named_networks": {
+    "network__named_network": {
+      "control": [
+        "A-control"
+      ],
+      "energy": [
+        "A-energy"
+      ],
+      "gas": [
+        "A-gas"
+      ],
+      "info_processing": [
+        "A-info_processing"
+      ],
+      "liquid": [
+        "A-liquid"
+      ],
+      "microscopic": [
+        "A-microscopic"
+      ],
+      "reactions": [
+        "A-reactions"
+      ],
+      "solid": [
+        "A-solid"
+      ]
+    },
+    "A-control": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-energy": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-gas": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-microscopic": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-solid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    }
+  },
+  "token_domains": {
+    "charge": {},
+    "energy": {},
+    "mass": {
+      "0": [
+        1,
+        3,
+        4
+      ]
+    },
+    "signal": {}
+  },
+  "typed_token_domains": {
+    "mass": {
+      "0": {
+        "species": {}
+      }
+    }
+  },
+  "token_incidence_matrix": {
+    "0": {
+      "mass": {
+        "1": [
+          0
+        ],
+        "4": [
+          0,
+          1
+        ],
+        "3": [
+          1
+        ]
+      }
+    }
+  },
+  "typed_token_incidence_matrix": {
+    "mass": {
+      "0": {}
+    }
+  },
+  "typed_token_lists": {
+    "mass": {
+      "0": []
+    }
+  }
+}

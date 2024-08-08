@@ -447,7 +447,7 @@
         "('arc_right', 'head', '-')": {
           "left": {
             "state": "-",
-            "output": "-"
+            "output": "insert knot"
           },
           "right": {
             "state": "re-connect_arc",
@@ -537,10 +537,10 @@
             "state": "-",
             "output": "-"
           },
-          "cursor": "-",
+          "cursor": "TC_L_blank-R_adda",
           "right": {
-            "state": "-",
-            "output": "-"
+            "state": "connect_arc",
+            "output": "begin arc"
           }
         },
         "('node_simple', 'name', '-')": {
@@ -913,10 +913,10 @@
             "state": "-",
             "output": "-"
           },
-          "cursor": "-",
+          "cursor": "TC_L_blank-R_adda",
           "right": {
-            "state": "-",
-            "output": "-"
+            "state": "insert",
+            "output": "add arc"
           }
         },
         "('node_simple', 'name', '-')": {

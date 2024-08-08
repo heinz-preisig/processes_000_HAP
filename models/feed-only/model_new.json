@@ -1,0 +1,58 @@
+{
+    "N_0": {
+        "identifier": "N_0",
+        "name": "composite",
+        "parent_id": null,
+        "modeller_class": "NodeComposite",
+        "children_ids": [
+            "A_1",
+            "N_2"
+        ]
+    },
+    "A_1": {
+        "identifier": "A_1",
+        "name": "controlledMassFlow",
+        "parent_id": "N_0",
+        "modeller_class": "Arc",
+        "entity_name": "macroscopic.arc.mass|convection|lumped.controlledMassFlow",
+        "network": "liquid",
+        "named_network": "A-liquid >>> A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {
+            "V_104": {},
+            "V_150": {},
+            "V_183": {},
+            "V_189": {}
+        },
+        "outgoing_connections": []
+    },
+    "N_2": {
+        "identifier": "N_2",
+        "name": "massSource",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.mass|constant|infinity.massSource",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [
+            "mass"
+        ],
+        "typed_tokens": {
+            "mass": []
+        },
+        "instantiated_variables": {
+            "V_112": {},
+            "V_138": {}
+        },
+        "outgoing_connections": [
+            "A_1"
+        ],
+        "conversions": null,
+        "injected_typed_tokens": null
+    }
+}

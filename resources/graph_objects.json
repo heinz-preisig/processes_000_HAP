@@ -1137,7 +1137,7 @@
               "layer": "text",
               "movable": true,
               "position_x": 0,
-              "position_y": 50
+              "position_y": 40
             }
           }
         },
@@ -1176,7 +1176,7 @@
               "layer": "text",
               "movable": true,
               "position_x": 0,
-              "position_y": 55
+              "position_y": 25
             }
           }
         },
@@ -1190,12 +1190,12 @@
                 255,
                 255
               ],
-              "height": 10,
+              "height": 15,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 10
+              "width": 15
             },
             "selected": {
               "action": [],
@@ -1205,12 +1205,12 @@
                 79,
                 255
               ],
-              "height": 10,
+              "height": 15,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 10
+              "width": 15
             }
           }
         }
@@ -1225,7 +1225,7 @@
               "layer": "text",
               "movable": true,
               "position_x": 0,
-              "position_y": 50
+              "position_y": 40
             }
           }
         },
@@ -2509,7 +2509,7 @@
               "layer": "text",
               "movable": true,
               "position_x": 0,
-              "position_y": 50
+              "position_y": 40
             }
           }
         },
@@ -2547,7 +2547,7 @@
               "layer": "text",
               "movable": true,
               "position_x": 0,
-              "position_y": 55
+              "position_y": 25
             }
           }
         },
@@ -2561,12 +2561,12 @@
                 182,
                 255
               ],
-              "height": 10,
+              "height": 15,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 10
+              "width": 15
             },
             "enabled": {
               "action": [],
@@ -2576,12 +2576,12 @@
                 255,
                 255
               ],
-              "height": 10,
+              "height": 15,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 10
+              "width": 15
             },
             "selected": {
               "action": [],
@@ -2591,12 +2591,12 @@
                 79,
                 255
               ],
-              "height": 10,
+              "height": 15,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 10
+              "width": 15
             }
           }
         }
@@ -2611,7 +2611,7 @@
               "layer": "text",
               "movable": true,
               "position_x": 0,
-              "position_y": 50
+              "position_y": 40
             }
           }
         },
@@ -4454,10 +4454,9 @@
             },
             "enabled": {
               "action": [
-                "name node",
                 "begin arc",
-                "add node",
-                "delete node"
+                "delete node",
+                "name node"
               ],
               "colour": [
                 53,
@@ -4645,7 +4644,6 @@
             }
           },
           "signal|link|unidirectional": {
-            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -4704,6 +4702,11 @@
               "layer": "text",
               "movable": true,
               "position_x": 0,
+              "position_y": 40
+            }
+          },
+          "dynamic|ODE": {
+            "-": {
               "position_y": 50
             }
           }
@@ -4744,12 +4747,19 @@
               "layer": "text",
               "movable": true,
               "position_x": 0,
-              "position_y": 55
+              "position_y": 25
+            }
+          },
+          "node_interface": {
+            "-": {
+              "movable": true,
+              "position_y": 25
             }
           }
         },
         "root": {
           "node_interface": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -4758,18 +4768,18 @@
                 182,
                 255
               ],
-              "height": 10,
+              "height": 15,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 10
+              "width": 15
             },
             "enabled": {
               "action": [
                 "add arc",
                 "begin arc",
-                "change arc"
+                "delete node"
               ],
               "colour": [
                 170,
@@ -4777,12 +4787,12 @@
                 255,
                 255
               ],
-              "height": 10,
+              "height": 15,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 10
+              "width": 15
             },
             "selected": {
               "action": [],
@@ -4792,12 +4802,12 @@
                 79,
                 255
               ],
-              "height": 10,
+              "height": 15,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 10
+              "width": 15
             }
           }
         }
@@ -4812,6 +4822,12 @@
               "layer": "text",
               "movable": true,
               "position_x": 0,
+              "position_y": 40
+            }
+          },
+          "dynamic|ODE": {
+            "-": {
+              "movable": true,
               "position_y": 50
             }
           }
@@ -4962,6 +4978,7 @@
             }
           },
           "dynamic|ODE": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [

@@ -149,21 +149,6 @@
     "network": "control",
     "rhs": " Instantiate ( T_meas , value )"
   },
-  "E_127": {
-    "lhs": "p_gain",
-    "network": "control",
-    "rhs": " Instantiate ( value , value )"
-  },
-  "E_128": {
-    "lhs": "u",
-    "network": "control",
-    "rhs": " neg ( p_gain ) . control_error"
-  },
-  "E_129": {
-    "lhs": "d_dir",
-    "network": "control",
-    "rhs": " sign ( u )"
-  },
   "E_13": {
     "lhs": "G",
     "network": "macroscopic",
@@ -174,15 +159,40 @@
     "network": "control",
     "rhs": " T_setpoint - T_meas"
   },
-  "E_132": {
-    "lhs": "limit",
+  "E_133": {
+    "lhs": "fm",
+    "network": "macroscopic",
+    "rhs": " fV . rho"
+  },
+  "E_136": {
+    "lhs": "y_p_control",
     "network": "control",
-    "rhs": " Instantiate ( u , value )"
+    "rhs": " neg ( p ) * p control_error"
+  },
+  "E_137": {
+    "lhs": "y_p_positive",
+    "network": "control",
+    "rhs": " max ( zero . y_p_control , y_p_control )"
   },
   "E_14": {
     "lhs": "v_x",
     "network": "macroscopic",
     "rhs": " ParDiff ( r_x , t )"
+  },
+  "E_140": {
+    "lhs": "_y_p_positive",
+    "network": "control >>> macroscopic",
+    "rhs": " reduceSum ( ( ( F_NI_source * N y_p_positive ) . S_Iq ) , q )"
+  },
+  "E_141": {
+    "lhs": "y_p_positive",
+    "network": "macroscopic",
+    "rhs": " F_AI_source * I _y_p_positive"
+  },
+  "E_142": {
+    "lhs": "fV",
+    "network": "macroscopic",
+    "rhs": " y_p_positive . inv ( rhoA ) . kcA_x . Ayz . F * N p"
   },
   "E_15": {
     "lhs": "v_y",

@@ -2951,7 +2951,30 @@
             "V_2"
           ],
           "created": "2024-03-30 15:42:22",
-          "modified": "2024-04-03 09:58:01",
+          "modified": "2024-07-11 15:38:43",
+          "lhs": {
+            "global_ID": "V_159",
+            "latex": "{{\\hat{V}}}{_{A}}"
+          }
+        },
+        "E_142": {
+          "rhs": {
+            "global_ID": " V_243 O_4 F_15 D_0 V_189 D_1 O_4 V_183 O_4 V_150 O_4 V_2  O_5 I_1 V_112",
+            "latex": "{{y^{p+}}}{_{A}} \\, . \\, \\left( {{\\rho}}{_{A}} \\right)^{-1} \\, . \\, {{k^c_x}}{_{A}} \\, . \\, {{A_{yz}}}{_{N}} \\, . \\, {{F}}{_{N, A}} \\stackrel{N}{\\star} {p}{_{N}}"
+          },
+          "type": "generic",
+          "doc": "controlled volumetric flow in x-direction",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_112",
+            "V_150",
+            "V_183",
+            "V_189",
+            "V_2",
+            "V_243"
+          ],
+          "created": "2024-07-11 15:38:15",
+          "modified": "2024-07-11 15:38:15",
           "lhs": {
             "global_ID": "V_159",
             "latex": "{{\\hat{V}}}{_{A}}"
@@ -6346,7 +6369,7 @@
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
-      "type": "secondaryState",
+      "type": "observation",
       "units": [
         0,
         0,
@@ -6386,7 +6409,7 @@
             "V_223"
           ],
           "created": "2024-06-19 12:12:49",
-          "modified": "2024-06-19 12:12:49",
+          "modified": "2024-06-20 14:39:45",
           "lhs": {
             "global_ID": "V_224",
             "latex": "{{\\bar{T}}}{_{N}}"
@@ -6403,7 +6426,7 @@
       "network": "macroscopic",
       "port_variable": false,
       "tokens": [],
-      "type": "secondaryState",
+      "type": "observation",
       "units": [
         0,
         0,
@@ -6589,118 +6612,6 @@
         0
       ]
     },
-    "V_228": {
-      "IRI": "qudt:Gain",
-      "aliases": {
-        "matlab": "p_gain",
-        "latex": "p",
-        "internal_code": "p_gain",
-        "global_ID": "V_228"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_228",
-        "latex": "{p}{_{}}"
-      },
-      "created": "2024-06-19 12:21:52",
-      "doc": "proportional gain",
-      "equations": {
-        "E_127": {
-          "rhs": {
-            "global_ID": " O_10 D_0 V_101 D_7 V_101 D_1",
-            "latex": "\\textbf{Instantiate}({{\\#}}{_{}}, {{\\#}}{_{}})"
-          },
-          "type": "generic",
-          "doc": "proportional gain",
-          "network": "control",
-          "incidence_list": [
-            "V_101"
-          ],
-          "created": "2024-06-19 12:21:52",
-          "modified": "2024-06-19 12:21:52",
-          "lhs": {
-            "global_ID": "V_228",
-            "latex": "{p}{_{}}"
-          }
-        }
-      },
-      "imported": false,
-      "index_structures": [],
-      "label": "p_gain",
-      "memory": null,
-      "modified": "2024-06-19 12:25:55",
-      "network": "control",
-      "port_variable": false,
-      "tokens": [],
-      "type": "algebraic",
-      "units": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "V_229": {
-      "IRI": "promo:u",
-      "aliases": {
-        "matlab": "u",
-        "latex": "u",
-        "internal_code": "u",
-        "global_ID": "V_229"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_229",
-        "latex": "{u}{_{N, p}}"
-      },
-      "created": "2024-06-19 12:24:02",
-      "doc": "output of straight proportional controller direction heating",
-      "equations": {
-        "E_128": {
-          "rhs": {
-            "global_ID": " F_11 D_0 V_228 D_1 O_4 V_231",
-            "latex": "\\left( -{p}{_{}} \\right) \\, . \\, {e}{_{N, p}}"
-          },
-          "type": "generic",
-          "doc": "output of straight proportional temperature controller",
-          "network": "control",
-          "incidence_list": [
-            "V_228",
-            "V_231"
-          ],
-          "created": "2024-06-19 12:24:02",
-          "modified": "2024-06-19 15:53:43",
-          "lhs": {
-            "global_ID": "V_229",
-            "latex": "{u}{_{N, p}}"
-          }
-        }
-      },
-      "imported": false,
-      "index_structures": [
-        "I_1",
-        "I_7"
-      ],
-      "label": "u",
-      "memory": "node",
-      "modified": "2024-06-19 12:34:01",
-      "network": "control",
-      "port_variable": false,
-      "tokens": [],
-      "type": "algebraic",
-      "units": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
     "V_23": {
       "IRI": "promo:r_x",
       "aliases": {
@@ -6730,63 +6641,6 @@
       "units": [
         0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "V_230": {
-      "IRI": "promo:d_dir",
-      "aliases": {
-        "matlab": "d_dir",
-        "latex": "{d^{heating}}",
-        "internal_code": "d_dir",
-        "global_ID": "V_230"
-      },
-      "compiled_lhs": {
-        "global_ID": "V_230",
-        "latex": "{{d^{heating}}}{_{N, p}}"
-      },
-      "created": "2024-06-19 12:36:12",
-      "doc": "direction of heating",
-      "equations": {
-        "E_129": {
-          "rhs": {
-            "global_ID": " F_16 D_0 V_229 D_1",
-            "latex": "\\textbf{sign} \\left( {u}{_{N, p}} \\right)"
-          },
-          "type": "generic",
-          "doc": "direction of heating",
-          "network": "control",
-          "incidence_list": [
-            "V_229"
-          ],
-          "created": "2024-06-19 12:36:12",
-          "modified": "2024-06-19 12:36:12",
-          "lhs": {
-            "global_ID": "V_230",
-            "latex": "{{d^{heating}}}{_{N, p}}"
-          }
-        }
-      },
-      "imported": false,
-      "index_structures": [
-        "I_1",
-        "I_7"
-      ],
-      "label": "d_dir",
-      "memory": "node",
-      "modified": "2024-06-19 15:49:40",
-      "network": "control",
-      "port_variable": false,
-      "tokens": [],
-      "type": "algebraic",
-      "units": [
-        0,
-        0,
         0,
         0,
         0,
@@ -6853,49 +6707,204 @@
         0
       ]
     },
-    "V_233": {
-      "IRI": "promo:limit",
+    "V_234": {
+      "IRI": "promo:fm",
       "aliases": {
-        "matlab": "limit",
-        "latex": "l",
-        "internal_code": "limit",
-        "global_ID": "V_233"
+        "matlab": "fm",
+        "latex": "{\\hat{m}}",
+        "internal_code": "fm",
+        "global_ID": "V_234"
       },
       "compiled_lhs": {
-        "global_ID": "V_233",
-        "latex": "{{u^{max}}}{_{N, p}}"
+        "global_ID": "V_234",
+        "latex": "{{\\hat{m}}}{_{N, A}}"
       },
-      "created": "2024-06-19 16:14:14",
-      "doc": "limit",
+      "created": "2024-06-20 13:20:43",
+      "doc": "convective mass flow",
       "equations": {
-        "E_132": {
+        "E_133": {
           "rhs": {
-            "global_ID": " O_10 D_0 V_229 D_7 V_101 D_1",
-            "latex": "\\textbf{Instantiate}({u}{_{N, p}}, {{\\#}}{_{}})"
+            "global_ID": " V_159 O_4 V_143",
+            "latex": "{{\\hat{V}}}{_{A}} \\, . \\, {{\\rho}}{_{N}}"
           },
           "type": "generic",
-          "doc": "maximum limit",
-          "network": "control",
+          "doc": "convective mass flow",
+          "network": "macroscopic",
           "incidence_list": [
-            "V_101",
-            "V_229"
+            "V_143",
+            "V_159"
           ],
-          "created": "2024-06-19 16:14:14",
-          "modified": "2024-06-19 16:14:14",
+          "created": "2024-06-20 13:20:43",
+          "modified": "2024-06-20 13:20:43",
           "lhs": {
-            "global_ID": "V_233",
-            "latex": "{{u^{max}}}{_{N, p}}"
+            "global_ID": "V_234",
+            "latex": "{{\\hat{m}}}{_{N, A}}"
           }
         }
       },
       "imported": false,
       "index_structures": [
         "I_1",
-        "I_7"
+        "I_2"
       ],
-      "label": "limit",
+      "label": "fm",
+      "memory": null,
+      "modified": "2024-07-11 15:10:50",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_237": {
+      "IRI": "promo:p",
+      "aliases": {
+        "matlab": "p",
+        "latex": "p",
+        "internal_code": "p",
+        "global_ID": "V_237"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_237",
+        "latex": "{p}{_{N, p, q}}"
+      },
+      "created": "2024-07-11 10:25:05",
+      "doc": "controller gain",
+      "equations": {},
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_7",
+        "I_8"
+      ],
+      "label": "p",
+      "memory": null,
+      "modified": "2024-07-11 10:25:48",
+      "network": "control",
+      "port_variable": true,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_238": {
+      "IRI": "promo:y_p_control",
+      "aliases": {
+        "matlab": "y_p_control",
+        "latex": "{y^{p}}",
+        "internal_code": "y_p_control",
+        "global_ID": "V_238"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_238",
+        "latex": "{{y^{p}}}{_{N, q}}"
+      },
+      "created": "2024-07-11 10:29:13",
+      "doc": "output of proportional controller",
+      "equations": {
+        "E_136": {
+          "rhs": {
+            "global_ID": " F_11 D_0 V_237 D_1  O_5 I_7 V_231",
+            "latex": "\\left( -{p}{_{N, p, q}} \\right) \\stackrel{p}{\\star} {e}{_{N, p}}"
+          },
+          "type": "generic",
+          "doc": "output of proportional controller",
+          "network": "control",
+          "incidence_list": [
+            "V_231",
+            "V_237"
+          ],
+          "created": "2024-07-11 10:29:13",
+          "modified": "2024-07-11 10:29:13",
+          "lhs": {
+            "global_ID": "V_238",
+            "latex": "{{y^{p}}}{_{N, q}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_8"
+      ],
+      "label": "y_p_control",
       "memory": "node",
-      "modified": "2024-06-19 16:42:58",
+      "modified": "2024-07-11 10:29:13",
+      "network": "control",
+      "port_variable": false,
+      "tokens": [],
+      "type": "algebraic",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_239": {
+      "IRI": "promo:y_p_positive",
+      "aliases": {
+        "matlab": "y_p_positive",
+        "latex": "{y^{p +}}",
+        "internal_code": "y_p_positive",
+        "global_ID": "V_239"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_239",
+        "latex": "{{y^{p +}}}{_{N, q}}"
+      },
+      "created": "2024-07-11 10:34:07",
+      "doc": "positive signal only",
+      "equations": {
+        "E_137": {
+          "rhs": {
+            "global_ID": " O_11 D_0 V_102 O_4 V_238 D_7 V_238 D_1",
+            "latex": "\\mathbf{max}\\left( {0}{_{}} \\, . \\, {{y^{p}}}{_{N, q}}, {{y^{p}}}{_{N, q}} \\right)"
+          },
+          "type": "generic",
+          "doc": "positive signal only",
+          "network": "control",
+          "incidence_list": [
+            "V_102",
+            "V_238"
+          ],
+          "created": "2024-07-11 10:34:07",
+          "modified": "2024-07-11 10:34:07",
+          "lhs": {
+            "global_ID": "V_239",
+            "latex": "{{y^{p +}}}{_{N, q}}"
+          }
+        }
+      },
+      "imported": false,
+      "index_structures": [
+        "I_1",
+        "I_8"
+      ],
+      "label": "y_p_positive",
+      "memory": "node",
+      "modified": "2024-07-11 10:37:13",
       "network": "control",
       "port_variable": false,
       "tokens": [],
@@ -6940,6 +6949,121 @@
       "units": [
         0,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_242": {
+      "IRI": "promo:_y_p_positive",
+      "aliases": {
+        "matlab": "_y_p_positive",
+        "latex": "{\\_y^{p+}}",
+        "internal_code": "_y_p_positive",
+        "global_ID": "V_242"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_242",
+        "latex": "{{\\_y^{p+}}}{_{I}}"
+      },
+      "created": "2024-07-11 15:07:12",
+      "doc": "link variable _y_p_positive to interface control >>> macroscopic with source:arc",
+      "equations": {
+        "E_140": {
+          "rhs": {
+            "global_ID": " O_15 D_0 D_0 D_0 V_3  O_5 I_1 V_239 D_1 O_4 V_10 D_1 D_7 I_8 D_1",
+            "latex": "\\textbf{reduceSum}\\left(\\left(\\left({{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {{y^{p +}}}{_{N, q}}\\right) \\, . \\, {{S}}{_{I, q}}\\right),q\\right)"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "control >>> macroscopic",
+          "incidence_list": [
+            "V_10",
+            "V_239",
+            "V_3"
+          ],
+          "created": "2024-07-11 15:07:12",
+          "modified": "2024-07-11 15:07:12",
+          "lhs": {
+            "global_ID": "V_242",
+            "latex": "{{\\_y^{p+}}}{_{I}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_3"
+      ],
+      "label": "_y_p_positive",
+      "memory": "arc",
+      "modified": "2024-07-11 15:11:47",
+      "network": "control >>> macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "get",
+      "units": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "V_243": {
+      "IRI": "promo:y_p_positive",
+      "aliases": {
+        "matlab": "y_p_positive",
+        "latex": "{y^{p+}}",
+        "internal_code": "y_p_positive",
+        "global_ID": "V_243"
+      },
+      "compiled_lhs": {
+        "global_ID": "V_243",
+        "latex": "{{y^{p+}}}{_{A}}"
+      },
+      "created": "2024-07-11 15:07:14",
+      "doc": "link variable _y_p_positive to interface macroscopic",
+      "equations": {
+        "E_141": {
+          "rhs": {
+            "global_ID": " V_5  O_5 I_3 V_242",
+            "latex": "{{F^{source}}}{_{A, I}} \\stackrel{I}{\\star} {{\\_y^{p+}}}{_{I}}"
+          },
+          "type": "interface_link_equation",
+          "doc": "interface equation",
+          "network": "macroscopic",
+          "incidence_list": [
+            "V_242",
+            "V_5"
+          ],
+          "created": "2024-07-11 15:07:14",
+          "modified": "2024-07-11 15:07:14",
+          "lhs": {
+            "global_ID": "V_243",
+            "latex": "{{y^{p+}}}{_{A}}"
+          }
+        }
+      },
+      "imported": true,
+      "index_structures": [
+        "I_2"
+      ],
+      "label": "y_p_positive",
+      "memory": "arc",
+      "modified": "2024-07-11 15:11:16",
+      "network": "macroscopic",
+      "port_variable": false,
+      "tokens": [],
+      "type": "transport",
+      "units": [
+        0,
+        0,
         0,
         0,
         0,
@@ -7628,7 +7752,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 233,
-    "equation": 132
+    "variable": 243,
+    "equation": 142
   }
 }

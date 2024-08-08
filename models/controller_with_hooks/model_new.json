@@ -1,0 +1,66 @@
+{
+    "N_0": {
+        "identifier": "N_0",
+        "name": "composite",
+        "parent_id": null,
+        "modeller_class": "NodeComposite",
+        "children_ids": [
+            "A_1",
+            "A_2",
+            "N_3"
+        ]
+    },
+    "A_1": {
+        "identifier": "A_1",
+        "name": "macroscopic >>> control (T_meas -> _T_meas)",
+        "parent_id": "N_0",
+        "modeller_class": "Arc",
+        "entity_name": "macroscopic >>> control (T_meas -> _T_meas)",
+        "network": "liquid >>> control",
+        "named_network": "A-liquid >>> A-control",
+        "tokens": [],
+        "typed_tokens": {},
+        "instantiated_variables": {},
+        "outgoing_connections": [
+            "N_3"
+        ]
+    },
+    "A_2": {
+        "identifier": "A_2",
+        "name": "control >>> macroscopic (y_p_positive -> _y_p_positive)",
+        "parent_id": "N_0",
+        "modeller_class": "Arc",
+        "entity_name": "control >>> macroscopic (y_p_positive -> _y_p_positive)",
+        "network": "control >>> liquid",
+        "named_network": "A-control >>> A-liquid",
+        "tokens": [],
+        "typed_tokens": {},
+        "instantiated_variables": {},
+        "outgoing_connections": []
+    },
+    "N_3": {
+        "identifier": "N_3",
+        "name": "pControl",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "control.node.signal|event|AE.pControl",
+        "network": "control",
+        "named_network": "A-control",
+        "tokens": [
+            "information"
+        ],
+        "typed_tokens": {
+            "information": []
+        },
+        "instantiated_variables": {
+            "V_102": {},
+            "V_227": {},
+            "V_237": {}
+        },
+        "outgoing_connections": [
+            "A_2"
+        ],
+        "conversions": {},
+        "injected_typed_tokens": null
+    }
+}
