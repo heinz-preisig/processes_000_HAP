@@ -797,7 +797,7 @@
     ],
     "name_space": false,
     "network_enable_adding_indices": {
-      "control": true,
+      "control": false,
       "energy": false,
       "fluid": false,
       "gas": false,
@@ -821,9 +821,6 @@
       "intraface",
       "node_arc"
     ],
-    "normed_network": {
-      "control": true
-    },
     "numerical_value": "value",
     "variable_classes_being_state_variables": [],
     "variable_classes_having_port_variables": [
