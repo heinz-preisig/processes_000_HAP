@@ -1,0 +1,67 @@
+digraph control {
+	graph [nodesep=0.4 rankdir=LR ranksep=0.8 splines=false]
+	controlbehaviour [label=behaviour shape=diamond]
+	control -> controlbehaviour
+	controlbehaviourarc [label=arc]
+	controlbehaviour -> controlbehaviourarc
+	controlbehaviourarcdataFlow [label=dataFlow]
+	controlbehaviourarc -> controlbehaviourarcdataFlow
+	controlbehaviourarcdataFlow [label=dataFlow color=green peripheries=2 style=filled]
+	controlbehaviourarcinput [label=input]
+	controlbehaviourarc -> controlbehaviourarcinput
+	controlbehaviourarcinput [label=input color=green peripheries=2 style=filled]
+	controlbehaviourarcoutput [label=output]
+	controlbehaviourarc -> controlbehaviourarcoutput
+	controlbehaviourarcoutput [label=output color=green peripheries=2 style=filled]
+	controlbehaviourgraph [label="graph"]
+	controlbehaviour -> controlbehaviourgraph
+	controlbehaviourgraphnetwork [label=network]
+	controlbehaviourgraph -> controlbehaviourgraphnetwork
+	controlbehaviourgraphnetwork [label=network color=greenyellow peripheries=1 style=filled]
+	controlbehaviournode [label="node"]
+	controlbehaviour -> controlbehaviournode
+	controlbehaviournodeframe [label=frame]
+	controlbehaviournode -> controlbehaviournodeframe
+	controlbehaviournodeframe [label=frame color=greenyellow peripheries=1 style=filled]
+	controlbehaviournodestate [label=state]
+	controlbehaviournode -> controlbehaviournodestate
+	controlbehaviournodestate [label=state color=greenyellow peripheries=1 style=filled]
+	controlbehaviournodeconstant [label=constant]
+	controlbehaviournode -> controlbehaviournodeconstant
+	controlbehaviournodeconstant [label=constant color=greenyellow peripheries=1 style=filled]
+	controlbehaviournodediffState [label=diffState]
+	controlbehaviournode -> controlbehaviournodediffState
+	controlbehaviournodediffState [label=diffState color=greenyellow peripheries=1 style=filled]
+	controlbehaviournodealgebraic [label=algebraic]
+	controlbehaviournode -> controlbehaviournodealgebraic
+	controlbehaviournodealgebraic [label=algebraic color=green peripheries=2 style=filled]
+	controlstructure [label=structure shape=diamond]
+	control -> controlstructure
+	controlstructurearc [label=arc]
+	controlstructure -> controlstructurearc
+	controlstructurearcsignal [label=signal color=pink3 peripheries=2 style=filled]
+	controlstructurearc -> controlstructurearcsignal
+	controlstructurearcsignallink [label=link color=pink3 peripheries=2 style=filled]
+	controlstructurearcsignal -> controlstructurearcsignallink
+	controlstructurearcsignallink [label=link]
+	controlstructurearcsignallinkunidirectional [label=unidirectional color=mediumturquoise peripheries=2 style=filled]
+	controlstructurearcsignallink -> controlstructurearcsignallinkunidirectional
+	controlstructurenode [label="node"]
+	controlstructure -> controlstructurenode
+	controlstructurenodeconstant [label=constant color=pink peripheries=1 style=filled]
+	controlstructurenode -> controlstructurenodeconstant
+	controlstructurenodeconstantAE [label=AE color=pink3 peripheries=2 style=filled]
+	controlstructurenodeconstant -> controlstructurenodeconstantAE
+	controlstructurenodedynamic [label=dynamic color=pink peripheries=1 style=filled]
+	controlstructurenode -> controlstructurenodedynamic
+	controlstructurenodedynamicODE [label=ODE color=pink3 peripheries=2 style=filled]
+	controlstructurenodedynamic -> controlstructurenodedynamicODE
+	controlstructurenodeevent [label=event color=pink peripheries=1 style=filled]
+	controlstructurenode -> controlstructurenodeevent
+	controlstructurenodeeventAE [label=AE color=pink3 peripheries=2 style=filled]
+	controlstructurenodeevent -> controlstructurenodeeventAE
+	controlstructuretoken [label=token]
+	controlstructure -> controlstructuretoken
+	controlstructuretokensignal [label=signal color=pink3 peripheries=2 style=filled]
+	controlstructuretoken -> controlstructuretokensignal
+}

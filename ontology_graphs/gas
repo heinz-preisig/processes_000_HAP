@@ -1,0 +1,115 @@
+digraph gas {
+	graph [nodesep=0.4 rankdir=LR ranksep=0.8 splines=false]
+	gasbehaviour [label=behaviour shape=diamond]
+	gas -> gasbehaviour
+	gasbehaviourarc [label=arc]
+	gasbehaviour -> gasbehaviourarc
+	gasbehaviourarctransport [label=transport]
+	gasbehaviourarc -> gasbehaviourarctransport
+	gasbehaviourarctransport [label=transport color=greenyellow peripheries=1 style=filled]
+	gasbehaviourarcgeometry [label=geometry]
+	gasbehaviourarc -> gasbehaviourarcgeometry
+	gasbehaviourarcgeometry [label=geometry color=greenyellow peripheries=1 style=filled]
+	gasbehaviourarcproperties [label=properties]
+	gasbehaviourarc -> gasbehaviourarcproperties
+	gasbehaviourarcproperties [label=properties color=greenyellow peripheries=1 style=filled]
+	gasbehaviourgraph [label="graph"]
+	gasbehaviour -> gasbehaviourgraph
+	gasbehaviourgraphnetwork [label=network]
+	gasbehaviourgraph -> gasbehaviourgraphnetwork
+	gasbehaviourgraphnetwork [label=network color=greenyellow peripheries=1 style=filled]
+	gasbehaviourgraphdifferenceOperator [label=differenceOperator]
+	gasbehaviourgraph -> gasbehaviourgraphdifferenceOperator
+	gasbehaviourgraphdifferenceOperator [label=differenceOperator color=greenyellow peripheries=1 style=filled]
+	gasbehaviournode [label="node"]
+	gasbehaviour -> gasbehaviournode
+	gasbehaviournodeframe [label=frame]
+	gasbehaviournode -> gasbehaviournodeframe
+	gasbehaviournodeframe [label=frame color=greenyellow peripheries=1 style=filled]
+	gasbehaviournodestate [label=state]
+	gasbehaviournode -> gasbehaviournodestate
+	gasbehaviournodestate [label=state color=greenyellow peripheries=1 style=filled]
+	gasbehaviournodeconstant [label=constant]
+	gasbehaviournode -> gasbehaviournodeconstant
+	gasbehaviournodeconstant [label=constant color=greenyellow peripheries=1 style=filled]
+	gasbehaviournodeeffort [label=effort]
+	gasbehaviournode -> gasbehaviournodeeffort
+	gasbehaviournodeeffort [label=effort color=greenyellow peripheries=1 style=filled]
+	gasbehaviournodesecondaryState [label=secondaryState]
+	gasbehaviournode -> gasbehaviournodesecondaryState
+	gasbehaviournodesecondaryState [label=secondaryState color=greenyellow peripheries=1 style=filled]
+	gasbehaviournodeconversion [label=conversion]
+	gasbehaviournode -> gasbehaviournodeconversion
+	gasbehaviournodeconversion [label=conversion color=greenyellow peripheries=1 style=filled]
+	gasbehaviournodediffState [label=diffState]
+	gasbehaviournode -> gasbehaviournodediffState
+	gasbehaviournodediffState [label=diffState color=greenyellow peripheries=1 style=filled]
+	gasbehaviournodeinternalTransport [label=internalTransport]
+	gasbehaviournode -> gasbehaviournodeinternalTransport
+	gasbehaviournodeinternalTransport [label=internalTransport color=greenyellow peripheries=1 style=filled]
+	gasbehaviournodecontrolInput [label=controlInput]
+	gasbehaviournode -> gasbehaviournodecontrolInput
+	gasbehaviournodecontrolInput [label=controlInput color=greenyellow peripheries=1 style=filled]
+	gasbehaviournodeobservation [label=observation]
+	gasbehaviournode -> gasbehaviournodeobservation
+	gasbehaviournodeobservation [label=observation color=greenyellow peripheries=1 style=filled]
+	gasstructure [label=structure shape=diamond]
+	gas -> gasstructure
+	gasstructurearc [label=arc]
+	gasstructure -> gasstructurearc
+	gasstructurearccharge [label=charge color=pink peripheries=1 style=filled]
+	gasstructurearc -> gasstructurearccharge
+	gasstructurearcchargeconduction [label=conduction color=pink peripheries=1 style=filled]
+	gasstructurearccharge -> gasstructurearcchargeconduction
+	gasstructurearcchargeconduction [label=conduction]
+	gasstructurearcchargeconductionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	gasstructurearcchargeconduction -> gasstructurearcchargeconductionlumped
+	gasstructurearcenergy [label=energy color=pink peripheries=1 style=filled]
+	gasstructurearc -> gasstructurearcenergy
+	gasstructurearcenergyconduction [label=conduction color=pink peripheries=1 style=filled]
+	gasstructurearcenergy -> gasstructurearcenergyconduction
+	gasstructurearcenergyconduction [label=conduction]
+	gasstructurearcenergyconductionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	gasstructurearcenergyconduction -> gasstructurearcenergyconductionlumped
+	gasstructurearcenergywork [label=work color=pink peripheries=1 style=filled]
+	gasstructurearcenergy -> gasstructurearcenergywork
+	gasstructurearcenergywork [label=work]
+	gasstructurearcenergyworklumped [label=lumped color=lightblue peripheries=1 style=filled]
+	gasstructurearcenergywork -> gasstructurearcenergyworklumped
+	gasstructurearcmass [label=mass color=pink peripheries=1 style=filled]
+	gasstructurearc -> gasstructurearcmass
+	gasstructurearcmassconvection [label=convection color=pink peripheries=1 style=filled]
+	gasstructurearcmass -> gasstructurearcmassconvection
+	gasstructurearcmassconvection [label=convection]
+	gasstructurearcmassconvectionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	gasstructurearcmassconvection -> gasstructurearcmassconvectionlumped
+	gasstructurearcmassdiffusion [label=diffusion color=pink peripheries=1 style=filled]
+	gasstructurearcmass -> gasstructurearcmassdiffusion
+	gasstructurearcmassdiffusion [label=diffusion]
+	gasstructurearcmassdiffusionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	gasstructurearcmassdiffusion -> gasstructurearcmassdiffusionlumped
+	gasstructurenode [label="node"]
+	gasstructure -> gasstructurenode
+	gasstructurenodeconstant [label=constant color=pink peripheries=1 style=filled]
+	gasstructurenode -> gasstructurenodeconstant
+	gasstructurenodeconstantinfinity [label=infinity color=pink peripheries=1 style=filled]
+	gasstructurenodeconstant -> gasstructurenodeconstantinfinity
+	gasstructurenodedynamic [label=dynamic color=pink peripheries=1 style=filled]
+	gasstructurenode -> gasstructurenodedynamic
+	gasstructurenodedynamiclumped [label=lumped color=pink peripheries=1 style=filled]
+	gasstructurenodedynamic -> gasstructurenodedynamiclumped
+	gasstructurenodeevent [label=event color=pink peripheries=1 style=filled]
+	gasstructurenode -> gasstructurenodeevent
+	gasstructurenodeeventlumped [label=lumped color=pink peripheries=1 style=filled]
+	gasstructurenodeevent -> gasstructurenodeeventlumped
+	gasstructuretoken [label=token]
+	gasstructure -> gasstructuretoken
+	gasstructuretokencharge [label=charge color=pink peripheries=1 style=filled]
+	gasstructuretoken -> gasstructuretokencharge
+	gasstructuretokenenergy [label=energy color=pink peripheries=1 style=filled]
+	gasstructuretoken -> gasstructuretokenenergy
+	gasstructuretokenmass [label=mass color=pink peripheries=1 style=filled]
+	gasstructuretoken -> gasstructuretokenmass
+	gasstructuretokenmassspecies [label=species color=pink peripheries=1 style=filled]
+	gasstructuretokenmass -> gasstructuretokenmassspecies
+}

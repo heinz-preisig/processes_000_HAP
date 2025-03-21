@@ -1,0 +1,115 @@
+digraph liquid {
+	graph [nodesep=0.4 rankdir=LR ranksep=0.8 splines=false]
+	liquidbehaviour [label=behaviour shape=diamond]
+	liquid -> liquidbehaviour
+	liquidbehaviourarc [label=arc]
+	liquidbehaviour -> liquidbehaviourarc
+	liquidbehaviourarctransport [label=transport]
+	liquidbehaviourarc -> liquidbehaviourarctransport
+	liquidbehaviourarctransport [label=transport color=greenyellow peripheries=1 style=filled]
+	liquidbehaviourarcgeometry [label=geometry]
+	liquidbehaviourarc -> liquidbehaviourarcgeometry
+	liquidbehaviourarcgeometry [label=geometry color=greenyellow peripheries=1 style=filled]
+	liquidbehaviourarcproperties [label=properties]
+	liquidbehaviourarc -> liquidbehaviourarcproperties
+	liquidbehaviourarcproperties [label=properties color=greenyellow peripheries=1 style=filled]
+	liquidbehaviourgraph [label="graph"]
+	liquidbehaviour -> liquidbehaviourgraph
+	liquidbehaviourgraphnetwork [label=network]
+	liquidbehaviourgraph -> liquidbehaviourgraphnetwork
+	liquidbehaviourgraphnetwork [label=network color=greenyellow peripheries=1 style=filled]
+	liquidbehaviourgraphdifferenceOperator [label=differenceOperator]
+	liquidbehaviourgraph -> liquidbehaviourgraphdifferenceOperator
+	liquidbehaviourgraphdifferenceOperator [label=differenceOperator color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournode [label="node"]
+	liquidbehaviour -> liquidbehaviournode
+	liquidbehaviournodeframe [label=frame]
+	liquidbehaviournode -> liquidbehaviournodeframe
+	liquidbehaviournodeframe [label=frame color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournodestate [label=state]
+	liquidbehaviournode -> liquidbehaviournodestate
+	liquidbehaviournodestate [label=state color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournodeconstant [label=constant]
+	liquidbehaviournode -> liquidbehaviournodeconstant
+	liquidbehaviournodeconstant [label=constant color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournodeeffort [label=effort]
+	liquidbehaviournode -> liquidbehaviournodeeffort
+	liquidbehaviournodeeffort [label=effort color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournodesecondaryState [label=secondaryState]
+	liquidbehaviournode -> liquidbehaviournodesecondaryState
+	liquidbehaviournodesecondaryState [label=secondaryState color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournodeconversion [label=conversion]
+	liquidbehaviournode -> liquidbehaviournodeconversion
+	liquidbehaviournodeconversion [label=conversion color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournodediffState [label=diffState]
+	liquidbehaviournode -> liquidbehaviournodediffState
+	liquidbehaviournodediffState [label=diffState color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournodeinternalTransport [label=internalTransport]
+	liquidbehaviournode -> liquidbehaviournodeinternalTransport
+	liquidbehaviournodeinternalTransport [label=internalTransport color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournodecontrolInput [label=controlInput]
+	liquidbehaviournode -> liquidbehaviournodecontrolInput
+	liquidbehaviournodecontrolInput [label=controlInput color=greenyellow peripheries=1 style=filled]
+	liquidbehaviournodeobservation [label=observation]
+	liquidbehaviournode -> liquidbehaviournodeobservation
+	liquidbehaviournodeobservation [label=observation color=greenyellow peripheries=1 style=filled]
+	liquidstructure [label=structure shape=diamond]
+	liquid -> liquidstructure
+	liquidstructurearc [label=arc]
+	liquidstructure -> liquidstructurearc
+	liquidstructurearccharge [label=charge color=pink peripheries=1 style=filled]
+	liquidstructurearc -> liquidstructurearccharge
+	liquidstructurearcchargeconduction [label=conduction color=pink peripheries=1 style=filled]
+	liquidstructurearccharge -> liquidstructurearcchargeconduction
+	liquidstructurearcchargeconduction [label=conduction]
+	liquidstructurearcchargeconductionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	liquidstructurearcchargeconduction -> liquidstructurearcchargeconductionlumped
+	liquidstructurearcenergy [label=energy color=pink peripheries=1 style=filled]
+	liquidstructurearc -> liquidstructurearcenergy
+	liquidstructurearcenergyconduction [label=conduction color=pink peripheries=1 style=filled]
+	liquidstructurearcenergy -> liquidstructurearcenergyconduction
+	liquidstructurearcenergyconduction [label=conduction]
+	liquidstructurearcenergyconductionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	liquidstructurearcenergyconduction -> liquidstructurearcenergyconductionlumped
+	liquidstructurearcenergywork [label=work color=pink peripheries=1 style=filled]
+	liquidstructurearcenergy -> liquidstructurearcenergywork
+	liquidstructurearcenergywork [label=work]
+	liquidstructurearcenergyworklumped [label=lumped color=lightblue peripheries=1 style=filled]
+	liquidstructurearcenergywork -> liquidstructurearcenergyworklumped
+	liquidstructurearcmass [label=mass color=pink peripheries=1 style=filled]
+	liquidstructurearc -> liquidstructurearcmass
+	liquidstructurearcmassconvection [label=convection color=pink peripheries=1 style=filled]
+	liquidstructurearcmass -> liquidstructurearcmassconvection
+	liquidstructurearcmassconvection [label=convection]
+	liquidstructurearcmassconvectionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	liquidstructurearcmassconvection -> liquidstructurearcmassconvectionlumped
+	liquidstructurearcmassdiffusion [label=diffusion color=pink peripheries=1 style=filled]
+	liquidstructurearcmass -> liquidstructurearcmassdiffusion
+	liquidstructurearcmassdiffusion [label=diffusion]
+	liquidstructurearcmassdiffusionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	liquidstructurearcmassdiffusion -> liquidstructurearcmassdiffusionlumped
+	liquidstructurenode [label="node"]
+	liquidstructure -> liquidstructurenode
+	liquidstructurenodeconstant [label=constant color=pink peripheries=1 style=filled]
+	liquidstructurenode -> liquidstructurenodeconstant
+	liquidstructurenodeconstantinfinity [label=infinity color=pink peripheries=1 style=filled]
+	liquidstructurenodeconstant -> liquidstructurenodeconstantinfinity
+	liquidstructurenodedynamic [label=dynamic color=pink peripheries=1 style=filled]
+	liquidstructurenode -> liquidstructurenodedynamic
+	liquidstructurenodedynamiclumped [label=lumped color=pink peripheries=1 style=filled]
+	liquidstructurenodedynamic -> liquidstructurenodedynamiclumped
+	liquidstructurenodeevent [label=event color=pink peripheries=1 style=filled]
+	liquidstructurenode -> liquidstructurenodeevent
+	liquidstructurenodeeventlumped [label=lumped color=pink peripheries=1 style=filled]
+	liquidstructurenodeevent -> liquidstructurenodeeventlumped
+	liquidstructuretoken [label=token]
+	liquidstructure -> liquidstructuretoken
+	liquidstructuretokencharge [label=charge color=pink peripheries=1 style=filled]
+	liquidstructuretoken -> liquidstructuretokencharge
+	liquidstructuretokenenergy [label=energy color=pink peripheries=1 style=filled]
+	liquidstructuretoken -> liquidstructuretokenenergy
+	liquidstructuretokenmass [label=mass color=pink peripheries=1 style=filled]
+	liquidstructuretoken -> liquidstructuretokenmass
+	liquidstructuretokenmassspecies [label=species color=pink peripheries=1 style=filled]
+	liquidstructuretokenmass -> liquidstructuretokenmassspecies
+}

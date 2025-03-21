@@ -4,31 +4,31 @@ rankdir=LR;
 subgraph cluster_energy___transport {
 label=transport;
 rankdir=LR;
-V_151 [fillcolor=lightcyan2, fontsize=12, label=fq_x, penwidth=3, style=filled];
-V_152 [fillcolor=lightcyan2, fontsize=12, label=fq_y, penwidth=3, style=filled];
-V_153 [fillcolor=lightcyan2, fontsize=12, label=fq_z, penwidth=3, style=filled];
-V_154 [fillcolor=lightcyan2, fontsize=12, label=fnd_x, penwidth=3, style=filled];
-V_155 [fillcolor=lightcyan2, fontsize=12, label=fnd_y, penwidth=3, style=filled];
-V_156 [fillcolor=lightcyan2, fontsize=12, label=fnd_z, penwidth=3, style=filled];
-V_157 [fillcolor=lightcyan2, fontsize=12, label=d, penwidth=3, style=filled];
-V_158 [fillcolor=lightcyan2, fontsize=12, label=c_AS, penwidth=3, style=filled];
-V_159 [fillcolor=lightcyan2, fontsize=12, label=fV, penwidth=3, style=filled];
-V_160 [fillcolor=lightcyan2, fontsize=12, label=fnc_x, penwidth=3, style=filled];
-V_194 [fillcolor=lightcyan2, fontsize=12, label=anc_x, penwidth=3, style=filled];
-V_195 [fillcolor=lightcyan2, fontsize=12, label=and_x, penwidth=3, style=filled];
-V_204 [fillcolor=lightcyan2, fontsize=12, label=aHnc_x, penwidth=3, style=filled];
-V_205 [fillcolor=lightcyan2, fontsize=12, label=aHnd_x, penwidth=3, style=filled];
-V_206 [fillcolor=lightcyan2, fontsize=12, label=aHnd_y, penwidth=3, style=filled];
-V_207 [fillcolor=lightcyan2, fontsize=12, label=aHnd_z, penwidth=3, style=filled];
-V_208 [fillcolor=lightcyan2, fontsize=12, label=aq_x, penwidth=3, style=filled];
-V_209 [fillcolor=lightcyan2, fontsize=12, label=aq_y, penwidth=3, style=filled];
-V_210 [fillcolor=lightcyan2, fontsize=12, label=aq_z, penwidth=3, style=filled];
-V_211 [fillcolor=lightcyan2, fontsize=12, label=fw, penwidth=3, style=filled];
-V_212 [fillcolor=lightcyan2, fontsize=12, label=and_y, penwidth=3, style=filled];
-V_213 [fillcolor=lightcyan2, fontsize=12, label=and_z, penwidth=3, style=filled];
-V_214 [fillcolor=lightcyan2, fontsize=12, label=aw, penwidth=3, style=filled];
-V_234 [fillcolor=lightcyan2, fontsize=12, label=fm, penwidth=3, style=filled];
-V_243 [fillcolor=lightcyan2, fontsize=12, label=y_p_positive, penwidth=3, style=filled];
+V_151 [fillcolor=cyan, fontsize=12, label=fq_x, penwidth=3, style=filled];
+V_152 [fillcolor=cyan, fontsize=12, label=fq_y, penwidth=3, style=filled];
+V_153 [fillcolor=cyan, fontsize=12, label=fq_z, penwidth=3, style=filled];
+V_154 [fillcolor=cyan, fontsize=12, label=fnd_x, penwidth=3, style=filled];
+V_155 [fillcolor=cyan, fontsize=12, label=fnd_y, penwidth=3, style=filled];
+V_156 [fillcolor=cyan, fontsize=12, label=fnd_z, penwidth=3, style=filled];
+V_157 [fillcolor=cyan, fontsize=12, label=d, penwidth=3, style=filled];
+V_158 [fillcolor=cyan, fontsize=12, label=c_AS, penwidth=3, style=filled];
+V_159 [fillcolor=cyan, fontsize=12, label=fV, penwidth=3, style=filled];
+V_160 [fillcolor=cyan, fontsize=12, label=fnc_x, penwidth=3, style=filled];
+V_194 [fillcolor=cyan, fontsize=12, label=anc_x, penwidth=3, style=filled];
+V_195 [fillcolor=cyan, fontsize=12, label=and_x, penwidth=3, style=filled];
+V_204 [fillcolor=cyan, fontsize=12, label=aHnc_x, penwidth=3, style=filled];
+V_205 [fillcolor=cyan, fontsize=12, label=aHnd_x, penwidth=3, style=filled];
+V_206 [fillcolor=cyan, fontsize=12, label=aHnd_y, penwidth=3, style=filled];
+V_207 [fillcolor=cyan, fontsize=12, label=aHnd_z, penwidth=3, style=filled];
+V_208 [fillcolor=cyan, fontsize=12, label=aq_x, penwidth=3, style=filled];
+V_209 [fillcolor=cyan, fontsize=12, label=aq_y, penwidth=3, style=filled];
+V_210 [fillcolor=cyan, fontsize=12, label=aq_z, penwidth=3, style=filled];
+V_211 [fillcolor=cyan, fontsize=12, label=fw, penwidth=3, style=filled];
+V_212 [fillcolor=cyan, fontsize=12, label=and_y, penwidth=3, style=filled];
+V_213 [fillcolor=cyan, fontsize=12, label=and_z, penwidth=3, style=filled];
+V_214 [fillcolor=cyan, fontsize=12, label=aw, penwidth=3, style=filled];
+V_234 [fillcolor=cyan, fontsize=12, label=fm, penwidth=3, style=filled];
+V_243 [fillcolor=cyan, fontsize=12, label=y_p_positive, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___geometry {
@@ -39,21 +39,21 @@ rankdir=LR;
 subgraph cluster_energy___properties {
 label=properties;
 rankdir=LR;
-V_180 [fillcolor=seagreen2, fontsize=12, label=kdA_x, penwidth=3, style=filled];
-V_181 [fillcolor=seagreen2, fontsize=12, label=kdA_y, penwidth=3, style=filled];
-V_182 [fillcolor=seagreen2, fontsize=12, label=kdA_z, penwidth=3, style=filled];
-V_183 [fillcolor=seagreen2, fontsize=12, label=kcA_x, penwidth=3, style=filled];
-V_184 [fillcolor=seagreen2, fontsize=12, label=kcA_y, penwidth=3, style=filled];
-V_185 [fillcolor=seagreen2, fontsize=12, label=kcA_z, penwidth=3, style=filled];
-V_186 [fillcolor=seagreen2, fontsize=12, label=kqA_x, penwidth=3, style=filled];
-V_187 [fillcolor=seagreen2, fontsize=12, label=kqA_y, penwidth=3, style=filled];
-V_188 [fillcolor=seagreen2, fontsize=12, label=kqA_z, penwidth=3, style=filled];
-V_189 [fillcolor=seagreen2, fontsize=12, label=rhoA, penwidth=3, style=filled];
-V_190 [fillcolor=seagreen2, fontsize=12, label=kdAFick_x, penwidth=3, style=filled];
-V_191 [fillcolor=seagreen2, fontsize=12, label=kdAFick_y, penwidth=3, style=filled];
-V_192 [fillcolor=seagreen2, fontsize=12, label=kdAFick_z, penwidth=3, style=filled];
-V_193 [fillcolor=seagreen2, fontsize=12, label=hA, penwidth=3, style=filled];
-V_219 [fillcolor=seagreen2, fontsize=12, label=elResistant, penwidth=3, style=filled];
+V_180 [fillcolor=darkolivegreen1, fontsize=12, label=kdA_x, penwidth=3, style=filled];
+V_181 [fillcolor=darkolivegreen1, fontsize=12, label=kdA_y, penwidth=3, style=filled];
+V_182 [fillcolor=darkolivegreen1, fontsize=12, label=kdA_z, penwidth=3, style=filled];
+V_183 [fillcolor=darkolivegreen1, fontsize=12, label=kcA_x, penwidth=3, style=filled];
+V_184 [fillcolor=darkolivegreen1, fontsize=12, label=kcA_y, penwidth=3, style=filled];
+V_185 [fillcolor=darkolivegreen1, fontsize=12, label=kcA_z, penwidth=3, style=filled];
+V_186 [fillcolor=darkolivegreen1, fontsize=12, label=kqA_x, penwidth=3, style=filled];
+V_187 [fillcolor=darkolivegreen1, fontsize=12, label=kqA_y, penwidth=3, style=filled];
+V_188 [fillcolor=darkolivegreen1, fontsize=12, label=kqA_z, penwidth=3, style=filled];
+V_189 [fillcolor=darkolivegreen1, fontsize=12, label=rhoA, penwidth=3, style=filled];
+V_190 [fillcolor=darkolivegreen1, fontsize=12, label=kdAFick_x, penwidth=3, style=filled];
+V_191 [fillcolor=darkolivegreen1, fontsize=12, label=kdAFick_y, penwidth=3, style=filled];
+V_192 [fillcolor=darkolivegreen1, fontsize=12, label=kdAFick_z, penwidth=3, style=filled];
+V_193 [fillcolor=darkolivegreen1, fontsize=12, label=hA, penwidth=3, style=filled];
+V_219 [fillcolor=darkolivegreen1, fontsize=12, label=elResistant, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___network {
@@ -91,93 +91,93 @@ rankdir=LR;
 subgraph cluster_energy___frame {
 label=frame;
 rankdir=LR;
-V_1 [fillcolor=lightcyan3, fontsize=12, label=t, penwidth=3, style=filled];
-V_105 [fillcolor=lightcyan3, fontsize=12, label=to, penwidth=3, style=filled];
-V_106 [fillcolor=lightcyan3, fontsize=12, label=te, penwidth=3, style=filled];
-V_107 [fillcolor=lightcyan3, fontsize=12, label=t_interval, penwidth=3, style=filled];
-V_23 [fillcolor=lightcyan3, fontsize=12, label=r_x, penwidth=3, style=filled];
-V_24 [fillcolor=lightcyan3, fontsize=12, label=r_y, penwidth=3, style=filled];
-V_25 [fillcolor=lightcyan3, fontsize=12, label=r_z, penwidth=3, style=filled];
+V_1 [fillcolor=lightcyan, fontsize=12, label=t, penwidth=3, style=filled];
+V_105 [fillcolor=lightcyan, fontsize=12, label=to, penwidth=3, style=filled];
+V_106 [fillcolor=lightcyan, fontsize=12, label=te, penwidth=3, style=filled];
+V_107 [fillcolor=lightcyan, fontsize=12, label=t_interval, penwidth=3, style=filled];
+V_23 [fillcolor=lightcyan, fontsize=12, label=r_x, penwidth=3, style=filled];
+V_24 [fillcolor=lightcyan, fontsize=12, label=r_y, penwidth=3, style=filled];
+V_25 [fillcolor=lightcyan, fontsize=12, label=r_z, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___state {
 label=state;
 rankdir=LR;
-V_108 [fillcolor=white, fontsize=12, label=U, penwidth=3, style=filled];
-V_109 [fillcolor=white, fontsize=12, label=S, penwidth=3, style=filled];
-V_110 [fillcolor=white, fontsize=12, label=V, penwidth=3, style=filled];
-V_111 [fillcolor=white, fontsize=12, label=n, penwidth=3, style=filled];
-V_115 [fillcolor=white, fontsize=12, label=H, penwidth=3, style=filled];
-V_116 [fillcolor=white, fontsize=12, label=A, penwidth=3, style=filled];
-V_117 [fillcolor=white, fontsize=12, label=G, penwidth=3, style=filled];
-V_137 [fillcolor=white, fontsize=12, label=m, penwidth=3, style=filled];
-V_144 [fillcolor=white, fontsize=12, label=C, penwidth=3, style=filled];
-V_203 [fillcolor=white, fontsize=12, label=no, penwidth=3, style=filled];
-V_216 [fillcolor=white, fontsize=12, label=Ho, penwidth=3, style=filled];
+V_108 [fillcolor=grey, fontsize=12, label=U, penwidth=3, style=filled];
+V_109 [fillcolor=grey, fontsize=12, label=S, penwidth=3, style=filled];
+V_110 [fillcolor=grey, fontsize=12, label=V, penwidth=3, style=filled];
+V_111 [fillcolor=grey, fontsize=12, label=n, penwidth=3, style=filled];
+V_115 [fillcolor=grey, fontsize=12, label=H, penwidth=3, style=filled];
+V_116 [fillcolor=grey, fontsize=12, label=A, penwidth=3, style=filled];
+V_117 [fillcolor=grey, fontsize=12, label=G, penwidth=3, style=filled];
+V_137 [fillcolor=grey, fontsize=12, label=m, penwidth=3, style=filled];
+V_144 [fillcolor=grey, fontsize=12, label=C, penwidth=3, style=filled];
+V_203 [fillcolor=grey, fontsize=12, label=no, penwidth=3, style=filled];
+V_216 [fillcolor=grey, fontsize=12, label=Ho, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___constant {
 label=constant;
 rankdir=LR;
-V_101 [fillcolor=grey, fontsize=12, label=value, penwidth=3, style=filled];
-V_102 [fillcolor=grey, fontsize=12, label=zero, penwidth=3, style=filled];
-V_103 [fillcolor=grey, fontsize=12, label=one, penwidth=3, style=filled];
-V_104 [fillcolor=grey, fontsize=12, label=oneHalf, penwidth=3, style=filled];
-V_121 [fillcolor=grey, fontsize=12, label=Avo, penwidth=3, style=filled];
-V_122 [fillcolor=grey, fontsize=12, label=Boltz, penwidth=3, style=filled];
-V_123 [fillcolor=grey, fontsize=12, label=R, penwidth=3, style=filled];
-V_132 [fillcolor=grey, fontsize=12, label=Mm, penwidth=3, style=filled];
+V_101 [fillcolor=lightcyan1, fontsize=12, label=value, penwidth=3, style=filled];
+V_102 [fillcolor=lightcyan1, fontsize=12, label=zero, penwidth=3, style=filled];
+V_103 [fillcolor=lightcyan1, fontsize=12, label=one, penwidth=3, style=filled];
+V_104 [fillcolor=lightcyan1, fontsize=12, label=oneHalf, penwidth=3, style=filled];
+V_121 [fillcolor=lightcyan1, fontsize=12, label=Avo, penwidth=3, style=filled];
+V_122 [fillcolor=lightcyan1, fontsize=12, label=Boltz, penwidth=3, style=filled];
+V_123 [fillcolor=lightcyan1, fontsize=12, label=R, penwidth=3, style=filled];
+V_132 [fillcolor=lightcyan1, fontsize=12, label=Mm, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___effort {
 label=effort;
 rankdir=LR;
-V_112 [fillcolor=lightcyan, fontsize=12, label=p, penwidth=3, style=filled];
-V_113 [fillcolor=lightcyan, fontsize=12, label=T, penwidth=3, style=filled];
-V_114 [fillcolor=lightcyan, fontsize=12, label=chemPot, penwidth=3, style=filled];
-V_161 [fillcolor=lightcyan, fontsize=12, label=chemPotStandard, penwidth=3, style=filled];
-V_217 [fillcolor=lightcyan, fontsize=12, label=Ue, penwidth=3, style=filled];
+V_112 [fillcolor=lightcyan4, fontsize=12, label=p, penwidth=3, style=filled];
+V_113 [fillcolor=lightcyan4, fontsize=12, label=T, penwidth=3, style=filled];
+V_114 [fillcolor=lightcyan4, fontsize=12, label=chemPot, penwidth=3, style=filled];
+V_161 [fillcolor=lightcyan4, fontsize=12, label=chemPotStandard, penwidth=3, style=filled];
+V_217 [fillcolor=lightcyan4, fontsize=12, label=Ue, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___secondaryState {
 label=secondaryState;
 rankdir=LR;
-V_118 [fillcolor=seagreen4, fontsize=12, label=v_x, penwidth=3, style=filled];
-V_119 [fillcolor=seagreen4, fontsize=12, label=v_y, penwidth=3, style=filled];
-V_120 [fillcolor=seagreen4, fontsize=12, label=v_z, penwidth=3, style=filled];
-V_124 [fillcolor=seagreen4, fontsize=12, label=Cp, penwidth=3, style=filled];
-V_125 [fillcolor=seagreen4, fontsize=12, label=CV, penwidth=3, style=filled];
-V_136 [fillcolor=seagreen4, fontsize=12, label=h, penwidth=3, style=filled];
-V_138 [fillcolor=seagreen4, fontsize=12, label=c, penwidth=3, style=filled];
-V_139 [fillcolor=seagreen4, fontsize=12, label=nt, penwidth=3, style=filled];
-V_140 [fillcolor=seagreen4, fontsize=12, label=x, penwidth=3, style=filled];
-V_141 [fillcolor=seagreen4, fontsize=12, label=cp, penwidth=3, style=filled];
-V_142 [fillcolor=seagreen4, fontsize=12, label=cV, penwidth=3, style=filled];
-V_143 [fillcolor=seagreen4, fontsize=12, label=rho, penwidth=3, style=filled];
-V_148 [fillcolor=seagreen4, fontsize=12, label=Axy, penwidth=3, style=filled];
-V_149 [fillcolor=seagreen4, fontsize=12, label=Axz, penwidth=3, style=filled];
-V_150 [fillcolor=seagreen4, fontsize=12, label=Ayz, penwidth=3, style=filled];
-V_222 [fillcolor=seagreen4, fontsize=12, label=T_ref, penwidth=3, style=filled];
+V_118 [fillcolor=tomato, fontsize=12, label=v_x, penwidth=3, style=filled];
+V_119 [fillcolor=tomato, fontsize=12, label=v_y, penwidth=3, style=filled];
+V_120 [fillcolor=tomato, fontsize=12, label=v_z, penwidth=3, style=filled];
+V_124 [fillcolor=tomato, fontsize=12, label=Cp, penwidth=3, style=filled];
+V_125 [fillcolor=tomato, fontsize=12, label=CV, penwidth=3, style=filled];
+V_136 [fillcolor=tomato, fontsize=12, label=h, penwidth=3, style=filled];
+V_138 [fillcolor=tomato, fontsize=12, label=c, penwidth=3, style=filled];
+V_139 [fillcolor=tomato, fontsize=12, label=nt, penwidth=3, style=filled];
+V_140 [fillcolor=tomato, fontsize=12, label=x, penwidth=3, style=filled];
+V_141 [fillcolor=tomato, fontsize=12, label=cp, penwidth=3, style=filled];
+V_142 [fillcolor=tomato, fontsize=12, label=cV, penwidth=3, style=filled];
+V_143 [fillcolor=tomato, fontsize=12, label=rho, penwidth=3, style=filled];
+V_148 [fillcolor=tomato, fontsize=12, label=Axy, penwidth=3, style=filled];
+V_149 [fillcolor=tomato, fontsize=12, label=Axz, penwidth=3, style=filled];
+V_150 [fillcolor=tomato, fontsize=12, label=Ayz, penwidth=3, style=filled];
+V_222 [fillcolor=tomato, fontsize=12, label=T_ref, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___conversion {
 label=conversion;
 rankdir=LR;
-V_202 [fillcolor=tomato, fontsize=12, label=np, penwidth=3, style=filled];
+V_202 [fillcolor=yellow, fontsize=12, label=np, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___diffState {
 label=diffState;
 rankdir=LR;
-V_196 [fillcolor=lightcyan1, fontsize=12, label=an, penwidth=3, style=filled];
-V_215 [fillcolor=lightcyan1, fontsize=12, label=dH, penwidth=3, style=filled];
-V_220 [fillcolor=lightcyan1, fontsize=12, label=dUe, penwidth=3, style=filled];
+V_196 [fillcolor=green, fontsize=12, label=an, penwidth=3, style=filled];
+V_215 [fillcolor=green, fontsize=12, label=dH, penwidth=3, style=filled];
+V_220 [fillcolor=green, fontsize=12, label=dUe, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___internalTransport {
 label=internalTransport;
 rankdir=LR;
-V_218 [fillcolor=seagreen3, fontsize=12, label=current, penwidth=3, style=filled];
+V_218 [fillcolor=lightcyan3, fontsize=12, label=current, penwidth=3, style=filled];
 }
 
 subgraph cluster_energy___controlInput {
@@ -188,8 +188,8 @@ rankdir=LR;
 subgraph cluster_energy___observation {
 label=observation;
 rankdir=LR;
-V_223 [fillcolor=darkolivegreen1, fontsize=12, label=T_meas_norming, penwidth=3, style=filled];
-V_224 [fillcolor=darkolivegreen1, fontsize=12, label=T_meas, penwidth=3, style=filled];
+V_223 [fillcolor=seagreen1, fontsize=12, label=T_meas_norming, penwidth=3, style=filled];
+V_224 [fillcolor=seagreen1, fontsize=12, label=T_meas, penwidth=3, style=filled];
 }
 
 }

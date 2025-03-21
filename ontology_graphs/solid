@@ -1,0 +1,115 @@
+digraph solid {
+	graph [nodesep=0.4 rankdir=LR ranksep=0.8 splines=false]
+	solidbehaviour [label=behaviour shape=diamond]
+	solid -> solidbehaviour
+	solidbehaviourarc [label=arc]
+	solidbehaviour -> solidbehaviourarc
+	solidbehaviourarctransport [label=transport]
+	solidbehaviourarc -> solidbehaviourarctransport
+	solidbehaviourarctransport [label=transport color=greenyellow peripheries=1 style=filled]
+	solidbehaviourarcgeometry [label=geometry]
+	solidbehaviourarc -> solidbehaviourarcgeometry
+	solidbehaviourarcgeometry [label=geometry color=greenyellow peripheries=1 style=filled]
+	solidbehaviourarcproperties [label=properties]
+	solidbehaviourarc -> solidbehaviourarcproperties
+	solidbehaviourarcproperties [label=properties color=greenyellow peripheries=1 style=filled]
+	solidbehaviourgraph [label="graph"]
+	solidbehaviour -> solidbehaviourgraph
+	solidbehaviourgraphnetwork [label=network]
+	solidbehaviourgraph -> solidbehaviourgraphnetwork
+	solidbehaviourgraphnetwork [label=network color=greenyellow peripheries=1 style=filled]
+	solidbehaviourgraphdifferenceOperator [label=differenceOperator]
+	solidbehaviourgraph -> solidbehaviourgraphdifferenceOperator
+	solidbehaviourgraphdifferenceOperator [label=differenceOperator color=greenyellow peripheries=1 style=filled]
+	solidbehaviournode [label="node"]
+	solidbehaviour -> solidbehaviournode
+	solidbehaviournodeframe [label=frame]
+	solidbehaviournode -> solidbehaviournodeframe
+	solidbehaviournodeframe [label=frame color=greenyellow peripheries=1 style=filled]
+	solidbehaviournodestate [label=state]
+	solidbehaviournode -> solidbehaviournodestate
+	solidbehaviournodestate [label=state color=greenyellow peripheries=1 style=filled]
+	solidbehaviournodeconstant [label=constant]
+	solidbehaviournode -> solidbehaviournodeconstant
+	solidbehaviournodeconstant [label=constant color=greenyellow peripheries=1 style=filled]
+	solidbehaviournodeeffort [label=effort]
+	solidbehaviournode -> solidbehaviournodeeffort
+	solidbehaviournodeeffort [label=effort color=greenyellow peripheries=1 style=filled]
+	solidbehaviournodesecondaryState [label=secondaryState]
+	solidbehaviournode -> solidbehaviournodesecondaryState
+	solidbehaviournodesecondaryState [label=secondaryState color=greenyellow peripheries=1 style=filled]
+	solidbehaviournodeconversion [label=conversion]
+	solidbehaviournode -> solidbehaviournodeconversion
+	solidbehaviournodeconversion [label=conversion color=greenyellow peripheries=1 style=filled]
+	solidbehaviournodediffState [label=diffState]
+	solidbehaviournode -> solidbehaviournodediffState
+	solidbehaviournodediffState [label=diffState color=greenyellow peripheries=1 style=filled]
+	solidbehaviournodeinternalTransport [label=internalTransport]
+	solidbehaviournode -> solidbehaviournodeinternalTransport
+	solidbehaviournodeinternalTransport [label=internalTransport color=greenyellow peripheries=1 style=filled]
+	solidbehaviournodecontrolInput [label=controlInput]
+	solidbehaviournode -> solidbehaviournodecontrolInput
+	solidbehaviournodecontrolInput [label=controlInput color=greenyellow peripheries=1 style=filled]
+	solidbehaviournodeobservation [label=observation]
+	solidbehaviournode -> solidbehaviournodeobservation
+	solidbehaviournodeobservation [label=observation color=greenyellow peripheries=1 style=filled]
+	solidstructure [label=structure shape=diamond]
+	solid -> solidstructure
+	solidstructurearc [label=arc]
+	solidstructure -> solidstructurearc
+	solidstructurearccharge [label=charge color=pink peripheries=1 style=filled]
+	solidstructurearc -> solidstructurearccharge
+	solidstructurearcchargeconduction [label=conduction color=pink peripheries=1 style=filled]
+	solidstructurearccharge -> solidstructurearcchargeconduction
+	solidstructurearcchargeconduction [label=conduction]
+	solidstructurearcchargeconductionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	solidstructurearcchargeconduction -> solidstructurearcchargeconductionlumped
+	solidstructurearcenergy [label=energy color=pink peripheries=1 style=filled]
+	solidstructurearc -> solidstructurearcenergy
+	solidstructurearcenergyconduction [label=conduction color=pink peripheries=1 style=filled]
+	solidstructurearcenergy -> solidstructurearcenergyconduction
+	solidstructurearcenergyconduction [label=conduction]
+	solidstructurearcenergyconductionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	solidstructurearcenergyconduction -> solidstructurearcenergyconductionlumped
+	solidstructurearcenergywork [label=work color=pink peripheries=1 style=filled]
+	solidstructurearcenergy -> solidstructurearcenergywork
+	solidstructurearcenergywork [label=work]
+	solidstructurearcenergyworklumped [label=lumped color=lightblue peripheries=1 style=filled]
+	solidstructurearcenergywork -> solidstructurearcenergyworklumped
+	solidstructurearcmass [label=mass color=pink peripheries=1 style=filled]
+	solidstructurearc -> solidstructurearcmass
+	solidstructurearcmassconvection [label=convection color=pink peripheries=1 style=filled]
+	solidstructurearcmass -> solidstructurearcmassconvection
+	solidstructurearcmassconvection [label=convection]
+	solidstructurearcmassconvectionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	solidstructurearcmassconvection -> solidstructurearcmassconvectionlumped
+	solidstructurearcmassdiffusion [label=diffusion color=pink peripheries=1 style=filled]
+	solidstructurearcmass -> solidstructurearcmassdiffusion
+	solidstructurearcmassdiffusion [label=diffusion]
+	solidstructurearcmassdiffusionlumped [label=lumped color=lightblue peripheries=1 style=filled]
+	solidstructurearcmassdiffusion -> solidstructurearcmassdiffusionlumped
+	solidstructurenode [label="node"]
+	solidstructure -> solidstructurenode
+	solidstructurenodeconstant [label=constant color=pink peripheries=1 style=filled]
+	solidstructurenode -> solidstructurenodeconstant
+	solidstructurenodeconstantinfinity [label=infinity color=pink peripheries=1 style=filled]
+	solidstructurenodeconstant -> solidstructurenodeconstantinfinity
+	solidstructurenodedynamic [label=dynamic color=pink peripheries=1 style=filled]
+	solidstructurenode -> solidstructurenodedynamic
+	solidstructurenodedynamiclumped [label=lumped color=pink peripheries=1 style=filled]
+	solidstructurenodedynamic -> solidstructurenodedynamiclumped
+	solidstructurenodeevent [label=event color=pink peripheries=1 style=filled]
+	solidstructurenode -> solidstructurenodeevent
+	solidstructurenodeeventlumped [label=lumped color=pink peripheries=1 style=filled]
+	solidstructurenodeevent -> solidstructurenodeeventlumped
+	solidstructuretoken [label=token]
+	solidstructure -> solidstructuretoken
+	solidstructuretokencharge [label=charge color=pink peripheries=1 style=filled]
+	solidstructuretoken -> solidstructuretokencharge
+	solidstructuretokenenergy [label=energy color=pink peripheries=1 style=filled]
+	solidstructuretoken -> solidstructuretokenenergy
+	solidstructuretokenmass [label=mass color=pink peripheries=1 style=filled]
+	solidstructuretoken -> solidstructuretokenmass
+	solidstructuretokenmassspecies [label=species color=pink peripheries=1 style=filled]
+	solidstructuretokenmass -> solidstructuretokenmassspecies
+}
