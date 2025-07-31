@@ -174,7 +174,7 @@
 \object{('arc\_edge', 'tail', 'open')} &\cursor{TC\_L\_blank-R\_recon} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
 \object{('arc\_edge', 'tail', 'selected')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
 \object{('arc\_left', 'tail', '-')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{insert knot}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
-\object{('arc\_right', 'head', '-')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
+\object{('arc\_right', 'head', '-')} &\cursor{TC\_L\_insknot-R\_recon} &(\leftnextstate{-}, \leftaction{insert knot}) &(\rightnextstate{re-connect\_arc}, \rightaction{re-direct arc})\\
 \object{('connector', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
 \object{('knot', 'root', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
 \object{('node\_arc', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
@@ -185,7 +185,7 @@
 \object{('node\_composite', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
 \object{('node\_composite', 'root', '-')} &\cursor{TC\_L\_goin-R\_tofile} &(\leftnextstate{-}, \leftaction{zoom in}) &(\rightnextstate{-}, \rightaction{make a copy})\\
 \object{('node\_interface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
-\object{('node\_interface', 'root', 'enabled')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
+\object{('node\_interface', 'root', 'enabled')} &\cursor{TC\_L\_blank-R\_adda} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{connect\_arc}, \rightaction{begin arc})\\
 \object{('node\_intraface', 'name', '-')} &\cursor{-} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{-})\\
 \object{('node\_intraface', 'root', 'enabled')} &\cursor{CC\_L\_add-R\_adda} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{connect\_arc}, \rightaction{begin arc})\\
 \object{('node\_simple', 'name', '-')} &\cursor{TC\_L\_move-R\_ask} &(\leftnextstate{-}, \leftaction{-}) &(\rightnextstate{-}, \rightaction{name node})\\
