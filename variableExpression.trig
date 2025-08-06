@@ -13,6 +13,24 @@
 @prefix root: <http://example.org/root> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<promo_units> {
+    promo:unit_amount promo:has_unit <http://qudt.org/vocab/unit/MOL> .
+
+    promo:unit_current promo:has_unit <http://qudt.org/vocab/unit/A> .
+
+    promo:unit_length promo:has_unit <http://qudt.org/vocab/unit/M> .
+
+    promo:unit_light promo:has_unit <http://qudt.org/vocab/unit/CD> .
+
+    promo:unit_mass promo:has_unit <http://qudt.org/vocab/unit/KiloGM> .
+
+    promo:unit_nil promo:has_unit <http://qudt.org/vocab/unit/UNITLESS> .
+
+    promo:unit_temperature promo:has_unit <http://qudt.org/vocab/unit/K> .
+
+    promo:unit_time promo:has_unit <http://qudt.org/vocab/unit/SEC> .
+}
+
 macroscopic_control: {
     <http://example.org/macroscopic_control#V_225> a promo:variable ;
         promo:created "2024-06-19 12:14:14" ;
@@ -33,161 +51,6 @@ macroscopic_control: {
         promo:unit_nil 0 ;
         promo:unit_temperature 0 ;
         promo:unit_time 0 .
-}
-
-<promo_units> {
-    promo:unit_amount promo:has_unit <http://qudt.org/vocab/unit/MOL> .
-
-    promo:unit_current promo:has_unit <http://qudt.org/vocab/unit/A> .
-
-    promo:unit_length promo:has_unit <http://qudt.org/vocab/unit/M> .
-
-    promo:unit_light promo:has_unit <http://qudt.org/vocab/unit/CD> .
-
-    promo:unit_mass promo:has_unit <http://qudt.org/vocab/unit/KiloGM> .
-
-    promo:unit_nil promo:has_unit <http://qudt.org/vocab/unit/UNITLESS> .
-
-    promo:unit_temperature promo:has_unit <http://qudt.org/vocab/unit/K> .
-
-    promo:unit_time promo:has_unit <http://qudt.org/vocab/unit/SEC> .
-}
-
-promolg: {
-    promolg:Hadamard rdfs:label "." ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:Instantiate rdfs:label "Instantiate" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:Integral rdfs:label "Integral" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:MakeIndex rdfs:label "MakeIndex" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:ParDiff rdfs:label "ParDiff" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:Product rdfs:label "Product" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:Root rdfs:label "Root" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:TotalDiff rdfs:label "TotalDiff" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:abs rdfs:label "abs" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:acos rdfs:label "acos" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:ampersand rdfs:label "&" ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:asin rdfs:label "asin" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:atan rdfs:label "atan" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:comma rdfs:label "," ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:cos rdfs:label "cos" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:diffSpace rdfs:label "diffSpace" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:double_column rdfs:label "::" ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:exp rdfs:label "exp" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:expandProduct rdfs:label ":" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:in rdfs:label "in" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:inv rdfs:label "inv" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:left rdfs:label "left" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:left_round rdfs:label "(" ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:left_square rdfs:label "[" ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:left_wiggled rdfs:label "{" ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:ln rdfs:label "ln" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:log rdfs:label "log" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:max rdfs:label "max" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:min rdfs:label "min" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:minus rdfs:label "-" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:neg rdfs:label "neg" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:or rdfs:label "|" ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:plus rdfs:label "+" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:power rdfs:label "^" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:reduceProduct rdfs:label "*" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:reducteSum rdfs:label "reduceSum" ;
-        rdfs:subClassOf promolg:operator .
-
-    promolg:right rdfs:label "right" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:right_round rdfs:label ")" ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:right_square rdfs:label "]" ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:right_wiggled rdfs:label "}" ;
-        rdfs:subClassOf promolg:delimiter .
-
-    promolg:sign rdfs:label "sign" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:sin rdfs:label "sin" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:sqrt rdfs:label "sqrt" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:tan rdfs:label "tan" ;
-        rdfs:subClassOf promolg:function .
-
-    promolg:underline rdfs:label "_" ;
-        rdfs:subClassOf promolg:delimiter .
 }
 
 macroscopic: {
@@ -2044,120 +1907,141 @@ physical: {
         promo:unit_time 0 .
 }
 
-{
-    promo:charge a promo:token .
+promolg: {
+    promolg:Hadamard rdfs:label "." ;
+        rdfs:subClassOf promolg:operator .
 
-    promo:energy a promo:token .
+    promolg:Instantiate rdfs:label "Instantiate" ;
+        rdfs:subClassOf promolg:operator .
 
-    promo:mass a promo:token .
+    promolg:Integral rdfs:label "Integral" ;
+        rdfs:subClassOf promolg:operator .
 
-    promo:signal a promo:token .
+    promolg:MakeIndex rdfs:label "MakeIndex" ;
+        rdfs:subClassOf promolg:operator .
 
-    <http://example.org/indices#I_1> a promo:index ;
-        promo:label "N" ;
-        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+    promolg:ParDiff rdfs:label "ParDiff" ;
+        rdfs:subClassOf promolg:operator .
 
-    <http://example.org/indices#I_10> a promo:index ;
-        promo:label "t" ;
-        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+    promolg:Product rdfs:label "Product" ;
+        rdfs:subClassOf promolg:operator .
 
-    <http://example.org/indices#I_11> a promo:index ;
-        promo:label "u" ;
-        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+    promolg:Root rdfs:label "Root" ;
+        rdfs:subClassOf promolg:function .
 
-    <http://example.org/indices#I_2> a promo:index ;
-        promo:label "A" ;
-        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+    promolg:TotalDiff rdfs:label "TotalDiff" ;
+        rdfs:subClassOf promolg:operator .
 
-    <http://example.org/indices#I_3> a promo:index ;
-        promo:label "I" ;
-        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+    promolg:abs rdfs:label "abs" ;
+        rdfs:subClassOf promolg:function .
 
-    <http://example.org/indices#I_4> a promo:index ;
-        promo:label "S" ;
-        promo:network "['physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions']" .
+    promolg:acos rdfs:label "acos" ;
+        rdfs:subClassOf promolg:function .
 
-    <http://example.org/indices#I_5> a promo:index ;
-        promo:label "K" ;
-        promo:network "['physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions']" .
+    promolg:ampersand rdfs:label "&" ;
+        rdfs:subClassOf promolg:delimiter .
 
-    <http://example.org/indices#I_6> a promo:index ;
-        promo:label "D" ;
-        promo:network "['control']" .
+    promolg:asin rdfs:label "asin" ;
+        rdfs:subClassOf promolg:function .
 
-    <http://example.org/indices#I_7> a promo:index ;
-        promo:label "p" ;
-        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+    promolg:atan rdfs:label "atan" ;
+        rdfs:subClassOf promolg:function .
 
-    <http://example.org/indices#I_8> a promo:index ;
-        promo:label "q" ;
-        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+    promolg:comma rdfs:label "," ;
+        rdfs:subClassOf promolg:delimiter .
 
-    <http://example.org/indices#I_9> a promo:index ;
-        promo:label "r" ;
-        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
-}
+    promolg:cos rdfs:label "cos" ;
+        rdfs:subClassOf promolg:function .
 
-macroscopic_reactions: {
-    <http://example.org/macroscopic_reactions#V_162> a promo:variable ;
-        promo:created "2024-03-30 18:06:12" ;
-        promo:doc "link variable _c to interface macroscopic >>> reactions with source:node" ;
-        promo:has_latex_representation "E_55:{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {c}{_{N, S}}" ;
-        promo:is_defined_by_expression "E_55: V_3  O_5 I_1 V_138" ;
-        promo:label "_c" ;
-        promo:modified "2024-03-30 18:06:12" ;
-        promo:name "_c" ;
-        promo:network "macroscopic >>> reactions" ;
-        promo:port_variable false ;
-        promo:type "get" ;
-        promo:unit_amount 1 ;
-        promo:unit_current 0 ;
-        promo:unit_length -3 ;
-        promo:unit_light 0 ;
-        promo:unit_mass 0 ;
-        promo:unit_nil 0 ;
-        promo:unit_temperature 0 ;
-        promo:unit_time 0 .
+    promolg:diffSpace rdfs:label "diffSpace" ;
+        rdfs:subClassOf promolg:function .
 
-    <http://example.org/macroscopic_reactions#V_164> a promo:variable ;
-        promo:created "2024-03-30 18:08:39" ;
-        promo:doc "link variable _x to interface macroscopic >>> reactions with source:node" ;
-        promo:has_latex_representation "E_57:{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {x}{_{N, S}}" ;
-        promo:is_defined_by_expression "E_57: V_3  O_5 I_1 V_140" ;
-        promo:label "_x" ;
-        promo:modified "2024-03-30 18:08:39" ;
-        promo:name "_x" ;
-        promo:network "macroscopic >>> reactions" ;
-        promo:port_variable false ;
-        promo:type "get" ;
-        promo:unit_amount 0 ;
-        promo:unit_current 0 ;
-        promo:unit_length 0 ;
-        promo:unit_light 0 ;
-        promo:unit_mass 0 ;
-        promo:unit_nil 0 ;
-        promo:unit_temperature 0 ;
-        promo:unit_time 0 .
+    promolg:double_column rdfs:label "::" ;
+        rdfs:subClassOf promolg:delimiter .
 
-    <http://example.org/macroscopic_reactions#V_166> a promo:variable ;
-        promo:created "2024-03-30 18:08:59" ;
-        promo:doc "link variable _T to interface macroscopic >>> reactions with source:node" ;
-        promo:has_latex_representation "E_59:{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {T}{_{N}}" ;
-        promo:is_defined_by_expression "E_59: V_3  O_5 I_1 V_113" ;
-        promo:label "_T" ;
-        promo:modified "2024-03-30 18:08:59" ;
-        promo:name "_T" ;
-        promo:network "macroscopic >>> reactions" ;
-        promo:port_variable false ;
-        promo:type "get" ;
-        promo:unit_amount 0 ;
-        promo:unit_current 0 ;
-        promo:unit_length 0 ;
-        promo:unit_light 0 ;
-        promo:unit_mass 0 ;
-        promo:unit_nil 0 ;
-        promo:unit_temperature 1 ;
-        promo:unit_time 0 .
+    promolg:exp rdfs:label "exp" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:expandProduct rdfs:label ":" ;
+        rdfs:subClassOf promolg:operator .
+
+    promolg:in rdfs:label "in" ;
+        rdfs:subClassOf promolg:operator .
+
+    promolg:inv rdfs:label "inv" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:left rdfs:label "left" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:left_round rdfs:label "(" ;
+        rdfs:subClassOf promolg:delimiter .
+
+    promolg:left_square rdfs:label "[" ;
+        rdfs:subClassOf promolg:delimiter .
+
+    promolg:left_wiggled rdfs:label "{" ;
+        rdfs:subClassOf promolg:delimiter .
+
+    promolg:ln rdfs:label "ln" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:log rdfs:label "log" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:max rdfs:label "max" ;
+        rdfs:subClassOf promolg:operator .
+
+    promolg:min rdfs:label "min" ;
+        rdfs:subClassOf promolg:operator .
+
+    promolg:minus rdfs:label "-" ;
+        rdfs:subClassOf promolg:operator .
+
+    promolg:neg rdfs:label "neg" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:or rdfs:label "|" ;
+        rdfs:subClassOf promolg:delimiter .
+
+    promolg:plus rdfs:label "+" ;
+        rdfs:subClassOf promolg:operator .
+
+    promolg:power rdfs:label "^" ;
+        rdfs:subClassOf promolg:operator .
+
+    promolg:reduceProduct rdfs:label "*" ;
+        rdfs:subClassOf promolg:operator .
+
+    promolg:reducteSum rdfs:label "reduceSum" ;
+        rdfs:subClassOf promolg:operator .
+
+    promolg:right rdfs:label "right" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:right_round rdfs:label ")" ;
+        rdfs:subClassOf promolg:delimiter .
+
+    promolg:right_square rdfs:label "]" ;
+        rdfs:subClassOf promolg:delimiter .
+
+    promolg:right_wiggled rdfs:label "}" ;
+        rdfs:subClassOf promolg:delimiter .
+
+    promolg:sign rdfs:label "sign" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:sin rdfs:label "sin" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:sqrt rdfs:label "sqrt" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:tan rdfs:label "tan" ;
+        rdfs:subClassOf promolg:function .
+
+    promolg:underline rdfs:label "_" ;
+        rdfs:subClassOf promolg:delimiter .
 }
 
 control_macroscopic: {
@@ -2379,6 +2263,60 @@ reactions: {
         promo:unit_nil 0 ;
         promo:unit_temperature 0 ;
         promo:unit_time 0 .
+}
+
+{
+    promo:charge a promo:token .
+
+    promo:energy a promo:token .
+
+    promo:mass a promo:token .
+
+    promo:signal a promo:token .
+
+    <http://example.org/indices#I_1> a promo:index ;
+        promo:label "N" ;
+        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+
+    <http://example.org/indices#I_10> a promo:index ;
+        promo:label "t" ;
+        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+
+    <http://example.org/indices#I_11> a promo:index ;
+        promo:label "u" ;
+        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+
+    <http://example.org/indices#I_2> a promo:index ;
+        promo:label "A" ;
+        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+
+    <http://example.org/indices#I_3> a promo:index ;
+        promo:label "I" ;
+        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+
+    <http://example.org/indices#I_4> a promo:index ;
+        promo:label "S" ;
+        promo:network "['physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions']" .
+
+    <http://example.org/indices#I_5> a promo:index ;
+        promo:label "K" ;
+        promo:network "['physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions']" .
+
+    <http://example.org/indices#I_6> a promo:index ;
+        promo:label "D" ;
+        promo:network "['control']" .
+
+    <http://example.org/indices#I_7> a promo:index ;
+        promo:label "p" ;
+        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+
+    <http://example.org/indices#I_8> a promo:index ;
+        promo:label "q" ;
+        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
+
+    <http://example.org/indices#I_9> a promo:index ;
+        promo:label "r" ;
+        promo:network "['root', 'physical', 'macroscopic', 'solid', 'fluid', 'liquid', 'gas', 'energy', 'microscopic', 'reactions', 'control', 'info_processing']" .
 }
 
 root: {
@@ -2956,6 +2894,68 @@ root: {
         promo:unit_mass 0 ;
         promo:unit_nil 0 ;
         promo:unit_temperature 0 ;
+        promo:unit_time 0 .
+}
+
+macroscopic_reactions: {
+    <http://example.org/macroscopic_reactions#V_162> a promo:variable ;
+        promo:created "2024-03-30 18:06:12" ;
+        promo:doc "link variable _c to interface macroscopic >>> reactions with source:node" ;
+        promo:has_latex_representation "E_55:{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {c}{_{N, S}}" ;
+        promo:is_defined_by_expression "E_55: V_3  O_5 I_1 V_138" ;
+        promo:label "_c" ;
+        promo:modified "2024-03-30 18:06:12" ;
+        promo:name "_c" ;
+        promo:network "macroscopic >>> reactions" ;
+        promo:port_variable false ;
+        promo:type "get" ;
+        promo:unit_amount 1 ;
+        promo:unit_current 0 ;
+        promo:unit_length -3 ;
+        promo:unit_light 0 ;
+        promo:unit_mass 0 ;
+        promo:unit_nil 0 ;
+        promo:unit_temperature 0 ;
+        promo:unit_time 0 .
+
+    <http://example.org/macroscopic_reactions#V_164> a promo:variable ;
+        promo:created "2024-03-30 18:08:39" ;
+        promo:doc "link variable _x to interface macroscopic >>> reactions with source:node" ;
+        promo:has_latex_representation "E_57:{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {x}{_{N, S}}" ;
+        promo:is_defined_by_expression "E_57: V_3  O_5 I_1 V_140" ;
+        promo:label "_x" ;
+        promo:modified "2024-03-30 18:08:39" ;
+        promo:name "_x" ;
+        promo:network "macroscopic >>> reactions" ;
+        promo:port_variable false ;
+        promo:type "get" ;
+        promo:unit_amount 0 ;
+        promo:unit_current 0 ;
+        promo:unit_length 0 ;
+        promo:unit_light 0 ;
+        promo:unit_mass 0 ;
+        promo:unit_nil 0 ;
+        promo:unit_temperature 0 ;
+        promo:unit_time 0 .
+
+    <http://example.org/macroscopic_reactions#V_166> a promo:variable ;
+        promo:created "2024-03-30 18:08:59" ;
+        promo:doc "link variable _T to interface macroscopic >>> reactions with source:node" ;
+        promo:has_latex_representation "E_59:{{F^{source}}}{_{N, I}} \\stackrel{N}{\\star} {T}{_{N}}" ;
+        promo:is_defined_by_expression "E_59: V_3  O_5 I_1 V_113" ;
+        promo:label "_T" ;
+        promo:modified "2024-03-30 18:08:59" ;
+        promo:name "_T" ;
+        promo:network "macroscopic >>> reactions" ;
+        promo:port_variable false ;
+        promo:type "get" ;
+        promo:unit_amount 0 ;
+        promo:unit_current 0 ;
+        promo:unit_length 0 ;
+        promo:unit_light 0 ;
+        promo:unit_mass 0 ;
+        promo:unit_nil 0 ;
+        promo:unit_temperature 1 ;
         promo:unit_time 0 .
 }
 
