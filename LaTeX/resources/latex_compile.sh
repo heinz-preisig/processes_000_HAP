@@ -7,13 +7,17 @@ pdflatex -interaction=nonstopmode $2 ;
 pdflatex -interaction=nonstopmode $2 ;
 
 
+# do not delete .toc
 if [ $? -eq 0 ]
  then
-   rm *.dvi ;\
-   rm *.ps ;\
-   rm *.bbl ;\
+   rm *.dvi ;
+   rm *.ps ;
+   rm *.bbl ;
    rm *.aux ;
    rm *.blg ;
+   rm *.out; 
+   rm *.log; 
+   rm *.tex;
 fi
 
 
