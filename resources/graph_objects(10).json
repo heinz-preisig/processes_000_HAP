@@ -1281,12 +1281,12 @@
                 0,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -1296,12 +1296,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "constant|infinity": {
@@ -1317,12 +1317,12 @@
                 2,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -1332,12 +1332,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "dynamic|ODE": {
@@ -1353,12 +1353,12 @@
                 38,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -1368,12 +1368,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "dynamic|lumped": {
@@ -1389,12 +1389,12 @@
                 41,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -1404,12 +1404,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "event|AE": {
@@ -2665,12 +2665,12 @@
                 182,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -2684,12 +2684,12 @@
                 0,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [
@@ -2703,12 +2703,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "constant|infinity": {
@@ -2722,12 +2722,12 @@
                 182,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -2741,12 +2741,12 @@
                 2,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [
@@ -2760,12 +2760,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "dynamic|ODE": {
@@ -2779,12 +2779,12 @@
                 182,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -2798,12 +2798,12 @@
                 38,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [
@@ -2817,12 +2817,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "dynamic|lumped": {
@@ -2836,12 +2836,12 @@
                 182,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -2855,12 +2855,12 @@
                 41,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [
@@ -2874,12 +2874,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "event|AE": {
@@ -4704,6 +4704,11 @@
               "position_x": 0,
               "position_y": 40
             }
+          },
+          "dynamic|ODE": {
+            "-": {
+              "position_y": 50
+            }
           }
         },
         "root": {
@@ -4744,10 +4749,17 @@
               "position_x": 0,
               "position_y": 25
             }
+          },
+          "node_interface": {
+            "-": {
+              "movable": true,
+              "position_y": 25
+            }
           }
         },
         "root": {
           "node_interface": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -4812,6 +4824,12 @@
               "position_x": 0,
               "position_y": 40
             }
+          },
+          "dynamic|ODE": {
+            "-": {
+              "movable": true,
+              "position_y": 50
+            }
           }
         },
         "named_network": {
@@ -4862,12 +4880,12 @@
                 182,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -4883,12 +4901,12 @@
                 0,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -4898,12 +4916,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "constant|infinity": {
@@ -4915,12 +4933,12 @@
                 182,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -4936,12 +4954,12 @@
                 2,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -4951,15 +4969,16 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "dynamic|ODE": {
+            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -4968,12 +4987,12 @@
                 182,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -4989,12 +5008,12 @@
                 38,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -5004,16 +5023,15 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "dynamic|lumped": {
-            "": {},
             "blocked": {
               "action": [],
               "colour": [
@@ -5022,12 +5040,12 @@
                 182,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -5043,12 +5061,12 @@
                 41,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -5058,12 +5076,12 @@
                 79,
                 255
               ],
-              "height": 36,
+              "height": 28,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 36
+              "width": 28
             }
           },
           "event|AE": {
