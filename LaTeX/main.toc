@@ -1,13 +1,13 @@
 \contentsline {section}{\numberline {1}Variables}{2}{section.1}%
 \contentsline {section}{\numberline {2} root }{2}{section.2}%
-\contentsline {section}{\numberline {3} physical }{4}{section.3}%
-\contentsline {section}{\numberline {4} macroscopic }{5}{section.4}%
-\contentsline {section}{\numberline {5} reactions }{9}{section.5}%
-\contentsline {section}{\numberline {6} control }{10}{section.6}%
-\contentsline {section}{\numberline {7} reactions--macroscopic }{11}{section.7}%
-\contentsline {section}{\numberline {8} macroscopic--reactions }{12}{section.8}%
-\contentsline {section}{\numberline {9} control--macroscopic }{13}{section.9}%
-\contentsline {section}{\numberline {10} macroscopic--control }{14}{section.10}%
-\contentsline {section}{\numberline {11}Equations}{15}{section.11}%
-\contentsline {section}{\numberline {12} Generic }{15}{section.12}%
-\contentsline {section}{\numberline {13} Interface Link Equation }{22}{section.13}%
+\contentsline {section}{\numberline {3} physical }{5}{section.3}%
+\contentsline {section}{\numberline {4} macroscopic }{7}{section.4}%
+\contentsline {section}{\numberline {5} reactions }{12}{section.5}%
+\contentsline {section}{\numberline {6} control }{13}{section.6}%
+\contentsline {section}{\numberline {7} control--macroscopic }{14}{section.7}%
+\contentsline {section}{\numberline {8} macroscopic--reactions }{15}{section.8}%
+\contentsline {section}{\numberline {9} reactions--macroscopic }{16}{section.9}%
+\contentsline {section}{\numberline {10} macroscopic--control }{17}{section.10}%
+\contentsline {section}{\numberline {11}Equations}{18}{section.11}%
+\contentsline {section}{\numberline {12} Generic }{18}{section.12}%
+\contentsline {section}{\numberline {13} Interface Link Equation }{25}{section.13}%
