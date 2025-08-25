@@ -1,22 +1,7 @@
 {
   "nodes": {
-    "1": {
-      "name": "massSource",
-      "network": "liquid",
-      "named_network": "A-liquid",
-      "class": "node_simple",
-      "type": "constant|infinity",
-      "variant": "massSource",
-      "instantiated_variables": {},
-      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
-      "tokens": {
-        "mass": []
-      },
-      "injected_typed_tokens": {},
-      "mass": []
-    },
     "2": {
-      "name": "dynamicMass",
+      "name": "dynamicMassCenter",
       "network": "liquid",
       "named_network": "A-liquid",
       "class": "node_simple",
@@ -30,22 +15,37 @@
       "conversions": {},
       "mass": []
     },
-    "3": {
-      "name": "massSource",
+    "8": {
+      "name": "dynamicMassLeft",
       "network": "liquid",
       "named_network": "A-liquid",
       "class": "node_simple",
-      "type": "constant|infinity",
-      "variant": "massSource",
+      "type": "dynamic|lumped",
+      "variant": "dynamicMass",
       "instantiated_variables": {},
-      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "entity_id": "macroscopic.node.mass|dynamic|lumped.dynamicMass",
       "tokens": {
         "mass": []
       },
-      "injected_typed_tokens": {},
+      "conversions": {},
       "mass": []
     },
-    "4": {
+    "9": {
+      "name": "dynamicMassRight",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "dynamic|lumped",
+      "variant": "dynamicMass",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|dynamic|lumped.dynamicMass",
+      "tokens": {
+        "mass": []
+      },
+      "conversions": {},
+      "mass": []
+    },
+    "10": {
       "name": "convectiveMassFlow",
       "network": "liquid",
       "named_network": "A-liquid >>> A-liquid",
@@ -68,7 +68,7 @@
       },
       "mass": []
     },
-    "6": {
+    "11": {
       "name": "convectiveMassFlow",
       "network": "liquid",
       "named_network": "A-liquid >>> A-liquid",
@@ -94,9 +94,9 @@
   },
   "arcs": {
     "0": {
-      "name": "1 | 4",
-      "source": 1,
-      "sink": 4,
+      "name": "8 | 10",
+      "source": 8,
+      "sink": 10,
       "token": "mass",
       "typed_tokens": [],
       "network": "liquid",
@@ -104,11 +104,12 @@
       "mechanism": "convection",
       "nature": "lumped",
       "variant": "convectiveMassFlow",
-      "instantiated_variables": {}
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow"
     },
     "1": {
-      "name": "4 | 2",
-      "source": 4,
+      "name": "10 | 2",
+      "source": 10,
       "sink": 2,
       "token": "mass",
       "typed_tokens": [],
@@ -117,12 +118,13 @@
       "mechanism": "convection",
       "nature": "lumped",
       "variant": "convectiveMassFlow",
-      "instantiated_variables": {}
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow"
     },
     "2": {
-      "name": "2 | 6",
+      "name": "2 | 11",
       "source": 2,
-      "sink": 6,
+      "sink": 11,
       "token": "mass",
       "typed_tokens": [],
       "network": "liquid",
@@ -130,12 +132,13 @@
       "mechanism": "convection",
       "nature": "lumped",
       "variant": "convectiveMassFlow",
-      "instantiated_variables": {}
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow"
     },
     "3": {
-      "name": "6 | 3",
-      "source": 6,
-      "sink": 3,
+      "name": "11 | 9",
+      "source": 11,
+      "sink": 9,
       "token": "mass",
       "typed_tokens": [],
       "network": "liquid",
@@ -143,7 +146,8 @@
       "mechanism": "convection",
       "nature": "lumped",
       "variant": "convectiveMassFlow",
-      "instantiated_variables": {}
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow"
     }
   },
   "named_networks": {
@@ -243,11 +247,11 @@
     "energy": {},
     "mass": {
       "0": [
-        1,
         2,
-        3,
-        4,
-        6
+        8,
+        9,
+        10,
+        11
       ]
     },
     "signal": {}
@@ -262,10 +266,10 @@
   "token_incidence_matrix": {
     "0": {
       "mass": {
-        "1": [
+        "8": [
           0
         ],
-        "4": [
+        "10": [
           0,
           1
         ],
@@ -273,11 +277,11 @@
           1,
           2
         ],
-        "6": [
+        "11": [
           2,
           3
         ],
-        "3": [
+        "9": [
           3
         ]
       }

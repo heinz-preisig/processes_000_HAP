@@ -4,13 +4,15 @@
             "macroscopic.node.mass|constant|infinity.massSource",
             "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
             "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
-            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass",
+            "macroscopic.node.mass|constant|infinity.massSink"
         ],
         "sinks": [
             "macroscopic.node.mass|constant|infinity.massSource",
             "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
             "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
-            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass",
+            "macroscopic.node.mass|constant|infinity.massSink"
         ]
     },
     "macroscopic.arc.mass|diffusion|lumped.diffusionalMassTransfer": {
@@ -18,13 +20,15 @@
             "macroscopic.node.mass|constant|infinity.massSource",
             "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
             "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
-            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass",
+            "macroscopic.node.mass|constant|infinity.massSink"
         ],
         "sinks": [
             "macroscopic.node.mass|constant|infinity.massSource",
             "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
             "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
-            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass",
+            "macroscopic.node.mass|constant|infinity.massSink"
         ]
     },
     "control.arc.signal|link|unidirectional.signal": {
@@ -40,13 +44,15 @@
             "macroscopic.node.mass|constant|infinity.massSource",
             "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
             "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
-            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass",
+            "macroscopic.node.mass|constant|infinity.massSink"
         ],
         "sinks": [
             "macroscopic.node.mass|constant|infinity.massSource",
             "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
             "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
-            "macroscopic.node.mass|dynamic|lumped.dynamicMass"
+            "macroscopic.node.mass|dynamic|lumped.dynamicMass",
+            "macroscopic.node.mass|constant|infinity.massSink"
         ]
     },
     "macroscopic >>> reactions (x -> _x)": {

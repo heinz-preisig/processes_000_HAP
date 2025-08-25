@@ -3,18 +3,12 @@
     "0": {
       "ancestors": [],
       "children": [
-        1,
         2,
-        3,
-        4,
-        6
+        8,
+        9,
+        10,
+        11
       ]
-    },
-    "1": {
-      "ancestors": [
-        0
-      ],
-      "children": []
     },
     "2": {
       "ancestors": [
@@ -22,19 +16,25 @@
       ],
       "children": []
     },
-    "3": {
+    "8": {
       "ancestors": [
         0
       ],
       "children": []
     },
-    "4": {
+    "9": {
       "ancestors": [
         0
       ],
       "children": []
     },
-    "6": {
+    "10": {
+      "ancestors": [
+        0
+      ],
+      "children": []
+    },
+    "11": {
       "ancestors": [
         0
       ],
@@ -144,23 +144,8 @@
       "instantiated_variables": {},
       "entity_id": ""
     },
-    "1": {
-      "name": "massSource",
-      "network": "liquid",
-      "named_network": "A-liquid",
-      "class": "node_simple",
-      "type": "constant|infinity",
-      "variant": "massSource",
-      "instantiated_variables": {},
-      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
-      "tokens": {
-        "mass": []
-      },
-      "injected_typed_tokens": {},
-      "mass": []
-    },
     "2": {
-      "name": "dynamicMass",
+      "name": "dynamicMassCenter",
       "network": "liquid",
       "named_network": "A-liquid",
       "class": "node_simple",
@@ -174,22 +159,37 @@
       "conversions": {},
       "mass": []
     },
-    "3": {
-      "name": "massSource",
+    "8": {
+      "name": "dynamicMassLeft",
       "network": "liquid",
       "named_network": "A-liquid",
       "class": "node_simple",
-      "type": "constant|infinity",
-      "variant": "massSource",
+      "type": "dynamic|lumped",
+      "variant": "dynamicMass",
       "instantiated_variables": {},
-      "entity_id": "macroscopic.node.mass|constant|infinity.massSource",
+      "entity_id": "macroscopic.node.mass|dynamic|lumped.dynamicMass",
       "tokens": {
         "mass": []
       },
-      "injected_typed_tokens": {},
+      "conversions": {},
       "mass": []
     },
-    "4": {
+    "9": {
+      "name": "dynamicMassRight",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "dynamic|lumped",
+      "variant": "dynamicMass",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.mass|dynamic|lumped.dynamicMass",
+      "tokens": {
+        "mass": []
+      },
+      "conversions": {},
+      "mass": []
+    },
+    "10": {
       "name": "convectiveMassFlow",
       "network": "liquid",
       "named_network": "A-liquid >>> A-liquid",
@@ -212,7 +212,7 @@
       },
       "mass": []
     },
-    "6": {
+    "11": {
       "name": "convectiveMassFlow",
       "network": "liquid",
       "named_network": "A-liquid >>> A-liquid",
@@ -241,20 +241,20 @@
     "energy": {},
     "mass": {
       "0": [
-        1,
         2,
-        3,
-        4,
-        6
+        8,
+        9,
+        10,
+        11
       ]
     },
     "signal": {}
   },
   "arcs": {
     "0": {
-      "name": "1 | 4",
-      "source": 1,
-      "sink": 4,
+      "name": "8 | 10",
+      "source": 8,
+      "sink": 10,
       "token": "mass",
       "typed_tokens": [],
       "network": "liquid",
@@ -262,11 +262,12 @@
       "mechanism": "convection",
       "nature": "lumped",
       "variant": "convectiveMassFlow",
-      "instantiated_variables": {}
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow"
     },
     "1": {
-      "name": "4 | 2",
-      "source": 4,
+      "name": "10 | 2",
+      "source": 10,
       "sink": 2,
       "token": "mass",
       "typed_tokens": [],
@@ -275,12 +276,13 @@
       "mechanism": "convection",
       "nature": "lumped",
       "variant": "convectiveMassFlow",
-      "instantiated_variables": {}
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow"
     },
     "2": {
-      "name": "2 | 6",
+      "name": "2 | 11",
       "source": 2,
-      "sink": 6,
+      "sink": 11,
       "token": "mass",
       "typed_tokens": [],
       "network": "liquid",
@@ -288,12 +290,13 @@
       "mechanism": "convection",
       "nature": "lumped",
       "variant": "convectiveMassFlow",
-      "instantiated_variables": {}
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow"
     },
     "3": {
-      "name": "6 | 3",
-      "source": 6,
-      "sink": 3,
+      "name": "11 | 9",
+      "source": 11,
+      "sink": 9,
       "token": "mass",
       "typed_tokens": [],
       "network": "liquid",
@@ -301,32 +304,13 @@
       "mechanism": "convection",
       "nature": "lumped",
       "variant": "convectiveMassFlow",
-      "instantiated_variables": {}
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.mass|convection|lumped.convectiveMassFlow"
     }
   },
   "scenes": {
     "0": {
       "nodes": {
-        "1": {
-          "position_x": -323.0,
-          "position_y": -146.0,
-          "root": {
-            "position_x": 0,
-            "position_y": 0
-          },
-          "name": {
-            "position_x": 0,
-            "position_y": 40
-          },
-          "network": {
-            "position_x": -15,
-            "position_y": 0
-          },
-          "named_network": {
-            "position_x": -20,
-            "position_y": 0
-          }
-        },
         "2": {
           "position_x": -82.0,
           "position_y": -142.0,
@@ -347,8 +331,28 @@
             "position_y": 0
           }
         },
-        "3": {
-          "position_x": 151.0,
+        "8": {
+          "position_x": -307.0,
+          "position_y": -144.0,
+          "root": {
+            "position_x": 0,
+            "position_y": 0
+          },
+          "name": {
+            "position_x": 0,
+            "position_y": 40
+          },
+          "network": {
+            "position_x": -15,
+            "position_y": 0
+          },
+          "named_network": {
+            "position_x": -20,
+            "position_y": 0
+          }
+        },
+        "9": {
+          "position_x": 189.0,
           "position_y": -152.0,
           "root": {
             "position_x": 0,
@@ -367,9 +371,9 @@
             "position_y": 0
           }
         },
-        "4": {
-          "position_x": -205,
-          "position_y": -144,
+        "10": {
+          "position_x": -194,
+          "position_y": -143,
           "root": {
             "position_x": -15,
             "position_y": -10
@@ -379,8 +383,8 @@
             "position_y": 50
           }
         },
-        "6": {
-          "position_x": 34,
+        "11": {
+          "position_x": 53,
           "position_y": -147,
           "root": {
             "position_x": -15,
@@ -399,12 +403,6 @@
         "3": []
       }
     },
-    "1": {
-      "nodes": {},
-      "arcs": {
-        "0": []
-      }
-    },
     "2": {
       "nodes": {},
       "arcs": {
@@ -412,20 +410,26 @@
         "2": []
       }
     },
-    "3": {
+    "8": {
+      "nodes": {},
+      "arcs": {
+        "0": []
+      }
+    },
+    "9": {
       "nodes": {},
       "arcs": {
         "3": []
       }
     },
-    "4": {
+    "10": {
       "nodes": {},
       "arcs": {
         "0": [],
         "1": []
       }
     },
-    "6": {
+    "11": {
       "nodes": {},
       "arcs": {
         "2": [],
