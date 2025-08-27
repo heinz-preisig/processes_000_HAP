@@ -1,0 +1,90 @@
+{
+    "N_0": {
+        "identifier": "N_0",
+        "name": "simple-heat-transfer",
+        "parent_id": null,
+        "modeller_class": "NodeComposite",
+        "children_ids": [
+            "N_1",
+            "A_3",
+            "N_4"
+        ]
+    },
+    "N_1": {
+        "identifier": "N_1",
+        "name": "constantTemperature",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.energy|constant|infinity.constantTemperature",
+        "network": "solid",
+        "named_network": "A-solid",
+        "tokens": [
+            "energy"
+        ],
+        "typed_tokens": {
+            "energy": []
+        },
+        "instantiated_variables": {
+            "V_113": {}
+        },
+        "outgoing_connections": [
+            "A_3"
+        ],
+        "conversions": null,
+        "injected_typed_tokens": null
+    },
+    "A_3": {
+        "identifier": "A_3",
+        "name": "heatFlow",
+        "parent_id": "N_0",
+        "modeller_class": "Arc",
+        "entity_name": "macroscopic.arc.energy|conduction|lumped.heatFlow",
+        "network": "solid",
+        "named_network": "A-solid >>> A-solid",
+        "tokens": [
+            "energy"
+        ],
+        "typed_tokens": {
+            "energy": []
+        },
+        "instantiated_variables": {
+            "V_150": {},
+            "V_186": {},
+            "V_2": {}
+        },
+        "outgoing_connections": [
+            "N_4"
+        ]
+    },
+    "N_4": {
+        "identifier": "N_4",
+        "name": "faulty",
+        "parent_id": "N_0",
+        "modeller_class": "NodeSimple",
+        "entity_name": "macroscopic.node.energy|dynamic|lumped.faulty",
+        "network": "liquid",
+        "named_network": "A-liquid",
+        "tokens": [
+            "energy"
+        ],
+        "typed_tokens": {
+            "energy": []
+        },
+        "instantiated_variables": {
+            "V_105": {},
+            "V_106": {},
+            "V_124": {},
+            "V_204": {},
+            "V_205": {},
+            "V_206": {},
+            "V_207": {},
+            "V_209": {},
+            "V_210": {},
+            "V_214": {},
+            "V_222": {}
+        },
+        "outgoing_connections": [],
+        "conversions": {},
+        "injected_typed_tokens": null
+    }
+}

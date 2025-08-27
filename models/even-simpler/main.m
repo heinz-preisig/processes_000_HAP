@@ -15,30 +15,6 @@ function output_vars = main
   indexOrder(4)  = S_lbl;
 
   % Variables
-  % link variable _np to interface macroscopic
-  np = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
-  np(1) = 0;
-  np(2) = 0;
-
-
-  % fundamental state -- molar mass
-  n = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
-
-
-  % starting time
-  to = MultiDimVar({}, [1], indexOrder);
-  to(1) = 0;
-
-
-  % differential mass balance without reaction
-  an = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
-
-
-  % convective mass conductivity in arc and x diretion
-  kcA_x = MultiDimVar({A_lbl}, [1], indexOrder);
-  kcA_x(1) = 0.1;
-
-
   % time
   t = MultiDimVar({}, [1], indexOrder);
 
@@ -46,12 +22,6 @@ function output_vars = main
   % end time
   te = MultiDimVar({}, [1], indexOrder);
   te(1) = 100;
-
-
-  % volume
-  V = MultiDimVar({N_lbl}, [2], indexOrder);
-  V(1) = 1000;
-  V(2) = 1000;
 
 
   % accumulation due to diffusion in x-direction
@@ -63,52 +33,9 @@ function output_vars = main
   rhoA(1) = 1;
 
 
-  % molar convective flow in x-direction
-  fnc_x = MultiDimVar({A_lbl, S_lbl}, [1,0], indexOrder);
-
-
-  % cross sectional area yz
-  Ayz = MultiDimVar({N_lbl}, [2], indexOrder);
-  Ayz(1) = 1;
-
-
-  % accumulation of molar mass due to convection
-  anc_x = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
-
-
-  % diffusion flow in x-direction
-  fnd_x = MultiDimVar({A_lbl, S_lbl}, [1,0], indexOrder);
-
-
-  % molar concentration
-  c = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
-
-
-  % initial mass
-  no = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
-  no(1) = 100;
-  no(2) = 0;
-
-
-  % incidence matrix
-  F = MultiDimVar({N_lbl, A_lbl}, [2,1], indexOrder);
-  F(1,1) = -1;
-  F(2,1) = 1;
-
-
-  % numerical value one half
-  oneHalf = MultiDimVar({}, [1], indexOrder);
-  oneHalf(1) = 0.5;
-
-
-  % flow direction of convective flow
-  d = MultiDimVar({A_lbl}, [1], indexOrder);
-
-
-  % thermodynamic pressure
-  p = MultiDimVar({N_lbl}, [2], indexOrder);
-  p(1) = 10;
-  p(2) = 1;
+  % starting time
+  to = MultiDimVar({}, [1], indexOrder);
+  to(1) = 0;
 
 
   % concentration in convective event-dynamic flow
@@ -117,6 +44,79 @@ function output_vars = main
 
   % volumetric flow in x-direction
   fV = MultiDimVar({A_lbl}, [1], indexOrder);
+
+
+  % molar convective flow in x-direction
+  fnc_x = MultiDimVar({A_lbl, S_lbl}, [1,0], indexOrder);
+
+
+  % differential mass balance without reaction
+  an = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
+
+
+  % incidence matrix
+  F = MultiDimVar({N_lbl, A_lbl}, [2,1], indexOrder);
+  F(1,1) = -1;
+  F(2,1) = 1;
+
+
+  % molar concentration
+  c = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
+
+
+  % accumulation of molar mass due to convection
+  anc_x = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
+
+
+  % initial mass
+  no = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
+  no(1) = 100;
+  no(2) = 0;
+
+
+  % cross sectional area yz
+  Ayz = MultiDimVar({N_lbl}, [2], indexOrder);
+  Ayz(1) = 1;
+
+
+  % flow direction of convective flow
+  d = MultiDimVar({A_lbl}, [1], indexOrder);
+
+
+  % diffusion flow in x-direction
+  fnd_x = MultiDimVar({A_lbl, S_lbl}, [1,0], indexOrder);
+
+
+  % numerical value one half
+  oneHalf = MultiDimVar({}, [1], indexOrder);
+  oneHalf(1) = 0.5;
+
+
+  % thermodynamic pressure
+  p = MultiDimVar({N_lbl}, [2], indexOrder);
+  p(1) = 10;
+  p(2) = 1;
+
+
+  % fundamental state -- molar mass
+  n = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
+
+
+  % link variable _np to interface macroscopic
+  np = MultiDimVar({N_lbl, S_lbl}, [2,0], indexOrder);
+  np(1) = 0;
+  np(2) = 0;
+
+
+  % convective mass conductivity in arc and x diretion
+  kcA_x = MultiDimVar({A_lbl}, [1], indexOrder);
+  kcA_x(1) = 0.1;
+
+
+  % volume
+  V = MultiDimVar({N_lbl}, [2], indexOrder);
+  V(1) = 1000;
+  V(2) = 1000;
 
 
 
@@ -159,12 +159,12 @@ function output_vars = main
 
     A_E_50 = [1];
     S_E_50 = [];
-    c_AS(A_E_50, S_E_50) = E_50(c, F, oneHalf, d, A_E_50, S_E_50);
+    c_AS(A_E_50, S_E_50) = E_50(d, F, oneHalf, c, A_E_50, S_E_50);
 
     A_E_51 = [1];
     S_E_51 = [];
     N_E_51 = [1,2];
-    fV(A_E_51) = E_51(rhoA, p, kcA_x, F, Ayz, N_E_51, A_E_51, S_E_51);
+    fV(A_E_51) = E_51(F, p, rhoA, kcA_x, Ayz, N_E_51, A_E_51, S_E_51);
 
     A_E_52 = [1];
     S_E_52 = [];
@@ -181,7 +181,7 @@ function output_vars = main
 
     N_E_92 = [1,2];
     S_E_92 = [];
-    an(N_E_92, S_E_92) = E_92(and_x, np, anc_x, V, N_E_92, S_E_92);
+    an(N_E_92, S_E_92) = E_92(anc_x, np, and_x, V, N_E_92, S_E_92);
 
     extra_output = [
     ];
@@ -195,11 +195,11 @@ function sol = E_49(p, F, N, A, S)
   sol = sign(einsum(F(N, A), p(N), {"N"}));
 endfunction
 
-function sol = E_50(c, F, oneHalf, d, A, S)
+function sol = E_50(d, F, oneHalf, c, A, S)
   sol = einsum((einsum(oneHalf, (F(N, A) - einsum(d(A), abs(F(N, A)))))), c(N, S), {"N"});
 endfunction
 
-function sol = E_51(rhoA, p, kcA_x, F, Ayz, N, A, S)
+function sol = E_51(F, p, rhoA, kcA_x, Ayz, N, A, S)
   sol = einsum(einsum(einsum(einsum(1 ./ rhoA(A), kcA_x(A)), Ayz(N)), F(N, A)), p(N), {"N"});
 endfunction
 
@@ -215,7 +215,7 @@ function sol = E_87(fnc_x, F, N, A, S)
   sol = einsum(F(N, A), fnc_x(A, S), {"A"});
 endfunction
 
-function sol = E_92(and_x, np, anc_x, V, N, S)
+function sol = E_92(anc_x, np, and_x, V, N, S)
   sol = anc_x(N, S) + and_x(N, S) + einsum(V(N), np(N, S));
 endfunction
 

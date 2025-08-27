@@ -55,6 +55,20 @@
             "macroscopic.node.mass|constant|infinity.massSink"
         ]
     },
+    "macroscopic.arc.energy|conduction|lumped.heatFlow": {
+        "sources": [
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+            "macroscopic.node.energy|constant|infinity.constantTemperature",
+            "macroscopic.node.energy|dynamic|lumped.lumpedDynamicEnergy",
+            "macroscopic.node.energy|dynamic|lumped.faulty"
+        ],
+        "sinks": [
+            "macroscopic.node.energy_mass|dynamic|lumped.dynamicMassEnergy",
+            "macroscopic.node.energy|constant|infinity.constantTemperature",
+            "macroscopic.node.energy|dynamic|lumped.lumpedDynamicEnergy",
+            "macroscopic.node.energy|dynamic|lumped.faulty"
+        ]
+    },
     "macroscopic >>> reactions (x -> _x)": {
         "sources": [],
         "sinks": []
@@ -72,7 +86,9 @@
     "macroscopic >>> reactions (T -> _T)": {
         "sources": [
             "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
-            "macroscopic.node.energy|constant|infinity.constantTemperature"
+            "macroscopic.node.energy|constant|infinity.constantTemperature",
+            "macroscopic.node.energy|dynamic|lumped.lumpedDynamicEnergy",
+            "macroscopic.node.energy|dynamic|lumped.faulty"
         ],
         "sinks": []
     },

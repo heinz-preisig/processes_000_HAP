@@ -1,0 +1,309 @@
+{
+  "ID_tree": {
+    "0": {
+      "ancestors": [],
+      "children": [
+        1,
+        3,
+        4
+      ]
+    },
+    "1": {
+      "ancestors": [
+        0
+      ],
+      "children": []
+    },
+    "3": {
+      "ancestors": [
+        0
+      ],
+      "children": []
+    },
+    "4": {
+      "ancestors": [
+        0
+      ],
+      "children": []
+    }
+  },
+  "named_networks": {
+    "network__named_network": {
+      "control": [
+        "A-control"
+      ],
+      "energy": [
+        "A-energy"
+      ],
+      "gas": [
+        "A-gas"
+      ],
+      "info_processing": [
+        "A-info_processing"
+      ],
+      "liquid": [
+        "A-liquid"
+      ],
+      "microscopic": [
+        "A-microscopic"
+      ],
+      "reactions": [
+        "A-reactions"
+      ],
+      "solid": [
+        "A-solid"
+      ]
+    },
+    "A-control": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-energy": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-gas": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-info_processing": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-microscopic": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "A-solid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    }
+  },
+  "nodes": {
+    "0": {
+      "name": "simple-heat-transfer",
+      "network": null,
+      "named_network": null,
+      "class": "node_composite",
+      "type": "node_composite",
+      "variant": null,
+      "instantiated_variables": {},
+      "entity_id": ""
+    },
+    "1": {
+      "name": "constantTemperature",
+      "network": "solid",
+      "named_network": "A-solid",
+      "class": "node_simple",
+      "type": "constant|infinity",
+      "variant": "constantTemperature",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.energy|constant|infinity.constantTemperature",
+      "tokens": {
+        "energy": []
+      },
+      "injected_typed_tokens": {},
+      "energy": []
+    },
+    "3": {
+      "name": "heatFlow",
+      "network": "solid",
+      "named_network": "A-solid >>> A-solid",
+      "class": "node_arc",
+      "type": "energy|conduction|lumped",
+      "variant": "heatFlow",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.energy|conduction|lumped.heatFlow",
+      "tokens": {
+        "energy": []
+      },
+      "tokens_right": {
+        "energy": []
+      },
+      "tokens_left": {
+        "energy": []
+      },
+      "transfer_constraints": {
+        "energy": []
+      },
+      "energy": []
+    },
+    "4": {
+      "name": "faulty",
+      "network": "liquid",
+      "named_network": "A-liquid",
+      "class": "node_simple",
+      "type": "dynamic|lumped",
+      "variant": "faulty",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.node.energy|dynamic|lumped.faulty",
+      "tokens": {
+        "energy": []
+      },
+      "conversions": {},
+      "energy": []
+    }
+  },
+  "domains": {
+    "charge": {},
+    "energy": {
+      "0": [
+        1,
+        3,
+        4
+      ]
+    },
+    "mass": {},
+    "signal": {}
+  },
+  "arcs": {
+    "0": {
+      "name": "1 | 3",
+      "source": 1,
+      "sink": 3,
+      "token": "energy",
+      "typed_tokens": [],
+      "network": "solid",
+      "named_network": "A-solid",
+      "mechanism": "conduction",
+      "nature": "lumped",
+      "variant": "heatFlow",
+      "instantiated_variables": {},
+      "entity_id": "macroscopic.arc.energy|conduction|lumped.heatFlow"
+    },
+    "1": {
+      "name": "3 | 4",
+      "source": 3,
+      "sink": 4,
+      "token": "energy",
+      "typed_tokens": [],
+      "network": "solid",
+      "named_network": "A-solid",
+      "mechanism": "conduction",
+      "nature": "lumped",
+      "variant": "heatFlow",
+      "instantiated_variables": {}
+    }
+  },
+  "scenes": {
+    "0": {
+      "nodes": {
+        "1": {
+          "position_x": -272.0,
+          "position_y": -155.0,
+          "root": {
+            "position_x": 0,
+            "position_y": 0
+          },
+          "name": {
+            "position_x": 0,
+            "position_y": 40
+          },
+          "network": {
+            "position_x": -15,
+            "position_y": 0
+          },
+          "named_network": {
+            "position_x": -20,
+            "position_y": 0
+          }
+        },
+        "3": {
+          "position_x": -156,
+          "position_y": -156,
+          "root": {
+            "position_x": -15,
+            "position_y": -10
+          },
+          "name": {
+            "position_x": 0,
+            "position_y": 50
+          }
+        },
+        "4": {
+          "position_x": 68.0,
+          "position_y": -157.0,
+          "root": {
+            "position_x": 0,
+            "position_y": 0
+          },
+          "name": {
+            "position_x": 0,
+            "position_y": 40
+          },
+          "network": {
+            "position_x": -15,
+            "position_y": 0
+          },
+          "named_network": {
+            "position_x": -20,
+            "position_y": 0
+          }
+        }
+      },
+      "arcs": {
+        "0": [],
+        "1": []
+      }
+    },
+    "1": {
+      "nodes": {},
+      "arcs": {
+        "0": []
+      }
+    },
+    "3": {
+      "nodes": {},
+      "arcs": {
+        "0": [],
+        "1": []
+      }
+    },
+    "4": {
+      "nodes": {},
+      "arcs": {
+        "1": []
+      }
+    }
+  }
+}
