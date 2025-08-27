@@ -71,7 +71,8 @@
     },
     "macroscopic >>> reactions (T -> _T)": {
         "sources": [
-            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump"
+            "macroscopic.node.mass|dynamic|lumped.dynamicReactiveLump",
+            "macroscopic.node.energy|constant|infinity.constantTemperature"
         ],
         "sinks": []
     },
